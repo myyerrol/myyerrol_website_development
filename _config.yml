@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: Home | myyerrol's blog
+subtitle: Home | myyerrol's blog
+description: "This is my personal website, which uses the hexo system to build. Enter the following URL to access: https://myyerrol.github.io"
+author: myyerrol
+language: zh-CN
 timezone:
 
 # URL

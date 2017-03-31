@@ -1,39 +1,31 @@
-slogan: "Yet another bootstrap ."
+slogan: "Hacking means exploring the limits of what is possible, in a spirit of playful cleverness."
 
 theme: bootstrap
 inverse: true
 
 menu:
-  - title: Archives
+  - title: 归档
     url: archives
-    intro: "All the articles."
+    intro: "所有的文章。"
     icon: "fa fa-archive"
-  - title: Categories
+  - title: 分类
     url: categories
-    intro: "All the categories."
+    intro: "所有的分类。"
     icon: "fa fa-folder"
-  - title: Tags
+  - title: 标签
     url: tags
-    intro: "All the tags."
+    intro: "所有的标签。"
     icon: "fa fa-tags"
-  - title: About
+  - title: 关于
     url: about
-    intro: "About me."
+    intro: "关于我"
     icon: "fa fa-user"
 
 links:
-  - title: Freemind
-    url: https://github.com/wzpan/freemind/
-    intro: "Freemind's Github repository."
+  - title: "我的GitHub"
+    url: http://www.github.com/myyerrol
+    intro: "我的GitHub账户。"
     icon: "fa fa-github"
-  - title: "My Github"
-    url: http://www.github.com/wzpan
-    intro: "My Github account."
-    icon: "fa fa-github"
-  - title: "My LinkedIn"
-    url: http://www.linkedin.com/in/hahack
-    intro: "My Linkin account."
-    icon: "fa fa-linkedin"
 
 widgets:
 - search
@@ -61,4 +53,3 @@ baidu_tongji:
 # share widgets
 bdshare: true
 jiathis: false
-
