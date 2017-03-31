@@ -72,3 +72,6 @@ deploy:
   type: git
   repo: git@github.com:myyerrol/myyerrol.github.io.git
   branch: master
+
+# Disqus
+disqus_shortname: myyerrol

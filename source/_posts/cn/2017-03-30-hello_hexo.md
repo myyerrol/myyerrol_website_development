@@ -4,6 +4,7 @@ date: 2017-03-30 20:00:00
 tags: 基础
 categories: 文档
 description: 介绍基本的Hexo使用方法。
+comments: true
 toc: true
 ---
 
