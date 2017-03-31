@@ -16,7 +16,7 @@ url: http://yoursite.com
 root: /
 permalink: :lang/:year/:month/:day/:title/
 permalink_defaults:
-  lang: cn
+  lang: zh-cn
 
 # Directory
 source_dir: source
