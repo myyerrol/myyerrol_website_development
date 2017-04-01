@@ -8,7 +8,7 @@ subtitle: Home | myyerrol's blog
 description: "This is my personal website, which uses the hexo system to build. Enter the following URL to access: https://myyerrol.github.io"
 author: myyerrol
 language: zh-cn
-timezone: UTC
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
