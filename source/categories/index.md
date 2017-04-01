@@ -1,3 +1,4 @@
-title: 文档
+---
+title: 分类
 layout: categories
 ---
