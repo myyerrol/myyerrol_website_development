@@ -116,7 +116,7 @@ comments: true
   ```
 
   {% alert success %}
-  Hexo-cli在这个过程中会将`landscape`主题包以及其所依赖的Hexo软件包都下载下来并以本地安装的方式安装到博客文件夹下的node_modules目录下。关于安装的软件包的详细信息，可以打开博客文件夹下的package.json来查看。
+  Hexo-cli在这个过程中会将landscape主题包以及其所依赖的Hexo软件包都下载下来并以本地安装的方式安装到博客文件夹下的node_modules目录下。关于安装的软件包的详细信息，可以打开博客文件夹下的package.json来查看。
   {% endalert %}
 
   安装Hexo默认的依赖和插件
