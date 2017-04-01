@@ -22,9 +22,9 @@ menu:
     icon: "fa fa-user"
 
 links:
-  - title: "我的GitHub"
+  - title: "myyerrol"
     url: http://www.github.com/myyerrol
-    intro: "我的GitHub账户。"
+    intro: "我的GitHub。"
     icon: "fa fa-github"
   - title: "maksyuki"
     url: http://www.maksyuki.com
@@ -40,7 +40,7 @@ widgets:
 
 rss:
 fancybox: true
-favicon: favicon.png
+favicon: favicon.ico
 duoshuo_shortname:
 
 # Analytics
