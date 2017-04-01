@@ -1,7 +1,7 @@
 ---
 title: Hexo教程系列（一）：简介
 date: 2017-03-31 16:57:48
-tags: 
+tags:
   - Hexo
   - Blog
 categories: Hexo
@@ -20,6 +20,8 @@ comments: true
 ### Hexo定义
 
 Hexo是一个快速、简洁且高效的博客框架。Hexo使用 Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+
+<!--more-->
 
 ### Hexo特点
 

@@ -26,12 +26,16 @@ links:
     url: http://www.github.com/myyerrol
     intro: "我的GitHub账户。"
     icon: "fa fa-github"
+  - title: "maksyuki"
+    url: http://www.maksyuki.com
+    intro: "maksyuki的博客。"
+    icon: "fa fa-globe"
 
 widgets:
 - search
 - category
 - tagcloud
-- recent_posts  
+- recent_posts
 - links
 
 rss:
