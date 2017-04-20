@@ -5,6 +5,6 @@ tags:
 categories:
 description:
 feature:
-toc:
-comments:
+toc: true
+comments: true
 ---
