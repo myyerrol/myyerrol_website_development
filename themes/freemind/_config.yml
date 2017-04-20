@@ -22,14 +22,34 @@ menu:
     icon: "fa fa-user"
 
 links:
-  - title: "myyerrol"
+  - title: "GitHub myyerrol"
     url: http://www.github.com/myyerrol
     intro: "我的GitHub。"
     icon: "fa fa-github"
-  - title: "maksyuki"
+  - title: "GitHub maksyuki"
+    url: http://www.github.com/maksyuki
+    intro: "maksyuki的GitHub。"
+    icon: "fa fa-github"
+  - title: "GitHub mawenke"
+    url: http://www.github.com/mawenke"
+    intro: "mawenke的GitHub"
+    icon: "fa fa-github"
+  - title: "Blog maksyuki"
     url: http://www.maksyuki.com
     intro: "maksyuki的博客。"
     icon: "fa fa-globe"
+  - title: "Blog mawenke"
+    url: https://mawenke.github.io
+    intro: "mawenke的博客。"
+    icon: "fa fa-globe"
+  - title: "Website HandsFree"
+    url: http://www.hands-free.org.cn 
+    intro: "HandsFree的网站。"
+    icon: "fa fa-globe"
+  - title: "Wiki HandsFree"
+    url: https://github.com/HANDS-FREE/HANDS-FREE.github.io/wiki 
+    intro: "HandsFree的维基。"
+    icon: "fa fa-wikipedia-w"
 
 widgets:
 - search
