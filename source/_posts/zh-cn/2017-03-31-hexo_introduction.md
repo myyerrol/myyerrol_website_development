@@ -6,14 +6,10 @@ tags:
   - Blog
 categories: Hexo
 description: 本系列文章将从零开始讲述如何使用Hexo搭建一个免费、简单、稳定、快速、强大的个人独立博客。
-feature:
+feature: false
 toc: true
 comments: true
 ---
-
-{% alert info %}
-普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
-{% endalert %}
 
 ## 前言
 

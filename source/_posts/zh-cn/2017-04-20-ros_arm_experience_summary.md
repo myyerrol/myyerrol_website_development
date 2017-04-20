@@ -7,14 +7,10 @@ tags:
   - Gazebo
 categories: ROS
 description: 本篇文章介绍ROS下机械臂开发的相关经验。
-feature:
+feature: false
 toc: true
 comments: true
 ---
-
-{% alert info %}
-普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
-{% endalert %}
 
 # 一、前言
 
