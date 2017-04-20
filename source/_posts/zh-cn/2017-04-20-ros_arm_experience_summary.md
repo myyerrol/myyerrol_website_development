@@ -12,6 +12,10 @@ toc: true
 comments: true
 ---
 
+{% alert info %}
+普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
+{% endalert %}
+
 # 一、前言
 
 HandsFree团队在其最新的[Giraffe移动机器人平台](https://github.com/HANDS-FREE/HANDS-FREE.github.io/wiki/4.3-Giraffe)上使用了HF中型机械臂，其设计原型来自于西工大舞蹈机器人基地家政组晓萌机器人的老机械臂。作为之前负责过晓萌机械臂软件部分的队员，我把自己曾经开发机械臂时所总结的一些方法和及经验分享出来，当然，写得不对的地方欢迎各位大神指正，也欢迎正在研究机械臂的大神能在此留下自己宝贵的开发经验。
@@ -50,16 +54,16 @@ ROS Control提供的硬件抽象层主要负责管理机器人的硬件资源，
 
 细心的读者可能会发现这两个架构图在硬件接口层部分有一些不一样的地方。接下来我就讲解一下硬件接口层部分各子模块的功能，并解释彼此不同的原因。
 
-- 实体机械臂：<br>
+- 实体机械臂：
   这一部分指的就是真实客观存在的机械臂。STM32嵌入式控制器使用位置PID闭环算法来计算由硬件抽象层通过串口通信方式发过来的关节数据，并将计算好的数据直接发送给电机对其进行控制。同时，电机的编码器也将电机实时的位置数据经串口通信返回给上面的硬件抽象层。
 
-- 硬件抽象层：<br>
+- 硬件抽象层：
   硬件抽象层和硬件直接打交道，通过**write**和**read**方法来完成对硬件的相关操作。硬件抽象层跟上面官方提供（红色的部分）的有一些不太一样的地方在于我并没有使用ROS Control提供的**Transmissions**（数据转换）和**Joint Limits**(关节限位）的API。原因的话，我在下面会讲到。这首先简要的介绍一下什么是Transmissions和Joint Limits。
 
-  - Transmissions：<br>
+  - Transmissions：
     Transmissions就是机器人每个运动关节和电机之间的数学映射。因为机械臂关节结构的不同，会导致机器人上层规划所使用的Joint与Actuator数据之间存在明显的偏差。比如说有简单齿轮和同步带驱动的，有锥齿轮差动机构，四连杆机构等。Transmissions提供的接口中包含有解决上面这些结构进行数据转换的映射公式。
 
-  - Joint Limits：<br>
+  - Joint Limits：
     Joint Limits主要是维护了一个关节限位的数据结构，里面可以包含的数据种类不仅仅是常用的关节位置、速度、力矩、加速度等方面的限位，还可以储存具有安全作用的位置软限位、[位置边界](http://wiki.ros.org/pr2_controller_manager/safety_limits)和[速度边界](http://wiki.ros.org/pr2_controller_manager/safety_limits)等。
 
   至于我为什么没有使用以上两个模块的原因，主要是参考了**西工大一小学生**曾经在[Exbot](http://exbot.net)上发表的有关ROS Control的[文章](http://blog.exbot.net/archives/2337)。下面就截取其中的一小部分：
@@ -68,7 +72,7 @@ ROS Control提供的硬件抽象层主要负责管理机器人的硬件资源，
 
   之前，我是有尝试过在RobotHW中加载URDF中的相关标签，不过用起来确实就如同**小学生**所说的那样，比较麻烦，而且还很冗余。因此，我根据机械组队员提供的有关机械臂关节电机转换的数学公式封装了相应的函数，至于Joint Limits，我是在规划层的地方进行了指定。
 
-- 控制器管理器：<br>
+- 控制器管理器：
   控制器管理器提供一种通用的接口来管理不同的[ROS Controllers](http://wiki.ros.org/ros_controllers)，它可以加载、开始运行、停止运行、卸载不同的Controller，并且提供了多种工具来完成这些操作。[Controller Manager](http://wiki.ros.org/controller_manager)的输入就是ROS上层应用的输出。在这里面，我用到了Joint Command Controller和Joint State Controller，它们分别可以完成对每个关节的控制以及读取硬件接口中关节的状态。
 
 ---
@@ -543,37 +547,37 @@ xm_arm:
 
 这张图我在学习MoveIt!的时候看过很多遍，理解这个架构图对于学习MoveIt!非常重要。从图中可以看到，**move_group**是MoveIt!最核心的部分。它将其他独立的组件集成到一起，为使用者提供了一系列可以使用的命令和服务。
 
-- 用户接口：<br>
+- 用户接口：
   用户可以使用C++、Python或者GUI来访问**move_group**。一般对于初学者来说，GUI和Python的使用会更多一些。
 
-- 配置：<br>
+- 配置：
   **move_group**本质上还是一个ROS的节点，它需要使用ROS的参数服务器来获取以下三种信息。
 
-  - URDF：<br>
+  - URDF：
     **move_group**需要机械臂的URDF文件来进行运动规划。
 
-  - SRDF：<br>
+  - SRDF：
     **move_group**在启动时会寻找机械臂的SRDF文件，它可以通过使用MoveIt! Setup Assistant自动生成。
 
-  - MoveIt!配置：<br>
+  - MoveIt!配置：
     **move_group**在启动时会加载机械臂的关节限位、动力学、运动规划、感知以及其他相关信息。所有以上的配置信息都可以通过使用MoveIt! Setup Assistant自动生成。
 
-- 机器人接口：<br>
+- 机器人接口：
   **move_group**使用ROS中的Topic和Action两种机制来与机械臂进行数据通信。它可以获取当前机械臂的位置信息，点云数据以及其他传感器数据，并且发送命令给机械臂的Controller。
 
-  - 关节状态信息：<br>
+  - 关节状态信息：
     **move_group**会监听机械臂的/joint_states主题来获取当前的状态信息。注意：**move_group**只管监听，你需要自己给机械臂配置好[Joint State Controller](http://wiki.ros.org/joint_state_controller)。
 
-  - 坐标转换信息：<br>
+  - 坐标转换信息：
     **move_group**可以订阅机械臂的TF主题来确定机械臂内部各关节之间的位置变换关系。跟上面一样，你需要自己运行[Robot State Publier](http://wiki.ros.org/robot_state_publisher)节点来发布坐标转换。
 
-  - 控制器接口：<br>
+  - 控制器接口：
     **move_group**使用[Follow Joint Trajectory](http://docs.ros.org/kinetic/api/control_msgs/html/action/FollowJointTrajectory.html)类型的Action接口来与Controller进行数据通信。**move_group**自己是不带Action接口的，它是使用了一个特殊的插件来发布上述Follow Joint Trajectory类型的Action，而对于机械臂来说，你依然需要自己配置上述类型的Controller来订阅机械臂的数据。
 
-  - 规划场景：<br>
+  - 规划场景：
     Planning Scene指的是机械臂本身以及其周围环境的表示。
 
-  - 扩展能力：<br>
+  - 扩展能力：
     **move_group**的所有组件都是以独立插件的形式实现的，而且这些插件可以通过使用ROS的参数文件或插件库来进行配置，这使得**move_group**拥有了强大的定制以及可扩展能力。
 
 接下来，我们介绍一下**Motion Planning**。
@@ -586,43 +590,43 @@ xm_arm:
 
 ![Motion Planning Pipeline](http://moveit.ros.org/wordpress/wp-content/uploads/2013/12/Overview.002.jpg)
 
-- 运动规划请求：<br>
+- 运动规划请求：
   在让运动规划器进行运动规划之前，我们要先发送一个运动规划的请求。这个请求可以是新的机械臂或末端执行器的位置。为了让运动规划器规划出来的轨迹符合要求，我们需要指定一些约束条件：
 
-  - 位置约束：<br>
+  - 位置约束：
     约束机械臂Link的位置。
 
-  - 方向约束：<br>
+  - 方向约束：
     约束机械臂Link的方向。
 
-  - 可见性约束：<br>
+  - 可见性约束：
     约束Link上的某点在某些区域的可见性。
 
-  - 关节约束：<br>
+  - 关节约束：
     约束Joint的运动范围。
 
-  - 自定义约束：<br>
+  - 自定义约束：
     使用自定义的回调函数来指定约束条件。
 
-- 运动规划结果：<br>
+- 运动规划结果：
   **move_group**节点最终将会根据上面的运动规划请求，生成一条运动轨迹。这条轨迹可以使机械臂移动到预想的目标位置。请注意：**move_group**输出的是一条轨迹，而不是路径。对于机械臂来说，路径是使末端执行器移动到目标位置的过程中，中间所经历的一系列独立的位置点。而轨迹则是在路径的基础上，通过加入速度、加速度约束以及时间参数来使机械臂运动的更加平滑。
 
-- 规划请求适配器：<br>
+- 规划请求适配器：
   在运动规划器的输入输出端分别有两个规划请求适配器。它们的作用分别是对规划请求和规划结果进行预处理和后期处理。MoveIt!提供了几种默认的适配器来完成一些特定的功能。
 
-  - FixStartStateBounds:<br>
+  - FixStartStateBounds:
     当机械臂的一个或多个关节的初始状态**稍微**超出了URDF文件中所定义的Joint Limits后，为了能让运动规划器可以运行，FixStartStateBounds适配器会通过将关节状态移动到Joint Limits处来解决这个问题。不过，如果机械臂关节的偏差很大的话，这种靠软件方式修正的方式就不适用了。
 
-  - FixWorkspaceBounds:<br>
+  - FixWorkspaceBounds:
     这个适配器会默认地生成一个10x10x10立方米的机械臂规划空间。
 
-  - FixStartStateCollision:<br>
+  - FixStartStateCollision:
     如果已有的关节配置文件会导致碰撞，这个适配器可以采样新的配置文件，并根据摇摆因子来修改已有的配置文件，从而保证新的机械臂不会发生碰撞。
 
-  - FixStartStatePathConstraints:<br>
+  - FixStartStatePathConstraints:
     如果机械臂的初始姿态不满足路径约束，这个适配器可以找到附近满足约束的姿态作为机械臂的初始姿态。
 
-  - AddTimeParameterization:<br>
+  - AddTimeParameterization:
     这个适配器非常重要。它把从运动规划器中输出的空间路径按等距离进行划分，并在其中添加加速度、加速度约束，以及时间戳等必要信息。
 
 **Planning Scene**
@@ -719,10 +723,10 @@ rosrun moveit_setup_assistant moveit_setup_assistant
 
 之后你可以根据[MoveIt! Setaup Assistant官网教程](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html)完成机械臂的配置。虽然这里我没有详细讲解配置的每一步（其实是我忘了截图），但这一步是非常重要的。我之前就配置过很多次，但总有问题。所以说配置机械臂MoveIt!参数是需要一定经验的。这里，我主要讲两个我在配置过程中遇到的问题，希望对你有所帮助。
 
-- 交互式Marker没有在末端执行器上生成：<br>
+- 交互式Marker没有在末端执行器上生成：
   这个问题曾经困扰了我很久，后来我在Google上搜索了一段时间，终于找到问题的原因和解决办法。出现这个问题的原因是我在配置末端执行器的时候，**parent_link**没有选择**arm**组中的link，而是选了**gripper**组中的。因此，解决办法就是选择**arm**组中的最顶端的link填入到**parent_link**中就没问题了。
 
-- MoveIt!根据点云数据生成的OctoMap在Rviz中的位置、方向与实际不符：<br>
+- MoveIt!根据点云数据生成的OctoMap在Rviz中的位置、方向与实际不符：
   这个问题的原因，你可以通过可视化Rviz中的TF插件来看到。每个Link都有自己的XYZ方向，如果你机器人的Camera Link的XYZ方向恰好与Rviz所使用的XYZ方向不符，就会出现上述问题。我的解决办法是在URDF中再添加一个或两个虚拟的Link来修正方向上的偏差。
 
 打开用MoveIt! Setup Assistant生成的包，我们可以发现里面有config和launch两个文件夹。这里简要介绍下每个文件的功能。
@@ -1368,50 +1372,54 @@ MoveIt!默认使用OMPL库来做运动规划，你可以去OMPL的[官网](http:
 
 ### (2)、书籍
 
-《Effective_Robotics_Programming_with_ROS_Third_Edition》<br>
-《Learning_ROS_for_Robotics_Programming_Second_Edition》<br>
-《Mastering_ROS_for_Robotics_Programming》<br>
-《Programming_Robots_with_ROS》<br>
-《Robot_Operating_System(ROS)_The_Complete_Reference》<br>
-《ROS_By_Example_2_Indigo》<br>
-《ROS_Robotics_By_Example》<br>
+《Effective_Robotics_Programming_with_ROS_Third_Edition》
+《Learning_ROS_for_Robotics_Programming_Second_Edition》
+《Mastering_ROS_for_Robotics_Programming》
+《Programming_Robots_with_ROS》
+《Robot_Operating_System(ROS)_The_Complete_Reference》
+《ROS_By_Example_2_Indigo》
+《ROS_Robotics_By_Example》
 
 ### (3)、博客
 
-西工大一小学生：<br>
+西工大一小学生：
 [ros_control攻略](http://blog.exbot.net/archives/2337)
 
-古月居：<br>
-[ROS探索总结（二十五）——MoveIt!基础](http://www.guyuehome.com/435)<br>
-[ROS探索总结（二十六）——MoveIt!编程](http://www.guyuehome.com/455)<br>
-[ROS探索总结（三十一）——ros_control](http://www.guyuehome.com/890)<br>
+古月居：
+[ROS探索总结（二十五）——MoveIt!基础](http://www.guyuehome.com/435)
+[ROS探索总结（二十六）——MoveIt!编程](http://www.guyuehome.com/455)
+[ROS探索总结（三十一）——ros_control](http://www.guyuehome.com/890)
 
-redefine：<br>
-[运动规划 (Motion Planning): MoveIt! 与 OMPL](http://www.roswiki.com/read.php?tid=402&fid=9&page=1)<br>
-[基于OMPL的采样运动规划算法(Sampling-based Motion Planning)](http://www.roswiki.com/read.php?tid=535&fid=9)<br>
+redefine：
+[运动规划 (Motion Planning): MoveIt! 与 OMPL](http://www.roswiki.com/read.php?tid=402&fid=9&page=1)
+[基于OMPL的采样运动规划算法(Sampling-based Motion Planning)](http://www.roswiki.com/read.php?tid=535&fid=9)
 
-yaked：<br>
-[在qt下编写基于KUKA youbot API的程序](http://blog.csdn.net/yaked/article/details/42265325)<br>
-[用ROS控制KUKA youbot的5自由度机械臂和夹子](http://blog.csdn.net/yaked/article/details/45022047)<br>
-[给KUKA youbot机械臂添加dynamic reconfig](http://blog.csdn.net/yaked/article/details/45061889)<br>
-[Actionlib与KUKA youbot机械臂](http://blog.csdn.net/yaked/article/details/45098549)<br>
-[利用rqt_plot与matlab分析KUKA youbot的joint_states信息](http://blog.csdn.net/yaked/article/details/45534381)<br>
-[KUKA youbot机械臂与Moveit工具包（1）](http://blog.csdn.net/yaked/article/details/45618877)<br>
-[KUKA youbot机械臂与Moveit工具包（2）](http://blog.csdn.net/yaked/article/details/45621517)<br>
-[KUKA youbot机械臂与Moveit工具包（3）](http://blog.csdn.net/yaked/article/details/46840763)<br>
-[Gazebo与ros_control（1）：让模型动起来](http://blog.csdn.net/yaked/article/details/51412781)<br>
-[Gazebo与ros_control（2）：七自由度机械臂和两轮差速运动小车](http://blog.csdn.net/yaked/article/details/51417742)<br>
-[Gazebo与ros_control（3）：Moveit输出规划轨迹到Gazebo](http://blog.csdn.net/yaked/article/details/51436262)<br>
-[Gazebo与ros_control（4）：举一反三，实战youBot](http://blog.csdn.net/yaked/article/details/51483531)<br>
+yaked：
+[在qt下编写基于KUKA youbot API的程序](http://blog.csdn.net/yaked/article/details/42265325)
+[用ROS控制KUKA youbot的5自由度机械臂和夹子](http://blog.csdn.net/yaked/article/details/45022047)
+[给KUKA youbot机械臂添加dynamic reconfig](http://blog.csdn.net/yaked/article/details/45061889)
+[Actionlib与KUKA youbot机械臂](http://blog.csdn.net/yaked/article/details/45098549)
+[利用rqt_plot与matlab分析KUKA youbot的joint_states信息](http://blog.csdn.net/yaked/article/details/45534381)
+[KUKA youbot机械臂与Moveit工具包（1）](http://blog.csdn.net/yaked/article/details/45618877)
+[KUKA youbot机械臂与Moveit工具包（2）](http://blog.csdn.net/yaked/article/details/45621517)
+[KUKA youbot机械臂与Moveit工具包（3）](http://blog.csdn.net/yaked/article/details/46840763)
+[Gazebo与ros_control（1）：让模型动起来](http://blog.csdn.net/yaked/article/details/51412781)
+[Gazebo与ros_control（2）：七自由度机械臂和两轮差速运动小车](http://blog.csdn.net/yaked/article/details/51417742)
+[Gazebo与ros_control（3）：Moveit输出规划轨迹到Gazebo](http://blog.csdn.net/yaked/article/details/51436262)
+[Gazebo与ros_control（4）：举一反三，实战youBot](http://blog.csdn.net/yaked/article/details/51483531)
 
-邱博士：<br>
-[使用MoveIt进行运动规划](http://blog.exbot.net/archives/2908)<br>
-[实例介绍机械臂运动规划及前沿研究方向](http://www.leiphone.com/news/201703/0JJyEB2eqdRe9XS8.html)<br>
-[邱博士知乎问题回答](https://www.zhihu.com/people/fly_qq/answers)<br>
+邱博士：
+[使用MoveIt进行运动规划](http://blog.exbot.net/archives/2908)
+[实例介绍机械臂运动规划及前沿研究方向](http://www.leiphone.com/news/201703/0JJyEB2eqdRe9XS8.html)
+[邱博士知乎问题回答](https://www.zhihu.com/people/fly_qq/answers)
 
-创客智造：<br>
-[MoveIt!入门教程系列](http://www.ncnynl.com/archives/201610/947.html)<br>
+创客智造：
+[MoveIt!入门教程系列](http://www.ncnynl.com/archives/201610/947.html)
 
 # 四、总结
 
 我在大二的时候了加入西工大舞蹈机器人基地家政组，负责机械臂的软件开发工作。那个时候ROS的版本还是Indigo，MoveIt!用的人还不是很多，RoboCup@Home比赛队伍中用机械臂的还很少。如今接近两年的时间过去了，当我再次打开MoveIt!官网的时候，教程的数量和质量已经不可同日而语了。我相信现在的机器人爱好者或研究者们要比我当初那会儿更容易地学习并掌握机械臂的开发，并能将其应用到解决当今人们所遇到的问题中去。我们正处在人工智能的伟大时代，而机器人作为人工智能技术最为重要的技术载体，需要我们为此付出努力并勇于探索前方未知的道路。最后，我希望这篇文章可以让更多的开发者迈入机械臂开发的大门，并为机械臂的研究发展贡献你们自己的一份力量！
+
+{% alert info %}
+普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
+{% endalert %}
