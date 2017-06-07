@@ -2,7 +2,7 @@
 title: 关于
 ---
 
-![Logo](../images/logo.jpg)
+![Logo](../images/logo/logo.jpg)
 
 ## 个人
 我叫缪宇飏(Miao Yuyang)，英文名为**myyerrol**。
