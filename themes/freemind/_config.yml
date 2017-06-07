@@ -80,7 +80,7 @@ widgets:
 
 rss:
 fancybox: true
-favicon: favicon.ico
+favicon: images/favicon/favicon.ico
 duoshuo_shortname:
 
 # Analytics
