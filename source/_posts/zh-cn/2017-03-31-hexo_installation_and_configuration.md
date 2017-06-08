@@ -13,11 +13,9 @@ comments: true
 
 ## 前言
 
-这篇教程主要介绍Hexo的安装和配置方法。
+Hexo的安装内容主要由三个部分组成，它们分别是Node.js、Git和Hexo。Node.js是一个开放源代码、跨平台的JavaScript语言运行环境，由于Hexo是基于Node.js框架进行开发的，因此Node.js为Hexo提供了必需的运行基础。而Git则是著名的分布式版本控制软件，安装它是为了方便对博客网站的仓库进行管理以及远程部署。最后，就像上一篇教程介绍的那样，Hexo是一个简洁且强大的博客框架，它的安装可以通过Node.js的包管理器npm来实现。
 
-安装内容主要由三个部分组成，它们分别是Node.js、Git和Hexo。Node.js是一个开放源代码、跨平台的JavaScript语言运行环境，由于Hexo是基于Node.js框架进行开发的，因此Node.js为Hexo提供了必需的运行基础。而Git则是著名的分布式版本控制软件，安装它是为了方便对博客网站的仓库进行管理以及远程部署。最后，就像上一篇教程介绍的那样，Hexo是一个简洁且强大的博客框架，它的安装可以通过Node.js的包管理器npm来实现。
-
-配置内容依然由三个部分组成，分别是Git和GitHub、GitHub Page以及Hexo。GitHub Page是GitHub提供的免费静态网站，用它可以部署自己的博客网站。具体的配置过程在接下来的章节中会讲到。
+Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub Pages以及Hexo。Github Pages是面向用户、组织和项目开放的公共静态页面搭建托管服务，站点可以被免费托管在Github上。只需在_config.yaml里进行相关的配置就可以让Hexo生成的静态网站被部署到GitHub Pages上，非常方便。
 
 <!--more-->
 
@@ -178,7 +176,7 @@ comments: true
   $> Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
   ```
 
-### 配置GitHub Page
+### 配置GitHub Pages
 
 已配置过**GitHub Page**的可以略过本小节。
 
