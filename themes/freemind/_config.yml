@@ -70,6 +70,10 @@ links:
     url: https://github.com/HANDS-FREE/HANDS-FREE.github.io/wiki
     intro: "HandsFree项目的维基。"
     icon: "fa fa-globe"
+  - title: "myyerrol的邮箱"
+    url: mailto:myyerrol@126.com
+    intro: myyerrol的邮箱。
+    icon: "fa fa-envelope"
 
 widgets:
 - search
