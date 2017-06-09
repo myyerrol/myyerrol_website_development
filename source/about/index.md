@@ -1,5 +1,6 @@
 ---
 title: 关于
+layout: page
 ---
 
 ![Logo](../images/logo/logo.jpg)
