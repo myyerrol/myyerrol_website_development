@@ -5,7 +5,7 @@ tags:
   - Hexo
   - Blog
 categories: Hexo
-description: 本篇文章介绍Hexo博客网站如何统计访问数量。
+description: 本篇end文章介绍Hexo博客网站如何统计访问数量。
 feature: images/hexo/hexo.png
 toc: true
 comments: true
