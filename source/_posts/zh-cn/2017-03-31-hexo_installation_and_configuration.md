@@ -38,13 +38,13 @@ Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub 
 
   安装Node.js的最佳方式是使用nvm。
 
-  ```bash
+  ```sh
   $> wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
   ```
 
   安装完之后，使用以下命令来安装Node.js
 
-  ```bash
+  ```sh
   $> nvm install stable
   ```
 
@@ -54,12 +54,11 @@ Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub 
 
   直接从[Git](https://git-scm.com)官网上下载相应（32或64位）的软件安装包进行安装。安装时，请勾选**Add to PATH**选项。安装时强烈建议勾选**Git Bash**，**Git Bash**提供了一组Linux风格的Shell环境。在该环境下，你可以直接通过命令行的方式来安装Node.js以及之后的Hexo。因为Hexo的很多操作都涉及命令行的操作，所以**Git Bash**很重要！
 
-
 - #### Ubuntu系统
 
   直接通过命令行来安装
 
-  ```bash
+  ```sh
   $> sudo apt-get update
   $> sudo apt-get install git-core
   ```
@@ -72,25 +71,25 @@ Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub 
 
   **方法一：**使用淘宝源来替换官方软件源
 
-  ```bash
+  ```sh
   $> npm config set registry https://registry.npm.taobao.org
   ```
 
   之后跟官方教程一样安装Hexo
 
-  ```bash
+  ```sh
   $> npm install -g hexo-cli
   ```
 
   **方法二：**使用淘宝镜像来替换官方镜像
 
-  ```bash
+  ```sh
   $> npm install -g cnpm --registry=https://registry.npm.taobao.org
   ```
 
   之后就可以使用cnpm命令来安装Hexo了
 
-  ```bash
+  ```sh
   $> cnpm install -g hexo-cli
   ```
 
@@ -104,20 +103,20 @@ Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub 
 
   切换目录到用户桌面
 
-  ```bash
+  ```sh
   $> cd ~/Desktop
   ```
 
   创建空文件夹，名字可以随便取，但最好跟你的博客有关
 
-  ```bash
+  ```sh
   $> mkdir xxx_blog
   $> cd xxx_blog
   ```
 
   初始化博客文件夹
 
-  ```bash
+  ```sh
   $> hexo init
   ```
 
@@ -127,13 +126,13 @@ Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub 
 
   安装Hexo默认的依赖和插件
 
-  ```bash
+  ```sh
   $> npm install
   ```
 
   安装Git插件并保存为Hexo的依赖，为部署到GitHub Page做准备
 
-  ```bash
+  ```sh
   $> npm install hexo-deployer-git --save
   ```
 
@@ -147,14 +146,14 @@ Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub 
 
   配置全局的用户名和E-mail地址
 
-  ```bash
+  ```sh
   $> git config --global user.name "your_name"
   $> git config --global user.email "your_email@xxx.com"
   ```
 
   根据E-mail地址生成特定的ssh密钥
 
-  ```bash
+  ```sh
   $> ssh-keygen -t rsa -c "your_email@xxx.com"
   ```
 
@@ -166,13 +165,13 @@ Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub 
 
 - 再次打开Shell软件（Windows下**Git Bash**，Ubuntu下为默认的**Terminal**），输入以下命令
 
-  ```bash
+  ```sh
   $> ssh -T git@github.com
   ```
 
   如果Shell软件返回以下信息，就说明Git已经配置好了。
 
-  ```bash
+  ```sh
   $> Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
   ```
 
@@ -434,6 +433,7 @@ Hexo的命令极简单，安装后只需要记住以下五个常用的即可。*
 
 ## 总结
 
+至此，最基本的Hexo博客网站就已经搭建好了，后续就是使用Markdown语法来写文章，最后部署就行了。当然，以上只是Hexo配置和使用的最基本流程，如果你想拥有个性化的博客网站界面以及一些增强功能的话，我会在接下来的文章中详细地介绍Hexo主题的配置方法，它肯定可以让你的博客变得更加酷炫的。
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
