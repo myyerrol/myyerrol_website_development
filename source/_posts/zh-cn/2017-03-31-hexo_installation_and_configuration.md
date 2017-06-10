@@ -5,7 +5,7 @@ tags:
   - Hexo
   - Blog
 categories: Hexo
-description: 本篇主要介绍Hexo的安装和基本配置。
+description: 本篇文章介绍Hexo的安装和基本配置。
 feature: images/hexo/hexo.png
 toc: true
 comments: true
@@ -431,6 +431,9 @@ Hexo的命令极简单，安装后只需要记住以下五个常用的即可。*
   ```bash
   $> hexo clean
   ```
+
+## 总结
+
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！

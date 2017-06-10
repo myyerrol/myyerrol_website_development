@@ -5,7 +5,7 @@ tags:
   - Hexo
   - Blog
 categories: Hexo
-description: 本篇主要介绍Hexo主题的配置。
+description: 本篇文章介绍Hexo主题的配置。
 feature: images/hexo/hexo.png
 toc: true
 comments: true
