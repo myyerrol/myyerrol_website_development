@@ -49,9 +49,18 @@ Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown解析�
 
 ## 总纲
 
-[]()
+以下是我编写的Hexo教程系列文章：
+
+[Hexo教程系列（一）：简介和总纲](https://myyerrol.github.io/zh-cn/2017/03/31/hexo_introduction_and_superclass/)
+[Hexo教程系列（二）：安装和配置](https://myyerrol.github.io/zh-cn/2017/03/31/hexo_installation_and_configuration/)
+[Hexo教程系列（三）：主题的配置](https://myyerrol.github.io/zh-cn/2017/06/07/hexo_theme_configuration/)
+[Hexo教程系列（四）：主题的优化](https://myyerrol.github.io/zh-cn/2017/06/10/hexo_theme_optimization/)
+[Hexo教程系列（五）：搜索引擎索引](https://myyerrol.github.io/zh-cn/2017/06/10/hexo_search_engine_index/)
+[Hexo教程系列（六）：访问数量统计](https://myyerrol.github.io/zh-cn/2017/06/10/hexo_access_number_statistics/)
 
 ## 总结
+
+在开始接触Hexo之后，我在网上搜集并学习一些有关Hexo的教程资料，算是基本掌握了Hexo的配置和使用方法。总之，我的个人博客网站已经搭建完成，后续我会使用这个平台来记录自己大学四年以及未来的项目经验和生活感悟。当然，我会首先把上面的Hexo教程系列文章完成，希望能让更多的人可以据此来搭建网站并分享自己的故事。
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
