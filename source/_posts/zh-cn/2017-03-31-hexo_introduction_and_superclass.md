@@ -1,11 +1,11 @@
 ---
-title: Hexo教程系列（一）：简介
+title: Hexo教程系列（一）：简介和总纲
 date: 2017-03-31 16:57:48
 tags:
   - Hexo
   - Blog
 categories: Hexo
-description: 本系列文章将从零开始讲述如何使用Hexo搭建一个免费、简单、稳定、快速且强大的个人博客网站。
+description: 本篇文章介绍Hexo以及该教程系列的总纲。
 feature: images/hexo/hexo.png
 toc: true
 comments: true
@@ -46,6 +46,12 @@ Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown解析�
 - #### 强大
 
   Hexo拥有强大的插件系统，安装插件可以让Hexo支持Jade、CoffeeScript。
+
+## 总纲
+
+
+
+## 总结
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
