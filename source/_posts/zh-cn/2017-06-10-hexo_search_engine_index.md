@@ -6,7 +6,7 @@ tags:
   - Blog
 categories: Hexo
 description: 本篇文章介绍Hexo博客网站如何被搜索引擎索引。
-feature: false
+feature: images/hexo/hexo.png
 toc: true
 comments: true
 ---
