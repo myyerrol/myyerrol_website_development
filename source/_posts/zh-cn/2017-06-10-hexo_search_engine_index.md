@@ -5,7 +5,7 @@ tags:
   - Hexo
   - Blog
 categories: Hexo
-description: 本篇文章介绍Hexo博客网站如何被搜索引擎索引。
+description: 本篇文章介绍如何通过一定的配置使得Hexo博客网站能够被搜索引擎索引。
 feature: images/hexo/hexo.png
 toc: true
 comments: true
