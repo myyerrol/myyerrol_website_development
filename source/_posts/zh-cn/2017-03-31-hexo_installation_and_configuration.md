@@ -30,111 +30,111 @@ Hexo的配置内容依然由三个部分组成，分别是Git和GitHub、GitHub 
 
 ### 安装Node.js
 
-- #### Windows系统
+#### Windows系统
 
-  直接从[Node.js](https://nodejs.org)官网上下载相应（32或64位）的Node.js软件安装包，一路Next即可。
+直接从[Node.js](https://nodejs.org)官网上下载相应（32或64位）的Node.js软件安装包，一路Next即可。
 
-- #### Ubuntu系统
+#### Ubuntu系统
 
-  安装Node.js的最佳方式是使用nvm。
+安装Node.js的最佳方式是使用nvm。
 
-  ```sh
-  $> wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
-  ```
+```sh
+$> wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
+```
 
-  安装完之后，使用以下命令来安装Node.js
+安装完之后，使用以下命令来安装Node.js
 
-  ```sh
-  $> nvm install stable
-  ```
+```sh
+$> nvm install stable
+```
 
 ### 安装Git
 
-- #### Windows系统
+#### Windows系统
 
-  直接从[Git](https://git-scm.com)官网上下载相应（32或64位）的软件安装包进行安装。安装时，请勾选**Add to PATH**选项。安装时强烈建议勾选**Git Bash**，**Git Bash**提供了一组Linux风格的Shell环境。在该环境下，你可以直接通过命令行的方式来安装Node.js以及之后的Hexo。因为Hexo的很多操作都涉及命令行的操作，所以**Git Bash**很重要！
+直接从[Git](https://git-scm.com)官网上下载相应（32或64位）的软件安装包进行安装。安装时，请勾选**Add to PATH**选项。安装时强烈建议勾选**Git Bash**，**Git Bash**提供了一组Linux风格的Shell环境。在该环境下，你可以直接通过命令行的方式来安装Node.js以及之后的Hexo。因为Hexo的很多操作都涉及命令行的操作，所以**Git Bash**很重要！
 
-- #### Ubuntu系统
+#### Ubuntu系统
 
-  直接通过命令行来安装
+直接通过命令行来安装
 
-  ```sh
-  $> sudo apt-get update
-  $> sudo apt-get install git-core
-  ```
+```sh
+$> sudo apt-get update
+$> sudo apt-get install git-core
+```
 
 ### 安装Hexo
 
 在国内，npm下载安装包的速度会很慢（除了已翻墙的用户），推荐使用淘宝源或镜像，速度会比较快。
 
-- #### 安装Hexo-cli
+#### 安装Hexo-cli
 
-  **方法一：**使用淘宝源来替换官方软件源
+**方法一：**使用淘宝源来替换官方软件源
 
-  ```sh
-  $> npm config set registry https://registry.npm.taobao.org
-  ```
+```sh
+$> npm config set registry https://registry.npm.taobao.org
+```
 
-  之后跟官方教程一样安装Hexo
+之后跟官方教程一样安装Hexo
 
-  ```sh
-  $> npm install -g hexo-cli
-  ```
+```sh
+$> npm install -g hexo-cli
+```
 
-  **方法二：**使用淘宝镜像来替换官方镜像
+**方法二：**使用淘宝镜像来替换官方镜像
 
-  ```sh
-  $> npm install -g cnpm --registry=https://registry.npm.taobao.org
-  ```
+```sh
+$> npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
 
-  之后就可以使用cnpm命令来安装Hexo了
+之后就可以使用cnpm命令来安装Hexo了
 
-  ```sh
-  $> cnpm install -g hexo-cli
-  ```
+```sh
+$> cnpm install -g hexo-cli
+```
 
-  {% alert success %}
-  淘宝NPM镜像是一个完整npmjs.org镜像，你可以用此代替官方版本(只读)，同步频率目前为10分钟 一次，以保证尽量与官方服务同步。
-  {% endalert %}
+{% alert success %}
+淘宝NPM镜像是一个完整npmjs.org镜像，你可以用此代替官方版本(只读)，同步频率目前为10分钟 一次，以保证尽量与官方服务同步。
+{% endalert %}
 
-  因为我本人是一个坚定的**K.I.S.S**(Keep It Simple, Stupid)支持者，崇尚Unix的设计哲学。所以我在安装Hexo时会选择方法一，因为它不需要安装额外的软件，只是修改了用户的配置，比较精简。
+因为我本人是一个坚定的**K.I.S.S**(Keep It Simple, Stupid)支持者，崇尚Unix的设计哲学。所以我在安装Hexo时会选择方法一，因为它不需要安装额外的软件，只是修改了用户的配置，比较精简。
 
-- #### 初始化Hexo
+#### 初始化Hexo
 
-  切换目录到用户桌面
+切换目录到用户桌面
 
-  ```sh
-  $> cd ~/Desktop
-  ```
+```sh
+$> cd ~/Desktop
+```
 
-  创建空文件夹，名字可以随便取，但最好跟你的博客有关
+创建空文件夹，名字可以随便取，但最好跟你的博客有关
 
-  ```sh
-  $> mkdir xxx_blog
-  $> cd xxx_blog
-  ```
+```sh
+$> mkdir xxx_blog
+$> cd xxx_blog
+```
 
-  初始化博客文件夹
+初始化博客文件夹
 
-  ```sh
-  $> hexo init
-  ```
+```sh
+$> hexo init
+```
 
-  {% alert success %}
-  Hexo-cli在这个过程中会将landscape主题包以及其所依赖的Hexo软件包都下载下来并以本地安装的方式安装到博客文件夹下的node_modules目录下。关于安装的软件包的详细信息，可以打开博客文件夹下的package.json来查看。
-  {% endalert %}
+{% alert success %}
+Hexo-cli在这个过程中会将landscape主题包以及其所依赖的Hexo软件包都下载下来并以本地安装的方式安装到博客文件夹下的node_modules目录下。关于安装的软件包的详细信息，可以打开博客文件夹下的package.json来查看。
+{% endalert %}
 
-  安装Hexo默认的依赖和插件
+安装Hexo默认的依赖和插件
 
-  ```sh
-  $> npm install
-  ```
+```sh
+$> npm install
+```
 
-  安装Git插件并保存为Hexo的依赖，为部署到GitHub Page做准备
+安装Git插件并保存为Hexo的依赖，为部署到GitHub Page做准备
 
-  ```sh
-  $> npm install hexo-deployer-git --save
-  ```
+```sh
+$> npm install hexo-deployer-git --save
+```
 
 ## 配置
 
