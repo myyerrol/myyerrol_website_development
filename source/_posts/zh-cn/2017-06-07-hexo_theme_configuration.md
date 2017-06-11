@@ -66,6 +66,112 @@ $> npm install hexo-tag-bootstrap --save
 $> npm install hexo-generator-search --save
 ```
 
+## 目录
+
+### Hexo目录
+
+```sh
+|__ .deploy_git/
+|__ .git/
+|__ .gitignore
+|__ _config.yaml
+|__ LICENSE
+|__ node_modules/
+|__ package.json
+|__ public/
+|__ README.md
+|__ scaffolds
+|   |__ draft.md
+|   |__ freemind.md
+|   |__ page.md
+|   |__ post.md
+|__ setup.sh
+|__ source
+|   |__ _posts/
+|   |__ about/
+|   |__ categories/
+|   |__ images/
+|   |__ tags/
+|__ themes
+|   |__ freemind/
+|   |__ landscape/
+```
+
+- **.deploy_git(不被Git管理):**
+存放远程博客网站的全部内容。
+
+- **.git(不被Git管理):**
+Git的核心功能目录。
+
+- **.gitignore:**
+Git的忽略文件，用于忽略某些文件的版本管理。
+
+- **_config.yaml:**
+博客网站的配置文件，里面包含了配置过程中的大部分参数。
+
+- **db.json(不被Git管理):**
+在博客网站的中间数据库文件。
+
+- **LICENSE:**
+仓库使用的开源版本协议。
+
+- **node_modules:**
+博客网站开发所需要或依赖的Node.js模块。
+
+- **package.json:**
+记录Hexo以及各种插件版本信息的文件。
+
+- **public(不被Git管理):**
+存放生成的博客网站的全部内容。
+
+- **README.md:**
+仓库的使用介绍。
+
+- **scaffolds:**
+模板文件夹，用来创建不同风格的文章。
+
+- **setup.sh:**
+安装Hexo插件的脚本文件。
+
+- **source:**
+存放用户资源的文件夹，里面一般文章和图片等。
+
+- **themes:**
+主题文件夹，Hexo会根据主题来生成相应的静态博客网站。
+
+### Freemind目录
+
+```sh
+|__ .gitignore
+|__ _config.yaml
+|__ languages/
+|__ layout/
+|__ LICENSE
+|__ README.md
+|__ source/
+```
+
+- **.gitignore:**
+Git的忽略文件，用于忽略某些文件的版本管理。
+
+- **_config.yaml:**
+主题的配置文件，里面包含了配置过程中的大部分参数。
+
+- **languages:**
+主题的语言文件夹。
+
+- **layout:**
+主题的页面布局文件夹。
+
+- **LICENSE:**
+主题使用的开源版本协议。
+
+- **README.md:**
+主题的使用介绍。
+
+- **source:**
+主题的核心功能文件夹。
+
 ## 配置
 
 ### 页面
@@ -190,141 +296,6 @@ disqus_shortname: myyerrol
 
 ```
 
-其中跟主题配置相关的内容有：
-
-**启用主题**
-
-```yaml
-theme: freemind
-```
-
-修改theme中的内容为freemind来启用主题。
-
-**文章布局**
-
-```yaml
-default_layout: freemind
-```
-
-上面修改的是文章的默认布局，可以在终端里使用如下的命令来简化：
-
-```sh
-$> hexo new "article"
-```
-
-而不需要
-
-```sh
-$> hexo new freemind "article"
-```
-
-因为Freemind主题在Hexo的基础之上，额外提供了一些新的front-matter选项，所以我创建了这个freemind布局（`scaffolds/freemind.md`）来更好地装饰整篇文章。以下是其中的具体内容：
-
-```md
----
-title: {{ title }}
-date: {{ date }}
-tags:
-categories:
-description:
-feature: false
-toc: true
-comments: true
----
-
-{% alert info %}
-普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
-{% endalert %}
-
-```
-
-- **title:**
-文章的标题，由创建文章命令中的title自动写入，可以手动修改。
-
-- **date:**
-文章的创建日期，由创建文章命令时的系统时间自动写入，可以手动修改。
-
-- **tags:**
-文章的标签，用于在博客网站首页的标签页里进行显示，可以添加多个。
-
-- **categories:**
-文章的分类，用于在博客网站首页的分类页里进行显示。
-
-- **description:**（新）
-文章的描述，用于在文章顶部插入一段简短的摘要信息。
-
-- **feature:**（新）
-文章的特征图，用于在博客网站首页的文章列表中进行显示。
-
-- **toc:**（新）
-文章的目录，用于显示文章的目录层级。
-
-- **comments:**
-文章的评论，用于留言和交流。
-
-**评论系统**
-
-```yaml
-# Disqus
-disqus_shortname: myyerrol
-```
-
-因为多说已经关闭，所以我使用Disqus来取代其做博客的评论系统，上面需要填写的是注册Disqus时所指定的ID。具体的操作步骤如下：
-
-**1. 注册或登录Disqus**
-
-![disqus_login_and_signup](../../../../../images/disqus/disqus_login_and_signup.png)
-
-打开[Disqus](https://disqus.com/)主页，可以看到，Disqus 支持 Facebook，Twitter以及 Google 登录，当然也可以用邮箱注册一个账号，如果是注册的账号，需要验证一下邮箱。
-
-**2. 配置Disqus**
-
-登陆后，在[Disqus](https://disqus.com/)主页选择**GET STARTED**按钮，会出现如下界面：
-
-![disqus_get_started](../../../../../images/disqus/disqus_get_started.png)
-
-选择**I want to install Disqus on my site**选项后，接着会出现下面的界面：
-
-![disqus_create_site](../../../../../images/disqus/disqus_create_site.png)
-
-- **Website Name:**
-你的网站名字，可以随便起，但最好和你的网站相关。
-
-- **Shortname:**
-这个就是上面Hexo配置中的disqus_shortname，要求全网唯一，设定之后不可改变。推荐使用你的英文名来当做Shortname。
-
-- **Category:**
-这个是站点的种类，你可以根据自己的实际情况来进行选择。
-
-在填写完上面的内容之后，点击**Create Site**，等待页面的跳转。接下来在页面的左侧点击**Configure Disqus**
-
-![disqus_configuration](../../../../../images/disqus/disqus_configuration.png)
-
-- **Website Name:**
-自动从上面创建站点的步骤中读取，不需要手填。
-
-- **Website URL:**
-自己博客网站的地址，需要如实填写。
-
-- **Category:**
-自动从上面创建站点的步骤中读取，不需要手填。
-
-- **Description:**
-网站的描述，可以不写。
-
-- **Language:**
-Disqus显示在网站中的语言，根据自己的实际情况来选择，一般选择Chinese或English。
-
-配置完以上内容后，点击**Complete Setup**完成Disqus的配置。
-
-**3. 配置Hexo**
-
-最后，在`_config.yaml`文件中将disqus_shortname填写为上面Disqus创建的Shortname就可以了。
-
-{% alert success %}
-Disqus评论系统需要翻墙才可以访问，而且在留言之前要先登录个人账户。
-{% endalert %}
-
 #### Freemind配置
 
 我的Freemind主题配置文件（`themes/freemind/_config.yaml`）如下：
@@ -439,6 +410,12 @@ jiathis: false
 - **slogan:**
 显示在博客网站首页的个性签名。
 
+- **theme:**
+Freemind的颜色主题，具体可参看[Freemind颜色主题配置](http://hahack.com/hexo-theme-freemind/2016/01/30/color-themes/)。
+
+- **inverse:**
+Freemind颜色主题的反转，配合上面的theme选项一起使用。
+
 - **menu:**
 显示在博客网站首页的导航菜单。
 
@@ -453,6 +430,9 @@ jiathis: false
 
 - **fancybox:**
 是否开启[fancyBox](http://fancyapps.com/fancybox/3/)功能。
+
+- **favicon:**
+
 
 - **duoshuo_shortname:**
 多说ID，由于关闭，不再使用。
@@ -471,6 +451,12 @@ Baidu统计，用于统计访问量。
 
 - **jiathis:**
 分享插件。
+
+## 总结
+
+以上就是Freemind主题的基本配置方法，概括来说就是对Hexo根目录和Freemind目录下的两个_config.yaml文件进行配置。Hexo提供的主题有很多，大家可以去[Hexo主题](https://hexo.io/themes/)网站选择适合自己的主题，并根据每个主题的README.md等相关文档来对博客网站进行个性化的配置。
+
+在下一篇文章中，我会总结关于Freemind主题优化的配置。
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
