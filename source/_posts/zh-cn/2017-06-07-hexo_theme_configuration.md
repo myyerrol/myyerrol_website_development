@@ -172,6 +172,14 @@ Git的忽略文件，用于忽略某些文件的版本管理。
 - **source:**
 主题的核心功能文件夹。
 
+## 启用
+
+```yaml
+theme: freemind
+```
+
+修改Hexo根目录下`_config.yaml`文件中的theme选项为freemind来启用该主题。
+
 ## 配置
 
 ### 页面
