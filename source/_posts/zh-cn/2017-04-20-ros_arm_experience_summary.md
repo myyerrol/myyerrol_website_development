@@ -7,7 +7,7 @@ tags:
   - Gazebo
 categories: ROS
 description: 本篇文章介绍ROS下机械臂开发的相关经验。
-feature: images/xmbot/xmbot.jpg
+feature: false
 toc: true
 comments: true
 ---

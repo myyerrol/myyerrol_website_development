@@ -6,7 +6,7 @@ tags:
   - Blog
 categories: Hexo
 description: 本篇文章介绍Hexo以及该教程系列的总纲。
-feature: images/hexo/hexo.png
+feature: false
 toc: true
 comments: true
 ---
