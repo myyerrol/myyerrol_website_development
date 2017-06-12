@@ -171,7 +171,13 @@ $> npm install hexo-deployer-git --save
     Windows用户注意：如果生成的.ssh文件夹默认不在C:\Users\xxx下，你可以通过向用户添加HOME环境变量为C:\Users\xxx来解决这个问题。
     {% endalert %}**
 
+- 登录GitHub并点击**Setting**选项。
+
+  ![github_settings](../../../../../images/github/github_settings.png)
+
 - 使用文本编辑器打开`.ssh`文件夹下的`id_rsa.pub`文件，将里面的内容添加到你的GitHub账户设置中的**SSH Key**中去。
+
+  ![github_ssh_keys](../../../../../images/github/github_ssh_keys.png)
 
 - 再次打开Shell软件（Windows下**Git Bash**，Ubuntu下为默认的**Terminal**），输入以下命令
 
@@ -191,7 +197,11 @@ $> npm install hexo-deployer-git --save
 
 - 登录你的GitHub，点击**New repository**。
 
+  ![github_new_repository](../../../../../images/github/github_new_repository.png)
+
 - 填写仓库的名字和相关描述。
+
+  ![github_create_repository](../../../../../images/github/github_create_repository.png)
 
   **{% textcolor danger %}
     在设置界面上填写Repository name时一定要注意，仓库的名字是固定的。即your_name.github.io
