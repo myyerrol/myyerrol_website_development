@@ -1,11 +1,11 @@
 ---
-title: Hexo教程系列（五）：搜索引擎索引
-date: 2017-06-10 19:35:34
+title: Hexo教程系列（七）：添加访问数量统计功能
+date: 2017-06-10 19:37:47
 tags:
   - Hexo
   - Blog
 categories: Hexo
-description: 本篇文章介绍如何通过一定的配置使得Hexo博客网站能够被搜索引擎索引。
+description: 本篇文章介绍如何给博客网站添加访问数量统计功能
 feature: images/hexo/hexo.png
 toc: true
 comments: true

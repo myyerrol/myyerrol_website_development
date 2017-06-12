@@ -1,5 +1,5 @@
 ---
-title: Hexo教程系列（二）：安装和配置
+title: Hexo教程系列（一）：Hexo的安装和配置
 date: 2017-03-31 18:45:38
 tags:
   - Hexo

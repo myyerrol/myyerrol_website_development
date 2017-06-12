@@ -1,11 +1,11 @@
 ---
-title: Hexo教程系列（四）：主题的优化
-date: 2017-06-10 19:34:07
+title: Hexo教程系列（三）：Freemind主题的优化
+date: 2017-06-07 19:34:07
 tags:
   - Hexo
   - Blog
 categories: Hexo
-description: 本篇文章介绍Hexo主题的优化。
+description: 本篇文章介绍Freemind主题的优化。
 feature: images/hexo/hexo.png
 toc: true
 comments: true
