@@ -54,10 +54,6 @@ Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown解析�
 [Hexo教程系列（零）：Hexo教程系列总纲](https://myyerrol.github.io/zh-cn/2017/03/31/hexo_0_superclass/)
 [Hexo教程系列（一）：Hexo的安装和配置](https://myyerrol.github.io/zh-cn/2017/03/31/hexo_1_installation_and_configuration/)
 [Hexo教程系列（二）：Freemind主题的配置](https://myyerrol.github.io/zh-cn/2017/06/07/hexo_2_freemind_configuration/)
-[Hexo教程系列（三）：Freemind主题的优化](https://myyerrol.github.io/zh-cn/2017/06/07/hexo_3_freemind_optimization/)
-[Hexo教程系列（四）：部署到GitHub和Coding](https://myyerrol.github.io/zh-cn/2017/06/10/hexo_4_deploy_to_github_and_coding/)
-[Hexo教程系列（五）：添加搜索引擎索引功能](https://myyerrol.github.io/zh-cn/2017/06/10/hexo_5_add_search_engine_index/)
-[Hexo教程系列（六）：添加访问数量统计功能](https://myyerrol.github.io/zh-cn/2017/06/10/hexo_6_add_access_number_statistics/)
 
 ## 总结
 
