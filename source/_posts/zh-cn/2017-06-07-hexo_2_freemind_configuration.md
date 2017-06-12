@@ -182,7 +182,15 @@ theme: freemind
 
 ## 配置
 
-### 页面
+### 首页摘要
+
+在网站首页，文章中的内容默认是全部展开的。你可以通过在文章中添加如下标签，来显示该标签以前文章中的所有内容（通过在文章相应位置插入一个**阅读全文**的按钮来实现），这样做可以让网站首页看起来较为简洁并且突出了每个文章的重点。
+
+```md
+<!--more-->
+```
+
+### 标题页面
 
 Freemind预先已经定义了**分类**、**标签**和**关于**页面的排版和布局，但是要想让它们显示出来，就需要自己手动在博客网站的`source`目录中添加相应的页面。
 
@@ -217,9 +225,138 @@ layout: page
 为了能使用Markdown语法来对关于页面中的内容进行编写，我将原本官方教程中需要创建的index.html文件修改为了index.md，经过测试，两者显示效果相同。
 {% endalert %}
 
-### 配置
+### 文章模板
 
-#### Hexo配置
+#### 布局
+
+```yaml
+default_layout: freemind
+```
+
+上面的配置（存在于`_config.yaml`文件中）修改了文章的默认布局，可以在终端里使用如下的命令来简化：
+
+```sh
+$> hexo new "article"
+```
+
+而不需要
+
+```sh
+$> hexo new freemind "article"
+```
+
+#### 模板
+
+因为Freemind主题在Hexo的基础之上，额外提供了一些新的front-matter选项，所以我创建了这个freemind布局（`scaffolds/freemind.md`）来更好地装饰整篇文章。以下是其中的具体内容：
+
+```md
+---
+title: {{ title }}
+date: {{ date }}
+tags:
+categories:
+description:
+feature: false
+toc: true
+comments: true
+---
+
+{% alert info %}
+普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
+{% endalert %}
+
+```
+
+- **title:**
+文章的标题，由创建文章命令中的title自动写入，可以手动修改。
+
+- **date:**
+文章的创建日期，由创建文章命令时的系统时间自动写入，可以手动修改。
+
+- **tags:**
+文章的标签，用于在博客网站首页的标签页里进行显示，可以添加多个。
+
+- **categories:**
+文章的分类，用于在博客网站首页的分类页里进行显示。
+
+- **description:**（新）
+文章的描述，用于在文章顶部插入一段简短的摘要信息。
+
+- **feature:**（新）
+文章的特征图，用于在博客网站首页的文章列表中进行显示。
+
+- **toc:**（新）
+文章的目录，用于显示文章的目录层级。
+
+- **comments:**
+文章的评论，用于留言和交流。
+
+### 评论系统
+
+```yaml
+# Disqus
+disqus_shortname: myyerrol
+```
+
+因为多说已经关闭，所以我使用Disqus来取代其做博客的评论系统，上面需要填写的是注册Disqus时所指定的ID。具体的操作步骤如下：
+
+**1. 注册或登录Disqus**
+
+![disqus_login_and_signup](../../../../../images/disqus/disqus_login_and_signup.png)
+
+打开[Disqus](https://disqus.com/)主页，可以看到，Disqus 支持 Facebook，Twitter以及 Google 登录，当然也可以用邮箱注册一个账号，如果是注册的账号，需要验证一下邮箱。
+
+**2. 配置Disqus**
+
+登陆后，在[Disqus](https://disqus.com/)主页选择**GET STARTED**按钮，会出现如下界面：
+
+![disqus_get_started](../../../../../images/disqus/disqus_get_started.png)
+
+选择**I want to install Disqus on my site**选项后，接着会出现下面的界面：
+
+![disqus_create_site](../../../../../images/disqus/disqus_create_site.png)
+
+- **Website Name:**
+你的网站名字，可以随便起，但最好和你的网站相关。
+
+- **Shortname:**
+这个就是上面Hexo配置中的disqus_shortname，要求全网唯一，设定之后不可改变。推荐使用你的英文名来当做Shortname。
+
+- **Category:**
+这个是站点的种类，你可以根据自己的实际情况来进行选择。
+
+在填写完上面的内容之后，点击**Create Site**，等待页面的跳转。接下来在页面的左侧点击**Configure Disqus**
+
+![disqus_configuration](../../../../../images/disqus/disqus_configuration.png)
+
+- **Website Name:**
+自动从上面创建站点的步骤中读取，不需要手填。
+
+- **Website URL:**
+自己博客网站的地址，需要如实填写。
+
+- **Category:**
+自动从上面创建站点的步骤中读取，不需要手填。
+
+- **Description:**
+网站的描述，可以不写。
+
+- **Language:**
+Disqus显示在网站中的语言，根据自己的实际情况来选择，一般选择Chinese或English。
+
+配置完以上内容后，点击**Complete Setup**完成Disqus的配置。
+
+**3. 配置Hexo**
+
+最后，在`_config.yaml`文件中将disqus_shortname填写为上面Disqus创建的Shortname就可以了。
+
+{% alert success %}
+Disqus评论系统需要翻墙才可以访问，而且在留言之前要先登录个人账户。
+{% endalert %}
+
+### 配置文件
+
+#### Hexo
 
 我的Hexo配置文件（`_config.yaml`）内容如下：
 
@@ -304,7 +441,7 @@ disqus_shortname: myyerrol
 
 ```
 
-#### Freemind配置
+#### Freemind
 
 我的Freemind主题配置文件（`themes/freemind/_config.yaml`）如下：
 
@@ -462,9 +599,7 @@ Baidu统计，用于统计访问量。
 
 ## 总结
 
-以上就是Freemind主题的基本配置方法，概括来说就是对Hexo根目录和Freemind目录下的两个_config.yaml文件进行配置。Hexo提供的主题有很多，大家可以去[Hexo主题](https://hexo.io/themes/)网站选择适合自己的主题，并根据每个主题的README.md等相关文档来对博客网站进行个性化的配置。
-
-在下一篇文章中，我会总结关于Freemind主题优化的配置。
+以上就是Freemind主题的基本配置方法，概括来说就是对Hexo根目录和Freemind目录下的两个_config.yaml文件进行配置。Hexo提供的主题有很多，大家可以去[Hexo主题](https://hexo.io/themes/)网站选择适合自己的主题来进行配置。最后，在下一篇文章中，我会介绍关于Freemind主题优化方面的配置。
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
