@@ -1,11 +1,11 @@
 ---
-title: ROS机械臂经验开发总结
+title: ROS经验总结系列（二）：晓萌机器人机械臂
 date: 2017-04-20 08:26:56
 tags:
   - ROS
   - MoveIt!
   - Gazebo
-categories: ROS
+categories: ROS经验总结系列
 description: 本篇文章介绍ROS下机械臂开发的相关经验。
 feature: images/xmbot/xmbot.jpg
 toc: true
