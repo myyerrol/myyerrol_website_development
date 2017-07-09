@@ -4,7 +4,7 @@ date: 2017-03-31 18:45:38
 tags:
   - Hexo
   - Blog
-categories: Hexo
+categories: Hexo教程系列
 description: 本篇文章介绍Hexo的安装和基本配置。
 feature: images/hexo/hexo.png
 toc: true

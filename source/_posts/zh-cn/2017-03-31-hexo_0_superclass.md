@@ -1,10 +1,10 @@
 ---
-title: Hexo教程系列（零）：Hexo教程系列总纲
+title: Hexo教程系列（零）：总纲
 date: 2017-03-31 16:57:48
 tags:
   - Hexo
   - Blog
-categories: Hexo
+categories: Hexo教程系列
 description: 本篇文章介绍Hexo教程系列的总纲。
 feature: images/hexo/hexo.png
 toc: true
