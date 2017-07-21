@@ -1,12 +1,12 @@
 ---
-title: Robot比赛系列（零）：总纲
-date: 2017-07-01 08:30:00
+title: Robot比赛系列（一）：中国服务机器人大赛
+date: 2017-07-03 09:30:00
 tags:
   - Robot
   - RoboCup@Home
 categories: Robot比赛系列
-description: 本篇文章介绍Robot比赛系列的总纲。
-feature: images/robocup/robocup.png
+description: 本篇文章介绍中国服务机器人大赛的相关内容。
+feature: images/robocup/robocup@home.jpg
 toc: true
 comments: true
 ---

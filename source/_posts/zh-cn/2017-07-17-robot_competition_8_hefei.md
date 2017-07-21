@@ -1,12 +1,11 @@
 ---
-title: Robot比赛系列（零）：总纲
-date: 2017-07-01 08:30:00
+title: Robot比赛系列（八）：RoboCup合肥国际赛第六天
+date: 2017-07-17 16:30:00
 tags:
   - Robot
-  - RoboCup@Home
 categories: Robot比赛系列
-description: 本篇文章介绍Robot比赛系列的总纲。
-feature: images/robocup/robocup.png
+description: 本篇文章介绍RoboCup合肥国际赛第六天的相关内容。
+feature: images/robocup/robocup2015.png
 toc: true
 comments: true
 ---
