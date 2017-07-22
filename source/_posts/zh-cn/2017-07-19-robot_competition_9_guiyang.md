@@ -3,9 +3,10 @@ title: Robot比赛系列（九）：RoboCup贵阳公开赛
 date: 2017-07-19 17:30:00
 tags:
   - Robot
+  - RoboCup@Home
 categories: Robot比赛系列
 description: 本篇文章介绍RoboCup贵阳公开赛的相关内容。
-feature: images/robocup/robocup.png
+feature: images/robocup/robocup@home.jpg
 toc: true
 comments: true
 ---
