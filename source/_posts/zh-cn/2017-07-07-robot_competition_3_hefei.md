@@ -1,9 +1,9 @@
 ---
-title: Robot比赛系列（三）：RoboCup合肥国际赛第一天
+title: RoboCup比赛系列（三）：RoboCup合肥国际赛第一天
 date: 2017-07-07 11:30:00
 tags:
-  - Robot
-categories: Robot比赛系列
+  - RoboCup
+categories: RoboCup比赛系列
 description: 本篇文章介绍RoboCup合肥国际赛第一天的相关内容。
 feature: images/robocup/robocup2015.png
 toc: true

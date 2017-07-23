@@ -1,9 +1,9 @@
 ---
-title: Robot比赛系列（六）：RoboCup合肥国际赛第四天
+title: RoboCup比赛系列（六）：RoboCup合肥国际赛第四天
 date: 2017-07-13 14:30:00
 tags:
-  - Robot
-categories: Robot比赛系列
+  - RoboCup
+categories: RoboCup比赛系列
 description: 本篇文章介绍RoboCup合肥国际赛第四天的相关内容。
 feature: images/robocup/robocup2015.png
 toc: true
