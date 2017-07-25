@@ -51,7 +51,7 @@ comments: true
 
   Nevertheless, we believe it is important that such a long-range goal should be set and pursued. It took only 50 years from the Wright Brothers’ first aircraft to the Apollo mission, to send a man to the moon and safely return him to the earth. It also took only 50 years, from the invention of the digital computer to Deep Blue, which beat the human world champion in chess. Building a humanoid soccer player requires an equally long period and extensive efforts of a broad range of researchers, and the goal will not be met in the near future.
 
-  我们提出，RoboCup计划的最终目标如下：
+  我们提出，RoboCup计划的终极目标如下：
 
   > 到二十一世纪中叶，一个完全自主的类人机器人足球运动员队伍在遵守国际足联的官方规则下与人类世界杯冠军队伍进行对抗，并取得最终的胜利。
 
@@ -61,13 +61,29 @@ comments: true
 
 - #### 里程碑
 
+  In the case of RoboCup, the ultimate goal is to "develop a robot soccer team which beats the human world champion team." (A more modest goal is "to develop a robot soccer team which plays like human players.")
+
+  Needless to say, the accomplishment of the ultimate goal will take decades of effort. It is not feasible, with current technologies to accomplish this goal in the near future. However, this goal can easily lead to a series of well-directed subgoals. Such an approach is common in any ambitious, or overly ambitious project. In the case of the American space program, the Mercury project and the Gemini project, which manned an orbital mission, were two precursors to the Apollo mission. The first subgoal to be accomplished in RoboCup is "to build real and software robot soccer teams which play reasonably well with modified rules." Even to accomplish this goal will undoubtedly generate technologies, which will impact a broad range of industries.
+
+  对于RoboCup来说，其终极目标是“开发一个击败人类世界冠军队伍的机器人足球队”（一个更为谦虚的目标是“开发一个表现与人类运动员类似的机器人足球队”）。
+
+  毫无疑问，完成这个终极目标需要几十年的努力，短期内使用当前技术实现该目标是不可行的。然而，该目标很容易催生一系列具有针对性的子目标，这种方法在任何有雄心或过于雄心勃勃的项目中都是常见的。在美国太空计划中，水星项目和配备轨道任务的双子星座项目是阿波罗任务的两个前身。在RoboCup中，第一个将要完成的子目标是“建立真实和基于软件的机器人足球队，它们能根据修改过的规则在比赛中表现得很合理”。即使实现这一目标，毫无疑问也会产生影响广泛行业的新技术。
+
+- #### 标准问题
+
+  One other aspect of RoboCup is a view that RoboCup is a standard problem so that various theories, algorithms, and architectures can be evaluated. Computer chess is a typical example of such a standard problem. Various search algorithms were evaluated and developed using this domain. With the accomplishment by Deep Blue team, which beat Garry Kasparov, a human grand master, using the official rules, the computer chess challenge came close to its aim. One of the major reasons for the success of computer chess as a standard problem is that the evaluation of progress was clearly defined. The progress of the research can be evaluated as the strength of the system, which was indicated by its rating. However, as computer chess approached its goal, we needed a new challenge. The challenge needed to foster a set of technologies for the next generation of industries. We think that RoboCup will fulfill such a demand.
+
+  RoboCup的另一面可以被看做是一个标准问题，它可以评估各种理论、算法和架构。计算机象棋是这样一个标准问题的典型案例，各种搜索算法都可以使用该模式进行了评估和开发。随着深蓝团队使用官方规则打败人类象棋大师加里·卡斯帕罗夫的成就，计算机象棋挑战接近了它的目标。计算机象棋作为标准问题成功的主要原因之一是对其进度的评估是确定的。研究进展可以通过评估来表现系统的能力。然而，随着计算机象棋接近其目标，我们需要一个新的挑战，它需要为下一代产业培育出一系列新技术，我们认为RoboCup将会满足这样的需求。
+
 ### RoboCup@Home
 
 ![robocup@home](../../../../../images/robocup/robocup@home.jpg)
 
-The RoboCup@Home league aims to develop service and assistive robot technology with high relevance for future personal domestic applications. It is the largest international annual competition for autonomous service robots and is part of the RoboCup initiative. A set of benchmark tests is used to evaluate the robots' abilities and performance in a realistic non-standardized home environment setting. Focus lies on the following domains but is not limited to: Human-Robot-Interaction and Cooperation, Navigation and Mapping in dynamic environments, Computer Vision and Object Recognition under natural light conditions, Object Manipulation, Adaptive Behaviors, Behavior Integration, Ambient Intelligence, Standardization and System Integration. It is colocated with the RoboCup symposium.
+- #### 概述
 
-RoboCup@Home联盟旨在开发服务和辅助机器人技术，与未来个人家庭应用高度相关。它是自主服务机器人最大的国际年度大赛，是RoboCup计划的一部分。 一套基准测试用于评估机器人在现实非标准化家庭环境中的能力和性能。研究的重点在于以下领域但不限于：人机交互与合作、动态环境中的导航和建图、自然光条件下的计算机视觉和物体识别、物体操作、自适应行为、行为集成、环境智能、标准化和系统集成。它与RoboCup研讨会共同进行。
+  The RoboCup@Home league aims to develop service and assistive robot technology with high relevance for future personal domestic applications. It is the largest international annual competition for autonomous service robots and is part of the RoboCup initiative. A set of benchmark tests is used to evaluate the robots' abilities and performance in a realistic non-standardized home environment setting. Focus lies on the following domains but is not limited to: Human-Robot-Interaction and Cooperation, Navigation and Mapping in dynamic environments, Computer Vision and Object Recognition under natural light conditions, Object Manipulation, Adaptive Behaviors, Behavior Integration, Ambient Intelligence, Standardization and System Integration. It is colocated with the RoboCup symposium.
+
+  RoboCup@Home联盟旨在开发服务和辅助机器人技术，与未来个人家庭应用高度相关。它是自主服务机器人最大的国际年度大赛，是RoboCup计划的一部分。 一套基准测试用于评估机器人在现实非标准化家庭环境中的能力和性能。研究的重点在于以下领域但不限于：人机交互与合作、动态环境中的导航和建图、自然光条件下的计算机视觉和物体识别、物体操作、自适应行为、行为集成、环境智能、标准化和系统集成。它与RoboCup研讨会共同进行。
 
 ## 总纲
 
