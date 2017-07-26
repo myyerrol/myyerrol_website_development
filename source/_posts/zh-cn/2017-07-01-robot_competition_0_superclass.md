@@ -23,8 +23,7 @@ comments: true
 
 ## 简介
 
-[RoboCup](http://www.robocup.org)
-[RoboCup@Home](http://www.robocupathome.org)
+因为我加入的是西北工业大学舞蹈机器人基地家政组，所以我们参加的比赛组别为RoboCup@Home。关于什么是[RoboCup](http://www.robocup.org)和[RoboCup@Home](http://www.robocupathome.org)，我会从官网上摘录一部分内容作为介绍。
 
 ### RoboCup
 
