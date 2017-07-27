@@ -23,13 +23,14 @@ comments: true
 
 ## 简介
 
-因为我加入的是西北工业大学舞蹈机器人基地家政组，所以我们参加的比赛组别为RoboCup@Home。关于什么是[RoboCup](http://www.robocup.org)和[RoboCup@Home](http://www.robocupathome.org)，我会从官网上摘录一部分内容作为介绍。
+我们团队参加的比赛类别为RoboCup@Home，即RoboCup服务机器人项目组。关于具体什么是[RoboCup](http://www.robocup.org)和[RoboCup@Home](http://www.robocupathome.org)，接下来我会对它们进行详细的介绍。
 
 ### RoboCup
 
 ![robocup](../../../../../images/robocup/robocup.png)
 
 - #### 概述
+
   RoboCup is an international scientific initiative with the goal to advance the state of the art of intelligent robots. When established in 1997, the original mission was to field a team of robots capable of winning against the human soccer World Cup champions by 2050.
 
   RoboCup是一项旨在推进智能机器人技术水平的国际科学计划。在1997年成立的时候，其最初的任务是要在2050年之前组建一支能够赢得人类足球世界杯冠军的机器人队。
@@ -101,9 +102,9 @@ comments: true
 
 ## 总结
 
-因为我在大二的时候就加入了西北工业大学舞蹈机器人基地，所以我很荣幸自己能有宝贵的机会可以和自己的队员们一起
+时至今日，那些过往比赛的经历依然历历在目：我们一起装箱运送机器人、在宾馆里熬夜调试代码、在比赛会场紧张地敲击着命令行。我们既有为失败而留的泪水，也有因努力付出所获得的阶段性成功，无论最终的比赛结果如何，它们已经成为我大学最美好的回忆，同时也是我人生中最不可缺少的宝贵财富。
 
-自豪感、荣誉感
+接下来，我会以系列文章的形式记录我大学所经历过的三次RoboCup比赛，其中重点突出比赛经历，而非技术开发要点。总之，希望自己从比赛中所获得的教训和经验都能始终铭记在心中，并为之后所用。
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
