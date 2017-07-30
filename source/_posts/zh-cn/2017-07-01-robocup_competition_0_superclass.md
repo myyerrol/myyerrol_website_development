@@ -89,16 +89,16 @@ comments: true
 
 以下是我原创的RoboCup比赛系列文章：
 
-[RoboCup比赛系列（零）：总纲](https://myyerrol.github.io/zh-cn/2017/07/01/robot_competition_0_superclass)
-[RoboCup比赛系列（一）：中国服务机器人大赛](https://myyerrol.github.io/zh-cn/2017/07/03/robot_competition_1_luoyang)
-[RoboCup比赛系列（二）：RoboCup合肥国际赛前一天](https://myyerrol.github.io/zh-cn/2017/07/05/robot_competition_2_hefei)
-[RoboCup比赛系列（三）：RoboCup合肥国际赛第一天](https://myyerrol.github.io/zh-cn/2017/07/07/robot_competition_3_hefei)
-[RoboCup比赛系列（四）：RoboCup合肥国际赛第二天](https://myyerrol.github.io/zh-cn/2017/07/09/robot_competition_4_hefei)
-[RoboCup比赛系列（五）：RoboCup合肥国际赛第三天](https://myyerrol.github.io/zh-cn/2017/07/11/robot_competition_5_hefei)
-[RoboCup比赛系列（六）：RoboCup合肥国际赛第四天](https://myyerrol.github.io/zh-cn/2017/07/13/robot_competition_6_hefei)
-[RoboCup比赛系列（七）：RoboCup合肥国际赛第五天](https://myyerrol.github.io/zh-cn/2017/07/15/robot_competition_7_hefei)
-[RoboCup比赛系列（八）：RoboCup合肥国际赛第六天](https://myyerrol.github.io/zh-cn/2017/07/17/robot_competition_8_hefei)
-[RoboCup比赛系列（九）：RoboCup贵阳公开赛](https://myyerrol.github.io/zh-cn/2017/07/19/robot_competition_9_guiyang)
+[RoboCup比赛系列（零）：总纲](https://myyerrol.github.io/zh-cn/2017/07/01/robocup_competition_0_superclass)
+[RoboCup比赛系列（一）：中国服务机器人大赛](https://myyerrol.github.io/zh-cn/2017/07/03/robocup_competition_1_luoyang)
+[RoboCup比赛系列（二）：RoboCup合肥国际赛前一天](https://myyerrol.github.io/zh-cn/2017/07/05/robocup_competition_2_hefei)
+[RoboCup比赛系列（三）：RoboCup合肥国际赛第一天](https://myyerrol.github.io/zh-cn/2017/07/07/robocup_competition_3_hefei)
+[RoboCup比赛系列（四）：RoboCup合肥国际赛第二天](https://myyerrol.github.io/zh-cn/2017/07/09/robocup_competition_4_hefei)
+[RoboCup比赛系列（五）：RoboCup合肥国际赛第三天](https://myyerrol.github.io/zh-cn/2017/07/11/robocup_competition_5_hefei)
+[RoboCup比赛系列（六）：RoboCup合肥国际赛第四天](https://myyerrol.github.io/zh-cn/2017/07/13/robocup_competition_6_hefei)
+[RoboCup比赛系列（七）：RoboCup合肥国际赛第五天](https://myyerrol.github.io/zh-cn/2017/07/15/robocup_competition_7_hefei)
+[RoboCup比赛系列（八）：RoboCup合肥国际赛第六天](https://myyerrol.github.io/zh-cn/2017/07/17/robocup_competition_8_hefei)
+[RoboCup比赛系列（九）：RoboCup贵阳公开赛](https://myyerrol.github.io/zh-cn/2017/07/19/robocup_competition_9_guiyang)
 
 ## 总结
 
