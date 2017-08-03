@@ -39,7 +39,7 @@ comments: true
 
 - #### Sun@Home
 
-- #### Bitathome
+- #### BIT@Home
 
 - #### 东方队
 
