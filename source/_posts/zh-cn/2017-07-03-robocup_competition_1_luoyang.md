@@ -39,6 +39,8 @@ comments: true
 
 - #### Sun@Home
 
+  Sun@Home队来自于北京信息科技大学。
+
 - #### BIT@Home
 
 - #### 东方队
