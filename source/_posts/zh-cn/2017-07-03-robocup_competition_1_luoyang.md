@@ -43,6 +43,8 @@ comments: true
 
 - #### BIT@Home
 
+ BIT@Home队来自北京理工大学。
+
 - #### 东方队
 
 - #### 自强队
