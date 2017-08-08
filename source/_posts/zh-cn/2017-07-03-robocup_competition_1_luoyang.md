@@ -45,21 +45,47 @@ comments: true
 
 ### 队伍
 
+- #### 晓萌队
 
+  ![team_xm](../../../../../images/luoyang/team_xm.jpg)
+
+  晓萌队来自西北工业大学。
+
+- #### 东风队
+
+  ![team_dongfeng](../../../../../images/luoyang/team_dongfeng.jpg)
+
+  东风队来自第二炮兵工程大学（现火箭军工程大学）。
+
+- #### 侏罗纪队
+
+  ![team_zhuluoji](../../../../../images/luoyang/team_zhuluoji.jpg)
+
+  侏罗纪队来自西北师范大学。
 
 - #### Sun@Home
 
-  Sun@Home队来自于北京信息科技大学。说实话
+  ![team_sun@home](../../../../../images/luoyang/team_sun@home.jpg)
+
+  Sun@Home队来自于北京信息科技大学。
 
 - #### BIT@Home
 
-  BIT@Home队来自北京理工大学。
+  ![team_bit@home](../../../../../images/luoyang/team_bit@home.jpg)
 
-- #### 东方队
+  BIT@Home队来自北京理工大学。
 
 - #### 自强队
 
+  ![team_ziqiang](../../../../../images/luoyang/team_ziqiang.jpg)
+
+  自强队来自上海大学。
+
 - #### 创之风队
+
+  ![team_chuangzhifeng](../../../../../images/luoyang/team_chuangzhifeng.jpg)
+
+  创之风队来自上海应用技术学院。
 
 ### 比赛
 
