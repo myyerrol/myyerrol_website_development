@@ -5,57 +5,57 @@ inverse: true
 
 menu:
   - title: 归档
-    url: archives
+    url: archives/
     intro: "所有的文章。"
     icon: "fa fa-archive"
   - title: 分类
-    url: categories
+    url: categories/
     intro: "所有的分类。"
     icon: "fa fa-folder"
   - title: 标签
-    url: tags
+    url: tags/
     intro: "所有的标签。"
     icon: "fa fa-tags"
   - title: 关于
-    url: about
+    url: about/
     intro: "关于。"
     icon: "fa fa-user"
 
 links:
   - title: "myyerrol的GitHub"
-    url: http://www.github.com/myyerrol
+    url: https://www.github.com/myyerrol
     intro: "我的GitHub。"
     icon: "fa fa-github"
   - title: "maksyuki的GitHub"
-    url: http://www.github.com/maksyuki
+    url: https://www.github.com/maksyuki
     intro: "maksyuki的GitHub。"
     icon: "fa fa-github"
   - title: "mawenke的GitHub"
-    url: http://www.github.com/mawenke
+    url: https://www.github.com/mawenke
     intro: "mawenke的GitHub。"
     icon: "fa fa-github"
   - title: "liao-zhihan的GitHub"
-    url: http://www.github.com/liao-zhihan
+    url: https://www.github.com/liao-zhihan
     intro: "liao-zhihan的GitHub。"
     icon: "fa fa-github"
   - title: "西工大RoboCup@Home的GitHub"
-    url: http://www.github.com/xm-project
+    url: https://www.github.com/xm-project
     intro: "西工大RoboCup@Home的GitHub。"
     icon: "fa fa-github"
   - title: "西工大RoboCup@Rescue的GitHub"
-    url: http://www.github.com/team-explorer-rescue-robot
+    url: https://www.github.com/team-explorer-rescue-robot
     intro: "西工大RoboCup@Rescue的GitHub。"
     icon: "fa fa-github"
   - title: "西工大篮球机器人项目的GitHub"
-    url: http://www.github.com/nwpu-basketball-robot
+    url: https://www.github.com/nwpu-basketball-robot
     intro: "西工大篮球机器人项目的GitHub。"
     icon: "fa fa-github"
   - title: "HeadsFree项目的GitHub"
-    url: http://www.github.com/HANDS-FREE
+    url: https://www.github.com/HANDS-FREE
     intro: "HeadsFree项目的GitHub。"
     icon: "fa fa-github"
   - title: "maksyuki的博客"
-    url: http://www.maksyuki.com
+    url: https://www.maksyuki.com
     intro: "maksyuki的博客。"
     icon: "fa fa-globe"
   - title: "mawenke的博客"
@@ -63,7 +63,7 @@ links:
     intro: "mawenke的博客。"
     icon: "fa fa-globe"
   - title: "HandsFree项目的网站"
-    url: http://www.hands-free.org.cn
+    url: https://www.hands-free.org.cn
     intro: "HandsFree项目的网站。"
     icon: "fa fa-globe"
   - title: "HandsFree项目的维基"
