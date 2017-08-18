@@ -20,6 +20,7 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 ## 经历
 
+
 ![competition_venue_1](../../../../../images/hefei/day_1/competition_venue_1.jpg)
 
 ![competition_venue_2](../../../../../images/hefei/day_1/competition_venue_2.jpg)
