@@ -92,6 +92,8 @@ RoboCup国际赛的第一天，我们都起得很早。在宾馆的餐厅里吃�
 
   ![humanoid_7](../../../../../images/hefei/day_1/robocup_soccer/humanoid/humanoid_7.jpg)
 
+---
+
 - #### RoboCup@Home
 
   **Open Platform**
@@ -136,6 +138,8 @@ RoboCup国际赛的第一天，我们都起得很早。在宾馆的餐厅里吃�
 
   ![bsr_4](../../../../../images/hefei/day_1/robocup@home/bsr/bsr_4.jpg)
 
+---
+
 - #### RoboCup Secure
 
   ![robocup_secure_1](../../../../../images/hefei/day_1/robocup_secure/robocup_secure_1.jpg)
@@ -164,6 +168,8 @@ RoboCup国际赛的第一天，我们都起得很早。在宾馆的餐厅里吃�
 
   ![robocup_secure_13](../../../../../images/hefei/day_1/robocup_secure/robocup_secure_13.jpg)
 
+---
+
 - #### RoboCup Industrial
 
   **RoboCup@Work**
@@ -179,6 +185,38 @@ RoboCup国际赛的第一天，我们都起得很早。在宾馆的餐厅里吃�
   ![robocup_logistics_2](../../../../../images/hefei/day_1/robocup_industrial/robocup_logistics/robocup_logistics_2.jpg)
 
 ### 参展商
+
+- #### KUKA
+
+  ![kuka_1](../../../../../images/hefei/day_1/exhibitor/kuka/kuka_1.jpg)
+
+  ![kuka_2](../../../../../images/hefei/day_1/exhibitor/kuka/kuka_2.jpg)
+
+  ![kuka_3](../../../../../images/hefei/day_1/exhibitor/kuka/kuka_3.jpg)
+
+---
+
+- #### ROBOTICS
+
+  ![robotics_1](../../../../../images/hefei/day_1/exhibitor/robotics/robotics_1.jpg)
+
+  ![robotics_2](../../../../../images/hefei/day_1/exhibitor/robotics/robotics_2.jpg)
+
+---
+
+- #### IAMT
+
+  ![iamt_1](../../../../../images/hefei/day_1/exhibitor/iamt/iamt_1.jpg)
+
+  ![iamt_2](../../../../../images/hefei/day_1/exhibitor/iamt/iamt_2.jpg)
+
+  ![iamt_3](../../../../../images/hefei/day_1/exhibitor/iamt/iamt_3.jpg)
+
+---
+
+- #### GaiTech
+
+  ![gaitech_1](../../../../../images/hefei/day_1/exhibitor/gaitech/gaitech_1.jpg)
 
 ## 总结
 
