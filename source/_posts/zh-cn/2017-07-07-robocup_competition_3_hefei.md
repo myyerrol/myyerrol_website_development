@@ -157,6 +157,9 @@ RoboCup国际赛的第一天，我们都起得很早。在宾馆的餐厅里吃�
 
 - #### RoboCup Secure
 
+  **Robot**
+  RoboCup救援组的目标是促进在恶劣环境下灾难救援领域机器人的研究和开发工作，在非结构化环境中搜索模拟的受害者时，需要机器人展示其在移动性、环境感知、规划、建图以及实际操作方面的能力。
+
   ![robocup_secure_1](../../../../../images/hefei/day_1/robocup_secure/robocup_secure_1.jpg)
 
   ![robocup_secure_2](../../../../../images/hefei/day_1/robocup_secure/robocup_secure_2.jpg)
@@ -188,12 +191,14 @@ RoboCup国际赛的第一天，我们都起得很早。在宾馆的餐厅里吃�
 - #### RoboCup Industrial
 
   **RoboCup@Work**
+  RoboCup@Work是RoboCup的最新比赛项目，其目标是在借鉴其他已有RoboCup比赛项目经验证的想法和概念基础之上，解决自主移动工业机器人对零件的识别、抓取和放置操作等任务难题。
 
   ![robocup@work_1](../../../../../images/hefei/day_1/robocup_industrial/robocup@work/robocup@work_1.jpg)
 
   ---
 
   **RoboCup Logistics**
+  RoboCup物流组创办的想法来源于智能工厂中的工业场景，未来的智能工厂需要更灵活的物流运输能力，而机器人则是最佳的选择。本次RoboCup比赛物流组项目的机器人全部由FESTO公司提供，虽然我没太看懂那些机器人具体是如何运作的，但从外部蓝色的细管还是可以判断出FESTO的物流机器人应该采用的是气动原理。
 
   ![robocup_logistics_1](../../../../../images/hefei/day_1/robocup_industrial/robocup_logistics/robocup_logistics_1.jpg)
 
