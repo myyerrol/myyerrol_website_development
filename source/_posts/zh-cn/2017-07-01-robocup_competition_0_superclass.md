@@ -83,7 +83,7 @@ comments: true
 
   The RoboCup@Home league aims to develop service and assistive robot technology with high relevance for future personal domestic applications. It is the largest international annual competition for autonomous service robots and is part of the RoboCup initiative. A set of benchmark tests is used to evaluate the robots' abilities and performance in a realistic non-standardized home environment setting. Focus lies on the following domains but is not limited to: Human-Robot-Interaction and Cooperation, Navigation and Mapping in dynamic environments, Computer Vision and Object Recognition under natural light conditions, Object Manipulation, Adaptive Behaviors, Behavior Integration, Ambient Intelligence, Standardization and System Integration. It is colocated with the RoboCup symposium.
 
-  RoboCup@Home联盟旨在开发服务和辅助机器人技术，与未来个人家庭应用高度相关。它是自主服务机器人最大的国际年度大赛，是RoboCup计划的一部分。 一套基准测试用于评估机器人在现实非标准化家庭环境中的能力和性能。研究的重点在于以下领域但不限于：人机交互与合作、动态环境中的导航和建图、自然光条件下的计算机视觉和物体识别、物体操作、自适应行为、行为集成、环境智能、标准化和系统集成。它与RoboCup研讨会共同进行。
+  RoboCup@Home联盟旨在开发服务和辅助机器人技术，与未来个人家庭应用高度相关。它是自主服务机器人最大的国际年度大赛，是RoboCup计划的一部分。一套基准测试用于评估机器人在现实非标准化家庭环境中的能力和性能。研究的重点在于以下领域但不限于：人机交互与合作、动态环境中的导航和建图、自然光条件下的计算机视觉和物体识别、物体操作、自适应行为、行为集成、环境智能、标准化和系统集成。它与RoboCup研讨会共同进行。
 
 ## 总纲
 
