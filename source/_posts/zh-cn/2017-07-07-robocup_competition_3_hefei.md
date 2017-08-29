@@ -222,9 +222,9 @@ RoboCup国际赛的第一天，我们都起得很早。在宾馆的餐厅里吃�
 
   ROBOTIS公司来自于韩国，是世界最为著名的机器人公司之一，该公司的标志性产品为Dynamixel系列舵机和ROBOTIS OP小型人型机器人。ROBOTIS公司的发展理念是：既为孩子们提供教具，让孩子们提升创新能力，也为专家们提供解决方案，让他们把富有创意的想法实现为实际机器人。
 
-  ![robotics_1](../../../../../images/hefei/day_1/exhibitor/robotics/robotics_1.jpg)
+  ![robotis_1](../../../../../images/hefei/day_1/exhibitor/robotis/robotis_1.jpg)
 
-  ![robotics_2](../../../../../images/hefei/day_1/exhibitor/robotics/robotics_2.jpg)
+  ![robotis_2](../../../../../images/hefei/day_1/exhibitor/robotis/robotis_2.jpg)
 
 ---
 
