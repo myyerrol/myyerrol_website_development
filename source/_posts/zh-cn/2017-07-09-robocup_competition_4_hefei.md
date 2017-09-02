@@ -18,6 +18,68 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 <!--more-->
 
+## 经历
+
+### RoboCup@Home
+
+- #### 赛程
+
+  ![schedule](../../../../../images/hefei/day_2/robocup@home/schedule/schedule.jpg)
+
+- #### 机器人
+
+  ![robot_1](../../../../../images/hefei/day_2/robocup@home/robot/robot_1.jpg)
+
+  ![robot_2](../../../../../images/hefei/day_2/robocup@home/robot/robot_2.jpg)
+
+  ![robot_3](../../../../../images/hefei/day_2/robocup@home/robot/robot_3.jpg)
+
+  ![robot_4](../../../../../images/hefei/day_2/robocup@home/robot/robot_4.jpg)
+
+  ![robot_5](../../../../../images/hefei/day_2/robocup@home/robot/robot_5.jpg)
+
+  ![robot_6](../../../../../images/hefei/day_2/robocup@home/robot/robot_6.jpg)
+
+  ![robot_7](../../../../../images/hefei/day_2/robocup@home/robot/robot_7.jpg)
+
+  ![robot_8](../../../../../images/hefei/day_2/robocup@home/robot/robot_8.jpg)
+
+- #### 技术海报
+
+  ![poster_1](../../../../../images/hefei/day_2/robocup@home/poster/poster_1.jpg)
+
+  ![poster_2](../../../../../images/hefei/day_2/robocup@home/poster/poster_2.jpg)
+
+  ![poster_3](../../../../../images/hefei/day_2/robocup@home/poster/poster_3.jpg)
+
+  ![poster_4](../../../../../images/hefei/day_2/robocup@home/poster/poster_4.jpg)
+
+  ![poster_5](../../../../../images/hefei/day_2/robocup@home/poster/poster_5.jpg)
+
+  ![poster_6](../../../../../images/hefei/day_2/robocup@home/poster/poster_6.jpg)
+
+  ![poster_7](../../../../../images/hefei/day_2/robocup@home/poster/poster_7.jpg)
+
+  ![poster_8](../../../../../images/hefei/day_2/robocup@home/poster/poster_8.jpg)
+
+  ![poster_9](../../../../../images/hefei/day_2/robocup@home/poster/poster_9.jpg)
+
+  ![poster_10](../../../../../images/hefei/day_2/robocup@home/poster/poster_10.jpg)
+
+  ![poster_11](../../../../../images/hefei/day_2/robocup@home/poster/poster_11.jpg)
+
+  ![poster_12](../../../../../images/hefei/day_2/robocup@home/poster/poster_12.jpg)
+
+  ![poster_13](../../../../../images/hefei/day_2/robocup@home/poster/poster_13.jpg)
+
+  ![poster_14](../../../../../images/hefei/day_2/robocup@home/poster/poster_14.jpg)
+
+  ![poster_15](../../../../../images/hefei/day_2/robocup@home/poster/poster_15.jpg)
+
+  ![poster_16](../../../../../images/hefei/day_2/robocup@home/poster/poster_16.jpg)
+
+  ![poster_17](../../../../../images/hefei/day_2/robocup@home/poster/poster_17.jpg)
+
 ## 总结
 
 {% alert info %}
