@@ -61,6 +61,12 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 - #### 技术海报
 
+  以下是所有参加RoboCup@Home组比赛的队伍对各自机器人所使用技术的概述。通过
+
+  {% alert success %}
+  因为当初我是竖着用手机对海报进行拍照的，所以照片显示在博客里也就发生了90度的旋转。如果你用的是手机或平板电脑浏览本文章的话，请直接将屏幕顺时针旋转90度即可，但是如果你用的是电脑的话，那就只能请你向左歪脑袋或者直接下载照片进行查看了。
+  {% endalert %}
+
   ![poster_1](../../../../../images/hefei/day_2/robocup@home/poster/poster_1.jpg)
 
   ![poster_2](../../../../../images/hefei/day_2/robocup@home/poster/poster_2.jpg)
