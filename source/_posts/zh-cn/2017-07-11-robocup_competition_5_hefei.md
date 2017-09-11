@@ -22,7 +22,7 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 ### 开幕式
 
-今天RoboCup合肥国际赛正式开幕。在开幕式上，RoboCup主席Itsuki Noda向
+伴随着热烈的掌声，2015年第18届RoboCup机器人世界杯赛正式开幕。在整个开幕式过程中，除了RoboCup主席和相关领导的精彩发言之外，最吸引人的就是那个站在演讲台旁边的Alpha 2人形机器人。
 
 ![ceremony](../../../../../images/hefei/day_3/ceremony/ceremony.jpg)
 
