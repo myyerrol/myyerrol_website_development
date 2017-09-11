@@ -76,16 +76,6 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
   ![robocup_secure_4](../../../../../images/hefei/day_3/robocup_secure/robocup_secure_4.jpg)
 
-- #### RoboCup Logistics
-
-  ![robocup_logistics_1](../../../../../images/hefei/day_3/robocup_logistics/robocup_logistics_1.jpg)
-
-  ![robocup_logistics_2](../../../../../images/hefei/day_3/robocup_logistics/robocup_logistics_2.jpg)
-
-  ![robocup_logistics_3](../../../../../images/hefei/day_3/robocup_logistics/robocup_logistics_3.jpg)
-
-  ![robocup_logistics_4](../../../../../images/hefei/day_3/robocup_logistics/robocup_logistics_4.jpg)
-
 - #### RoboCup Soccer
 
   ![robocup_soccer_1](../../../../../images/hefei/day_3/robocup_soccer/robocup_soccer_1.jpg)
@@ -95,6 +85,16 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
   ![robocup_soccer_3](../../../../../images/hefei/day_3/robocup_soccer/robocup_soccer_3.jpg)
 
   ![robocup_soccer_4](../../../../../images/hefei/day_3/robocup_soccer/robocup_soccer_4.jpg)
+
+- #### RoboCup Logistics
+
+  ![robocup_logistics_1](../../../../../images/hefei/day_3/robocup_logistics/robocup_logistics_1.jpg)
+
+  ![robocup_logistics_2](../../../../../images/hefei/day_3/robocup_logistics/robocup_logistics_2.jpg)
+
+  ![robocup_logistics_3](../../../../../images/hefei/day_3/robocup_logistics/robocup_logistics_3.jpg)
+
+  ![robocup_logistics_4](../../../../../images/hefei/day_3/robocup_logistics/robocup_logistics_4.jpg)
 
 - #### BSR
 
