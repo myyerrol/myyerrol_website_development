@@ -78,7 +78,12 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
   ---
 
+  **自主建图**
+  自主建图应该是RoboCup救援组的第一个比赛项目，大部分参赛队伍都选择下图中这样的小车来完成该项任务。原因也很明显，机器人需要在充满各种障碍物的狭小空间中自由移动，而且对于自主建图项目来说，机器人本身不需要承担搜索幸存者（用仿真人偶代替）的任务，即机器人不用携带机械臂等搜救设备，所以带有激光和视觉传感器的小型四驱车是最好的选择。
+
   ![robocup_secure_2](../../../../../images/hefei/day_3/robocup_secure/robocup_secure_2.jpg)
+
+  ---
 
   ![robocup_secure_3](../../../../../images/hefei/day_3/robocup_secure/robocup_secure_3.jpg)
 
