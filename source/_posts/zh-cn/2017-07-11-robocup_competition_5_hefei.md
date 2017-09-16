@@ -85,6 +85,8 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
   ---
 
+  以下两个图片展示的是救援机器人的远程控制站，铝制箱中上面的两个电脑负责可视化机器人实时建图的整个过程，左下角的电脑负责对相关代码进行调试，而右下角的那台电脑则主要负责远程控制机器人的移动以及监视其自身的各种传感器的实时状态（不得不承认，老外真是有钱，连远程控制站也能做得如此专业，说实话这场面跟欧美大片里的某些桥段没什么两样）。
+
   ![robocup_secure_3](../../../../../images/hefei/day_3/robocup_secure/robocup_secure_3.jpg)
 
   ![robocup_secure_4](../../../../../images/hefei/day_3/robocup_secure/robocup_secure_4.jpg)
