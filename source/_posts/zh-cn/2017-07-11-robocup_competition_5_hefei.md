@@ -93,9 +93,17 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 - #### RoboCup Soccer
 
+  **仿真组**
+  以下是RoboCup仿真2D和3D组的比赛画面，从图中可以看到仿真组的软件平台和裁判系统都是统一的，它们由RoboCup官方提供，而不同的地方在于各个参赛队伍需要根据比赛规则编写各自的程序算法来控制己方的机器人完成带球、传球、射门以及防守等操作。当然，除了基本的控制之外，整场比赛的策略也是非常重要的，因为足球毕竟不是单独个体的运动，它需要团队之间的协作配合。总之，个人感觉在多智能体协同算法方面，仿真组还是相当厉害的。
+
   ![robocup_soccer_1](../../../../../images/hefei/day_3/robocup_soccer/robocup_soccer_1.jpg)
 
   ![robocup_soccer_2](../../../../../images/hefei/day_3/robocup_soccer/robocup_soccer_2.jpg)
+
+  ---
+
+  **实物组**
+  
 
   ![robocup_soccer_3](../../../../../images/hefei/day_3/robocup_soccer/robocup_soccer_3.jpg)
 
