@@ -73,8 +73,24 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
   ---
 
-  **Object Manipulation**
-  
+  **Object Recognition & Manipulation**
+  从以下的图片中可以看到，只有前四个参赛队伍的机器人能够成功地至少抓取一个物体，其它的机器人基本上在开始位置没有移动，我估计问题是出在了物体识别上。在四个已完成抓取任务的机器人中，中科大的可佳表现得最为出色，它在有限的比赛时间内总共连续成功地完成了两次自主抓取（本来是三次，很可惜可佳的机器爪在放置第三个物体的时候不小心把它碰到了地面上），毫无悬念地获得了该项测试的第一名。
+
+  ![robocup@home_15](../../../../../images/hefei/day_3/robocup@home/robocup@home_15.jpg)
+
+  ![robocup@home_16](../../../../../images/hefei/day_3/robocup@home/robocup@home_16.jpg)
+
+  ![robocup@home_17](../../../../../images/hefei/day_3/robocup@home/robocup@home_17.jpg)
+
+  ![robocup@home_18](../../../../../images/hefei/day_3/robocup@home/robocup@home_18.jpg)
+
+  ![robocup@home_19](../../../../../images/hefei/day_3/robocup@home/robocup@home_19.jpg)
+
+  ![robocup@home_20](../../../../../images/hefei/day_3/robocup@home/robocup@home_20.jpg)
+
+  ![robocup@home_21](../../../../../images/hefei/day_3/robocup@home/robocup@home_21.jpg)
+
+  ![robocup@home_22](../../../../../images/hefei/day_3/robocup@home/robocup@home_22.jpg)
 
   ---
 
