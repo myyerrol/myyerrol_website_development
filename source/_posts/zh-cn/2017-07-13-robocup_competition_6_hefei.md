@@ -20,11 +20,61 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 ## 经历
 
-### Confi
+### Workshop
+
+![workshop](../../../../../images/hefei/day_4/workshop/workshop.jpg)
+
+- #### Team Xmbot
+
+  ![workshop_xmbot_1](../../../../../images/hefei/day_4/workshop/workshop_xmbot_1.jpg)
+
+  ![workshop_xmbot_2](../../../../../images/hefei/day_4/workshop/workshop_xmbot_2.jpg)
+
+  ![workshop_xmbot_3](../../../../../images/hefei/day_4/workshop/workshop_xmbot_3.jpg)
+
+  ![workshop_xmbot_4](../../../../../images/hefei/day_4/workshop/workshop_xmbot_4.jpg)
+
+  ![workshop_xmbot_5](../../../../../images/hefei/day_4/workshop/workshop_xmbot_5.jpg)
+
+- #### Team Kejia
+
+  ![workshop_kejia_1](../../../../../images/hefei/day_4/workshop/workshop_kejia_1.jpg)
+
+  ![workshop_kejia_2](../../../../../images/hefei/day_4/workshop/workshop_kejia_2.jpg)
+
+  ![workshop_kejia_3](../../../../../images/hefei/day_4/workshop/workshop_kejia_3.jpg)
+
+  ![workshop_kejia_4](../../../../../images/hefei/day_4/workshop/workshop_kejia_4.jpg)
+
+  ![workshop_kejia_5](../../../../../images/hefei/day_4/workshop/workshop_kejia_5.jpg)
+
+  ![workshop_kejia_6](../../../../../images/hefei/day_4/workshop/workshop_kejia_6.jpg)
 
 ### RoboCup@Home
 
+![robocup@home](../../../../../images/hefei/day_4/robocup@home/robocup@home.jpg)
+
 ### BSR
+
+![bsr_1](../../../../../images/hefei/day_4/bsr/bsr_1.jpg)
+
+![bsr_2](../../../../../images/hefei/day_4/bsr/bsr_2.jpg)
+
+![bsr_3](../../../../../images/hefei/day_4/bsr/bsr_3.jpg)
+
+![bsr_4](../../../../../images/hefei/day_4/bsr/bsr_4.jpg)
+
+![bsr_5](../../../../../images/hefei/day_4/bsr/bsr_5.jpg)
+
+![bsr_6](../../../../../images/hefei/day_4/bsr/bsr_6.jpg)
+
+![bsr_7](../../../../../images/hefei/day_4/bsr/bsr_7.jpg)
+
+![bsr_8](../../../../../images/hefei/day_4/bsr/bsr_8.jpg)
+
+![bsr_9](../../../../../images/hefei/day_4/bsr/bsr_9.jpg)
+
+![bsr_10](../../../../../images/hefei/day_4/bsr/bsr_10.jpg)
 
 ## 总结
 
