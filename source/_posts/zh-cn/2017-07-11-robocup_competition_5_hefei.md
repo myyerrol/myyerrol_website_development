@@ -67,12 +67,18 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
   ---
 
   **Person Recognition**
+  以下是中科大的可佳机器人在进行人脸识别测试，从图中可以看到识别的精度还是相当不错的，基本上摄像头里出现的人物都被识别并用方框标了出来。说实话能够在现场环境如此恶劣的情况下，还能够较为精准地识别出多个目标人物，可见可佳的图像识别算法有多鲁棒。
 
   ![robocup@home_14](../../../../../images/hefei/day_3/robocup@home/robocup@home_14.jpg)
 
   ---
 
   **Object Manipulation**
+  
+
+  ---
+
+  **Paper**
 
   ![paper_1](../../../../../images/hefei/day_3/robocup@home/paper_1.jpg)
 
