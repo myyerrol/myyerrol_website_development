@@ -53,13 +53,26 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
   ![robocup@home_10](../../../../../images/hefei/day_3/robocup@home/robocup@home_10.jpg)
 
+  ---
+
+  **Navigation**
+  以下是服务机器人在室内进行自主导航时的一些画面，因为自主导航是RoboCup@Home项目的基本能力，所以绝大部分参赛队伍都能够达到该项测试的基本要求，只是在如何让机器人避开突如其来的障碍物（突然被裁判扔到机器人行进路线上的杂志）这种技术细节方面上，强队与弱队之间的确存在一些差距。
+
   ![robocup@home_11](../../../../../images/hefei/day_3/robocup@home/robocup@home_11.jpg)
 
   ![robocup@home_12](../../../../../images/hefei/day_3/robocup@home/robocup@home_12.jpg)
 
   ![robocup@home_13](../../../../../images/hefei/day_3/robocup@home/robocup@home_13.jpg)
 
+  ---
+
+  **Person Recognition**
+
   ![robocup@home_14](../../../../../images/hefei/day_3/robocup@home/robocup@home_14.jpg)
+
+  ---
+
+  **Object Manipulation**
 
   ![paper_1](../../../../../images/hefei/day_3/robocup@home/paper_1.jpg)
 
