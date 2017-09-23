@@ -18,7 +18,37 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 <!--more-->
 
+## 经历
+
+### BSR
+
+![bsr_1](../../../../../images/hefei/day_6/bsr/bsr_1.jpg)
+
+![bsr_2](../../../../../images/hefei/day_6/bsr/bsr_2.jpg)
+
+![bsr_3](../../../../../images/hefei/day_6/bsr/bsr_3.jpg)
+
+![bsr_4](../../../../../images/hefei/day_6/bsr/bsr_4.jpg)
+
+![bsr_5](../../../../../images/hefei/day_6/bsr/bsr_5.jpg)
+
+![bsr_6](../../../../../images/hefei/day_6/bsr/bsr_6.jpg)
+
+![bsr_7](../../../../../images/hefei/day_6/bsr/bsr_7.jpg)
+
+![bsr_8](../../../../../images/hefei/day_6/bsr/bsr_8.jpg)
+
+### 合影
+
+![group_photo_1](../../../../../images/hefei/day_6/group_photo/group_photo_1.jpg)
+
+![group_photo_2](../../../../../images/hefei/day_6/group_photo/group_photo_2.jpg)
+
+![group_photo_3](../../../../../images/hefei/day_6/group_photo/group_photo_3.jpg)
+
 ## 总结
+
+
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
