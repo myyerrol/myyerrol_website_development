@@ -21,7 +21,41 @@ comments: true
 
 ### 调试
 
-### 
+![debug_navigation](../../../../../images/guiyang/debug/debug_navigation.jpg)
+
+![debug_pick_1](../../../../../images/guiyang/debug/debug_pick_1.jpg)
+
+![debug_pick_2](../../../../../images/guiyang/debug/debug_pick_2.jpg)
+
+![debug_pick_3](../../../../../images/guiyang/debug/debug_pick_3.jpg)
+
+![debug_pick_4](../../../../../images/guiyang/debug/debug_pick_4.jpg)
+
+### 比赛
+
+![competition_robozoo](../../../../../images/guiyang/competition/competition_robozoo.jpg)
+
+![competition_speech](../../../../../images/guiyang/competition/competition_speech.jpg)
+
+![competition_face_1](../../../../../images/guiyang/competition/competition_face_1.jpg)
+
+![competition_face_2](../../../../../images/guiyang/competition/competition_face_2.jpg)
+
+![competition_navigation](../../../../../images/guiyang/competition/competition_navigation.jpg)
+
+![competition_pick_1](../../../../../images/guiyang/competition/competition_pick_1.jpg)
+
+![competition_pick_2](../../../../../images/guiyang/competition/competition_pick_2.jpg)
+
+![competition_pick_3](../../../../../images/guiyang/competition/competition_pick_3.jpg)
+
+![competition_pick_4](../../../../../images/guiyang/competition/competition_pick_4.jpg)
+
+### 团队
+
+![team_cloth_and_logo](../../../../../images/guiyang/team/team_cloth_and_logo.jpg)
+
+![team_group_photo](../../../../../images/guiyang/team/team_group_photo.jpg)
 
 ## 总结
 
