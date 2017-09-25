@@ -19,6 +19,10 @@ comments: true
 
 ## 经历
 
+{% alert warning %}
+由于之前本人电脑中存储的照片全部丢失，因此该博客中所显示的照片数量比较有限，希望读者可以理解。
+{% endalert %}
+
 ### 调试
 
 ![debug_navigation](../../../../../images/guiyang/debug/debug_navigation.jpg)
@@ -50,6 +54,8 @@ comments: true
 ![competition_pick_3](../../../../../images/guiyang/competition/competition_pick_3.jpg)
 
 ![competition_pick_4](../../../../../images/guiyang/competition/competition_pick_4.jpg)
+
+![competition_xmbot](../../../../../images/guiyang/competition/competition_xmbot.jpg)
 
 ### 团队
 
