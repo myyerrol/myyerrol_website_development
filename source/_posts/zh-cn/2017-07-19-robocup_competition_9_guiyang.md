@@ -27,19 +27,25 @@ comments: true
 
 ### 调试
 
-![debug_navigation](../../../../../images/guiyang/debug/debug_navigation.jpg)
+我们吸取了之前比赛失利的教训，提高了赛前调试的次数和强度。由于9月份开学之后，我们的课业都比较繁重，所以那时我们基本上是白天学习专业课，晚上加班加点来舞蹈机器人基地调试机器人。晚上调试机器人最大的好处就是行动比较自由且不会受到外界的干扰，我们可以在楼道走廊里临时搭建好调试场地，并根据比赛内容进行专项联合调试，在联合调试过程中，各个机器人模块（这里的模块主要指的是软件方面，如机器人底盘、机械臂、语音、图像和策略）的负责人需要留在现场，以便出现问题可以大家一起讨论解决。
 
-![debug_pick_1](../../../../../images/guiyang/debug/debug_pick_1.jpg)
-
-![debug_pick_2](../../../../../images/guiyang/debug/debug_pick_2.jpg)
-
-![debug_pick_3](../../../../../images/guiyang/debug/debug_pick_3.jpg)
-
-![debug_pick_4](../../../../../images/guiyang/debug/debug_pick_4.jpg)
-
-### 美食
+- #### 自主导航进门
 
 
+
+  ![debug_navigation](../../../../../images/guiyang/debug/debug_navigation.jpg)
+
+  ---
+
+- #### 自主识别抓取物体
+
+  ![debug_pick_1](../../../../../images/guiyang/debug/debug_pick_1.jpg)
+
+  ![debug_pick_2](../../../../../images/guiyang/debug/debug_pick_2.jpg)
+
+  ![debug_pick_3](../../../../../images/guiyang/debug/debug_pick_3.jpg)
+
+  ![debug_pick_4](../../../../../images/guiyang/debug/debug_pick_4.jpg)
 
 ### 比赛
 
