@@ -51,25 +51,35 @@ comments: true
 
 ### 比赛
 
-![competition_robozoo](../../../../../images/guiyang/competition/competition_robozoo.jpg)
+- #### RoboZoo
 
-![competition_speech](../../../../../images/guiyang/competition/competition_speech.jpg)
+  ![competition_robozoo](../../../../../images/guiyang/competition/competition_robozoo.jpg)
 
-![competition_face_1](../../../../../images/guiyang/competition/competition_face_1.jpg)
+- #### Speech Recognition
 
-![competition_face_2](../../../../../images/guiyang/competition/competition_face_2.jpg)
+  ![competition_speech](../../../../../images/guiyang/competition/competition_speech.jpg)
 
-![competition_navigation](../../../../../images/guiyang/competition/competition_navigation.jpg)
+- #### Face Recognition
 
-![competition_pick_1](../../../../../images/guiyang/competition/competition_pick_1.jpg)
+  ![competition_face_1](../../../../../images/guiyang/competition/competition_face_1.jpg)
 
-![competition_pick_2](../../../../../images/guiyang/competition/competition_pick_2.jpg)
+  ![competition_face_2](../../../../../images/guiyang/competition/competition_face_2.jpg)
 
-![competition_pick_3](../../../../../images/guiyang/competition/competition_pick_3.jpg)
+- #### Navigation
 
-![competition_pick_4](../../../../../images/guiyang/competition/competition_pick_4.jpg)
+  ![competition_navigation](../../../../../images/guiyang/competition/competition_navigation.jpg)
 
-![competition_xmbot](../../../../../images/guiyang/competition/competition_xmbot.jpg)
+- #### Object Recognition & Manipulation
+
+  ![competition_pick_1](../../../../../images/guiyang/competition/competition_pick_1.jpg)
+
+  ![competition_pick_2](../../../../../images/guiyang/competition/competition_pick_2.jpg)
+
+  ![competition_pick_3](../../../../../images/guiyang/competition/competition_pick_3.jpg)
+
+  ![competition_pick_4](../../../../../images/guiyang/competition/competition_pick_4.jpg)
+
+  ![competition_xmbot](../../../../../images/guiyang/competition/competition_xmbot.jpg)
 
 ### 团队
 
