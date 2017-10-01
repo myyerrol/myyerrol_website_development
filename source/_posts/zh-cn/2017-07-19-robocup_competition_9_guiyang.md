@@ -59,6 +59,8 @@ comments: true
 
 - #### Speech Recognition
 
+  在语音识别这个项目上，技术裁判会根据电脑上安装有的[GPSRCmdGen](https://github.com/kyordhel/GPSRCmdGen)软件所随机生成的问题序列来询问机器人，机器人需要通过语音重复识别到的问题然后再进行回答，问题总共有15个，每答对一个就加一定的分数，最后哪个队得分高则排在前面。我们晓萌队在语音识别这个单项依然发挥得非常出色，我记得最后的成绩是正确答对13个问题，效果拔群。
+
   ![competition_speech](../../../../../images/guiyang/competition/competition_speech.jpg)
 
 - #### Face Recognition
