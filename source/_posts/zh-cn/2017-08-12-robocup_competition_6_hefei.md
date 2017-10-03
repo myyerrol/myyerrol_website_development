@@ -1,6 +1,6 @@
 ---
 title: RoboCup比赛系列（六）：RoboCup合肥国际赛第四天
-date: 2017-07-13 14:30:00
+date: 2017-08-12 14:30:00
 tags:
   - RoboCup
 categories: RoboCup比赛系列
