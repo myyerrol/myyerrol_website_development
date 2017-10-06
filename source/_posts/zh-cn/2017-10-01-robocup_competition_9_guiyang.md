@@ -1,6 +1,6 @@
 ---
 title: RoboCup比赛系列（九）：RoboCup贵阳公开赛
-date: 2017-09-02 17:30:00
+date: 2017-10-01 17:30:00
 tags:
   - RoboCup
   - RoboCup@Home
