@@ -123,7 +123,9 @@ comments: true
 
 在基地的时候，我每次跟别的同学或老师讲我们基地或我们家政组所正在研究的内容时，内心就会自然而然地产生一种成就感，我们正在做的是可以在不久的将来能引领人工智能发展的服务机器人领域，虽然我们的研究还处于早期阶段，但有一点可以肯定：目前西工大还没有一支有本科生组成的团队可以达到我们的高度，光这一点就让我发自内心的自豪！
 
-最后，放上一张晓萌在比赛现场的照片，以此来纪念我们最牢不可破的友谊！No matter where you are, whether it's a quarter mile away or half way across the world. The most important thing in life will always be the people in this room, right here, right now. You'll always be with me. And you'll always be my brother.
+最后，以《速度与激情7》中的片尾经典台词和晓萌的照片来结束这篇文章，以纪念我们大学生活中这段最为宝贵的经历：
+
+No matter where you are, whether it's a quarter mile away or half way across the world. The most important thing in life will always be the people in this room, right here, right now. You'll always be with me. And you'll always be my brother.
 
 ![team_xmbot](../../../../../images/guiyang/team/team_xmbot.jpg)
 
