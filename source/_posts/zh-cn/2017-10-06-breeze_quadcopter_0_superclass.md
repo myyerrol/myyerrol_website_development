@@ -24,7 +24,7 @@ comments: true
 
 - **软件：**
 
-  Crazyflie微型四轴飞行器的软件开发全部基于Linux开发环境
+  Crazyflie微型四轴飞行器的软件开发全部基于Linux开发环境 
 
 - **文档：**
 
