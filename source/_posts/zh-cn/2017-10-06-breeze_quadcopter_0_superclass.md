@@ -24,7 +24,7 @@ comments: true
 
 - **软件：**
 
-  Crazyflie微型四轴飞行器的软件开发全部基于Linux开发环境 
+  Crazyflie微型四轴飞行器的软件开发全部基于Linux开发环境。对于嵌入式软件开发，Bitcraze团队使用开源且强大的ARM-GCC、Make等工具链
 
 - **文档：**
 
@@ -33,6 +33,12 @@ comments: true
 ![crazyflie](../../../../../images/crazyflie/crazyflie.jpg)
 
 ## 简介
+
+## 总纲
+
+以下是我原创的Breeze微型四轴系列文章：
+
+[Breeze微型四轴系列（零）：总纲](https://myyerrol.github.io/zh-cn/2017/10/06/breeze_quadcopter_0_superclass)
 
 ## 总结
 
