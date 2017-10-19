@@ -714,7 +714,7 @@ MoveIt!使用CollisionWorld对象进行碰撞检测，采用[FCL](http://gamma.c
 之后，运行下面命令来启动MoveIt! Setup Assistant。
 
 ```bash
-rosrun moveit_setup_assistant moveit_setup_assistant
+$> rosrun moveit_setup_assistant moveit_setup_assistant
 ```
 
 ![MoveIt! Setup Assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/_images/setup_assistant_start.png)
@@ -1308,123 +1308,123 @@ $> roslaunch xm_arm_bringup xm_arm_bringup_moveit_and_gazebo.launch
 
 ### 基础
 
-#### 开发规范
+- #### 开发规范
 
-首先，我承认我对规范有一种近似疯狂的恪守。很多人都觉得学习开发规范对项目开发没有意义，简直就是在浪费时间。可是我一直坚信着：只有好的开发规范，才能产生成功的项目。我把学习开发规范作为基础中的基础，是因为我曾经在项目开发的过程中吃过这样的亏。因此，我希望每个开发者都能在为项目开始贡献之前耐下心来好好学习本团队的开发规范，并严格地执行规范中的内容。这里，我推荐[Google开发规范](https://google.github.io/styleguide)和[ROS开发规范](http://wiki.ros.org/StyleGuide)。当然，如果你感兴趣的话，你可以看一下我曾经自己整理编写的[晓萌团队开发规范](https://github.com/xm-project/xm_developer_guide)。
+  首先，我承认我对规范有一种近似疯狂的恪守。很多人都觉得学习开发规范对项目开发没有意义，简直就是在浪费时间。可是我一直坚信着：只有好的开发规范，才能产生成功的项目。我把学习开发规范作为基础中的基础，是因为我曾经在项目开发的过程中吃过这样的亏。因此，我希望每个开发者都能在为项目开始贡献之前耐下心来好好学习本团队的开发规范，并严格地执行规范中的内容。这里，我推荐[Google开发规范](https://google.github.io/styleguide)和[ROS开发规范](http://wiki.ros.org/StyleGuide)。当然，如果你感兴趣的话，你可以看一下我曾经自己整理编写的[晓萌团队开发规范](https://github.com/xm-project/xm_developer_guide)。
 
-#### 版本管理
+- #### 版本管理
 
-我认为掌握版本管理可以说是软件开发的必备技能之一，也是提高代码开发效率的绝对利器，希望大家好好地学习一下。版本管理主要涉及Git和GitHub的使用，这方面的学习资料很多，上网搜一下，花一段时间就能入门。
+  我认为掌握版本管理可以说是软件开发的必备技能之一，也是提高代码开发效率的绝对利器，希望大家好好地学习一下。版本管理主要涉及Git和GitHub的使用，这方面的学习资料很多，上网搜一下，花一段时间就能入门。
 
-#### 文档写作
+- #### 文档写作
 
-这方面也有很多的开发者不是很重视。但个人认为如果你想成为真正的强者，只会编代码是远远不够的，你还需要优秀的文档写作能力。比如说你在开发的过程中遇到了一些问题，并成功地解决了。这个时候，你应该及时地将遇到的问题和解决办法以项目日志的形式记录下来，这样伴随着项目开发进度的不断向前，日志的内容也会越来越多。我敢保证，若干年之后，你一定会拥有别人绝对没有的宝贵财富！当然，除了开发日志外，你也要学会如何使用Markdown来编写项目文档。Markdown是你与开源世界交流的最重要的工具，一定要学会，况且它也并不是很难学。
+  这方面也有很多的开发者不是很重视。但个人认为如果你想成为真正的强者，只会编代码是远远不够的，你还需要优秀的文档写作能力。比如说你在开发的过程中遇到了一些问题，并成功地解决了。这个时候，你应该及时地将遇到的问题和解决办法以项目日志的形式记录下来，这样伴随着项目开发进度的不断向前，日志的内容也会越来越多。我敢保证，若干年之后，你一定会拥有别人绝对没有的宝贵财富！当然，除了开发日志外，你也要学会如何使用Markdown来编写项目文档。Markdown是你与开源世界交流的最重要的工具，一定要学会，况且它也并不是很难学。
 
-#### 编程能力
+- #### 编程能力
 
-这个我就不用讲太多了，我相信如何学习编程，大家可能知道的比我还多。我这里主要想强调一下，一定要重点理解、学习C++。毕竟编译型语言要比解释性语言Python在执行效率上要高，而且对于机械臂开发来说，MoveIt!中的C++ API也要比Python的要多。
+  这个我就不用讲太多了，我相信如何学习编程，大家可能知道的比我还多。我这里主要想强调一下，一定要重点理解、学习C++。毕竟编译型语言要比解释性语言Python在执行效率上要高，而且对于机械臂开发来说，MoveIt!中的C++ API也要比Python的要多。
 
-#### ROS基础
+- #### ROS基础
 
-关于如何学习ROS，我推荐跟我曾经同在西工大舞蹈机器人基地的盛盛在易科上发表过的一篇文章：[如何学习ROS——盛盛经验谈](http://blog.exbot.net/archives/2667)。这里，我想补充一下，对于机械臂开发来说，除了盛盛在文章里讲到的那些内容之外，各位还要重点理解以下几个部分：
+  关于如何学习ROS，我推荐跟我曾经同在西工大舞蹈机器人基地的盛盛在易科上发表过的一篇文章：[如何学习ROS——盛盛经验谈](http://blog.exbot.net/archives/2667)。这里，我想补充一下，对于机械臂开发来说，除了盛盛在文章里讲到的那些内容之外，各位还要重点理解以下几个部分：
 
-- [Action](http://wiki.ros.org/actionlib)
-- [ROS Control](http://wiki.ros.org/ros_control)
-- [Joint State Publisher](http://wiki.ros.org/joint_state_publisher)
-- [Robot State Publisher](http://wiki.ros.org/robot_state_publisher)
-- [Joint Trajectory Controller](http://wiki.ros.org/joint_trajectory_controller)
-- [URDF](http://wiki.ros.org/urdf)
-- [Xacro](http://wiki.ros.org/xacro)
-- [Launch XML](http://wiki.ros.org/roslaunch/XML)
-- [Gazebo Connect to ROS](http://gazebosim.org/tutorials?cat=connect_ros)
+  - [Action](http://wiki.ros.org/actionlib)
+  - [ROS Control](http://wiki.ros.org/ros_control)
+  - [Joint State Publisher](http://wiki.ros.org/joint_state_publisher)
+  - [Robot State Publisher](http://wiki.ros.org/robot_state_publisher)
+  - [Joint Trajectory Controller](http://wiki.ros.org/joint_trajectory_controller)
+  - [URDF](http://wiki.ros.org/urdf)
+  - [Xacro](http://wiki.ros.org/xacro)
+  - [Launch XML](http://wiki.ros.org/roslaunch/XML)
+  - [Gazebo Connect to ROS](http://gazebosim.org/tutorials?cat=connect_ros)
 
 ### 进阶
 
 等你学习完以上的内容之后，我相信你已经打下了坚实的基础。这个时候，你可以开始入门MoveIt!了。学习MoveIt!的时候，一定要多实践，遇到问题多在[ROS Answers](http://answers.ros.org/questions)上搜一搜，我相信大部分问题的解决办法你都能找到。有关机械臂的URDF模型，我推荐刚开始入门的时候先从简单的机械臂模型入手，不要一上来就整个PR2的，一是机械臂关节比较多，二是我估计你的电脑不一定能带的动。
 
-#### Gazebo
+- #### Gazebo
 
-要熟练地掌握Gazebo仿真软件，因为我觉得并不是每个人都有机械臂，机械臂的成本确实比较高，这个时候如果你学会了如何在仿真环境下搭建机械臂模型并将其与MoveIt!连接在一起，你就能在一定程度上节约时间、资金成本。当然，仿真是永远无法替代实物的，这个我之前在开发机械臂的时候就深刻地体会过，不过，把Gazebo当做算法的前期验证平台还是非常好的。
+  要熟练地掌握Gazebo仿真软件，因为我觉得并不是每个人都有机械臂，机械臂的成本确实比较高，这个时候如果你学会了如何在仿真环境下搭建机械臂模型并将其与MoveIt!连接在一起，你就能在一定程度上节约时间、资金成本。当然，仿真是永远无法替代实物的，这个我之前在开发机械臂的时候就深刻地体会过，不过，把Gazebo当做算法的前期验证平台还是非常好的。
 
-#### MoveIt!
+- #### MoveIt!
 
-多看看别人的MoveIt!配置是什么样的，然后你自己再重新地配置几遍，主要是熟悉其中的一些概念。最后，在Rviz里试着拖动机械臂到新的位置，点击**Plan**按钮看看MoveIt!是怎么通过IK来输出一条平滑的轨迹的。当然，如果你配置好了深度传感器接口的话，可以试一试MoveIt!是如何在有障碍物的情况下进行运动规划的。
+  多看看别人的MoveIt!配置是什么样的，然后你自己再重新地配置几遍，主要是熟悉其中的一些概念。最后，在Rviz里试着拖动机械臂到新的位置，点击**Plan**按钮看看MoveIt!是怎么通过IK来输出一条平滑的轨迹的。当然，如果你配置好了深度传感器接口的话，可以试一试MoveIt!是如何在有障碍物的情况下进行运动规划的。
 
-总之，想要开发好机械臂，MoveIt!+Gazebo是必不可少的。
+  总之，想要开发好机械臂，MoveIt!+Gazebo是必不可少的。
 
 ### 高级
 
 至此，如果你能按照我说的完成前两步的话，你应该已经会用MoveIt!，并能用其做简单的运动规划了。当然，如果你想成为机械臂开发大神的话，你还需要重点学习MoveIt!的代码API。MoveIt!的API不少，你需要多尝试，找到最适合你们机械臂使用的API（推荐C++的API）。
 
-#### FCL
+- #### FCL
 
-在MoveIt!中，碰撞检测使用的是FCL库。你需要了解和学习FCL的API，并将其融入到机械臂的运动规划中去。
+  在MoveIt!中，碰撞检测使用的是FCL库。你需要了解和学习FCL的API，并将其融入到机械臂的运动规划中去。
 
-#### OMPL
+- #### OMPL
 
-MoveIt!默认使用OMPL库来做运动规划，你可以去OMPL的[官网](http://ompl.kavrakilab.org)仔细地学习一下它的使用方法。如果你有时间的话，也可以研究一下其他几种规划器的效果如何，比如[STOMP](http://wiki.ros.org/stomp_motion_planner)、[SBPL](http://wiki.ros.org/sbpl)、[CHOMP](http://www.nathanratliff.com/thesis-research/chomp)等。
+  MoveIt!默认使用OMPL库来做运动规划，你可以去OMPL的[官网](http://ompl.kavrakilab.org)仔细地学习一下它的使用方法。如果你有时间的话，也可以研究一下其他几种规划器的效果如何，比如[STOMP](http://wiki.ros.org/stomp_motion_planner)、[SBPL](http://wiki.ros.org/sbpl)、[CHOMP](http://www.nathanratliff.com/thesis-research/chomp)等。
 
-#### IK解算
+- #### IK解算
 
-如果你认为你已经对MoveIt!的使用了如指掌，你可以尝试挑战一下难度——根据你们自己机械臂的实际情况，手写IK解算插件并将其集成到OMPL中去。
+  如果你认为你已经对MoveIt!的使用了如指掌，你可以尝试挑战一下难度——根据你们自己机械臂的实际情况，手写IK解算插件并将其集成到OMPL中去。
 
-#### 理论
+- #### 理论
 
-完成以上之后，你如果发现自己还想在机械臂领域有更多的提升空间，那工程开发显然已经不能满足你的需求了，你需要阅读机械臂方面的论文以及专业书籍。这里我推荐《Robotics - Modelling, Planning and Control》这本书，里面深入地讲解了机器人的建模、轨迹规划以及运动控制等相关内容。
+  完成以上之后，你如果发现自己还想在机械臂领域有更多的提升空间，那工程开发显然已经不能满足你的需求了，你需要阅读机械臂方面的论文以及专业书籍。这里我推荐《Robotics - Modelling, Planning and Control》这本书，里面深入地讲解了机器人的建模、轨迹规划以及运动控制等相关内容。
 
 ### 资源
 
 以下是我认为学习机械臂比较好的资源，推荐给大家。
 
-#### 网站
+- #### 网站
 
-[MoveIt!官方文档](http://moveit.ros.org/documentation)
+  [MoveIt!官方文档](http://moveit.ros.org/documentation)
 
-#### 书籍
+- #### 书籍
 
-《Effective_Robotics_Programming_with_ROS_Third_Edition》
-《Learning_ROS_for_Robotics_Programming_Second_Edition》
-《Mastering_ROS_for_Robotics_Programming》
-《Programming_Robots_with_ROS》
-《Robot_Operating_System(ROS)_The_Complete_Reference》
-《ROS_By_Example_2_Indigo》
-《ROS_Robotics_By_Example》
+  《Effective_Robotics_Programming_with_ROS_Third_Edition》
+  《Learning_ROS_for_Robotics_Programming_Second_Edition》
+  《Mastering_ROS_for_Robotics_Programming》
+  《Programming_Robots_with_ROS》
+  《Robot_Operating_System(ROS)_The_Complete_Reference》
+  《ROS_By_Example_2_Indigo》
+  《ROS_Robotics_By_Example》
 
-#### 博客
+- #### 博客
 
-西工大一小学生：
-[ros_control攻略](http://blog.exbot.net/archives/2337)
+  **西工大一小学生：**
+  [ros_control攻略](http://blog.exbot.net/archives/2337)
 
-古月居：
-[ROS探索总结（二十五）——MoveIt!基础](http://www.guyuehome.com/435)
-[ROS探索总结（二十六）——MoveIt!编程](http://www.guyuehome.com/455)
-[ROS探索总结（三十一）——ros_control](http://www.guyuehome.com/890)
+  **古月居：**
+  [ROS探索总结（二十五）——MoveIt!基础](http://www.guyuehome.com/435)
+  [ROS探索总结（二十六）——MoveIt!编程](http://www.guyuehome.com/455)
+  [ROS探索总结（三十一）——ros_control](http://www.guyuehome.com/890)
 
-redefine：
-[运动规划 (Motion Planning): MoveIt! 与 OMPL](http://www.roswiki.com/read.php?tid=402&fid=9&page=1)
-[基于OMPL的采样运动规划算法(Sampling-based Motion Planning)](http://www.roswiki.com/read.php?tid=535&fid=9)
+  **redefine：**
+  [运动规划 (Motion Planning): MoveIt! 与 OMPL](http://www.roswiki.com/read.php?tid=402&fid=9&page=1)
+  [基于OMPL的采样运动规划算法(Sampling-based Motion Planning)](http://www.roswiki.com/read.php?tid=535&fid=9)
 
-yaked：
-[在qt下编写基于KUKA youbot API的程序](http://blog.csdn.net/yaked/article/details/42265325)
-[用ROS控制KUKA youbot的5自由度机械臂和夹子](http://blog.csdn.net/yaked/article/details/45022047)
-[给KUKA youbot机械臂添加dynamic reconfig](http://blog.csdn.net/yaked/article/details/45061889)
-[Actionlib与KUKA youbot机械臂](http://blog.csdn.net/yaked/article/details/45098549)
-[利用rqt_plot与matlab分析KUKA youbot的joint_states信息](http://blog.csdn.net/yaked/article/details/45534381)
-[KUKA youbot机械臂与Moveit工具包（1）](http://blog.csdn.net/yaked/article/details/45618877)
-[KUKA youbot机械臂与Moveit工具包（2）](http://blog.csdn.net/yaked/article/details/45621517)
-[KUKA youbot机械臂与Moveit工具包（3）](http://blog.csdn.net/yaked/article/details/46840763)
-[Gazebo与ros_control（1）：让模型动起来](http://blog.csdn.net/yaked/article/details/51412781)
-[Gazebo与ros_control（2）：七自由度机械臂和两轮差速运动小车](http://blog.csdn.net/yaked/article/details/51417742)
-[Gazebo与ros_control（3）：Moveit输出规划轨迹到Gazebo](http://blog.csdn.net/yaked/article/details/51436262)
-[Gazebo与ros_control（4）：举一反三，实战youBot](http://blog.csdn.net/yaked/article/details/51483531)
+  **yaked：**
+  [在qt下编写基于KUKA youbot API的程序](http://blog.csdn.net/yaked/article/details/42265325)
+  [用ROS控制KUKA youbot的5自由度机械臂和夹子](http://blog.csdn.net/yaked/article/details/45022047)
+  [给KUKA youbot机械臂添加dynamic reconfig](http://blog.csdn.net/yaked/article/details/45061889)
+  [Actionlib与KUKA youbot机械臂](http://blog.csdn.net/yaked/article/details/45098549)
+  [利用rqt_plot与matlab分析KUKA youbot的joint_states信息](http://blog.csdn.net/yaked/article/details/45534381)
+  [KUKA youbot机械臂与Moveit工具包（1）](http://blog.csdn.net/yaked/article/details/45618877)
+  [KUKA youbot机械臂与Moveit工具包（2）](http://blog.csdn.net/yaked/article/details/45621517)
+  [KUKA youbot机械臂与Moveit工具包（3）](http://blog.csdn.net/yaked/article/details/46840763)
+  [Gazebo与ros_control（1）：让模型动起来](http://blog.csdn.net/yaked/article/details/51412781)
+  [Gazebo与ros_control（2）：七自由度机械臂和两轮差速运动小车](http://blog.csdn.net/yaked/article/details/51417742)
+  [Gazebo与ros_control（3）：Moveit输出规划轨迹到Gazebo](http://blog.csdn.net/yaked/article/details/51436262)
+  [Gazebo与ros_control（4）：举一反三，实战youBot](http://blog.csdn.net/yaked/article/details/51483531)
 
-邱博士：
-[使用MoveIt进行运动规划](http://blog.exbot.net/archives/2908)
-[实例介绍机械臂运动规划及前沿研究方向](http://www.leiphone.com/news/201703/0JJyEB2eqdRe9XS8.html)
-[邱博士知乎问题回答](https://www.zhihu.com/people/fly_qq/answers)
+  **邱博士：**
+  [使用MoveIt进行运动规划](http://blog.exbot.net/archives/2908)
+  [实例介绍机械臂运动规划及前沿研究方向](http://www.leiphone.com/news/201703/0JJyEB2eqdRe9XS8.html)
+  [邱博士知乎问题回答](https://www.zhihu.com/people/fly_qq/answers)
 
-创客智造：
-[MoveIt!入门教程系列](http://www.ncnynl.com/archives/201610/947.html)
+  **创客智造：**
+  [MoveIt!入门教程系列](http://www.ncnynl.com/archives/201610/947.html)
 
 ## 总结
 
