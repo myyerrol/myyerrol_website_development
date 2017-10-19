@@ -74,6 +74,10 @@ links:
     url: mailto:myyerrol@126.com
     intro: myyerrol的邮箱。
     icon: "fa fa-envelope"
+  - title: "myyerrol的知乎"
+    url: https://www.zhihu.com/people/miaoyuyang
+    intro: "myyerrol的知乎。"
+    icon: "fa fa-link"
 
 widgets:
 - search
