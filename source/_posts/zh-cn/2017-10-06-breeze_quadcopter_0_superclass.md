@@ -58,7 +58,7 @@ MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭�
 
 - #### 硬件
 
-  本四轴飞行器硬件电路主要由五个部分组成。以下是硬件的架构图：
+  Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是硬件的架构图：
 
   ![breeze_hardware_architecture](../../../../../images/breeze/breeze_hardware_architecture.png)
 
@@ -79,7 +79,7 @@ MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭�
 
 - #### 软件
 
-  Breeze微型四轴飞行器的嵌入式系统架构如下图所示，其中主要包含硬件设备、底层驱动、外设模块和飞控算法。
+  Breeze微型四轴飞行器的嵌入式系统架构如下图所示，其中主要包含硬件设备、底层驱动、外设模块和飞控算法等四个部分。
 
   ![breeze_embedded_architecture](../../../../../images/breeze/breeze_embedded_architecture.png)
 
@@ -96,6 +96,12 @@ MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭�
   飞控算法处在整个嵌入式架构的最顶层，它的实现是要建立在以上三者的基础之上的，比如高度融合、数据滤波、控制算法等。由于整个四轴飞行器的核心功能都是由飞控算法决定的，所以飞控算法是该嵌入式系统的绝对核心，也是开发的重点。
 
 - #### 文档
+
+  如下图所示，[MicroDynamics团队GitHub](https://github.com/microdynamics)中主要包含了我们团队自己制定的代码规范，Linux下STM32开发的工程模板文件以及记录有我们在开发过程中所遇问题以及解决办法的日志文件。[MicroDynamics Quadcopter项目GitHub](https://github.com/microdynamics-quadcopter)中则主要包含了Breeze微型四轴飞行器的硬件电路设计、嵌入式代码以及图形化的上位机调试工具等。总之我们把所有能开源的资料都放到了以下两个GitHub组织里，方便交流学习。
+
+  {% alert info %}
+  由于我们MicroDynamics团队将正式着手开发新一代的微型四轴飞行器，所以Breeze微型四轴飞行器的代码不会再被开发和维护，目前已有内容仅供学习使用。
+  {% endalert %}
 
   ![github_microdynamics](../../../../../images/microdynamics/github_microdynamics.png)
 
