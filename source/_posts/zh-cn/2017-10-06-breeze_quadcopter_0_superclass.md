@@ -16,7 +16,11 @@ comments: true
 
 <!--more-->
 
-一转眼到了大三下学期，我从舞蹈机器人机基地退役。一个偶然的机会，我从我弟那里得知有一个叫做[Crazyflie](https://www.bitcraze.io/)的微型四轴飞行器，这一次我算是打从心底里被震撼到了，以下是几点原因：
+![ted_quadcopter_1](../../../../../images/ted/ted_quadcopter_1.jpg)
+
+![ted_quadcopter_2](../../../../../images/ted/ted_quadcopter_2.jpg)
+
+一转眼到了大三下学期，我从舞蹈机器人机基地退役。一个偶然的机会，我从[maksyuki](https://github.com/maksyuki)那里得知有一个叫做[Crazyflie](https://www.bitcraze.io/)的微型四轴飞行器，这一次我算是打从心底里被震撼到了，以下是几点原因：
 
 - **硬件**
 
@@ -30,7 +34,9 @@ comments: true
 
   除了以上两点有关技术层面的优势，Crazyflie微型四轴飞行器项目还有一个最令我无法抗拒的因素——丰富的文档。说实话，我从来没有看到过一家不以盈利为主要目的团队可以将自己的开源项目文档写得如此详细，但是Bitcraze团队做到了，他们这种乐于分享的精神实在是值得我们学习。
 
-总之，这次在看过Crazyflie微型四轴项目之后，我脑海中有关自制四轴飞行器的想法又被重新唤醒了，于是我联合我弟创建了MicroDynamics团队，而Breeze微型四轴项目也就因此顺利地诞生了。
+  ![crazyflie](../../../../../images/crazyflie/crazyflie.jpg)
+
+总之，这次在看过Crazyflie微型四轴项目之后，我脑海中有关自制四轴飞行器的想法又被重新唤醒了，于是我们创建了MicroDynamics团队，而Breeze微型四轴项目也就因此顺利地诞生了。
 
 ## 简介
 
@@ -118,6 +124,7 @@ MicroDynamics团队拥有其所有项目的版权，而对于项目中所用到�
 以下是我原创的Breeze微型四轴系列文章：
 
 [Breeze微型四轴系列（零）：总纲](https://myyerrol.github.io/zh-cn/2017/10/06/breeze_quadcopter_0_superclass)
+[Breeze微型四轴系列（一）：硬件电路板设计](https://myyerrol.github.io/zh-cn/2017/10/21/breeze_quadcopter_1_hardware_design)
 
 ## 总结
 
