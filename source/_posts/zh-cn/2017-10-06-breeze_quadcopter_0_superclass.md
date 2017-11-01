@@ -123,8 +123,8 @@ MicroDynamics团队拥有其所有项目的版权，而对于项目中所用到�
 
 以下是我原创的Breeze微型四轴系列文章：
 
-[Breeze微型四轴系列（零）：总纲](https://myyerrol.github.io/zh-cn/2017/10/06/breeze_quadcopter_0_superclass)
-[Breeze微型四轴系列（一）：硬件电路板设计](https://myyerrol.github.io/zh-cn/2017/10/21/breeze_quadcopter_1_hardware_design)
+[Breeze微型四轴系列（零）：总纲](https://myyerrol.github.io/zh-cn/2017/10/06/breeze_quadcopter_0_superclass/)
+[Breeze微型四轴系列（一）：硬件电路板设计](https://myyerrol.github.io/zh-cn/2017/10/21/breeze_quadcopter_1_hardware_design/)
 
 ## 总结
 
