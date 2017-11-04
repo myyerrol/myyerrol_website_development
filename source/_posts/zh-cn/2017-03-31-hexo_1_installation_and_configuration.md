@@ -6,7 +6,7 @@ tags:
   - Blog
 categories: Hexo教程系列
 description: 本篇文章介绍Hexo的安装和基本配置。
-feature: images/hexo/hexo.png
+feature: /images/hexo/hexo.png
 toc: true
 comments: true
 ---
