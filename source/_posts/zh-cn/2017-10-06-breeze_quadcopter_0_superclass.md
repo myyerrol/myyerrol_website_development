@@ -20,7 +20,7 @@ comments: true
 
 ![ted_quadcopter_2](../../../../../images/ted/ted_quadcopter_2.jpg)
 
-一转眼到了大三下学期，我从舞蹈机器人机基地退役。一个偶然的机会，我从[maksyuki](https://github.com/maksyuki)那里得知有一个叫做[Crazyflie](https://www.bitcraze.io/)的微型四轴飞行器，这一次我算是打从心底里被震撼到了，以下是几点原因：
+一转眼到了大三下学期，我从舞蹈机器人机基地退役。一个偶然的机会，我从[maksyuki](https://github.com/maksyuki)那里得知有一个叫做[Crazyflie](https://www.bitcraze.io)的微型四轴飞行器，这一次我算是打从心底里被震撼到了，以下是几点原因：
 
 - **硬件**
 
