@@ -15,7 +15,7 @@ comments: true
 
 我曾经在大二的时候为完成数字电路实验而简单地学过一些硬件电路板设计，当时我看的是郭天祥老师的教程视频，里面有关Altium Designer 6.9软件的操作可以说是讲得非常细致，但是由于后来临近期末考试，时间较为紧迫，而且实验电路本身并不复杂，所以我只学了其中的PCB部分之后就没再深入地学习下去了。
 
-可能是之前我还有一些PCB设计的基础，所以这次在设计Breeze微型四轴飞行器PCB的时候感觉还是比较容易上手的。我最早是在Ubuntu 14.04上用[KiCAD](http://kicad-pcb.org)来设计硬件（因为Crazyflie 1.0四轴飞行器的PCB就是用KiCAD画的），但是后来综合考虑到KiCAD在处理复杂元器件布线以及规则约束方面的短板，所以我们最终还是决定使用功能更加强大的Altium Designer 16来重新完成对PCB的绘制工作。
+可能是之前我还有一些PCB设计的基础，所以这次在设计Breeze微型四轴飞行器PCB的时候感觉还是比较容易上手的。我最早是在Ubuntu 14.04上用[KiCad](http://kicad-pcb.org)来设计硬件（因为Crazyflie 1.0四轴飞行器的PCB就是用KiCAD画的），但是后来综合考虑到KiCAD在处理复杂元器件布线以及规则约束方面的短板，所以我们最终还是决定使用功能更加强大的Altium Designer 16来重新完成对PCB的绘制工作。
 
 <!--more-->
 
@@ -40,13 +40,21 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 **主控制器模块**
 主控制器模块是四轴飞行器的核心，它主要接收从上层传感器和无线通信模块发过来的数据，并根据不同的控制命令对姿态数据进行数学解算，最后将解算结果以PWM信号的形式发送给电机驱动模块。
 
-## EDA软件
+## PCB软件
 
-### KiCAD
+### KiCad
+
+![kicad_logo](../../../../../images/breeze/hardware/kicad_logo.png)
+
+[KiCad](http://kicad-pcb.org)是一款开源的电路原理图和PCB设计工具，它可以被用来设计较为简单的硬件电路板。KiCad软件不对电路板的尺寸做任何的限制，它最多可以处理32个覆铜层、14个工艺层以及4个辅助层。KiCad可以创建所有与构建PCB有关的文件，比如光绘文件、钻孔文件、元器件位置文件等。
 
 ### Altium Designer
 
+![altium_logo](../../../../../images/breeze/hardware/altium_logo.jpg)
+
 ### Cadence SPB
+
+![cadence_logo](../../../../../images/breeze/hardware/cadence_logo.jpg)
 
 ## 原理
 
