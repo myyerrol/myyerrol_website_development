@@ -52,6 +52,8 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 ![altium_logo](../../../../../images/breeze/hardware/altium_logo.jpg)
 
+[Altium Designer](http://www.altium.com)
+
 ### Cadence SPB
 
 ![cadence_logo](../../../../../images/breeze/hardware/cadence_logo.jpg)
