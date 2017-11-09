@@ -46,17 +46,23 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 ![kicad_logo](../../../../../images/breeze/hardware/kicad_logo.png)
 
-[KiCad](http://kicad-pcb.org)是一款开源的电路原理图和PCB设计工具，它可以被用来设计较为简单的硬件电路板。KiCad软件不对电路板的尺寸做任何的限制，它最多可以处理32个覆铜层、14个工艺层以及4个辅助层。KiCad可以创建所有与构建PCB有关的文件，比如光绘文件、钻孔文件、元器件位置文件等。
+- #### 简介
+
+  [KiCad](http://kicad-pcb.org)是一款开源的电路原理图和PCB设计工具，它可以被用来设计较为简单的硬件电路板。KiCad软件不对电路板的尺寸做任何的限制，它最多可以处理32个覆铜层、14个工艺层以及4个辅助层。KiCad可以创建所有与构建PCB有关的文件，比如光绘文件、钻孔文件、元器件位置文件等。
 
 ### Altium Designer
 
 ![altium_logo](../../../../../images/breeze/hardware/altium_logo.jpg)
 
-[Altium Designer](http://www.altium.com)
+- #### 简介
+
+  [Altium Designer](http://www.altium.com)是原Protel软件开发商Altium公司推出的一款EDA（电子设计自动化）软件，它集成了原理图设计、电路仿真、PCB绘制编辑、拓扑逻辑自动布线、信号完整性分析和设计输出等功能。除此之外，Altium Designer设计平台还拓宽了板级设计的传统界面，全面集成了FPGA和SOPC设计，为设计者提供了全新的一体化解决方案，提高了电路设计的质量和效率。
 
 ### Cadence SPB
 
 ![cadence_logo](../../../../../images/breeze/hardware/cadence_logo.jpg)
+
+- #### 简介
 
 ## 原理
 
