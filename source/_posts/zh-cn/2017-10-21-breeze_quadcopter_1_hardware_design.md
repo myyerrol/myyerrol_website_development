@@ -50,6 +50,8 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
   [KiCad](http://kicad-pcb.org)是一款开源的电路原理图和PCB设计工具，它可以被用来设计较为简单的硬件电路板。KiCad软件不对电路板的尺寸做任何的限制，它最多可以处理32个覆铜层、14个工艺层以及4个辅助层。KiCad可以创建所有与构建PCB有关的文件，比如光绘文件、钻孔文件、元器件位置文件等。
 
+- #### 成果
+
 ### Altium Designer
 
 ![altium_logo](../../../../../images/breeze/hardware/altium_logo.jpg)
@@ -58,11 +60,23 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
   [Altium Designer](http://www.altium.com)是原Protel软件开发商Altium公司推出的一款EDA（电子设计自动化）软件，它集成了原理图设计、电路仿真、PCB绘制编辑、拓扑逻辑自动布线、信号完整性分析和设计输出等功能。除此之外，Altium Designer设计平台还拓宽了板级设计的传统界面，全面集成了FPGA和SOPC设计，为设计者提供了全新的一体化解决方案，提高了电路设计的质量和效率。
 
+- #### 成果
+
+  ![breeze_pcb](../../../../../images/breeze/hardware/breeze_pcb.png)
+
 ### Cadence SPB
 
 ![cadence_logo](../../../../../images/breeze/hardware/cadence_logo.jpg)
 
 - #### 简介
+
+  [Cadance SPB](https://www.cadence.com)Cadence旗下用于PCB板级设计的EDA软件。Cadence SPB是一套PCB板级设计完整解决方案，涵盖了从原理图设计到PCB设计以及生产加工装配输出的整个流程。Cadence SPB包括原理图输入设计工具，元件库管理工具，PCB设计工具和一个自动/交互式的强大的布线工具。
+
+  **OrCAD**
+  Cadence OrCAD Capture是一款多功能的PCB原理图输入工具。OrCAD Capture作为行业标准的PCB原理图输入方式，是当今世界最流行的原理图输入工具之一，具有简单直观的用户设计界面。OrCAD Capture CIS具有功能强大的元件信息系统，可以在线和集中管理元件数据库，从而大幅提升电路设计的效率。
+
+  **Allergo**
+  Cadence Allegro PCB Designer是一个可扩展的，经过验证的PCB设计环境，在解决技术和方法的挑战同时，可以使设计周期可控并尽可能缩短。Allegro PCB Designer解决方案采用了基础软件加选项的配置方案，包含了与PCB设计相关的一个完整的设计流程所需的一切。
 
 ## 原理
 
