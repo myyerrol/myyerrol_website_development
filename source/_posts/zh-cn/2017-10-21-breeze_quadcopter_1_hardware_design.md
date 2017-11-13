@@ -52,6 +52,10 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 - #### 成果
 
+  以下是我前期在Ubuntu 14.04上用KiCad软件所设计的Breeze微型四轴飞行器PCB图，由于KiCad软件不像Altium Designer那样带有各种IC封装生成的向导功能，所以当时我是边看IC的Datasheet边用KiCad的PCB库编辑功能来进行封装的绘制，这个过程很花费时间，不过也确实让我学到一些PCB封装设计方面的技巧和经验（比如根据手焊或机焊方式的不同来确定IC四周引脚的长宽度等）。最后很遗憾的是，由于我们对Breeze微型四轴飞行器的功能需求进行了较大的变更并考虑到后期PCB打板制作方面的问题，因此我们决定放弃KiCad转而使用Altium Designer来完成PCB电路板的设计工作（这也是为什么下图中的PCB没有完成的原因），但有一点我不得不说，作为一个开源且跨平台的EDA软件，KiCad真的很好上手，而且它在国外Hack界拥有非常高的人气的，毕竟[Crazyflie](https://www.bitcraze.io)和[Pixhawk](https://pixhawk.org)两大知名的开源项目都曾使用KiCad作为其PCB设计的工具。
+
+  ![breeze_pcb_kicad](../../../../../images/breeze/hardware/breeze_pcb_kicad.png)
+
 ### Altium Designer
 
 ![altium_logo](../../../../../images/breeze/hardware/altium_logo.jpg)
@@ -62,9 +66,7 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 - #### 成果
 
-  ![breeze_pcb](../../../../../images/breeze/hardware/breeze_pcb.png)
-
-  
+  ![breeze_pcb_altium](../../../../../images/breeze/hardware/breeze_pcb_altium.png)
 
 ### Cadence SPB
 
