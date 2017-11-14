@@ -4,7 +4,7 @@ date: 2017-10-06 22:30
 tags:
   - Micro Quadcopter
 categories: Breeze微型四轴系列
-description: 本篇文章介绍Breeze微型四轴无人机开发的相关内容。
+description: 本篇文章介绍Breeze微型四轴系列的总纲。
 feature: /images/breeze/breeze.png
 toc: true
 comments: true
