@@ -6,10 +6,10 @@ tags:
   - STM32
   - GNU/Linux
   - Make
-  - GCC
+  - ARM-GCC
   - OpenOCD
 categories: Breeze微型四轴系列
-description: 本篇文章介绍Breeze微型四轴无人机硬件电路板设计的相关内容。
+description: 本篇文章介绍Breeze微型四轴飞行器STM32嵌入式开发-开发环境搭建的相关内容。
 feature: /images/breeze/breeze.png
 toc: true
 comments: true
@@ -18,6 +18,22 @@ comments: true
 ## 前言
 
 <!--more-->
+
+## 搭建
+
+### 操作系统
+
+### 开发工具
+
+- #### Make
+
+- #### ARM-GCC
+
+- #### OpenOCD
+
+- #### Atom
+
+### 配置流程
 
 ## 总结
 
