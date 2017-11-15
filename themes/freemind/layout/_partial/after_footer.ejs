@@ -1,13 +1,15 @@
 
-<a id="gotop" href="#">   
-  <span>▲</span> 
+<a id="gotop" href="#">
+  <span>▲</span>
 </a>
 
 <script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
 <script src="<%- config.root %>js/gallery.js"></script>
 <script src="<%- config.root %>js/bootstrap.min.js"></script>
 <script src="<%- config.root %>js/main.js"></script>
-<script src="<%- config.root %>js/search.js"></script> 
+<script src="<%- config.root %>js/search.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
 <% if (theme.fancybox){ %>
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
@@ -20,7 +22,7 @@
 <% } %>
 
 <% if (config.search) { %>
-   <script type="text/javascript">      
+   <script type="text/javascript">
      var search_path = "<%= config.search.path %>";
 	 if (search_path.length == 0) {
 	 	search_path = "search.xml";
