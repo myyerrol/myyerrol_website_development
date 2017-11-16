@@ -12,22 +12,41 @@
 </script>
 
 <% if (theme.fancybox){ %>
-<link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
+  <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
+  <script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+    (function($){
+      $('.fancybox').fancybox();
+    })(jQuery);
+  </script>
 <% } %>
 
 <% if (config.search) { %>
-   <script type="text/javascript">
-     var search_path = "<%= config.search.path %>";
-	 if (search_path.length == 0) {
-	 	search_path = "search.xml";
-	 }
-	 var path = "<%= config.root %>" + search_path;
-     searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
+  <script type="text/javascript">
+    var search_path = "<%= config.search.path %>";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "<%= config.root %>" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+  </script>
+<% } %>
+
+<!-- syntax highlighting -->
+<% if (theme.comment_js) { %>
+  <script>
+    marked.setOptions({
+      highlight: function (code, lang) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+    function Highlighting(){
+      var markdowns = document.getElementsByClassName('markdown');
+      for(var i=0;i<markdowns.length;i++){
+        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
+      }
+    }
+    window.addEventListener('DOMContentLoaded', Highlighting, false);
+    window.addEventListener('load', Highlighting, false);
+  </script>
 <% } %>

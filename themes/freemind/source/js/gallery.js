@@ -8,7 +8,7 @@
           $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery' + i + '" />');
         } else {
           $(this).wrap('<a href="' + this.src + '" class="fancybox" rel="gallery' + i + '" />');
-	    }
+      }
       }
     });
   });
