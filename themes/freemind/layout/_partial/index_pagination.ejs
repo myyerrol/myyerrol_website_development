@@ -7,7 +7,7 @@
       <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i><%= __('prev') %></a></li>
     <% } %>
 
-    <li><a href="<%- config.root %>"><i class="fa fa-home"></i>Home</a></li>
+    <li><a href="<%- config.root %>"><i class="fa fa-home"></i><%= __('home') %></a></li>
 
     <% if (page.next){ %>
       <li class="next"> <a href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('next') %><i class="fa fa-arrow-circle-o-right"></i></a> </li>

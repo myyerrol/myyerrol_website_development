@@ -5,9 +5,11 @@ tagcloud: "Tag Cloud"
 tweets: Tweets
 prev: Prev
 next: Next
+home: Home
 comment: Comments
 archive_a: Archives
 archive_b: "Archives: %s"
+archives: Archives
 page: "Page %d"
 recent_posts: "Recent Posts"
 description: Description
