@@ -5,7 +5,7 @@ tags:
   - Micro Quadcopter
   - STM32
   - GNU/Linux
-  - Make
+  - GNU/Make
   - Makefile
   - ARM-GCC
   - OpenOCD
