@@ -32,6 +32,10 @@ comments: true
 
 - #### OpenOCD
 
+  [OpenOCD](http://openocd.org)项目最早是由Dominic Rath发起，它的目标是开发出一种能够接入市场上大多数常见MCU平台的通用开源片上调试器（Open On-Chip Debuger），并提供调试、系统内在线编程和边界扫描测试等功能。具体使用的时候，OpenOCD需要依靠一种叫做**调试适配器**（点击[这里](http://openocd.org/doc-release/html/Debug-Adapter-Hardware.html#Debug-Adapter-Hardware)获得OpenOCD所支持的完成设备列表）的硬件模块来帮助其在底层提供与目标板子相一致的电信号，因此只要在配置文件中对所使用的芯片和调试适配器的具体型号进行指定，OpenOCD就可以通过驱动与连接有硬件芯片的适配器进行数据通信，从而最终实现板级代码的烧写和调试。
+
+  通常市场上常见的调试适配器都可以支持一种或多种传输协议，比如在本项目中，我使用的 SEGGER J-Link设备就支持JTAG(Joint Test Action Group，即联合测试工作组)和SWD(Serial Wire Debug，即串口总线调试)两种通信协议。这里我推荐使用SWD模式来烧写和调试代码，主要是因为SWD只需要两根线就可以轻松完成适配器与硬件之间的连接，而且在SWD模式下，适配器烧写代码的速度较快。最后，有关项目中OpenOCD的具体配置，我会在下一篇文章中进行详细介绍。
+
 - #### Atom
 
   [Atom](https://atom.io)是GitHub开发团队“为21世纪创造的可配置的编辑器”，它拥有非常精致细腻的界面，并且可配置项丰富，加上它提供了包管理功能，人们可以非常方便地安装和管理各种插件，并将Atom打造成真正适合自己的开发工具。除此之外，Atom代码编辑器还支持Windows、Mac、Linux三大桌面平台，完全免费，并且已经在GitHub上开放了全部的源代码，在经过一段长时间的迭代开发和不断改进后，Atom在性能和稳定性方面都有着显著的改善。
