@@ -6,6 +6,7 @@ tags:
   - STM32
   - GNU/Linux
   - Make
+  - Makefile
   - ARM-GCC
   - OpenOCD
 categories: Breeze微型四轴系列
