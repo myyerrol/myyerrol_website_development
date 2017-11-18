@@ -40,6 +40,41 @@ comments: true
 
 - #### ARM-GCC
 
+  {% alert success %}
+  以下内容部分转载自VeryARM网站中的《arm交叉编译器gnueabi、none-eabi、arm-eabi、gnueabihf、gnueabi区别》文章。
+  {% endalert %}
+
+  ARM-GCC是一套交叉编译工具链家族，其命名规则统一为：**arch [-vendor] [-os] [-(gnu)eabi]**：
+
+  - **arch**
+  代表芯片的体系架构，比如ARM，MIPS等。
+
+  - **vendor**
+  代表工具链的提供商。
+
+  - **os**
+  代表目标开发板所使用的操作系统。
+
+  - **eabi**
+  代表**Embedded Application Binary Interface**，即嵌入式应用二进制接口。
+
+  ARM-GCC家族主要成员具体如下：
+
+  - **arm-none-eabi-gcc**
+  (ARM architecture, **no** vendor, **not** target an operating system, complies with the ARM EABI)
+  主要用于编译ARM架构的裸机系统（包括ARM Linux的Boot和Kernel，不适用编译Linux应用），一般适合ARM7、Cortex-M和Cortex-R内核等芯片使用，不支持那些跟操作系统关系密切的函数。除此之外，该编译器在底层使用了**newlib**这个专用于嵌入式系统的C库。
+
+  - **arm-none-linux-gnueabi-gcc**
+  (ARM architecture, **no** vendor, creates binaries that run on the Linux operating system, and uses the GNU EABI)
+  arm-none-linux-gnueabi-gcc是一款基于GCC，底层使用**glibc**库，并经过Codesourcery公司优化后所推出的编译器，其浮点运算的处理能力非常优秀，主要用于编译基于ARM架构（ARM9、ARM11以及Cortex-A9）的Linux系统（包括ARM架构的U-boot、Linux内核和Linux应用等）。
+
+  - **arm-eabi-gcc**
+  主要用于编译运行在Android ARM架构上的应用程序。
+
+  - **armcc**
+  ARM公司官方推出的编译工具，功能和arm-none-eabi-gcc类似，可以编译裸机程序（U-boot和Kernel），但是不能编译Linux应用程序。armcc一般是和ARM集成开发工具一起进行发布的，比如Keil MDK、ADS、RVDS和DS-5中都将armcc作为自己默认的编译器，是付费软件。
+
+
 - #### OpenOCD
 
   [OpenOCD](http://openocd.org)项目最早是由Dominic Rath发起，它的目标是开发出一种能够接入市场上大多数常见MCU平台的通用开源片上调试器（Open On-Chip Debuger），并提供调试、系统内在线编程和边界扫描测试等功能。具体使用的时候，OpenOCD需要依靠一种叫做**调试适配器**（点击[这里](http://openocd.org/doc-release/html/Debug-Adapter-Hardware.html#Debug-Adapter-Hardware)获得OpenOCD所支持的完成设备列表）的硬件模块来帮助其在底层提供与目标板子相一致的电信号，因此只要在配置文件中对所使用的芯片和调试适配器的具体型号进行指定，OpenOCD就可以通过驱动与连接有硬件芯片的适配器进行数据通信，从而最终实现板级代码的烧写和调试。
