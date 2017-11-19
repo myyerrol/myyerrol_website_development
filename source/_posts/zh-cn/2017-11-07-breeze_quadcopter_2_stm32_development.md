@@ -92,6 +92,8 @@ comments: true
 
 - #### 安装基础环境
 
+  以下命令主要安装Git和GNU/Make这两个开发工具，其中make软件是包含在build-essential元包（meta-package）当中的（build-essential元包是GNU/Linux为方便开发者所特别制作的，里面除make软件外，还有gcc、g++以及软件库等编译代码时所需要的相关组件）。
+
   ```bash
   $> sudo apt-get update
   $> sudo apt-get install git build-essential
@@ -99,13 +101,50 @@ comments: true
 
 - #### 安装ARM-GCC
 
+  **PPA源安装**
+  以下命令来源于[GNU ARM Embedded Toolchain PPA](https://launchpad.net/~team-gcc-arm-embedded/+archive/ubuntu/ppa)网站，目前支持Ubuntu 12.04/14.04/16.04/16.10 32/64-bit操作系统，是官方**推荐**的安装方法，本项目使用的就是这种安装方法。
+
   ```bash
   $> sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
   $> sudo apt-get udpate
   $> sudo apt-get install gcc-arm-embedded
   ```
 
+  当然，如果你之前也看过国外开源飞控中有关交叉工具链安装方法方面的资料，你就会发现下面这种PPA源安装方式也很常见：
+
+  ```bash
+  $> sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
+  $> sudo apt-get update
+  $> sudo apt-get install gcc-arm-none-eabi
+  ```
+
+  这里我要解释一下以上两种PPA源安装方式的区别，以下内容摘自[GNU ARM Embedded Toolchain官方网站的通告](https://launchpad.net/gcc-arm-embedded/+announcement/13824)：
+
+  > For our 2015Q4 GCC 5 release we decided to move from the old PPA maintained by Terry Guo to a team maintained one. We also took advantage of that move to rename the package from **gcc-arm-none-eabi** to **gcc-arm-embedded**.
+
+  上面的文字已经写得非常清楚了，从2015Q4 GCC 5版本开始，官方就将PPA源由原先Terry Guo个人维护改成新的基于团队管理的模式，并且将安装包的名字从gcc-arm-none-eabi改为gcc-arm-embedded。所以以上两种安装方式都没问题，只是Terry Guo的PPA源中arm-none-eabi-gcc的版本可能会较低，不过不影响使用。
+
+  **手动安装**
+  在终端中运行以下命令来手动安装arm-none-eabi-gcc。首先通过wget命令把工具链下载到本地，然后使用tar命令对文件进行解压缩，最后将工具链的bin目录添加到系统环境变量当中，并用source命令对PATH路径进行的更新就可以了。
+
+  ```bash
+  $> cd ~/Downloads
+  $> wget https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update/+download/gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2
+  $> tar -xvf gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2
+  $> echo "export PATH=$PATH:$HOME/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin" >> ~/.bashrc
+  $> source ~/.bashrc
+  ```
+
+  最后，根据zhengyangliu123在《[STM32高级开发(5)-gcc-arm-none-eabi](http://blog.csdn.net/zhengyangliu123/article/details/54783443)》博客中所讲到的内容，64位的Ubuntu需要安装lsb-core工具才可以正常使用工具链，使用下面的命令进行安装：
+
+  ```bash
+  $> sudo apt-get update
+  $> sudo apt-get install lsb-core
+  ```
+
 - #### 安装OpenOCD
+
+  OpenOCD工具很好安装，因为Ubuntu的官方仓库中已经包含有该软件包，所以直接使用下面的命令安装即可（不是最新版本的，如果需要最新版本可以从官方仓库中进行下载，并使用make进行编译和安装）：
 
   ```bash
   $> sudo apt-get update
@@ -113,6 +152,8 @@ comments: true
   ```
 
 - #### 安装Atom
+
+  Atom编辑器可以使用下面PPA源的方式安装，也可以直接到官网上下载对应操作系统位数的.deb包来进行安装（个人喜欢PPA源安装方式，主要是因为系统可以帮你自动解决软件依赖问题）。
 
   ```bash
   $> sudo add-apt-repository ppa:webupd8team/atom
