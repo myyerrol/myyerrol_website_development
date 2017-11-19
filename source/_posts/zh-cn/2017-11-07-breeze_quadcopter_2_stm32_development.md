@@ -90,6 +90,55 @@ comments: true
 
 ### 配置流程
 
+- #### 安装基础环境
+
+  ```bash
+  $> sudo apt-get update
+  $> sudo apt-get install git build-essential
+  ```
+
+- #### 安装ARM-GCC
+
+  ```bash
+  $> sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
+  $> sudo apt-get udpate
+  $> sudo apt-get install gcc-arm-embedded
+  ```
+
+- #### 安装OpenOCD
+
+  ```bash
+  $> sudo apt-get update
+  $> sudo apt-get install openocd
+  ```
+
+- #### 安装Atom
+
+  ```bash
+  $> sudo add-apt-repository ppa:webupd8team/atom
+  $> sudo apt-get update
+  $> sudo apt-get install atom
+  ```
+
+- #### 下载并编译源码
+
+  ```bash
+  $> cd ~/Desktop
+  $> git clone https://github.com/microdynamics-quadcopter/breeze_firmware_none.git
+  $> cd breeze_firmware_none/make
+  $> make
+  ```
+
+- #### 烧写或调试程序
+
+  ```bash
+  $> make burn
+  ```
+
+  ```bash
+  $> make Debug
+  ```
+
 ## 总结
 
 首先我要说的是目前国内大学的STM32嵌入式教育基本上被Keil+IAR所垄断了，虽然这些商业化的软件把代码编辑、编译和调试等功能集成在一个带有界面的程序当中，这对于很多刚开始接触STM32开发的新手来说是非常方便的，但是其缺点也非常明显：**它们阻碍了初学者对交叉编译工具链以及整个编译过程的理解**。而且相比于开发X86或X64架构的桌面程序，个人认为编写嵌入式程序，理解编译器是更为至关重要的，因为往往硬件的ROM、RAM或FLASH空间是有限的，而通过学习你就可以知道如何在不修改源码的基础上仅通过设置编译器的命令参数来优化.bin或.elf烧写文件的大小。除此之外，你还能通过自定义链接脚本中RAM和FLASH的起始地址和大小，并在其中分配并配置文本段、数据段、BSS段以及堆、栈在程序运行时的空间容量等参数来获得定制STM32程序运行的能力。因此，对于那些刚开始学习STM32并打算精通其开发的同学来说，我推荐放弃**Windows+Keil MDK**的固有学习模式，而是直接采用**GNU/Linux+ARM GCC+OpenOCD**的方式，虽然大家刚开始用的时候会觉得不适应或遇到一些问题，但是我相信过一段时间之后你就会明白这套开源工具链的强大之处了。
