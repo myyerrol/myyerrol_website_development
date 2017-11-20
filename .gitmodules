@@ -1,0 +1,3 @@
+[submodule "themes/freemind"]
+	path = themes/freemind
+	url = git@github.com:myyerrol/hexo-theme-freemind.git
