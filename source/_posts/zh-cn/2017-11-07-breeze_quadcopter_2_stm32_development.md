@@ -167,8 +167,10 @@ comments: true
   $> cd ~/Desktop
   $> git clone https://github.com/microdynamics-quadcopter/breeze_firmware_none.git
   $> cd breeze_firmware_none/make
-  $> make
+  $> make all
   ```
+
+  ![breeze_make_all](../../../../../images/breeze/embedded/breeze_make_all.png)
 
 - #### 烧写或调试程序
 
@@ -176,9 +178,13 @@ comments: true
   $> make burn
   ```
 
+  ![breeze_make_burn](../../../../../images/breeze/embedded/breeze_make_burn.png)
+
   ```bash
   $> make Debug
   ```
+
+  ![breeze_make_debug](../../../../../images/breeze/embedded/breeze_make_debug.png)
 
 ## 总结
 
