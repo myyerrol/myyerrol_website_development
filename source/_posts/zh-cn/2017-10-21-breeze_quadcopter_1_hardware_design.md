@@ -44,7 +44,7 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 ### KiCad
 
-![kicad_logo](../../../../../images/breeze/hardware/kicad_logo.png)
+![kicad_logo](../../../../../images/breeze/hardware/logo_kicad.png)
 
 - #### 简介
 
@@ -58,7 +58,7 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 ### Altium Designer
 
-![altium_logo](../../../../../images/breeze/hardware/altium_logo.jpg)
+![altium_logo](../../../../../images/breeze/hardware/logo_altium.jpg)
 
 - #### 简介
 
@@ -72,7 +72,7 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 ### Cadence SPB
 
-![cadence_logo](../../../../../images/breeze/hardware/cadence_logo.jpg)
+![cadence_logo](../../../../../images/breeze/hardware/logo_cadence.jpg)
 
 - #### 简介
 
