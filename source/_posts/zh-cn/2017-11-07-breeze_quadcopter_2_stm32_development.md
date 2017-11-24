@@ -122,7 +122,7 @@ comments: true
 
   > For our 2015Q4 GCC 5 release we decided to move from the old PPA maintained by Terry Guo to a team maintained one. We also took advantage of that move to rename the package from **gcc-arm-none-eabi** to **gcc-arm-embedded**.
 
-  上面的文字已经写得非常清楚了，从2015Q4 GCC 5版本开始，官方就将PPA源由原先Terry Guo个人维护改成新的基于团队管理的模式，并且将安装包的名字从gcc-arm-none-eabi改为gcc-arm-embedded。所以以上两种安装方式都没问题，只是Terry Guo的PPA源中arm-none-eabi-gcc的版本，。
+  上面的文字已经写得非常清楚了，从2015Q4 GCC 5版本开始，官方就将PPA源由原先Terry Guo个人维护改成新的基于团队管理的模式，并且将安装包的名字从gcc-arm-none-eabi改为gcc-arm-embedded。所以以上两种安装方式都没问题，只是Terry Guo的PPA源中arm-none-eabi-gcc的版本可能会偏低。
 
   **手动安装**
   在终端中运行以下命令来手动安装arm-none-eabi-gcc。首先通过wget命令把工具链下载到本地，然后使用tar命令对文件进行解压缩，最后将工具链的bin目录添加到系统环境变量当中，并用source命令对PATH路径进行更新就可以了。
