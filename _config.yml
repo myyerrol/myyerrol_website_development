@@ -5,14 +5,14 @@
 # Site
 title: Home | myyerrol's blog
 subtitle: Home | myyerrol's blog
-description: "This is my personal website, which uses the hexo system to build. Enter the following URL to access: https://myyerrol.github.io"
+description: "This is my personal website, which uses the hexo system to build. Enter the following URL to access: http://myyerrol.io"
 author: myyerrol
 language: zh-cn
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://myyerrol.github.io
+url: http://myyerrol.io
 root: /
 permalink: :lang/:year/:month/:day/:title/
 permalink_defaults:
