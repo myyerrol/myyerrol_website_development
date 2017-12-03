@@ -1,6 +1,6 @@
 ---
 title: Breeze微型四轴系列（零）：总纲
-date: 2017-10-06 22:30
+date: 2017-10-06 22:30:00
 tags:
   - Micro Quadcopter
 categories: Breeze微型四轴系列
