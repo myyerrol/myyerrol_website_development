@@ -123,10 +123,10 @@ MicroDynamics团队拥有其所有项目的版权，而对于项目中所用到�
 
 以下是我原创的Breeze微型四轴系列文章：
 
-[Breeze微型四轴系列（零）：总纲](https://myyerrol.github.io/zh-cn/2017/10/06/breeze_quadcopter_0_superclass/)
-[Breeze微型四轴系列（一）：硬件电路板设计](https://myyerrol.github.io/zh-cn/2017/10/21/breeze_quadcopter_1_hardware_design/)
-[Breeze微型四轴系列（二）：STM32嵌入式开发-开发环境搭建](https://myyerrol.github.io/zh-cn/2017/11/07/breeze_quadcopter_2_stm32_development/)
-[Breeze微型四轴系列（三）：STM32嵌入式开发-Makefile详解](https://myyerrol.github.io/zh-cn/2017/11/18/breeze_quadcopter_3_stm32_makefile/)
+[Breeze微型四轴系列（零）：总纲](http://myyerrol.io/zh-cn/2017/10/06/breeze_quadcopter_0_superclass/)
+[Breeze微型四轴系列（一）：硬件电路板设计](http://myyerrol.io/zh-cn/2017/10/21/breeze_quadcopter_1_hardware_design/)
+[Breeze微型四轴系列（二）：STM32嵌入式开发-开发环境搭建](http://myyerrol.io/zh-cn/2017/11/07/breeze_quadcopter_2_stm32_development/)
+[Breeze微型四轴系列（三）：STM32嵌入式开发-Makefile详解](http://myyerrol.io/zh-cn/2017/11/18/breeze_quadcopter_3_stm32_makefile/)
 
 ## 总结
 
