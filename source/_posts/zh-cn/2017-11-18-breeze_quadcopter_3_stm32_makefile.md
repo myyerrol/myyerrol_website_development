@@ -28,11 +28,11 @@ comments: true
 
 ### 整体架构
 
-![breeze_embedded_architecture](../../../../../images/breeze/embedded/breeze_embedded_architecture.png)
+![breeze_embedded_architecture](/images/breeze/embedded/breeze_embedded_architecture.png)
 
 ### 目录结构
 
-![breeze_dir_make](../../../../../images/breeze/embedded/breeze_dir_make.png)
+![breeze_dir_make](/images/breeze/embedded/breeze_dir_make.png)
 
 ### Makefile详解
 

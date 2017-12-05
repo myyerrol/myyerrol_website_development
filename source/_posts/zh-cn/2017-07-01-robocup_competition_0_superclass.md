@@ -27,7 +27,7 @@ comments: true
 
 ### RoboCup
 
-![robocup](../../../../../images/robocup/robocup.png)
+![robocup](/images/robocup/robocup.png)
 
 - #### 概述
 
@@ -77,7 +77,7 @@ comments: true
 
 ### RoboCup@Home
 
-![robocup@home](../../../../../images/robocup/robocup@home.jpg)
+![robocup@home](/images/robocup/robocup@home.jpg)
 
 - #### 概述
 
