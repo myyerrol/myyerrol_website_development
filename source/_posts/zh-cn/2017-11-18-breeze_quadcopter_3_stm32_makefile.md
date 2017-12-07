@@ -28,8 +28,6 @@ comments: true
 
 ### 整体架构
 
-
-
 ![breeze_embedded_architecture](/images/breeze/embedded/breeze_embedded_architecture.png)
 
 ### 目录结构
