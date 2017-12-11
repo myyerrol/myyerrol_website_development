@@ -72,6 +72,34 @@ comments: true
 
 ![breeze_dir_make](/images/breeze/embedded/breeze_dir_make.png)
 
+- #### 目录Algorithm
+
+  ![breeze_dir_algorithm](/images/breeze/embedded/breeze_dir_algorithm.png)
+
+- #### 目录Drivers
+
+  ![breeze_dir_drivers](/images/breeze/embedded/breeze_dir_drivers.png)
+
+- #### 目录Libraries
+
+  ![breeze_dir_libraries](/images/breeze/embedded/breeze_dir_libraries.png)
+
+- #### 目录Modules
+
+  ![breeze_dir_modules](/images/breeze/embedded/breeze_dir_modules.png)
+
+- #### 目录Project
+
+  ![breeze_dir_project](/images/breeze/embedded/breeze_dir_project.png)
+
+- #### 目录Tools
+
+  ![breeze_dir_tools](/images/breeze/embedded/breeze_dir_tools.png)
+
+- #### 目录User
+
+  ![breeze_dir_user](/images/breeze/embedded/breeze_dir_user.png)
+
 ### Makefile详解
 
 ```mk
