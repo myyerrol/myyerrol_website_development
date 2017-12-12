@@ -88,27 +88,39 @@ comments: true
 
 - #### 目录Libraries
 
-  该目录下
+  该目录下存放的是STM32官方开发库的相关内容，其中CMSIS子目录下包含有STM32内核源码、硬件寄存器和中断定义源码以及启动汇编源码等，FWLib子目录下包含有STM32提供的官方固件库源码，而LinkScript目录下则存有基于ARM-GCC的链接脚本文件。
 
   ![breeze_dir_libraries](/images/breeze/embedded/breeze_dir_libraries.png)
 
 - #### 目录Modules
 
+  该目录下存放的是所有外设模块层中的源码，其中每个外设模块的子目录中都包含有同名的.h和.c文件（下图中子目录文件夹显示包含有三个文件，其中第三个文件是编译生成的.o中间文件），便于源码管理和调用。
+
   ![breeze_dir_modules](/images/breeze/embedded/breeze_dir_modules.png)
 
 - #### 目录Project
+
+  该目录下主要存放有工程的Makefile文件，除此之外，根据Makefile中所定义的规则（在下面一节中会讲到），工程在被成功编译之后还会在本目录下生成.hex和.bin等可供烧写的文件。
 
   ![breeze_dir_project](/images/breeze/embedded/breeze_dir_project.png)
 
 - #### 目录Tools
 
+  该目录目前包含有命名为setup.sh的Shell脚本文件，以管理员权限运行这个脚本可以实现一键安装ARM-GCC交叉编译工具链、OpenOCD烧写工具和Minicom终端串口软件。
+
   ![breeze_dir_tools](/images/breeze/embedded/breeze_dir_tools.png)
 
 - #### 目录User
 
+  该目录主要是参考原子KEIL MDK工程模板中的USER目录进行设计的，里面存放的是工程的main.c（工程主源码文件）、stm32f10x_conf.h（工程头文件引用）、stm32f10x_it.h（中断函数定义）和stm32f10x_it.c（中断函数实现）等源码文件。
+
   ![breeze_dir_user](/images/breeze/embedded/breeze_dir_user.png)
 
 ### Makefile详解
+
+{% alert warning %}
+
+{% endalert %}
 
 ```mk
 PROJECT := breeze_firmware_none
@@ -254,6 +266,8 @@ clean:
     -rm -rf $(PROJECT).hex
     -rm -rf $(PROJECT).bin
 ```
+
+未完待续。。。
 
 ## 总结
 
