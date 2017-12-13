@@ -119,7 +119,7 @@ comments: true
 ### Makefile详解
 
 {% alert warning %}
-
+因为我在把Makefile中的内容拷过来的时候，为了能够让其中的命令以Soft Wrap（Atom等现代编辑器所提供的功能，可以自动让一行文字在某个特定列换行显示）的形式进行显示，我把原本Makefile中的TAB全部替换成空格，并且在80列的边界处进行了换行处理，所以如果你想自己编写Makefile，请复制并编辑工程目录里的Makefile，而不要直接复制下面的内容到你自己的Makefile文件中，否则运行make肯定会报错！
 {% endalert %}
 
 ```mk
