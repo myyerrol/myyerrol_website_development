@@ -119,6 +119,8 @@ comments: true
 
 ### Makefile详解
 
+根据工程目录结构、ARM-GCC和OpenOCD等工具的使用手册以及HandsFree项目所提供的STM32学习资料，我编写了工程的Makefile文件。在开始详细讲解相关内容之前，还是先放上工程的Makefile文件，好让大家对其能有一个整体的印象。
+
 {% alert warning %}
 因为我在把Makefile中的内容拷过来的时候，为了能够让其中的命令以Soft Wrap（Atom等现代编辑器所提供的功能，可以自动让一行文字在某个特定列换行显示）的形式进行显示，我把原本Makefile中的TAB全部替换成空格，并且在80列的边界处进行了换行处理，所以如果你想自己编写Makefile，请复制并编辑工程目录里的Makefile，而不要直接复制下面的内容到你自己的Makefile文件中，否则运行make肯定会报错！
 {% endalert %}
@@ -126,37 +128,37 @@ comments: true
 ```mk
 PROJECT := breeze_firmware_none
 
-MCU     := cortex-m3
+DIR_DRIVERS   += ../Drivers/Driver_Clock/
+DIR_DRIVERS   += ../Drivers/Driver_Delay/
+DIR_DRIVERS   += ../Drivers/Driver_EEPROM/
+DIR_DRIVERS   += ../Drivers/Driver_Flash/
+DIR_DRIVERS   += ../Drivers/Driver_IIC/
+DIR_DRIVERS   += ../Drivers/Driver_IO/
+DIR_DRIVERS   += ../Drivers/Driver_NVIC/
+DIR_DRIVERS   += ../Drivers/Driver_SPI/
+DIR_DRIVERS   += ../Drivers/Driver_Timer/
+DIR_DRIVERS   += ../Drivers/Driver_USART/
 
-DDEFS   += -DSTM32F10X_MD
-DDEFS   += -DHSE_VALUE=8000000 -DUSE_STDPERIPH_DRIVER
-
-SRC_ASM := ../Libraries/CMSIS/startup/gcc/startup_stm32f10x_md.s
-
-DIR_DRIVERS += ../Drivers/Driver_Clock/
-DIR_DRIVERS += ../Drivers/Driver_Delay/
-DIR_DRIVERS += ../Drivers/Driver_EEPROM/
-DIR_DRIVERS += ../Drivers/Driver_Flash/
-DIR_DRIVERS += ../Drivers/Driver_IIC/
-DIR_DRIVERS += ../Drivers/Driver_IO/
-DIR_DRIVERS += ../Drivers/Driver_NVIC/
-DIR_DRIVERS += ../Drivers/Driver_SPI/
-DIR_DRIVERS += ../Drivers/Driver_Timer/
-DIR_DRIVERS += ../Drivers/Driver_USART/
-
-DIR_MODULES += ../Modules/Module_Battery/
-DIR_MODULES += ../Modules/Module_CommLink/
-DIR_MODULES += ../Modules/Module_LED/
-DIR_MODULES += ../Modules/Module_Motor/
-DIR_MODULES += ../Modules/Module_MPU6050/
-DIR_MODULES += ../Modules/Module_MS5611/
-DIR_MODULES += ../Modules/Module_NRF24L01/
+DIR_MODULES   += ../Modules/Module_Battery/
+DIR_MODULES   += ../Modules/Module_CommLink/
+DIR_MODULES   += ../Modules/Module_LED/
+DIR_MODULES   += ../Modules/Module_Motor/
+DIR_MODULES   += ../Modules/Module_MPU6050/
+DIR_MODULES   += ../Modules/Module_MS5611/
+DIR_MODULES   += ../Modules/Module_NRF24L01/
 
 DIR_ALGORITHM += ../Algorithm/Algorithm_Altitude/
 DIR_ALGORITHM += ../Algorithm/Algorithm_Control/
 DIR_ALGORITHM += ../Algorithm/Algorithm_Filter/
 DIR_ALGORITHM += ../Algorithm/Algorithm_Flight/
 DIR_ALGORITHM += ../Algorithm/Algorithm_IMU/
+
+DIR_INCLUDE   += -I../Libraries/CMSIS/ \
+                 -I../Libraries/FWLib/inc/ \
+                 $(addprefix -I, $(DIR_DRIVERS)) \
+                 $(addprefix -I, $(DIR_MODULES)) \
+                 $(addprefix -I, $(DIR_ALGORITHM)) \
+                 -I../User/ \
 
 SRC_C   += $(wildcard ../Libraries/CMSIS/*.c)
 SRC_C   += $(wildcard ../Libraries/FWLib/src/*.c)
@@ -165,12 +167,7 @@ SRC_C   += $(wildcard $(addsuffix *.c, $(DIR_MODULES)))
 SRC_C   += $(wildcard $(addsuffix *.c, $(DIR_ALGORITHM)))
 SRC_C   += $(wildcard ../User/*.c)
 
-DIR_INCLUDE  += -I../Libraries/CMSIS/ \
-                -I../Libraries/FWLib/inc/ \
-                $(addprefix -I, $(DIR_DRIVERS)) \
-                $(addprefix -I, $(DIR_MODULES)) \
-                $(addprefix -I, $(DIR_ALGORITHM)) \
-                -I../User/ \
+SRC_ASM := ../Libraries/CMSIS/startup/gcc/startup_stm32f10x_md.s
 
 LINK_SCRIPT := ../Libraries/LinkScript/stm32f10x_flash.lds
 
@@ -185,13 +182,18 @@ AS   := $(CC) -x assembler-with-cpp
 HEX  := $(CP) -O ihex
 BIN  := $(CP) -O binary -S
 
-OPT  += -Os
-OPT  += -fsingle-precision-constant
-OPT  += -fno-common
-OPT  += -ffunction-sections
-OPT  += -fdata-sections
+DDEFS += -DSTM32F10X_MD
+DDEFS += -DHSE_VALUE=8000000 -DUSE_STDPERIPH_DRIVER
 
-DEFS := $(DDEFS) -DRUN_FROM_FLASH=1
+DEFS  := $(DDEFS) -DRUN_FROM_FLASH=1
+
+MCU   := cortex-m3
+
+OPT   += -Os
+OPT   += -fsingle-precision-constant
+OPT   += -fno-common
+OPT   += -ffunction-sections
+OPT   += -fdata-sections
 
 SPECS := --specs=rdimon.specs -u _printf_float
 
@@ -268,7 +270,62 @@ clean:
     -rm -rf $(PROJECT).bin
 ```
 
-未完待续。。。
+- #### 编译参数
+
+  **工程命名**
+  ```mk
+  PROJECT := breeze_firmware_none
+  ```
+
+  **引用目录**
+  ```mk
+  DIR_DRIVERS   += ../Drivers/Driver_Clock/
+  DIR_DRIVERS   += ../Drivers/Driver_Delay/
+  DIR_DRIVERS   += ../Drivers/Driver_EEPROM/
+  DIR_DRIVERS   += ../Drivers/Driver_Flash/
+  DIR_DRIVERS   += ../Drivers/Driver_IIC/
+  DIR_DRIVERS   += ../Drivers/Driver_IO/
+  DIR_DRIVERS   += ../Drivers/Driver_NVIC/
+  DIR_DRIVERS   += ../Drivers/Driver_SPI/
+  DIR_DRIVERS   += ../Drivers/Driver_Timer/
+  DIR_DRIVERS   += ../Drivers/Driver_USART/
+
+  DIR_MODULES   += ../Modules/Module_Battery/
+  DIR_MODULES   += ../Modules/Module_CommLink/
+  DIR_MODULES   += ../Modules/Module_LED/
+  DIR_MODULES   += ../Modules/Module_Motor/
+  DIR_MODULES   += ../Modules/Module_MPU6050/
+  DIR_MODULES   += ../Modules/Module_MS5611/
+  DIR_MODULES   += ../Modules/Module_NRF24L01/
+
+  DIR_ALGORITHM += ../Algorithm/Algorithm_Altitude/
+  DIR_ALGORITHM += ../Algorithm/Algorithm_Control/
+  DIR_ALGORITHM += ../Algorithm/Algorithm_Filter/
+  DIR_ALGORITHM += ../Algorithm/Algorithm_Flight/
+  DIR_ALGORITHM += ../Algorithm/Algorithm_IMU/
+
+  DIR_INCLUDE   += -I../Libraries/CMSIS/ \
+                   -I../Libraries/FWLib/inc/ \
+                   $(addprefix -I, $(DIR_DRIVERS)) \
+                   $(addprefix -I, $(DIR_MODULES)) \
+                   $(addprefix -I, $(DIR_ALGORITHM)) \
+                   -I../User/ \
+  ```
+
+- #### 编译命令
+
+- #### 烧写命令
+
+- #### 清理命令
+
+  ```mk
+  clean:
+      -rm -rf $(OBJS)
+      -rm -rf $(PROJECT).elf
+      -rm -rf $(PROJECT).map
+      -rm -rf $(PROJECT).hex
+      -rm -rf $(PROJECT).bin
+  ```
 
 ## 总结
 
