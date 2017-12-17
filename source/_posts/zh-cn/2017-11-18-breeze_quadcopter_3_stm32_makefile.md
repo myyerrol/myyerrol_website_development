@@ -173,14 +173,14 @@ LINK_SCRIPT := ../Libraries/LinkScript/stm32f10x_flash.lds
 
 CC_PREFIX := arm-none-eabi-
 
-CC   := $(CC_PREFIX)gcc
-CXX  := $(CC_PREFIX)g++
-CP   := $(CC_PREFIX)objcopy
-GDB  := $(CC_PREFIX)gdb
-SIZE := $(CC_PREFIX)size
-AS   := $(CC) -x assembler-with-cpp
-HEX  := $(CP) -O ihex
-BIN  := $(CP) -O binary -S
+CC        := $(CC_PREFIX)gcc
+CXX       := $(CC_PREFIX)g++
+CP        := $(CC_PREFIX)objcopy
+GDB       := $(CC_PREFIX)gdb
+SIZE      := $(CC_PREFIX)size
+AS        := $(CC) -x assembler-with-cpp
+HEX       := $(CP) -O ihex
+BIN       := $(CP) -O binary -S
 
 DDEFS += -DSTM32F10X_MD
 DDEFS += -DHSE_VALUE=8000000 -DUSE_STDPERIPH_DRIVER
@@ -277,7 +277,11 @@ clean:
   PROJECT := breeze_firmware_none
   ```
 
-  **引用目录**
+  使用变量的方式来存储工程的名字，以便为之后编译生成的程序提供统一的命名。
+
+  ---
+
+  **目录引用**
   ```mk
   DIR_DRIVERS   += ../Drivers/Driver_Clock/
   DIR_DRIVERS   += ../Drivers/Driver_Delay/
@@ -312,9 +316,165 @@ clean:
                    -I../User/ \
   ```
 
+  **DIR_DRIVERS**、**DIR_MODULES**和**DIR_ALGORITHM**这三个变量的作用是根据工程目录结构设计，使用相对路径的方式将底层驱动层、外设模块层和飞控算法层中的子目录分别添加到其中，为之后提取目录中的源码提供搜索路径。
+
+  而**DIR_INCLUDE**变量主要用于获取工程目录结构中的所有.h头文件，其中包括官方开发库层中CMSIS和FWLib里的头文件，以及底层驱动层、外设模块层、飞控算法层和用户主函数目录中所有相关的头文件。这里，为了让大家看得更加清楚，我在每个目录后面都添加了反斜杠来进行转义，表示所有目录路径在逻辑上依然同处一行，但可以通过多行的形式进行显示。此外，我还用了GNU/Make中的文件名操作函数**addprefix**，以下引用自《跟我一起学Makefile》：
+
+  > $(addprefix &lt;prefix&gt;, &lt;names...&gt;)
+  > 名称：加前缀函数——addprefix。
+  > 功能：把前缀<prefix>加到<names>中的每个单词后面。
+  > 返回：返回加过前缀的文件名序列。
+  > 示例：$(addprefix src/,foo bar)返回值是“src/foo src/bar”。
+
+  因此在工程Makefile中，$(addprefix -I, $(DIR_DRIVERS))函数操作会在**DIR_DRIVERS**变量前面添加**-I**标志，即将DIR_DRIVERS目录下的头文件添加到编译器的头文件搜索路径中。这样做简单灵活，且具有更好的可扩展性。
+
+  ---
+
+  **源文件搜索**
+  ```mk
+  SRC_C   += $(wildcard ../Libraries/CMSIS/*.c)
+  SRC_C   += $(wildcard ../Libraries/FWLib/src/*.c)
+  SRC_C   += $(wildcard $(addsuffix *.c, $(DIR_DRIVERS)))
+  SRC_C   += $(wildcard $(addsuffix *.c, $(DIR_MODULES)))
+  SRC_C   += $(wildcard $(addsuffix *.c, $(DIR_ALGORITHM)))
+  SRC_C   += $(wildcard ../User/*.c)
+
+  SRC_ASM := ../Libraries/CMSIS/startup/gcc/startup_stm32f10x_md.s
+  ```
+
+  根据操作不难看出，**SRC_C**和**SCR_ASM**这两个变量用于分别存储C源码和汇编文件，其中SRC_C里用到了**wildcard**和**addsuffix**两个函数，这里首先对**wildcard**函数进行简单讲解，以下内容引用自liangkaiming的《[Makefile中的wildcard用法](http://blog.csdn.net/liangkaiming/article/details/6267357)》中的部分内容：
+
+  > 在Makefile规则中，通配符会被自动展开。但在变量的定义和函数引用时，通配符将失效。这种情况下如果需要通配符有效，就需要使用函数“wildcard”，它的用法是：$(wildcard PATTERN...) 。在Makefile中，它被展开为已经存在的、使用空格分开的、匹配此模式的所有文件列表。如果不存在任何符合此模式的文件，函数会忽略模式字符并返回空。
+
+  所以，$(wildcard ../Libraries/CMSIS/\*.c)的含义是获取../Libraries/CMSIS/目录下的所有.c源文件，其它的类似。而$(wildcard $(addsuffix \*.c, $(DIR_DRIVERS)))则在wildcard函数的基础上又嵌套了**addsuffix**函数，它跟之前讲过的**addprefix**功能类似，主要用来添加后缀。以内容下依旧引用自《跟我一起学Makefile》：
+
+  > $(addsuffix &lt;suffix&gt;, &lt;names...&gt;)
+  > 名称：加后缀函数——addsuffix。
+  > 功能：把后缀<suffix>加到<names>中的每个单词后面。
+  > 返回：返回加过后缀的文件名序列。
+  > 示例：$(addsuffix .c,foo bar)返回值是“foo.c bar.c”
+
+  因此，$(wildcard $(addsuffix *.c, $(DIR_DRIVERS)))函数的含义是首先在DIR_DRIVERS变量的后边添加.c后缀，然后再调用wildcard函数获取其中的所有.c源文件。这种通过函数组合来实现指定功能的方式可以大大减少编写Makefile的工作量，提高项目的开发效率。
+
+  ---
+
+  **链接脚本**
+  ```mk
+  LINK_SCRIPT := ../Libraries/LinkScript/stm32f10x_flash.lds
+  ```
+
+  ---
+
+  **编译器可执行程序**
+  ```mk
+  CC_PREFIX := arm-none-eabi-
+
+  CC        := $(CC_PREFIX)gcc
+  CXX       := $(CC_PREFIX)g++
+  CP        := $(CC_PREFIX)objcopy
+  GDB       := $(CC_PREFIX)gdb
+  SIZE      := $(CC_PREFIX)size
+  AS        := $(CC) -x assembler-with-cpp
+  HEX       := $(CP) -O ihex
+  BIN       := $(CP) -O binary -S
+  ```
+
+  ---
+
+  **编译参数**
+  ```mk
+  DDEFS += -DSTM32F10X_MD
+  DDEFS += -DHSE_VALUE=8000000 -DUSE_STDPERIPH_DRIVER
+
+  DEFS  := $(DDEFS) -DRUN_FROM_FLASH=1
+
+  MCU   := cortex-m3
+
+  OPT   += -Os
+  OPT   += -fsingle-precision-constant
+  OPT   += -fno-common
+  OPT   += -ffunction-sections
+  OPT   += -fdata-sections
+
+  SPECS := --specs=rdimon.specs -u _printf_float
+  ```
+
+  ---
+
+  **编译标签**
+  ```mk
+  FLAGS_MCU := -mcpu=$(MCU)
+  FLAGS_AS  := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb
+  FLAGS_C   := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb \
+               -fomit-frame-pointer -Wall -fverbose-asm $(DEFS)
+  FLAGS_CXX := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb \
+               -fomit-frame-pointer -Wall -fverbose-asm -fno-exceptions \
+               -fno-rtti -fno-threadsafe-statics -fvisibility=hidden -std=c++11 \
+               $(DEFS)
+  FLAGS_LD  := $(SPECS) $(FLAGS_MCU) $(OPT) -lm -g -gdwarf-2 -mthumb \
+               -nostartfiles -Xlinker --gc-sections -T$(LINK_SCRIPT) \
+               -Wl,-Map=$(PROJECT).map,--cref,--no-warn-mismatch
+
+  OBJS      := $(filter %.o, $(SRC_ASM:.s=.o)) $(filter %.o, $(SRC_C:.c=.o))
+  ```
+
+  ---
+
+  **烧写类型**
+  ```mk
+  TYPE_BURN  := openocd_swd_flash
+  TYPE_DEBUG := openocd_swd_debug
+  TYPE_ERASE := openocd_swd_erase
+  ```
+
 - #### 编译命令
 
+  ```mk
+  .PHONY: all burn debug erase clean
+
+  all: $(OBJS) $(PROJECT).elf $(PROJECT).hex $(PROJECT).bin
+      $(SIZE) $(PROJECT).elf
+
+  %.o: %.c
+      $(CC) $(FLAGS_C) $(DIR_INCLUDE) $< -o $@
+
+  %.o: %.s
+      $(AS) $(FLAGS_AS) $< -o $@
+
+  %.elf: $(OBJS)
+      $(CC) $(OBJS) $(FLAGS_LD) -o $@
+
+  %.hex: %.elf
+      $(HEX) $< $@
+
+  %.bin: %.elf
+      $(BIN) $< $@
+  ```
+
 - #### 烧写命令
+
+  ```mk
+  burn:  $(TYPE_BURN)
+  debug: $(TYPE_DEBUG)
+  erase: $(TYPE_ERASE)
+
+  openocd_swd_flash: $(PROJECT).bin
+      openocd -f interface/jlink.cfg -c "transport select swd" -f
+      target/stm32f1x.cfg -c "init" -c "reset halt" -c "sleep 100" -c "wait_halt
+      2" -c "flash write_image erase $(PROJECT).bin 0x08000000" -c "sleep 100" -c
+      "verify_image $(PROJECT).bin 0x08000000" -c "sleep 100" -c "reset run" -c
+      shutdown
+
+  openocd_swd_debug: $(PROJECT).bin
+      xterm -e openocd -f interface/jlink.cfg -c "transport select swd" -f
+      target/stm32f1x.cfg -c "init" -c "halt" -c "reset halt" &
+      $(GDB) --eval-command="target extended-remote localhost:3333" $(PROJECT).elf
+
+  openocd_swd_erase:
+      openocd -f interface/jlink.cfg -c "transport select swd" -f
+      target/stm32f1x.cfg  -c "init" -c "reset halt" -c "sleep 100" -c "stm32f1x
+      mass_erase 0" -c "sleep 100" -c shutdown
+  ```
 
 - #### 清理命令
 
