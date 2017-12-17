@@ -169,6 +169,8 @@ SRC_C   += $(wildcard ../User/*.c)
 
 SRC_ASM := ../Libraries/CMSIS/startup/gcc/startup_stm32f10x_md.s
 
+OBJS    := $(filter %.o, $(SRC_ASM:.s=.o)) $(filter %.o, $(SRC_C:.c=.o))
+
 LINK_SCRIPT := ../Libraries/LinkScript/stm32f10x_flash.lds
 
 CC_PREFIX := arm-none-eabi-
@@ -208,8 +210,6 @@ FLAGS_CXX := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb \
 FLAGS_LD  := $(SPECS) $(FLAGS_MCU) $(OPT) -lm -g -gdwarf-2 -mthumb \
              -nostartfiles -Xlinker --gc-sections -T$(LINK_SCRIPT) \
              -Wl,-Map=$(PROJECT).map,--cref,--no-warn-mismatch
-
-OBJS      := $(filter %.o, $(SRC_ASM:.s=.o)) $(filter %.o, $(SRC_C:.c=.o))
 
 TYPE_BURN  := openocd_swd_flash
 TYPE_DEBUG := openocd_swd_debug
@@ -270,7 +270,7 @@ clean:
     -rm -rf $(PROJECT).bin
 ```
 
-- #### 编译参数
+- #### 编译选项
 
   **工程命名**
   ```mk
@@ -318,11 +318,11 @@ clean:
 
   **DIR_DRIVERS**、**DIR_MODULES**和**DIR_ALGORITHM**这三个变量的作用是根据工程目录结构设计，使用相对路径的方式将底层驱动层、外设模块层和飞控算法层中的子目录分别添加到其中，为之后提取目录中的源码提供搜索路径。
 
-  而**DIR_INCLUDE**变量主要用于获取工程目录结构中的所有.h头文件，其中包括官方开发库层中CMSIS和FWLib里的头文件，以及底层驱动层、外设模块层、飞控算法层和用户主函数目录中所有相关的头文件。这里，为了让大家看得更加清楚，我在每个目录后面都添加了反斜杠来进行转义，表示所有目录路径在逻辑上依然同处一行，但可以通过多行的形式进行显示。此外，我还用了GNU/Make中的文件名操作函数**addprefix**，以下引用自《跟我一起学Makefile》：
+  而**DIR_INCLUDE**变量主要用于获取工程目录结构中的所有.h头文件，其中包括官方开发库层中CMSIS和FWLib里的头文件，以及底层驱动层、外设模块层、飞控算法层和用户主函数目录中所有相关的头文件。这里，为了让大家看得更加清楚，我在每个目录后面都添加了反斜杠来进行转义，表示所有目录路径在逻辑上依然同处一行，但可以通过多行的形式进行显示。此外，我还用了GNU/Make中的**addprefix**函数，以下引用自《跟我一起学Makefile》：
 
   > $(addprefix &lt;prefix&gt;, &lt;names...&gt;)
   > 名称：加前缀函数——addprefix。
-  > 功能：把前缀<prefix>加到<names>中的每个单词后面。
+  > 功能：把前缀&lt;prefix&gt;加到&lt;names&gt;中的每个单词后面。
   > 返回：返回加过前缀的文件名序列。
   > 示例：$(addprefix src/,foo bar)返回值是“src/foo src/bar”。
 
@@ -340,6 +340,8 @@ clean:
   SRC_C   += $(wildcard ../User/*.c)
 
   SRC_ASM := ../Libraries/CMSIS/startup/gcc/startup_stm32f10x_md.s
+
+  OBJS    := $(filter %.o, $(SRC_ASM:.s=.o)) $(filter %.o, $(SRC_C:.c=.o))
   ```
 
   根据操作不难看出，**SRC_C**和**SCR_ASM**这两个变量用于分别存储C源码和汇编文件，其中SRC_C里用到了**wildcard**和**addsuffix**两个函数，这里首先对**wildcard**函数进行简单讲解，以下内容引用自liangkaiming的《[Makefile中的wildcard用法](http://blog.csdn.net/liangkaiming/article/details/6267357)》中的部分内容：
@@ -350,11 +352,25 @@ clean:
 
   > $(addsuffix &lt;suffix&gt;, &lt;names...&gt;)
   > 名称：加后缀函数——addsuffix。
-  > 功能：把后缀<suffix>加到<names>中的每个单词后面。
+  > 功能：把后缀&lt;suffix&gt;加到&lt;names&gt;中的每个单词后面。
   > 返回：返回加过后缀的文件名序列。
   > 示例：$(addsuffix .c,foo bar)返回值是“foo.c bar.c”
 
   因此，$(wildcard $(addsuffix *.c, $(DIR_DRIVERS)))函数的含义是首先在DIR_DRIVERS变量的后边添加.c后缀，然后再调用wildcard函数获取其中的所有.c源文件。这种通过函数组合来实现指定功能的方式可以大大减少编写Makefile的工作量，提高项目的开发效率。
+
+  **OBJS**变量用于存储所有通过.c和.s源文件生成的中间目标文件（object files），这里用到了**filter**函数和变量的**替换规则**，先介绍一下filter函数：
+
+  > $(filter &lt;pattern...&gt;, &lt;text&gt;)
+  > 名称：过滤函数——filter。
+  > 功能：以&lt;pattern&gt;模式过滤&lt;text&gt;字符串中的单词，保留符合模式&lt;pattern&gt;的单词。可以有多个模式。
+  > 返回：返回符合模式&lt;pattern&gt;的字串。
+  > 示例：
+  > sources := foo.c bar.c baz.s ugh.h
+  > foo: $(sources)
+  > cc $(filter %.c %.s,$(sources)) -o foo
+  > $(filter %.c %.s,$(sources))返回的值是“foo.c bar.c baz.s”。
+
+  综上所述，$(filter %.o, $(SRC_ASM:.s=.o))和$(filter %.o, $(SRC_C:.c=.o))函数的执行过程如下：filter函数首先根据$(SRC_ASM:.s=.o)和$(SRC_C:.c=.o)所定义好的替换规则，分别将SRC_ASM和SRC_C变量中的.s和.c字符串替换成.o，然后从替换之后的变量中匹配出符合.o后缀的文件，最后返回字符串结果给OBJS变量。
 
   ---
 
@@ -385,7 +401,7 @@ clean:
 
   ---
 
-  **编译参数**
+  **编译选项**
   ```mk
   DDEFS += -DSTM32F10X_MD
   DDEFS += -DHSE_VALUE=8000000 -DUSE_STDPERIPH_DRIVER
@@ -403,7 +419,37 @@ clean:
   SPECS := --specs=rdimon.specs -u _printf_float
   ```
 
-  
+  **DDEFS**和**DEFS**变量是ARM-GCC编译器的预处理宏定义，用于将指定的功能编译到可执行程序当中去：
+
+  - **-DSTM32F10X_MD**
+  -DSTM32F10X_MD选项表示该工程使用的是STM32F1系列的中容量芯片。如果你用的是小容量或大容量的芯片，请将此处对应地修改为-DSTM32F10X_LD或-DSTM32F10X_HD等选项。
+
+  - **-DHSE_VALUE=8000000**
+  -DHSE_VALUE=8000000选项用于配置STM32的外部晶振频率，其中8000000表示芯片使用的晶振频率为8MHz。
+
+  - **-DUSE_STDPERIPH_DRIVER**
+  -DUSE_STDPERIPH_DRIVER选项表示该工程会使用STM32官方提供的固件库。如果你自己的工程里没有使用STM32官方固件库，也可以不添加该选项。
+
+  - **-DRUN_FROM_FLASH=1**
+  -DRUN_FROM_FLASH=1选项用于指定程序从硬件的FLASH中开始运行。
+
+  **MCU**变量表示当前工程所用芯片的架构。我们用的是STM32F1系列的芯片，所以该变量的值为cortex-m3。
+
+  **OPT**(Optimization)变量用于表示**编译优化**方面的选项：
+
+   - **-Os**
+  -Os(Optimize size)选项指定编译器以-O2级别优化来进一步减少可执行程序所占空间的大小。
+
+  - **fsingle-precision-constant**
+  fsingle-precision-constant选项指定编译器将浮点型（floating-point）常量看成单精度常量而不把它们隐式地转换成双精度常量。
+
+  - **-fno-common**
+  -fno-common选项指定编译器应该将未初始化的全局变量放置到.o目标文件（object file）的数据段中而不是生成它们作为公共块（common blocks）。虽然当出现同一个变量在两个不同的编译中被声明的情况时，编译器会在链接过程中报**重复定义**的错误，但使用-fno-common选项编译目标程序可以更好地提高程序的性能（Unix C编译器传统上通过将变量放置在公共块中，以允许在不同编译单元中对这些变量进行多个定义，这种行为主要通过-fcommon选项来进行指定。但另一方面，ISO C标准并不要求这种行为，且对于某些可执行程序来说这种行为会带来变量引用上的速度或空间开销，因此-fno-common选项便出现了）。
+
+  - **-ffunction-sections**和**-fdata-sections**
+  -ffunction-sections和-fdata-sections选项指定编译器将每一个函数或数据项放置到输出文件的相应段里去，函数或数据项的名字决定了输出文件中相应段的名字。使用该选项可以让链接器执行优化来改进指令空间中引用的局部性，但代价是牺牲了目标文件和可执行文件的空间大小和速度。
+
+  **SPECS**变量用于指定编译器所要读取的**规格**（specs）文件，在命令行里可以指定多个规格文件，编译器会根据顺序从左到右依次进行处理。
 
   ---
 
@@ -420,10 +466,7 @@ clean:
   FLAGS_LD  := $(SPECS) $(FLAGS_MCU) $(OPT) -lm -g -gdwarf-2 -mthumb \
                -nostartfiles -Xlinker --gc-sections -T$(LINK_SCRIPT) \
                -Wl,-Map=$(PROJECT).map,--cref,--no-warn-mismatch
-
-  OBJS      := $(filter %.o, $(SRC_ASM:.s=.o)) $(filter %.o, $(SRC_C:.c=.o))
   ```
-
   ---
 
   **调试器类型**
@@ -437,9 +480,15 @@ clean:
 
 - #### 编译命令
 
+  **伪目标定义**
   ```mk
-  .PHONY: all burn debug erase clean
+    .PHONY: all burn debug erase clean
+    ```
 
+  ---
+
+  **编译规则**
+  ```mk
   all: $(OBJS) $(PROJECT).elf $(PROJECT).hex $(PROJECT).bin
       $(SIZE) $(PROJECT).elf
 
@@ -459,25 +508,40 @@ clean:
       $(BIN) $< $@
   ```
 
+
 - #### 调试器命令
 
+  **调试器定义**
   ```mk
   burn:  $(TYPE_BURN)
   debug: $(TYPE_DEBUG)
   erase: $(TYPE_ERASE)
+  ```
 
+  **调试命令**
+  ```mk
   openocd_swd_flash: $(PROJECT).bin
       openocd -f interface/jlink.cfg -c "transport select swd" -f
       target/stm32f1x.cfg -c "init" -c "reset halt" -c "sleep 100" -c "wait_halt
       2" -c "flash write_image erase $(PROJECT).bin 0x08000000" -c "sleep 100" -c
       "verify_image $(PROJECT).bin 0x08000000" -c "sleep 100" -c "reset run" -c
       shutdown
+  ```
 
+  ---
+
+  **调试命令**
+  ```mk
   openocd_swd_debug: $(PROJECT).bin
       xterm -e openocd -f interface/jlink.cfg -c "transport select swd" -f
       target/stm32f1x.cfg -c "init" -c "halt" -c "reset halt" &
       $(GDB) --eval-command="target extended-remote localhost:3333" $(PROJECT).elf
+  ```
 
+  ---
+
+  **擦除命令**
+  ```mk
   openocd_swd_erase:
       openocd -f interface/jlink.cfg -c "transport select swd" -f
       target/stm32f1x.cfg  -c "init" -c "reset halt" -c "sleep 100" -c "stm32f1x
@@ -495,11 +559,13 @@ clean:
       -rm -rf $(PROJECT).bin
   ```
 
+  通过调用Shell中的rm -rf命令来强制递归删除工程的所有因编译所产生的文件。
+
 ## 总结
 
 读到这里，我相信大家对Breeze微型四轴飞行器的嵌入式架构以及工程本身的Makefile有了一个比较清楚的认识。这里，我想再强调一下项目整体架构以及目录组织结构的重要性，一个开源项目能否成功在很大程度上取决于系统架构设计的好坏，优秀的系统架构可以降低各模块之间的耦合性，提高底层代码的封装性，并向上提供较为丰富的API接口，除此之外，最重要的是它统一了接口标准，降低程序开发的复杂程度，从而提高系统整体的鲁棒性。当然，拥有设计出色的系统架构之后，我们还需要根据其来组织整个项目工程的目录结构，把不同功能的代码、Makefile以及开发文档等放到不同的目录当中去，这样有利于后期项目代码的编写和维护等工作。
 
-在接下来的文章中，我将会为大家讲解STM32链接脚本的工作原理和参数配置，并分析其在程序链接和运行阶段的作用。由于下一篇的链接脚本部分涉及很多非常深奥的软件底层知识，所以我希望那些想深入理解STM32嵌入式程序是如何在硬件上运行的同学可以提前先看看《C专家编程》这本书中的**“第6章 运动的诗章：运行时数据结构”**，里面对程序的堆、栈和段进行了介绍，对你理解链接脚本中的相关内容有着很好的促进作用。最后，我还是希望能有更多的爱好者可以从本系列教程中受益匪浅。
+在接下来的文章中，我将会为大家讲解STM32链接脚本的工作原理和相关配置，并分析其在程序链接和运行阶段的作用。由于下一篇的链接脚本部分涉及很多非常深奥的软件底层知识，所以我希望那些想深入理解STM32嵌入式程序是如何在硬件上运行的同学可以提前先看看《C专家编程》这本书中的**“第6章 运动的诗章：运行时数据结构”**，里面对程序的堆、栈和段进行了介绍，对你理解链接脚本中的相关内容有着很好的促进作用。最后，我还是希望能有更多的爱好者可以从本系列教程中受益匪浅。
 
 {% alert info %}
 普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
