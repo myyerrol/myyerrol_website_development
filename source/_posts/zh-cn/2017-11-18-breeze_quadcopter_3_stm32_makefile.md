@@ -363,6 +363,8 @@ clean:
   LINK_SCRIPT := ../Libraries/LinkScript/stm32f10x_flash.lds
   ```
 
+  **LINK_SCRIPT**变量存储的是基于ARM-GCC编译器的链接脚本。
+
   ---
 
   **编译器可执行程序**
@@ -378,6 +380,8 @@ clean:
   HEX       := $(CP) -O ihex
   BIN       := $(CP) -O binary -S
   ```
+
+  以上一系列变量用于为ARM-GCC编译器相关可执行程序赋予新的别名，方便之后编译过程的使用。
 
   ---
 
@@ -398,6 +402,8 @@ clean:
 
   SPECS := --specs=rdimon.specs -u _printf_float
   ```
+
+  
 
   ---
 
@@ -420,12 +426,14 @@ clean:
 
   ---
 
-  **烧写类型**
+  **调试器类型**
   ```mk
   TYPE_BURN  := openocd_swd_flash
   TYPE_DEBUG := openocd_swd_debug
   TYPE_ERASE := openocd_swd_erase
   ```
+
+  根据名字可以知道，以上三个变量分别代表调试器烧写、调试和擦除的类型。由于目前该工程使用的调试器为J-Link，软件为OpenOCD，并且基于J-Link的SWD模式与硬件进行数据通信，所以上述三个变量的值是固定的。如果以后工程添加了新的调试器命令（比如ST-Link等），用户可以通过修改相应变量的值（必须要在下面的**调试器命令**部分中存在）来自行选择使用哪种调试器进行烧写、调试和擦除操作。
 
 - #### 编译命令
 
@@ -451,7 +459,7 @@ clean:
       $(BIN) $< $@
   ```
 
-- #### 烧写命令
+- #### 调试器命令
 
   ```mk
   burn:  $(TYPE_BURN)
