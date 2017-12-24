@@ -483,7 +483,42 @@ clean:
   **伪目标定义**
   ```mk
     .PHONY: all burn debug erase clean
-    ```
+  ```
+
+  这里首先介绍一下什么是**伪目标**：伪目标并不是一个文件，而是一个标签，我们通常用它来执行某种特定的功能，比如使用`make clean`来清理编译过程中生成的中间文件，其中`make`就是伪目标。当伪目标的取名与文件名不重复时，GNU/Make会自动将伪目标识别为标签，执行其中定义好的命令，但是如果伪目标与文件名重复，那么便会出现问题，举个简单的例子：Makefile文件中存在有如下的伪目标定义，且恰好该目录中有一个名为clean的文件：
+
+  ```mk
+  clean:
+      -rm -rf *.o
+  ```
+
+  这时若执行`make clean`命令，GNU/Make会以clean文件已存在且Makefile中的clean规则不存在依赖关系为由，不执行该操作。当然，为避免这种情况的发生，我们可以使用**.PHONY**关键字来显示地指明`clean`目标是一个伪目标，即就像下面这样：
+
+  ```mk
+  .PHONY: clean
+
+  clean:
+      -rm -rf *.o
+  ```
+
+  只要有.PHONY声明，不管是否有clean这个文件，只要执行`make clean`命令，GNU/Make便会调用Shell中的rm命令对中间文件进行删除操作。
+
+  伪目标一般没有依赖的文件。但是，我们也可以为伪目标指定所依赖的文件。伪目标同样可以作为**默认目标**，只要将其放在第一个。一个示例就是，如果你的Makefile需要一口气生成若干个可执行文件，但你只想简单地敲一个make完事，并且，所有的目标文件都写在一个Makefile中，那么你可以使用伪目标这个特性：
+
+  ```mk
+  all: $(OBJS) $(PROJECT).elf $(PROJECT).hex $(PROJECT).bin
+      $(SIZE) $(PROJECT).elf
+  ```
+
+  我们知道，Makefile中的第一个目标会被作为其默认目标。我们声明了一个`all`的伪目标，其依赖于其它四个目标。由于伪目标的特性是，总是被执行的，所以其依赖的那四个目标就总是不如`all`这个目标新。所以，其它四个目标的规则总是会被决议。也就达到了我们一口气生成多个目标的目的。
+
+  当然，从上面的例子我们可以看出，目标也可以成为依赖。所以，伪目标同样也可成为依赖：
+
+  ```mk
+  burn: $(TYPE_BURN)
+  ```
+
+  `burn`是伪目标，而$(TYPE_BURN)变量目前为`openocd_swd_flash`，它也是一个伪目标。我们可以很方便地使用`make burn`或`make openocd_swd_flash`将编译好的程序烧写到硬件中去。
 
   ---
 
@@ -518,7 +553,7 @@ clean:
   erase: $(TYPE_ERASE)
   ```
 
-  **调试命令**
+  **烧写命令**
   ```mk
   openocd_swd_flash: $(PROJECT).bin
       openocd -f interface/jlink.cfg -c "transport select swd" -f
