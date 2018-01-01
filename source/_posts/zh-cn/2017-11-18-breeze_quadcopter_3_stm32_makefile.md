@@ -619,7 +619,7 @@ clean:
   erase: $(TYPE_ERASE)
   ```
 
-
+  确定**烧写**、**调试**和**擦除**等功能所使用的调试器命令。
 
   **烧写命令**
   ```mk
@@ -631,6 +631,58 @@ clean:
       shutdown
   ```
 
+  **烧写命令**的重点在于OpenOCD的命令参数，以下对其进行简要介绍：
+
+  - **-f interface/jlink.cfg**
+  指定OpenOCD使用系统`interface`目录下的`jlink.cfg`调试适配器配置文件。
+
+  - **-c "transport select swd"**
+  指定调试适配器使用SWD模式进行数据传输。
+
+  - **-f target/stm32f1x.cfg**
+  指定OpenOCD使用系统`target`目录下的`stm32f1x.cfg`芯片配置文件。
+
+  - **-c "init"**
+  该命令指定OpenOCD结束配置而进入运行阶段。
+
+  - **-c "reset run"**
+  执行硬件复位，将所有已定义的目标重置，并开始目标的运行。
+
+  - **-c "reset halt"**
+  执行硬件复位，将所有已定义的目标重置，并立即停止目标的运行。
+
+  - **-c "sleep 100"**
+  指定OpenOCD在状态恢复之前等待至少100毫秒。
+
+  - **-c "wait_halt 2"**
+  指定OpenOCD等待目标停止的时间为2毫秒。
+
+  - **-c "flash write_image erase $(PROJECT).bin 0x08000000"**
+  指定OpenOCD将通过ARM-GCC编译生成的$(PROJECT).bin镜像文件烧写到当前目标硬件的FLASH块中，其中**0x08000000**是STM32芯片默认的重定位偏移量，在烧写镜像的过程中，它会被自动添加到镜像文件每个段的基址上，用于确保程序可以从正确的地址上运行。最后，在**erase**参数被指定后，相关FLASH扇区会在编程之前被擦除掉。
+
+  - **-c "verify_image $(PROJECT).bin 0x08000000"**
+  指定OpenOCD从**0x08000000**地址处开始验证**$(PROJECT).bin**镜像文件的数据是否正确，首先尝试使用CRC校验，若失败则直接对二进制文件进行比较。
+
+  - **-c shutdown**
+  该命令会关闭OpenOCD服务器，并断开所有与之相连的客户端（如GDB，Telnet等）。
+
+  在介绍完以上有关OpenOCD的命令参数之后，相信大家对OpenOCD的用法有了一个基本的认识，接下来总结一下本项目OpenOCD的整个烧写流程：
+
+  ```txt
+  设置调试适配器驱动为J-Link。
+  设置调试适配器使用SWD模式来进行数据传输。
+  设置目标芯片的类型为STM32F1系列。
+  调用OpenOCD的init命令开始执行烧写操作。
+  调用OpenOCD的reset halt命令重置并停止目标的运行。
+  延迟100毫秒等待状态恢复。
+  延迟2毫秒等待目标停止运行。
+  调用OpenOCD的flash write_image命令执行擦除和烧写文件操作。
+  延迟100毫秒等待状态恢复。
+  调用OpenOCD的verify_image命令验证烧写到STM32中的镜像文件是否正确。
+  延迟100毫秒等待状态恢复。
+  调用OpenOCD的reset run命令重置并开始目标的运行。
+  关闭OpenOCD服务器。
+  ```
   ---
 
   **调试命令**
@@ -641,6 +693,8 @@ clean:
       $(GDB) --eval-command="target extended-remote localhost:3333" $(PROJECT).elf
   ```
 
+  **调试命令**基本上和**烧写命令**类似，不同点在于当OpenOCD经过初始化并启动完服务器之后，Makefile会调用arm-none-eabi-gdb工具执行`target extended-remote localhost:3333`命令来建立GDB与OpenOCD的GDBServer之间的数据通信，并加载名为**$(PROJECT).elf**的程序到GDB中完成调试的初始化工作。而至于如何使用GDB进行调试，网上有非常多的资料，这里就不再进行介绍了。
+
   ---
 
   **擦除命令**
@@ -650,6 +704,8 @@ clean:
       target/stm32f1x.cfg  -c "init" -c "reset halt" -c "sleep 100" -c "stm32f1x
       mass_erase 0" -c "sleep 100" -c shutdown
   ```
+
+  **擦除命令**依然和上面讲过的**烧写命令**类似，不同点在于OpenOCD会使用`-c "stm32f1x mass_erase 0`命令来擦除STM32芯片的FLASH中0号扇区里的所有内容，该命令通常用于解锁受保护的FLASH。
 
 - #### 清理命令
 
