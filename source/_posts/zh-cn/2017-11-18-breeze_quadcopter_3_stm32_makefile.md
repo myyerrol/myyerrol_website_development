@@ -469,6 +469,52 @@ clean:
   ```
   ---
 
+  - **MCU标签**
+    ```mk
+    FLAGS_MCU := -mcpu=$(MCU)
+    ```
+
+    **-mcpu**选项用于指定目标处理器的名字（目前其值为cortex-m3）。GCC可通过该选项确定使用什么样的CPU指令集来生成对应的汇编代码，并确定目标处理器的性能调优。
+
+  - **汇编标签**
+    ```mk
+    FLAGS_AS  := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb
+    ```
+    **编译标签**中的`-c`选项指定编译器编译或汇编源文件，但并不进行链接；`-g`选项用于生成程序的调试信息，为之后的GDB调试提供基础；`-gdwarf-2`选项用于指定编译器生成DWARF-2格式的调试信息；`-mthumb`选项指定生成的代码能以**Thumb**状态运行。
+
+  - **C编译标签**
+    ```mk
+    FLAGS_C   := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb \
+                 -fomit-frame-pointer -Wall -fverbose-asm $(DEFS)
+    ```
+
+    **C编译标签**除了**编译标签**中所讲过的内容，还有`-fomit-frame-pointer`、`-Wall`和`-fverbose-asm`。其中`-fomit-frame-pointer`选项减少了栈帧的切换和栈地址的保存，可提高程序性能；`-Wall`选项用于打开代码的所有可选警告；`-fverbose-asm`选项用于在生成的汇编代码中加入额外的注释信息来使汇编代码更具可读性。
+
+  - **CXX编译标签**
+    ```mk
+    FLAGS_CXX := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb \
+                 -fomit-frame-pointer -Wall -fverbose-asm -fno-exceptions \
+                 -fno-rtti -fno-threadsafe-statics -fvisibility=hidden -std=c++11 \
+                 $(DEFS)
+    ```
+
+    **CXX编译标签**中的`-fno-exceptions`选项用于禁用异常机制；`-fno-rtti`选项用于禁用C++运行时类型信息的生成；`-fno-threadsafe-statics`选项用于禁用局部静态变量的线程安全初始化；`fvisibility=hidden`选项用于隐藏ELF格式的符号名称；`-std=c++11`选项指定编译器使用C++ 11标准对源文件进行编译。
+
+  - **链接标签**
+    ```mk
+    FLAGS_LD  := $(SPECS) $(FLAGS_MCU) $(OPT) -lm -g -gdwarf-2 -mthumb \
+                 -nostartfiles -Xlinker --gc-sections -T$(LINK_SCRIPT) \
+                 -Wl,-Map=$(PROJECT).map,--cref,--no-warn-mismatch
+    ```
+
+    **链接标签**中的`-lm`选项用于链接libm.so库，即math数学函数库；`-nostartfiles`选项指定在链接的时候不使用系统标准的启动文件；`-T$(LINK_SCRIPT)`选项指定使用$(LINK_SCRIPT)变量的值作为工程的链接脚本。
+
+    `-Xlinker`和`-Wl`两个选项都用于传递参数给链接器，区别首先在于`-Xlinker`是使用空格进行多个参数的划分，而`-Wl`则使用逗号。除此之外，如果你想传递一个包含有多个参数的选项，你就必须使用`-Xlinker`两次，第一次是为了指定选项，第二次则是为了指定参数。举个例子，对于传递`-assert definitions`命令给链接器，你必须写成`-Xlinker -assert -Xlinker defintions`而不是`-Xlinker "-assert definitions"`，因为链接器会认为这是一个参数。如果你用的是GNU的链接器，通常更简便的做法就是用`option=value`的方式，比如`-Xlinker -Map -Xlinker output.map`可以简写成`-Xlinker -Map=output.map`。而对于`Wl`来说，前面的例子可以则写成`-Wl,-Map,output.map`。
+
+    最后介绍一下由`-Xlinker`和`-Wl`所传递的选项的功能：`-gc-sections`选项用于指定编译器不把未在可执行程序中进行调用的函数链接到可执行程序中，这样做可在一定程度上节约FLASH和内存空间；`-Map=$(PROJECT).map`选项用于将链接的映射关系打印到标准输出上；`--cref`选项是**Cross Reference**的简写，用于输出交叉引用表；`--no-warn-mismatch`选项告诉链接器当出现**不匹配**的问题时，需要对其进行忽略。
+
+
+
   **调试器类型**
   ```mk
   TYPE_BURN  := openocd_swd_flash
