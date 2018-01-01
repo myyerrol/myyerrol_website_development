@@ -513,8 +513,6 @@ clean:
 
     最后介绍一下由`-Xlinker`和`-Wl`所传递的选项的功能：`-gc-sections`选项用于指定编译器不把未在可执行程序中进行调用的函数链接到可执行程序中，这样做可在一定程度上节约FLASH和内存空间；`-Map=$(PROJECT).map`选项用于将链接的映射关系打印到标准输出上；`--cref`选项是**Cross Reference**的简写，用于输出交叉引用表；`--no-warn-mismatch`选项告诉链接器当出现**不匹配**的问题时，需要对其进行忽略。
 
-
-
   **调试器类型**
   ```mk
   TYPE_BURN  := openocd_swd_flash
