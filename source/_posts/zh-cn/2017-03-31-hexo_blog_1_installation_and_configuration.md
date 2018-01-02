@@ -1,10 +1,10 @@
 ---
-title: Hexo教程系列（一）：Hexo的安装和配置
+title: Hexo博客教程系列（一）：Hexo的安装和配置
 date: 2017-03-31 18:45:38
 tags:
   - Hexo
   - Blog
-categories: Hexo教程系列
+categories: Hexo博客教程系列
 description: 本篇文章介绍Hexo的安装和基本配置。
 feature: /images/hexo/hexo.png
 toc: true

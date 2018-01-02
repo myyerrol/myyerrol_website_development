@@ -1,10 +1,10 @@
 ---
-title: Hexo教程系列（二）：Freemind主题的配置
+title: Hexo博客教程系列（二）：Freemind主题的配置
 date: 2017-06-07 10:44:37
 tags:
   - Hexo
   - Blog
-categories: Hexo教程系列
+categories: Hexo博客教程系列
 description: 本篇文章介绍Freemind主题的配置。
 feature: /images/hexo/hexo.png
 toc: true
