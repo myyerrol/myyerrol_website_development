@@ -20,7 +20,7 @@ comments: true
 <!--more-->
 
 {% alert success %}
-本代码规范参考自《STM32嵌入式系统开发实战指南》的有关章节，并根据团队实际的需求，在其原有基础上进行了一定程度的改写。
+本代码规范参考自《STM32嵌入式系统开发实战指南》中的【第四章 编程规范】。
 {% endalert %}
 
 ## 代码规范
@@ -31,7 +31,70 @@ comments: true
 
 - #### 缩写
 
+  ```txt
+  ---------------------
+  缩写         外设单元
+  ---------------------
+  ADC         模数转换器
+  BKP         备份寄存器
+  CAN         控制器局域网模块
+  DMA         直接内存存取控制器
+  EXTI        外部中断事件控制器
+  FLASH       闪存存储器
+  GPIO        通用输入输出
+  I2C         内部集成电路
+  IWDG        独立看门狗
+  NVIC        嵌套中断向量列表控制器
+  PWR         电源/功耗控制
+  RCC         复位与时钟控制器
+  RTC         实时时钟
+  SPI         串行外设接口
+  SysTick     系统嘀嗒定时器
+  TIM         通用定时器
+  TIM1        高级控制定时器
+  USART       通用同步异步接收发射端
+  WWDG        窗口看门狗
+  ```
+
 - #### 命名规则
+
+  - 系统、源程序文件和头文件命名都以**stm32f10x**作为开头。例如：``stm32f10x_conf.h``。
+
+  - 常量仅被应用于一个文件的，定义于该文件中。被应用于多个文件的，在对应头文件中定义。所有常量都由英文字母大写书写。
+
+  - 寄存器作为常量处理。他们的命名都由英文字母大写书写。在大多数情况下，他们采用的缩写规范与本用户手册一致。
+
+  - 外设函数的命名以该外设的缩写加下划线为开头。每个单词的第一个字母都由英文字母大写书写，例如：SPI_SendData。在函数名中，只允许存在一个下划线，用以分隔外设缩写和函数名的其它部分。而用以配置外设功能的函数，其名称应总是以字符串**Config**结尾。例如：GPIO_PinRemapConfig。
+
+    - **PPP_Init**：
+    PPP_Init函数的功能是根据PPP_InitTypeDef中指定的参数初始化外设PPP。
+
+    - **PPP_DeInit**:
+    PPP_DeInit函数的功能为复位外设PPP的所有寄存器至缺省值。
+
+    - **PPP_StructInit**:
+    PPP_StructInit函数的功能是通过设置PPP_InitTypeDef结构中的各种参数来定义外设的功能。
+
+    - **PPP_Cmd**：
+    PPP_Cmd函数的功能为使能或者失能外设PPP。
+
+    - **PPP_ITConfig**：
+    PPP_ITConfig函数的功能为使能或者失能来自外设PPP某中断源。
+
+    - **PPP_DMAConfig**：
+    PPP_DMAConfig函数的功能为使能或者失能外设PPP的DMA接口。
+
+    - **PPP_GetFlagStatus**：
+    PPP_GetFlagStatus函数的功能为检查外设PPP某标志位被设置与否。
+
+    - **PPP_ClearFlag**：
+    PPP_ClearFlag函数的功能为清除外设PPP标志位。
+
+    - **PPP_GetITStatus**：
+    PPP_GetITStatus函数的功能为判断来自外设PPP的中断发生与否。
+
+    - **PPP_ClearITPendingBit**：
+    PPP_ClearITPendingBit函数的功能为清除外设PPP中断待处理标志位。
 
 - #### 编码规则
 
