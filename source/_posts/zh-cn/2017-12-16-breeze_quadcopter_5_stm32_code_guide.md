@@ -98,6 +98,37 @@ comments: true
 
 - #### 编码规则
 
+  **变量**
+  固件函数库定义了24个变量类型，它们的类型和大小是固定的。在文件`stm32f10x_type.h`中我们定义了这些变量：
+
+  ```c
+  typedef signed long s32;
+  typedef signed short s16;
+  typedef signed char s8;
+  typedef signed long const sc32; /* Read Only */
+  typedef signed short const sc16; /* Read Only */
+  typedef signed char const sc8; /* Read Only */
+  typedef volatile signed long vs32;
+  typedef volatile signed short vs16;
+  typedef volatile signed char vs8;
+  typedef volatile signed long const vsc32; /* Read Only */
+  typedef volatile signed short const vsc16; /* Read Only */
+  typedef volatile signed char const vsc8; /* Read Only */
+  typedef unsigned long u32;
+  typedef unsigned short u16;
+  typedef unsigned char u8;
+  typedef unsigned long const uc32; /* Read Only */
+  typedef unsigned short const uc16; /* Read Only */
+  typedef unsigned char const uc8; /* Read Only */
+  typedef volatile unsigned long vu32;
+  typedef volatile unsigned short vu16;
+  typedef volatile unsigned char vu8;
+  typedef volatile unsigned long const vuc32; /* Read Only */
+  typedef volatile unsigned short const vuc16; /* Read Only */
+  typedef volatile unsigned char const vuc8; /* Read Only */
+  ```
+
+
 ### 基于C语言的嵌入式编程规范
 
 ## 工程规范
