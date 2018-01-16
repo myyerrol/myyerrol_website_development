@@ -128,6 +128,129 @@ comments: true
   typedef volatile unsigned char const vuc8; /* Read Only */
   ```
 
+  **布尔类型**
+  在文件`stm32f10x_type.h`中，布尔形变量被定义如下：
+
+  ```c
+  typedef enum
+  {
+      FALSE = 0,
+      TRUE  = !FALSE
+  } bool;
+  ```
+
+  **标志位状态类型**
+  在文件`stm32f10x_type.h`中，我们定义标志位类型的2个可能值为**设置**与**重置**。
+
+  ```c
+  typedef enum
+  {
+      RESET = 0,
+      SET   = !RESET
+  } FlagStatus;
+  ```
+
+  **功能状态类型**
+  在文件`stm32f10x_type.h`中，我们定义功能状态类型的2个可能值为**使能**与**失能**。
+
+  ```c
+  typedef enum
+  {
+      DISABLE = 0,
+      ENABLE  = !DISABLE
+  } FunctionalState;
+```
+
+  **错误类型**
+  在文件`stm32f10x_type.h`中，我们错误状态类型类型的2个可能值为**成功**与**错误**。
+
+  ```c
+  typedef enum
+  {
+      ERROR   = 0,
+      SUCCESS = !ERROR
+  } ErrorStatus;
+  ```
+
+  **外设**
+  用户可以通过指向各个外设的指针访问各外设的控制寄存器。这些指针所指向的数据结构与各个外设的控制寄存器布局一一对应。外设控制寄存器结构文件`stm32f10x_map.h`包含了所有外设控制寄存器的结构，下例为SPI寄存器结构的声明，其中RESERVEDi（i为一个整数索引值）表示被保留区域：
+
+  ```c
+  typedef struct
+  {
+      vu16 CR1;
+      u16 RESERVED0;
+      vu16 CR2;
+      u16 RESERVED1;
+      vu16 SR;
+      u16 RESERVED2;
+      vu16 DR;
+      u16 RESERVED3;
+      vu16 CRCPR;
+      u16 RESERVED4;
+      vu16 RXCRCR;
+      u16 RESERVED5;
+      vu16 TXCRCR;
+      u16 RESERVED6;
+  } SPI_TypeDef;
+  ```
+
+  文件`stm32f10x_map.h`包含了所有外设的声明，下例为SPI外设的声明：
+
+  ```c
+  #ifndef EXT
+  #define EXT extern
+  #endif
+  ...
+  #define PERIPH_BASE ((u32)0x40000000)
+  #define APB1PERIPH_BASE PERIPH_BASE
+  #define APB2PERIPH_BASE (PERIPH_BASE + 0x10000) ...
+  /* SPI2 Base Address definition*/
+  #define SPI2_BASE (APB1PERIPH_BASE + 0x3800) ...
+  /* SPI2 peripheral declaration*/
+  #ifndef DEBUG
+  ...
+  #ifdef _SPI2
+  #define SPI2 ((SPI_TypeDef *) SPI2_BASE)
+  #endif /*_SPI2 */
+  ...
+  #else /* DEBUG */
+  ...
+  #ifdef _SPI2
+  EXT SPI_TypeDef *SPI2;
+  #endif /*_SPI2 */
+  ...
+  #endif /* DEBUG */
+  ```
+
+  如果用户希望使用外设SPI，那么必须在文件`stm32f10x_conf.h`中定义_SPI标签。通过定义标签_SPIn，用户可以访问外设SPIn的寄存器。例如，用户必须在文件`stm32f10x_conf.h`中定义标签_SPI2，否则是不能访问SPI2的寄存器的。在文件`stm32f10x_conf.h`中，用户可以按照下例定义标签_SPI和_SPIn。
+
+  ```c
+  #define _SPI
+  #define _SPI1
+  #define _SPI2
+  ```
+
+  每个外设都有若干寄存器专门分配给标志位。我们按照相应的结构定义这些寄存器。标志位的命名，同样遵循上节的外设缩写规范，以**PPP\_FLAG\_**开始。对于不同的外设，标志位都被定义在相应的文件`stm32f10x_ppp.h`中。
+  用户想要进入除错（DEBUG）模式的话，必须在文件`stm32f10x_conf.h`中定义标签DEBUG。这样会在SRAM的外设结构部分创建一个指针。因此我们可以简化除错过程，并且通过转储外设获得来获得所有寄存器的状态。在所有情况下，SPI2都是一个指向外设SPI2首地址的指针。变量 DEBUG可以仿照下例定义：
+
+  ```c
+  #define DEBUG 1
+  ```
+
+  可以初始化DEBUG模式与文件`stm32f10x_lib.c`中如下：
+
+  ```c
+  #ifdef DEBUG void debug(void)
+  {
+  ...
+  #ifdef _SPI2
+      SPI2 = (SPI_TypeDef *)SPI2_BASE;
+  #endif /* _SPI2 */
+  ...
+  }
+  #endif /* DEBUG */
+  ```
 
 ### 基于C语言的嵌入式编程规范
 
