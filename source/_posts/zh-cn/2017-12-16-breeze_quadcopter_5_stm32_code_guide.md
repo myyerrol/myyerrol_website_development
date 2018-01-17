@@ -205,20 +205,21 @@ comments: true
   #define PERIPH_BASE ((u32)0x40000000)
   #define APB1PERIPH_BASE PERIPH_BASE
   #define APB2PERIPH_BASE (PERIPH_BASE + 0x10000) ...
-  /* SPI2 Base Address definition*/
+
+  /* SPI2 Base Address definition */
   #define SPI2_BASE (APB1PERIPH_BASE + 0x3800) ...
-  /* SPI2 peripheral declaration*/
+  /* SPI2 peripheral declaration */
   #ifndef DEBUG
   ...
   #ifdef _SPI2
   #define SPI2 ((SPI_TypeDef *) SPI2_BASE)
-  #endif /*_SPI2 */
+  #endif /* _SPI2 */
   ...
   #else /* DEBUG */
   ...
   #ifdef _SPI2
   EXT SPI_TypeDef *SPI2;
-  #endif /*_SPI2 */
+  #endif /* _SPI2 */
   ...
   #endif /* DEBUG */
   ```
@@ -231,30 +232,63 @@ comments: true
   #define _SPI2
   ```
 
-  每个外设都有若干寄存器专门分配给标志位。我们按照相应的结构定义这些寄存器。标志位的命名，同样遵循上节的外设缩写规范，以**PPP\_FLAG\_**开始。对于不同的外设，标志位都被定义在相应的文件`stm32f10x_ppp.h`中。
-  用户想要进入除错（DEBUG）模式的话，必须在文件`stm32f10x_conf.h`中定义标签DEBUG。这样会在SRAM的外设结构部分创建一个指针。因此我们可以简化除错过程，并且通过转储外设获得来获得所有寄存器的状态。在所有情况下，SPI2都是一个指向外设SPI2首地址的指针。变量 DEBUG可以仿照下例定义：
+  每个外设都有若干寄存器专门分配给标志位。我们按照相应的结构定义这些寄存器，标志位的命名，同样遵循上面的外设缩写规范，以**PPP\_FLAG\_**开始。对于不同的外设，标志位都被定义在相应的文件`stm32f10x_ppp.h`中。
+
+  用户想要进入除错（DEBUG）模式的话，必须在文件`stm32f10x_conf.h`中定义标签DEBUG，变量DEBUG可以仿照下例进行定义：
 
   ```c
   #define DEBUG 1
   ```
 
-  可以初始化DEBUG模式与文件`stm32f10x_lib.c`中如下：
+  初始化DEBUG模式与文件`stm32f10x_lib.c`的代码如下所示：
 
   ```c
   #ifdef DEBUG void debug(void)
   {
   ...
   #ifdef _SPI2
-      SPI2 = (SPI_TypeDef *)SPI2_BASE;
+      SPI2 = (SPI_TypeDef *) SPI2_BASE;
   #endif /* _SPI2 */
   ...
   }
   #endif /* DEBUG */
   ```
 
-### 基于C语言的嵌入式编程规范
+### C语言嵌入式编程规范
+
+- #### 代码排版
+
+- #### 代码注释
+
+- #### 标识符命名
+
+- #### 代码可读性
+
+- #### 代码变量与结构
+
+- #### 代码函数与过程
+
+- #### 代码可测性
+
+- #### 代码执行效率
+
+- #### 代码质量
+
+- #### 代码编辑与编译
+
+- #### 代码测试与维护
+
+- #### 代码宏定义
 
 ## 工程规范
+
+### 建立工程目录
+
+### 添加库文件
+
+### 建立工程
+
+### 配置工程
 
 ## 总结
 
