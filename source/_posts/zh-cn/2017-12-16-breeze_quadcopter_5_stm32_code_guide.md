@@ -268,8 +268,8 @@ comments: true
   {
       ... // Program code.
   }
-  example_a = data_buffer[index].a;
-  example_b = data_buffer[index].b;
+  variable_a = data_buffer[index].a;
+  variable_b = data_buffer[index].b;
   ```
 
   应如下书写
@@ -280,8 +280,8 @@ comments: true
       ... // Program code.
   }
 
-  example_a = data_buffer[index].a;
-  example_b = data_buffer[index].b;
+  variable_a = data_buffer[index].a;
+  variable_b = data_buffer[index].b;
   ```
 
   **3、较长的语句（大于80字符）要分成多行书写，长表达式要在低优先级操作符处划分新行，操作符放在旧行之尾，划分出的新行要进行适当的缩进，使排版整齐，语句可读。**
@@ -289,9 +289,6 @@ comments: true
   示例：
 
   ```c
-
-
-
   perm_count_msg.head.len = NO7_TO_STAT_PERM_COUNT_LEN +
       STAT_SIZE_PER_FRAM * sizeof(_UL);
 
@@ -311,23 +308,23 @@ comments: true
   示例：
 
   ```c
-  if ((taskno < max_act_task_number) &&
-      (n7stat_stat_item_valid (stat_item)))
+  if ((variable_a <= DATA_BUFFER_MAX_NUMBER) &&
+      (variable_b != getFunctionValue(parameter_a)))
   {
-      ...
+      ... // Program code.
   }
 
-  for (i = 0, j = 0; (i < buffer[index].length) &&
-      (j < NewKeyword.word_length); i++, j++)
+  for (i = 0, j = 0; (i < data_buffer[index].length) &&
+      (j < data_buffer[index].length); i++, j++)
   {
-      ...
+      ... // Program code.
   }
 
   for (i = 0, j = 0;
       (i < first_word_length) && (j < second_word_length);
       i++, j++)
   {
-      ...
+      ... // Program code.
   }
   ```
 
@@ -336,12 +333,9 @@ comments: true
   示例：
 
   ```c
-  n7stat_str_compare((BYTE *) & stat_object,
-                     (BYTE *) & (act_task_table[taskno].stat_object),
-                     sizeof(_STAT_OBJECT));
-
-  n7stat_flash_act_duration(stat_item, frame_id, STAT_TASK_CHECK_NUMBER + index,
-                            stat_object);
+  void testFunction((BYTE *)parameter_a + sizeof(parameter_c),
+                    (BYTE *)parameter_b + sizeof(parameter_c),
+                    data_buffer[index]);
   ```
 
   **6、不允许把多个短语句写在一行中，即一行只写一条语句。**
@@ -387,17 +381,17 @@ comments: true
 
   ```c
   for (...) {
-      ...
+      ... // Program code.
   }
 
   if (...)
      {
-     ...
+     ... // Program code.
      }
 
-  void test(void)
+  void testFunction(void)
      {
-     ...
+     ... // Program code.
      }
   ```
 
@@ -406,17 +400,17 @@ comments: true
   ```c
   for (...)
   {
-      ...
+      ... // Program code.
   }
 
   if (...)
   {
-      ...
+      ... // Program code.
   }
 
-  void test(void)
+  void testFunction(void)
   {
-      ...
+      ... // Program code.
   }
   ```
 
