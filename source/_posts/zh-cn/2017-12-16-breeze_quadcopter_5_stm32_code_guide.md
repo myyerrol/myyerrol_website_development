@@ -105,27 +105,27 @@ comments: true
   typedef signed long s32;
   typedef signed short s16;
   typedef signed char s8;
-  typedef signed long const sc32; /* Read Only */
-  typedef signed short const sc16; /* Read Only */
-  typedef signed char const sc8; /* Read Only */
+  typedef signed long const sc32;
+  typedef signed short const sc16;
+  typedef signed char const sc8;
   typedef volatile signed long vs32;
   typedef volatile signed short vs16;
   typedef volatile signed char vs8;
-  typedef volatile signed long const vsc32; /* Read Only */
-  typedef volatile signed short const vsc16; /* Read Only */
-  typedef volatile signed char const vsc8; /* Read Only */
+  typedef volatile signed long const vsc32;
+  typedef volatile signed short const vsc16;
+  typedef volatile signed char const vsc8;
   typedef unsigned long u32;
   typedef unsigned short u16;
   typedef unsigned char u8;
-  typedef unsigned long const uc32; /* Read Only */
-  typedef unsigned short const uc16; /* Read Only */
-  typedef unsigned char const uc8; /* Read Only */
+  typedef unsigned long const uc32;
+  typedef unsigned short const uc16;
+  typedef unsigned char const uc8;
   typedef volatile unsigned long vu32;
   typedef volatile unsigned short vu16;
   typedef volatile unsigned char vu8;
-  typedef volatile unsigned long const vuc32; /* Read Only */
-  typedef volatile unsigned short const vuc16; /* Read Only */
-  typedef volatile unsigned char const vuc8; /* Read Only */
+  typedef volatile unsigned long const vuc32;
+  typedef volatile unsigned short const vuc16;
+  typedef volatile unsigned char const vuc8;
   ```
 
   **布尔类型**
@@ -206,22 +206,22 @@ comments: true
   #define APB1PERIPH_BASE PERIPH_BASE
   #define APB2PERIPH_BASE (PERIPH_BASE + 0x10000) ...
 
-  /* SPI2 Base Address definition */
+  // SPI2 Base Address definition.
   #define SPI2_BASE (APB1PERIPH_BASE + 0x3800) ...
-  /* SPI2 peripheral declaration */
+  // SPI2 peripheral declaration.
   #ifndef DEBUG
   ...
   #ifdef _SPI2
   #define SPI2 ((SPI_TypeDef *) SPI2_BASE)
-  #endif /* _SPI2 */
+  #endif // _SPI2
   ...
-  #else /* DEBUG */
+  #else // DEBUG
   ...
   #ifdef _SPI2
   EXT SPI_TypeDef *SPI2;
-  #endif /* _SPI2 */
+  #endif // _SPI2
   ...
-  #endif /* DEBUG */
+  #endif // DEBUG
   ```
 
   如果用户希望使用外设SPI，那么必须在文件`stm32f10x_conf.h`中定义_SPI标签。通过定义标签_SPIn，用户可以访问外设SPIn的寄存器。例如，用户必须在文件`stm32f10x_conf.h`中定义标签_SPI2，否则是不能访问SPI2的寄存器的。在文件`stm32f10x_conf.h`中，用户可以按照下例定义标签_SPI和_SPIn。
@@ -248,15 +248,224 @@ comments: true
   ...
   #ifdef _SPI2
       SPI2 = (SPI_TypeDef *) SPI2_BASE;
-  #endif /* _SPI2 */
+  #endif // _SPI2
   ...
   }
-  #endif /* DEBUG */
+  #endif // DEBUG
   ```
 
 ### C语言嵌入式编程规范
 
 - #### 代码排版
+
+  **1、程序块要采用缩进风格编写，缩进的空格数为4个。**
+
+  **2、相对独立的程序块之间、变量说明之后必须加空行。**
+  示例：以下的例子不符合规范。
+
+  ```c
+  if (!flag)
+  {
+      ... // Program code.
+  }
+  example_a = data_buffer[index].a;
+  example_b = data_buffer[index].b;
+  ```
+
+  应如下书写
+
+  ```c
+  if (!flag)
+  {
+      ... // Program code.
+  }
+
+  example_a = data_buffer[index].a;
+  example_b = data_buffer[index].b;
+  ```
+
+  **3、较长的语句（大于80字符）要分成多行书写，长表达式要在低优先级操作符处划分新行，操作符放在旧行之尾，划分出的新行要进行适当的缩进，使排版整齐，语句可读。**
+
+  示例：
+
+  ```c
+
+
+
+  perm_count_msg.head.len = NO7_TO_STAT_PERM_COUNT_LEN +
+      STAT_SIZE_PER_FRAM * sizeof(_UL);
+
+  act_task_table[frame_id * STAT_TASK_CHECK_NUMBER + index].occupied =
+      stat_poi[index].occupied;
+
+  act_task_table[taskno].duration_true_or_false =
+      SYS_get_sccp_statistic_state(stat_item);
+
+  report_or_not_flag = ((taskno < MAX_ACT_TASK_NUMBER) &&
+      (n7stat_stat_item_valid(stat_item)) &&
+      (act_task_table[taskno].result_data != 0));
+  ```
+
+  **4、循环、判断等语句中若有较长的表达式或语句，则要进行适应的划分，长表达式要在低优先级操作符处划分新行，操作符放在旧行之尾。**
+
+  示例：
+
+  ```c
+  if ((taskno < max_act_task_number) &&
+      (n7stat_stat_item_valid (stat_item)))
+  {
+      ...
+  }
+
+  for (i = 0, j = 0; (i < buffer[index].length) &&
+      (j < NewKeyword.word_length); i++, j++)
+  {
+      ...
+  }
+
+  for (i = 0, j = 0;
+      (i < first_word_length) && (j < second_word_length);
+      i++, j++)
+  {
+      ...
+  }
+  ```
+
+  **5、若函数或过程中的参数较长，则要进行适当的划分。**
+
+  示例：
+
+  ```c
+  n7stat_str_compare((BYTE *) & stat_object,
+                     (BYTE *) & (act_task_table[taskno].stat_object),
+                     sizeof(_STAT_OBJECT));
+
+  n7stat_flash_act_duration(stat_item, frame_id, STAT_TASK_CHECK_NUMBER + index,
+                            stat_object);
+  ```
+
+  **6、不允许把多个短语句写在一行中，即一行只写一条语句。**
+
+  示例：以下的例子不符合规范。
+
+  ```c
+  rect.length = 0; rect.width = 0;
+  ```
+
+  应如下书写
+
+  ```c
+  rect.length = 0;
+  rect.width  = 0;
+  ```
+
+  **7、`if`、`for`、`do`、`while`、`case`、`switch`、`default`等语句自占一行，且 `if`、`for`、`do`、`while`等语句的执行语句部分无论多少都要加括号`{}`。**
+
+  示例：以下的例子不符合规范。
+
+  ```c
+  if (a == NULL) return;
+  ```
+
+  应如下书写：
+
+  ```c
+  if (a == NULL)
+  {
+      return;
+  }
+  ```
+
+  **8、对齐只能使用空格键，不能使用TAB键。**
+  说明：以免用不同的编辑器阅读程序时，因TAB键所设置的空格数目不同而造成程序布局不整齐。
+
+  **9、函数或过程的开始、结构的定义及循环、判断等语句中的代码都要采用缩进风格，`case`语句下的情况处理语句也要遵从语句缩进要求。**
+
+  **10、程序块的分界符（如C/C++语言的大括号`{`和`}`）应各独占一行并且位于同一列，同时与引用它们的语句左对齐。在函数体的开始、类的定义、结构的定义、枚举的定义以及`if`、`for`、`do`、`while`、`switch`、`case`语句中的程序都要采用如上的缩进方式。**
+
+  示例：如下例子不符合规范。
+
+  ```c
+  for (...) {
+      ...
+  }
+
+  if (...)
+     {
+     ...
+     }
+
+  void test(void)
+     {
+     ...
+     }
+  ```
+
+  应如下书写：
+
+  ```c
+  for (...)
+  {
+      ...
+  }
+
+  if (...)
+  {
+      ...
+  }
+
+  void test(void)
+  {
+      ...
+  }
+  ```
+
+  **11、在两个以上的关键字、变量、常量进行对等操作时，它们之间的操作符之前、之后或者前后要加空格。进行非对等操作时，如果是关系密切的立即操作符（如`->`），后不应加空格。**
+
+  说明：采用这种松散方式编写代码的目的是使代码更加清晰。由于留空格所产生的清晰性是相对的，所以在已经非常清晰的语句中没有必要再留空格，如果语句已足够清晰，则括号内侧（即左括号后面和右括号前面）不需要加空格，多重括号间不必加空格，因为在C/C++语言中括号已经是最清晰的标志了。
+
+  在长语句中，如果需要加的空格非常多，那么应该保持整体清晰，而在局部不加空格。给操作符留空格时不要连续留两个以上空格。
+
+  示例：
+
+  (1) 逗号、分号只在后面加空格。
+
+  ```c
+  int a, b, c;
+  ```
+
+  (2) 比较操作符，赋值操作符（`=`、`+=`），算术操作符（`+`、`%`），逻辑操作符（`&&`、`&`），位域操作符（`<<`、`^`）等双目操作符的前后加空格。
+
+  ```c
+  if (a >= b && b != 0)
+  {
+      c = a + b;
+      d = c ^ 2;
+  }
+  ```
+
+  (3) `!`、`~`、`++`、`--`、`&`（地址运算符）等单目操作符前后不加空格。
+
+  ```c
+  *p = 1;
+   a = !b;
+   p = &a;
+   i++;
+  ```
+
+  (4)`->`、`.`前后不加空格。
+
+  ```c
+  p->id = 1;
+  ```
+
+  (5) `if`、`for`、`while`、`switch`等与后面的括号间应加空格，使`if`等关键字更为突出和明显。
+
+  ```c
+  if (a >= b && c > d)
+  ```
+
+  **12、一行程序以小于80字符为宜，不要写得过长。**
 
 - #### 代码注释
 
