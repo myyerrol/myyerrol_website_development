@@ -289,6 +289,7 @@ comments: true
   示例：
 
   ```c
+  
   perm_count_msg.head.len = NO7_TO_STAT_PERM_COUNT_LEN +
       STAT_SIZE_PER_FRAM * sizeof(_UL);
 
