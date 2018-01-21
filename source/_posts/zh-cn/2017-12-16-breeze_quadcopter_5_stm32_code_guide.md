@@ -289,18 +289,15 @@ comments: true
   示例：
 
   ```c
-  perm_count_msg.head.len = NO7_TO_STAT_PERM_COUNT_LEN +
-      STAT_SIZE_PER_FRAM * sizeof(_UL);
+  data_package.length = DATA_PACKAGE_HEAD_LENGTH + DATA_PACKAGE_TAIL_LENGTH +
+      DATA_LENGTH_PER_BYTE * sizeof(data_byte_sum);
 
-  act_task_table[frame_id * STAT_TASK_CHECK_NUMBER + index].occupied =
-      stat_poi[index].occupied;
+  action_task_table[frame_id * ACTION_TASK_CHECK_NUMBER + index].occupied =
+      task_table[index].occupied;
 
-  act_task_table[taskno].duration_true_or_false =
-      SYS_get_sccp_statistic_state(stat_item);
-
-  report_or_not_flag = ((taskno < MAX_ACT_TASK_NUMBER) &&
-      (n7stat_stat_item_valid(stat_item)) &&
-      (act_task_table[taskno].result_data != 0));
+  report_or_not_flag = ((task_index < ACTION_TASK_MAX_NUMBER) &&
+      (judgeTaskIndexIsValid(task_index)) &&
+      (action_task_table[task_index].result_data != 0));
   ```
 
   **4、循环、判断等语句中若有较长的表达式或语句，则要进行适应的划分，长表达式要在低优先级操作符处划分新行，操作符放在旧行之尾。**
