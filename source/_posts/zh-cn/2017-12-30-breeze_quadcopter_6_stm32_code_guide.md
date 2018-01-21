@@ -793,6 +793,103 @@ comments: true
 
 - #### 标识符命名
 
+  **1、标识符的命名要清晰、明了，有明确含义，同时使用完整的单词或大家基本可以理解的缩写，避免使人产生误解。**
+  说明：较短的单词可通过去掉**元音**形成缩写，而较长的单词可取单词的头几个字母形成缩写。
+
+  示例：以下单词的缩写能够被大家基本认可。
+
+  ```txt
+  ---------------------------------------------------------------------
+  单词         缩写       单词             缩写  单词           缩写
+  ---------------------------------------------------------------------
+  addition     add        float           flt   previous      pre或prev
+  answer       ans        frequency       freq  payload type  pt
+  array        arr        header          hdr   pointer       ptr
+  average      avg        index           idx   return code   rc
+  buffer       buf或buff  image           img   record        rcd
+  capture      cap或capt  increment       inc   receive       recv
+  check        chk        initalize       init  result        res
+  count        cnt        iteration       itr   return        ret
+  column       col        length          len   source        src
+  control      ctrl       memory          mem   stack         stk
+  decode       dec        middle          mid   statistic     stat
+  define       def        make            mk    string        str
+  delete       del        message         msg   subtraction   sub
+  destination  dst或dest  multiplication  mul   table         tab
+  display      disp       number          num   temporary     tmp或temp
+  division     div        operand         opnd  total         tot
+  encode       enc        optimization    opt   time stamp    ts
+  environment  env        operator        optr  value         val
+  error        err        packet          pkt
+  flag         flg        positon         pos
+  ```
+
+  **2、命名中若使用特殊约定或缩写，则要有注释说明。**
+  说明：应该在源文件的开始之处，对文件中所使用的缩写或约定，特别是特殊的缩写，进行必要的注释说明。
+
+  **3、自己特有的命名风格，要自始至终保持一致，不可来回变化。**
+  说明：个人的命名风格，在符合所在项目组或产品组的命名规则的前提下，才可使用（即命名规则中没有规定到的地方才可有个人命名风格）。
+
+  **4、对于变量命名，禁止取单个字符（如i、j、k...），建议除了要有具体含义外，还能表明其变量类型、数据类型等，但i、j、k作局部循环变量是允许的。**
+  说明：变量，尤其是局部变量，如果用单个字符表示，很容易敲错（如i写成j），而编译时又检查不出来，有可能为了这个小小的错误而花费大量的查错时间。
+
+  根据变量的类型，需要在变量原有名字之前添加相应的前缀，以下是变量前缀的类型表：
+
+  ```txt
+  ---------------------
+  变量前缀  解释
+  ---------------------
+  g        全局变量（Global）
+  c        常量（Const）
+  s        静态变量（Static）
+  ```
+
+  **5、命名规范必须与所使用的系统风格保持一致，并在同一项目中统一。**
+
+  **6、除非必要，不要用数字或较奇怪的字符来定义标识符。**
+
+  **7、在同一软件开发项目内，应在编写代码前规划好接口部分标识符（变量、结构、函数及常量）的命名方式，以防止编译、链接时产生冲突。**
+  说明：对接口部分的标识符应该有更严格限制，防止冲突。如可规定接口部分的变量与常量之前加上**模块**标识等。
+
+  **8、用正确的反义词组命名具有互斥意义的变量或相反动作的函数等。**
+
+  示例：下面是一些在软件中常用的反义词组。
+
+  ```txt
+  ----------------------
+  正义词      反义词
+  ----------------------
+  begin      end
+  create     destroy
+  insert     delete
+  first      last
+  get        release
+  increment  decrement
+  put        get
+  add        delete
+  lock       unlock
+  open       close
+  min        max
+  old        new
+  start      stop
+  next       previous
+  source     target
+  show       hide
+  send       receive
+  source     destination
+  cut        paste
+  up         down
+  ```
+
+  示例：
+
+  ```c
+  int min_sum;
+  int max_sum;
+  ```
+
+  **9、除了编译开关/头文件等特殊应用，应避免使用以下划线开始和结尾的宏定义。**
+
 - #### 代码可读性
 
 - #### 代码变量与结构
