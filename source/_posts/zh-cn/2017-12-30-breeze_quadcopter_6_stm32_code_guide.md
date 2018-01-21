@@ -64,7 +64,7 @@ comments: true
 
   - 寄存器作为常量处理。他们的命名都由英文字母大写书写。在大多数情况下，他们采用的缩写规范与本用户手册一致。
 
-  - 外设函数的命名以该外设的缩写加下划线为开头。每个单词的第一个字母都由英文字母大写书写，例如：SPI_SendData。在函数名中，只允许存在一个下划线，用以分隔外设缩写和函数名的其它部分。而用以配置外设功能的函数，其名称应总是以字符串**Config**结尾。例如：GPIO_PinRemapConfig。
+  - 外设函数的命名以该外设的缩写加下划线为开头。每个单词的第一个字母都由英文字母大写书写，例如：SPI_SendData。在函数名中，只允许存在一个下划线，用以分隔外设缩写和函数名的其他部分。而用以配置外设功能的函数，其名称应总是以字符串**Config**结尾。例如：GPIO_PinRemapConfig。
 
     - **PPP_Init**：
     PPP_Init函数的功能是根据PPP_InitTypeDef中指定的参数初始化外设PPP。
@@ -261,7 +261,8 @@ comments: true
   **1、程序块要采用缩进风格编写，缩进的空格数为4个。**
 
   **2、相对独立的程序块之间、变量说明之后必须加空行。**
-  示例：以下的例子不符合规范。
+
+  示例：以下例子不符合规范。
 
   ```c
   if (!flag)
@@ -337,7 +338,7 @@ comments: true
 
   **6、不允许把多个短语句写在一行中，即一行只写一条语句。**
 
-  示例：以下的例子不符合规范。
+  示例：以下例子不符合规范。
 
   ```c
   rect.length = 0; rect.width = 0;
@@ -352,7 +353,7 @@ comments: true
 
   **7、`if`、`for`、`do`、`while`、`case`、`switch`、`default`等语句自占一行，且 `if`、`for`、`do`、`while`等语句的执行语句部分无论多少都要加括号`{}`。**
 
-  示例：以下的例子不符合规范。
+  示例：以下例子不符合规范。
 
   ```c
   if (a == NULL) return;
@@ -374,7 +375,7 @@ comments: true
 
   **10、程序块的分界符（如C/C++语言的大括号`{`和`}`）应各独占一行并且位于同一列，同时与引用它们的语句左对齐。在函数体的开始、类的定义、结构的定义、枚举的定义以及`if`、`for`、`do`、`while`、`switch`、`case`语句中的程序都要采用如上的缩进方式。**
 
-  示例：如下例子不符合规范。
+  示例：以下例子不符合规范。
 
   ```c
   for (...) {
@@ -459,6 +460,336 @@ comments: true
   **12、一行程序以小于80字符为宜，不要写得过长。**
 
 - #### 代码注释
+
+  **1、一般情况下，源程序应尽量简洁明了。**
+  说明：注释的原则是有助于对程序的阅读理解，注释应准确、易懂、简洁，此外为与各种编译环境的兼容，注释语言**必须**采用英文注释（为了便于大家理解，本规范中的一部分示例源码采用中文注释）。
+
+  **2、说明性文件（如`.h`文件、`.icf`文件、`.txt`文件等）头部应进行注释，注释必须列出：版权说明、版本号、生成日期、作者、内容、功能、与其他文件的关系、修改日志等。头文件的注释中还应有函数功能简要说明。**
+
+  示例：下面这段头文件的头注释比较标准。当然，并不局限于此格式，但上述信息建议要包含在内。
+
+  ```c
+  /****************************************************************************
+  Copyright (C), 2017-2018, Team MicroDynamics <microdynamics@126.com>
+
+  // 文件名。
+  File name:
+
+  // 作者、版本及完成日期。
+  Author:    Version:    Date:
+
+  // 用于详细说明此程序文件完成的主要功能，与其他模块或函数的接口，输出值、取值范围、
+  // 含义及参数间的控制、顺序、独立或依赖等关系。
+  Description:
+
+  // 其他内容的说明。
+  Others:
+
+  // 主要函数列表，每条记录应包括函数名及功能简要说明。
+  Function List:
+  1. ....
+
+  // 修改历史记录列表，每条修改记录应包括修改日期、修改者及修改内容简述。
+  History:
+  1. Date:
+     Author:
+     Modification:
+  2. ...
+  ****************************************************************************/
+  ```
+
+  **3、源文件头部应进行注释，列出：版权说明、版本号、生成日期、作者、模块目的/功能、主要函数及其功能、修改日志等。**
+
+  示例：下面这段源文件的头注释比较标准，当然，并不局限于此格式，但上述信息建议要包含在内。
+
+  ```c
+  /****************************************************************************
+  Copyright (C), 2017-2018, Team MicroDynamics <microdynamics@126.com>
+
+  // 文件名。
+  FileName:
+
+  // 作者、版本及完成日期。
+  Author:    Version:    Date:
+
+  // 模块描述
+  Description:
+
+  // 版本信息
+  Version:
+
+  // 主要函数及其功能
+  Function List:
+  1. ...
+
+  // 历史修改记录
+  History:
+  <author>    <time>    <version>    <desc>
+  ...
+  ****************************************************************************/
+  ```
+
+  说明：**Description**一项用于描述本文件的内容、功能、内部各部分之间的关系及本文件与其他文件关系等。**History**是修改历史记录列表，每条修改记录应包括修改日期、修改者及修改内容简述。
+
+  以Team MicroDynamics目前使用的源码头注释为例：
+
+  ```c
+  /*****************************************************************************
+  THIS PROGRAM IS FREE SOFTWARE. YOU CAN REDISTRIBUTE IT AND/OR MODIFY IT
+  UNDER THE TERMS OF THE GNU GPLV3 AS PUBLISHED BY THE FREE SOFTWARE FOUNDATION.
+
+  Copyright (C), 2017-2018, Team MicroDynamics <microdynamics@126.com>
+
+  Filename:    stm32f10x_driver_sys.c
+  Author:      maksyuki
+  Version:     0.1.0.20161231_release
+  Create date: 2016.8.3
+  Description: Define the bitband operation
+  Others:      none
+  Function List:
+               none
+  History:
+  1. <author>    <date>         <desc>
+     maksyuki    2016.11.29     modify the module
+  *****************************************************************************/
+  ```
+
+  **4、函数头部应进行注释，列出：函数的目的/功能、输入参数、输出参数、返回值、调用关系（函数、表）等。**
+
+  示例：下面这段函数的注释比较标准，当然，并不局限于此格式，但上述信息建议要包含在内。
+
+  ```c
+  /****************************************************************************
+  Function:       // 函数名称。
+  Description:    // 函数功能、性能等的描述。
+  Calls:          // 被本函数调用的函数清单。
+  Called By:      // 调用本函数的函数清单。
+  Table Accessed: // 被访问的表（此项仅对于牵扯到数据库操作的程序）。
+  Table Updated:  // 被修改的表（此项仅对于牵扯到数据库操作的程序）。
+  Input:          // 输入参数说明，包括每个参数的作。
+                  // 用、取值说明及参数间关系。
+  Output:         // 对输出参数的说明。
+  Return:         // 函数返回值的说明。
+  Others:         // 其他说明。
+  ****************************************************************************/
+  ```
+
+  **5、注释应与编写代码同步，修改代码同时修改相应的注释，以保证注释与代码的一致性。**
+
+  **6、注释的内容要清楚、明了，含义准确，避免产生歧义。**
+
+  **7、避免在注释中使用缩写，特别是非常用缩写，命名的标识符除外。**
+  说明：在使用缩写时或之前，应对缩写进行必要的说明。
+
+  **8、注释应与其描述的代码相近，对代码的注释应放在其上方或右方（对单条语句的注释）相邻位置，不可放在下面，如放于上方则需与其上面的代码用空行隔开。**
+
+  示例：以下例子不符合规范。
+
+  ```c
+  // Get replicate sub system index and net indicator.
+  repssn_ind = ssn_data[index].repssn_index;
+  repssn_ni  = ssn_data[index].ni;
+  ```
+
+  ```c
+  repssn_ind = ssn_data[index].repssn_index;
+  repssn_ni  = ssn_data[index].ni;
+  // Get replicate sub system index and net indicator.
+  ```
+
+  应如下书写：
+
+  ```c
+  // Get replicate sub system index and net indicator.
+  repssn_ind = ssn_data[index].repssn_index;
+  repssn_ni  = ssn_data[index].ni;
+  ```
+
+  **9、对于所有具有物理含义的变量、常量，如果其命名不是充分自注释的，在声明时都必须加以注释，说明其物理含义。变量、常量、宏的注释应放在其上方相邻位置或右方。**
+
+  示例：
+
+  ```c
+  // Active statistic task number.
+  #define MAX_ACT_TASK_NUMBER 1000
+  ```
+
+  **10、数据结构声明（包括数组、结构、枚举等），如果其命名不是充分自注释的，必须加以注释。对数据结构的注释应放在其上方相邻位置，不可放在下面。对结构中的每个域的注释放在此域的右方。**
+
+  示例：可按如下形式说明枚举/数据/联合结构。
+
+  ```c
+  // USART Ring Data buffer struct.
+  typedef struct USART_RingBuffer
+  {
+      u8  *buffer;   // Data buffer pointer.
+      u16  mask;     // Data mask.
+      vu16 index_rd; // Data read index.
+      vu16 index_wt; // Data write index.
+  } USART_RingBuffer;
+  ```
+
+  **11、全局变量要有较详细的注释，包括对其功能、取值范围、哪些函数或过程存取它以及存取时注意事项等的说明。**
+
+  示例：
+
+  ```c
+  /****************************************************************************
+  // 全局变量功能。
+  Variable function:
+
+  // 全局变量可能的取值即说明。
+  Avalable value:
+
+  // 函数调用关系。
+  Call relationship:
+  ...
+  ****************************************************************************/
+  ```
+
+  **12、注释与所描述内容进行同样的缩排。**
+
+  示例：以下例子不符合规范，排版不整齐，阅读稍感不方便。
+
+  ```c
+  void testFunction(void)
+  {
+  // Code one comments.
+      program code one;
+
+          // Code two comments.
+       program code two;
+  }
+  ```
+
+  应改为如下布局：
+
+  ```c
+  void testFunction(void)
+  {
+      // Code one comments.
+      program code one;
+
+      // Code two comments.
+      program code two;
+  }
+  ```
+
+  **13、将注释与其上面的代码用空行隔开。**
+
+  示例：以下例子不符合规范，代码显得过于紧凑。
+
+  ```c
+  // Code one comments.
+  program code one;
+  // Code two comments.
+  program code two;
+  ```
+
+  应如下书写：
+
+  ```c
+  // Code one comments.
+  program code one;
+
+  // Code two comments.
+  program code two;
+  ```
+
+  **14、对变量的定义和分支语句（条件分支、循环语句等）必须编写注释。**
+  说明：这些语句往往是程序实现某一特定功能的关键，对于维护人员来说，良好的注释帮助更好的理解程序，有时甚至优于看设计文档。
+
+  **15、对于`switch`语句下的`case`语句，如果因为特殊情况需要处理完一个`case`后进入下一个`case`处理，必须在该`case`语句处理完、下一个`case`语句前加上明确的注释。**
+  说明：这样有助于防止无故遗漏`break`语句情况的出现。
+
+  示例：
+
+  ```c
+  case CMD_UP:
+  {
+      ProcessUp();
+      break;      
+  }
+  case CMD_DOWN:
+  {
+      ProcessDown();
+      if (...)
+      {
+          ...
+          break;          
+      }
+      else
+      {
+          // Now jump into case CMD_A.
+          ProcessUp();
+      }
+  }
+  case CMD_A:
+  {
+      ProcessA();
+      break;
+  }
+  case CMD_B:
+  {
+      ProcessB();
+      break;
+  }
+  case CMD_C:
+  {
+      ProcessC();
+      break;
+  }
+  case CMD_D:
+  {
+      ProcessD();
+      break;
+  }
+  ...
+  ```
+
+  **16、避免在一行代码或表达式的中间插入注释。**
+  说明：除非必要，不应在代码或表达中间插入注释，否则容易使代码可理解性变差。
+
+  **17、通过对函数或过程、变量、结构等正确的命名以及合理地组织代码的结构，使代码成为自注释的。**
+  说明：清晰准确的函数、变量等的命名，可增加代码可读性，并减少不必要的注释。
+
+  **18、在代码的功能、意图层次上进行注释，提供有用、额外的信息。**
+  说明：注释的目的是解释代码的目的、功能和采用的方法，提供代码以外的信息，帮助读者理解代码，防止没必要的重复注释信息。
+
+  示例：如下注释意义不大。
+
+  ```c
+  // if receive_flag is TRUE.
+  if (receive_flag)
+  ```
+
+  应如下书写：
+
+  ```c
+  // if mtp receive a message from links.
+  if (receive_flag)
+  ```
+
+  **19、在程序块的结束行右方加注释标记，以表明某程序块的结束。**
+  说明：当代码段较长，特别是多重嵌套时，这样做可以使代码更清晰，更便于阅读。
+
+  示例：参见如下例子。
+
+  ```c
+  if (...)
+  {
+      while (index < MAX_INDEX)
+      {
+          // Program code.
+          ...
+      } // End of while (index < MAX_INDEX).
+
+  } // End of if (...).
+  ```
+
+  **20、注释格式尽量统一，除文件头注释外应全部使用行注释（//...）。**
+
+  **21、注释应考虑程序易读及外观排版的因素，使用的语言必须为英文。**
 
 - #### 标识符命名
 
