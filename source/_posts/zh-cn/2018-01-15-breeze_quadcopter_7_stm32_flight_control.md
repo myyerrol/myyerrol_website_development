@@ -23,12 +23,21 @@ comments: true
 - #### 国内研究现状
 
   **DJI**
+
+  ![flight_control_dji](/images/breeze/embedded/flight_control_dji.jpg)
+
   目前国内做四轴飞行器的公司有很多，其中做飞控系统最好的当属大疆创新（DJI）。大疆创新（DJI）目前拥有NAZE、WooKong以及A系列的多种商业飞控系统，其中作为NAZA飞控系列的最新一代产品，N3多旋翼飞控系统采用DJI最新的控制导航算法，新增内置的双IMU冗余设计，可实现数据实时互为备份，并结合全新内减震结构设计，赋予了飞行器更高的可靠性，为无人机爱好者及行业应用探索者提供稳定而全面的系统级解决方案。
 
   **Crazepony**
+
+  ![flight_control_crazepony](/images/breeze/embedded/flight_control_crazepony.png)
+
   Crazepony微型四轴飞行器由深圳创客火（Maker Fire）公司设计、制造并发行，其内置的飞控算法可以实现飞行器的定高悬停、有头（X模式）和无头模式飞行等功能。相比于商业飞控来说，Crazepony的飞控开源（包括源代码、原理图、工作原理、系统框架、设计思路等），且核心算法部分有详细的教程文档，既方便各大高校的学生和爱好者学习相关知识，也利于进行二次开发，以实现自己的创意。
 
   **MiniFly**
+
+  ![flight_control_alientek](/images/breeze/embedded/flight_control_alientek.png)
+
   MiniFly是广州市星翼电子科技有限公司（ALIENTEK）最新推出的一款开源微型四轴飞行器，它所使用的飞控算法可以支持：定高和手动飞行、4D翻飞、抛飞、有头（X模式）和无头模式飞行、一键起飞和降落等功能。由于MiniFly微型四轴的硬件电路设计主要是基于国外的Crazeflie项目修改而来，所以其硬件性能在国内同等规格的四轴飞行器里绝对算是一流的，当然强大的硬件性能也为MiniFly实现更为复杂的飞控算法提供了一个绝佳的平台。
 
 - #### 国外研究现状
@@ -36,21 +45,39 @@ comments: true
   国外高校和科研机构对飞行器控制系统的研究已经有很多年了，技术相对来说比较成熟，而且基本都是以开源飞控为主。以下简要介绍几个目前比较流行的开源飞控系统：
 
   **APM**
-  APM(ArduPilotMega)是在2007年由DIY无人机社区（DIY Drones）推出的飞控产品，是当今最为成熟的开源硬件项目。APM基于Arduino开源平台，对多处硬件做出了改进，包括加速度计、陀螺仪和磁力计组合惯性测量单元（IMU）。由于APM良好的可定制性，APM在全球航模爱好者范围内迅速传播开来。通过开源软件Mission Planner，开发者可以对APM进行相应的配置，接受并显示传感器的数据，使用Google Map完成自动驾驶等功能。除此之外，APM连接外置GPS传感器以后能够增强飞行的稳定性，并能够完成自主起降、自主航线飞行、回家、定高、定点等丰富的飞行模式。APM可以使用外置的超声波传感器和光流传感器，在室内实现定高和定点飞行。
+
+  ![flight_control_apm](/images/breeze/embedded/flight_control_apm.png)
+
+  APM(ArduPilot Mega)是在2007年由DIY无人机社区（DIY Drones）推出的飞控产品，是当今最为成熟的开源硬件项目。APM基于Arduino开源平台，对多处硬件做出了改进，包括加速度计、陀螺仪和磁力计组合惯性测量单元（IMU）。由于APM良好的可定制性，APM在全球航模爱好者范围内迅速传播开来。通过开源软件Mission Planner，开发者可以对APM进行相应的配置，接受并显示传感器的数据，使用Google Map完成自动驾驶等功能。除此之外，APM连接外置GPS传感器以后能够增强飞行的稳定性，并能够完成自主起降、自主航线飞行、回家、定高、定点等丰富的飞行模式。APM可以使用外置的超声波传感器和光流传感器，在室内实现定高和定点飞行。
 
   **PX4**
+
+  ![flight_control_px4](/images/breeze/embedded/flight_control_px4.png)
+
   PX4是一个软硬件开源项目（遵守BSD协议），目的在于为学术、爱好和工业团体提供一款低成本、高性能的高端自驾仪。这个项目源于苏黎世联邦理工大学的计算机视觉与几何实验室、自主系统实验室和自动控制实验室的PIXHawk项目。于2004年推出的PIXHawk飞控是PX4飞控的升级版本，它拥有PX4和APM两套固件和相应的地面站软件。该飞控是目前全世界飞控产品中硬件规格最高的产品，也是当前爱好者手中最炙手可热的产品。PIXHawk拥有168MHz的运算频率，并突破性地采用了整合硬件浮点运算核心的Cortex-M4的单片机作为主控芯片，内置两套陀螺和加速度计MEMS传感器，互为补充矫正，内置三轴磁场传感器并可以外接一个三轴磁场传感器，同时可外接一主一备两个GPS传感器，在故障时自动切换。
 
   **CC3D**
+
+  ![flight_control_cc3d](/images/breeze/embedded/flight_control_cc3d.png)
+
   CC3D是Openpilot旗下最流行的飞控系统，此飞控板只采用一颗72MHz的32位STM32单片机和一颗MPU6000就能够完成四旋翼、固定翼、直升机的姿态控制飞行。与所有开源飞控不同，它不需要GPS融合或者磁场传感器参与修正，就能保持长时间的姿态控制，而且通过设置就可以更改飞机种类、飞行模式、支持云台增稳等功能。此外，CC3D飞控编译完的固件容量只有大约100KB，代码效率令人惊叹，而且其地面站软件集成了完整的电子地图，可以通过电台实时监测飞机状态。
 
   **MWC**
+
+  ![flight_control_mwc](/images/breeze/embedded/flight_control_mwc.jpg)
+
   MultiWiiCopter(MWC)飞控是一款典型的Arduino衍生产品，是专为多旋翼开发的低成本飞控，它完整地保留了Arduino IDE开发和Arduino设备升级和使用的方法。由于成本低、架构简单、固件比较成熟，因此该飞控在国内外拥有大量爱好者。除了支持常见的四、六、八旋翼以外，该飞控的最大特点是支持很多奇特的飞行器类型，比如三旋翼、Y4型多旋翼（其中两轴为上下对置）等。
 
   **PPZ**
+
+  ![flight_control_ppz](/images/breeze/embedded/flight_control_ppz.jpg)
+
   Paparazzi(PPZ)是一个软硬件全开源的项目，它始于2003年，开发目标是建立一个配置灵活且性能强大的开源飞控项目。PPZ的一大特点是，该开源飞控方案中除了常见的飞控硬件、飞控软件和地面站软件之外，还包含地面站硬件，包括各种调制解调器、天线等设备。从功能上讲，PPZ已经接近一个小型的无人机系统了。该开源项目的另一个特点是采用Ubuntu操作系统，它将全部地面站软件和开发环境集成于该系统下，官方称之为Live CD。一张CD加飞控硬件就可完成从开发到使用的全部工作。PPZ目前最流行的硬件版本拥有大量的扩展接口，方便开发者进行DIY。
 
   **Crazeflie**
+
+  ![flight_control_crazeflie](/images/breeze/embedded/flight_control_crazeflie.png)
+
   Crazeflie是国外最著名的微型四轴飞行器开源项目，它由三个来自瑞典的嵌入式工程师所创建，目的是使用尽可能少的零件来构造一款可以在室内使用的小型飞行机器人。得益于其出色、严谨的硬件电路设计、稳定且可靠的飞控系统以及模块化的扩展能力，Crazeflie四轴飞行器可以完成很多同类型四轴飞行器无法做到的高难度实验任务。除此之外，Bitcraze团队还为Crazeflie微型四轴飞行器项目编写了大量的使用和发教程，方便全世界的四轴爱好者们进行学习和开发（国内Crazepony和MiniFly两大开源微型四轴项目就在很大程度上参考了Crazeflie中的一些设计理念和内容）。
 
 ### 基本概念
