@@ -224,15 +224,15 @@ comments: true
 
     四元数是简单的超复数。复数是由实数加上虚数单位i组成，其中`i^2=1`。相似地，四元数都是由实数加上三个虚数单位i、j、k组成，而且它们有如下的关系: `i^2=j^2=k^2=-1`和`i^0=j^0=k^0=-1`。每个四元数都是i 、j、k的线性组合，即四元数可用下面的公式进行表示，其中q0、q1、q2和q3是实数，ω是转动的角度，n为旋转轴。
 
-    ![breeze_quaternion_formula_4](/images/breeze/embedded/breeze_quaternion_formula_4.png)
+    ![breeze_quaternion_formula_4](/images/breeze/embedded/breeze_quaternion_formula_1.png)
 
     采用四元数表示姿态变换时，由四元数的运算法则，将其中的四元数按照元素展开并按照运算符法则进行计算可以得到四元数表示的方向余弦矩阵：
 
-    ![breeze_quaternion_formula_5](/images/breeze/embedded/breeze_quaternion_formula_5.png)
+    ![breeze_quaternion_formula_5](/images/breeze/embedded/breeze_quaternion_formula_2.png)
 
     最后综合以上公式可得欧拉角和四元数之间的转换关系：
 
-    ![breeze_quaternion_formula_6](/images/breeze/embedded/breeze_quaternion_formula_6.png)
+    ![breeze_quaternion_formula_6](/images/breeze/embedded/breeze_quaternion_formula_3.png)
 
     相对于另几种旋转表示法（矩阵，欧拉角，轴角），四元数具有某些方面的优势，如速度更快、提供平滑插值、有效避免万向锁问题、存储空间较小等等。
 
