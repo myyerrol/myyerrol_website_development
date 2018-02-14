@@ -186,17 +186,17 @@ comments: true
 
   ---
 
-  四轴飞行器在空中飞行时，我们使用下图中的姿态角来描述其在空间里的角度关系。其中姿态角包含有翻滚角**Roll**（记作φ）、俯仰角**Pitch**（记作θ）和航向角**Yaw**（记作ψ）。
+  四轴飞行器在空中飞行时，我们使用下图中的姿态角来描述其在空间里的角度关系。其中姿态角包含有翻滚角**Roll**（记作`$\phi$`）、俯仰角**Pitch**（记作`$\theta$`）和航向角**Yaw**（记作`$\psi$`）。
 
-  通常我们一般选择把X轴作为四轴飞行器的正前方，那么俯仰角θ则为载体绕Y轴旋转的角度，指向水平面以下为正，指向水平面以上为负，角度范围从−90 °至90°；翻滚角φ为载体绕X轴旋转的角度，坐标Y指向水平面以上为正，指向水平面以下为负，角度范围从−180°至180°；而航向角ψ为机体绕Z轴旋转的角度，俯视图逆时针为正，顺时针为负。
+  通常我们一般选择把`$X$`轴作为四轴飞行器的正前方，那么俯仰角`$\theta$`则为载体绕`$Y$`轴旋转的角度，指向水平面以下为正，指向水平面以上为负，角度范围从−90°至90°；翻滚角`$\phi$`为载体绕`$X$`轴旋转的角度，坐标`$Y$`指向水平面以上为正，指向水平面以下为负，角度范围从−180°至180°；而航向角`$\psi$`为机体绕`$Z$`轴旋转的角度，俯视图逆时针为正，顺时针为负。
 
   ![breeze_coordinate_body](/images/breeze/embedded/breeze_coordinate_body.jpg)
 
   ---
 
-  如地理坐标系图所示，定义导航坐标系为OXnYnZn，坐标原点为载体的转动中心，地理坐标系在载体运动时作为基准坐标系，所以求解载体航行姿态时，需要先将载体坐标系内测量到的数据转换到地理坐标系中，再进行姿态解算。
+  如地理坐标系图所示，定义导航坐标系为`$OX_{n}Y_{n}Z_{n}$`，坐标原点为载体的转动中心，地理坐标系在载体运动时作为基准坐标系，所以求解载体航行姿态时，需要先将载体坐标系内测量到的数据转换到地理坐标系中，再进行姿态解算。
 
-  如机体坐标系图所示，定义载体坐标系为OXbYbZb，其坐标系原点Ob在载体的质心或者中心，Xb轴沿载体水平方向向前，Yb轴指向朝着载体正前方看的左侧方向，Zb轴则垂直于OXbYbZb平面沿载体竖轴向上，且载体坐标系OXbYbZb满足右手法则。
+  如机体坐标系图所示，定义载体坐标系为`$OX_{b}Y_{b}Z_{b}$`，其坐标系原点`$O_b$`在载体的质心或者中心，`$X_b$`轴沿载体水平方向向前，`$Y_b$`轴指向朝着载体正前方看的左侧方向，`$Z_b$`轴则垂直于`$OX_{b}Y_{b}Z_{b}$`平面沿载体竖轴向上，且载体坐标系`$OX_{b}Y_{b}Z_{b}$`满足右手法则。
 
   **表示方式**
 
@@ -206,13 +206,62 @@ comments: true
 
     ![breeze_euler_angles](/images/breeze/embedded/breeze_euler_angles.png)
 
-    地理坐标系OXnYnZn与载体坐标系OXbYbZb之间的坐标变换矩阵即方向余弦矩阵可以通过三次基本旋转得到。对应的旋转变换矩阵为：
+    地理坐标系`$OX_{n}Y_{n}Z_{n}$`与载体坐标系`$OX_{b}Y_{b}Z_{b}$`之间的坐标变换矩阵即方向余弦矩阵可以通过三次基本旋转得到。对应的旋转变换矩阵为：
 
-    ![breeze_euler_formula_1](/images/breeze/embedded/breeze_euler_formula_1.png)
+    $$
+    \begin{align}
+    C_n^b&=
+    \begin{bmatrix}
+    {\cos{\theta}} & {0} & {-\sin{\theta}} \\
+    {0}            & {1} & {0}             \\
+    {\sin{\theta}} & {0} & {\cos{\theta}}  \\
+    \end{bmatrix}
+    \begin{bmatrix}
+    {1} & {0}           & {0}          \\
+    {0} & {\cos{\phi}}  & {\sin{\phi}} \\
+    {0} & {-\sin{\phi}} & {\cos{\phi}} \\
+    \end{bmatrix}
+    \begin{bmatrix}
+    {\cos{\psi}} & {-\sin{\psi}} & {0} \\
+    {\sin{\psi}} & {\cos{\psi}}  & {0} \\
+    {0}          & {0}           & {1} \\
+    \end{bmatrix}
+    \\&=
+    \begin{bmatrix}
+    {\cos{\theta}\cos{\psi}+\sin{\theta}\sin{\phi}\sin{\psi}}  &
+    {-\cos{\theta}\sin{\psi}+\sin{\theta}\sin{\phi}\cos{\psi}} &
+    {-\sin{\theta}\cos{\phi}} \\
+    {\cos{\phi}\sin{\psi}} &
+    {\cos{\phi}\cos{\psi}} &
+    {\sin{\phi}} \\
+    {\sin{\theta}\cos{\psi}-\cos{\theta}\sin{\phi}\sin{\psi}}  &
+    {-\sin{\theta}\sin{\psi}-\cos{\theta}\sin{\phi}\cos{\psi}} &
+    {\cos{\theta}\cos{\phi}} \\
+    \end{bmatrix}
+    \end{align}
+    $$
 
     使用下面的欧拉角微分方程可以方便地对四轴飞行器的姿态进行解算：
 
-    ![breeze_euler_formula_2](/images/breeze/embedded/breeze_euler_formula_2.png)
+    $$
+    \begin{bmatrix}
+    {\dot\theta} \\
+    {\dot\phi}   \\
+    {\dot\psi}   \\
+    \end{bmatrix}
+    =
+    \frac{1}{\cos{\theta}}
+    \begin{bmatrix}
+    {\cos{\phi}} & {\sin{\theta}\sin{\phi}} & {\cos{\theta}\sin{\phi}}  \\
+    {0}          & {\cos{\phi}\cos{\theta}} & {-\sin{\theta}\cos{\phi}} \\
+    {0}          & {\sin{\theta}}           & {\cos{\theta}\cos{\phi}}  \\
+    \end{bmatrix}^{-1}
+    \begin{bmatrix}
+    {\omega_{EbY}^b} \\
+    {\omega_{EbX}^b} \\
+    {\omega_{EbZ}^b} \\
+    \end{bmatrix}
+    $$
 
     上面公式中左侧是更新后的欧拉角，右侧是上个周期测算出来的角度，而三个角速度则由安装在四轴飞行器上的三轴陀螺仪测得。因此，求解这个微分方程就能解算出当前的欧拉角。
 
@@ -222,17 +271,36 @@ comments: true
 
     四元数是由爱尔兰数学家威廉·卢云·哈密顿在1843年发现的数学概念。明确地讲，四元数是复数的不可交换延伸，如把四元数的集合考虑成多维实数空间的话，四元数就代表着一个四维空间，相对于复数为二维空间。
 
-    四元数是简单的超复数。复数是由实数加上虚数单位i组成，其中`i^2=1`。相似地，四元数都是由实数加上三个虚数单位i、j、k组成，而且它们有如下的关系: `i^2=j^2=k^2=-1`和`i^0=j^0=k^0=-1`。每个四元数都是i 、j、k的线性组合，即四元数可用下面的公式进行表示，其中q0、q1、q2和q3是实数，ω是转动的角度，n为旋转轴。
+    四元数是简单的超复数。复数是由实数加上虚数单位i组成，其中`$i^2=1$`。相似地，四元数都是由实数加上三个虚数单位`$i、j、k$`组成，而且它们有如下的关系: `$i^2=j^2=k^2=-1$`和`$i^0=j^0=k^0=-1$`。每个四元数都是`$i 、j、k$`的线性组合，即四元数可用下面的公式进行表示，其中`$q_0、q_1、q_2$`和`$q_3$`是实数，`$\omega$`是转动的角度，`$n$`为旋转轴。
 
-    ![breeze_quaternion_formula_4](/images/breeze/embedded/breeze_quaternion_formula_1.png)
+    $$Q=q_0+q_1i+q_2j+q_3k=q_0+n\sin({\frac{\omega}{2})}$$
 
     采用四元数表示姿态变换时，由四元数的运算法则，将其中的四元数按照元素展开并按照运算符法则进行计算可以得到四元数表示的方向余弦矩阵：
 
-    ![breeze_quaternion_formula_5](/images/breeze/embedded/breeze_quaternion_formula_2.png)
+    $$
+    C_n^b=
+    \begin{bmatrix}
+    {q_1^2+q_0^2-q_3^2-q_2^2} & {2(q_1q_2-q_0q_3)} &
+    {2(q_1q_3+q_0q_2)} \\
+    {2(q_1q_2+q_0q_3)}        & {q_2^2-q_3^2+q_0^2-q_1^2} &
+    {2(q_2q_3-q_0q_1)} \\
+    {2(q_1q_3-q_0q_2)}        & {2(q_2q_3+q_0q_1)} &
+    {q_3^2-q_2^2-q_1^2+q_0^2} \\
+    \end{bmatrix}
+    $$
 
     最后综合以上公式可得欧拉角和四元数之间的转换关系：
 
-    ![breeze_quaternion_formula_6](/images/breeze/embedded/breeze_quaternion_formula_3.png)
+    $$
+    \begin{align}
+    \theta&=-\sin^{-1}\left[{2(q_1q_2-q_0q_3)}\right]
+    \\
+    \phi&=\tan^{-1}\left[\frac{2(q_1q_3+q_0q_1)}{q_3^2+q_2^2-q_1^2+1_0^2}\right]
+    \\
+    \psi&=\tan^{-1}\left[\frac{2(q_1q_2+q_0q_3)}{q_1^2+q_0^2-q_3^2-q_2^2}\right]
+    \\
+    \end{align}
+    $$
 
     相对于另几种旋转表示法（矩阵，欧拉角，轴角），四元数具有某些方面的优势，如速度更快、提供平滑插值、有效避免万向锁问题、存储空间较小等等。
 
