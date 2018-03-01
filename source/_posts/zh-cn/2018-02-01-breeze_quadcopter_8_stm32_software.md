@@ -31,13 +31,21 @@ comments: true
 
   ![breeze_remote_control_1](/images/breeze/software/breeze_remote_control_1.png)
 
-  以下图片展示了Breeze远程控制站所集成的实时视频流采集功能。摄像头安装在四轴飞行器的顶部，可通过2.4GHz无线图传与PC相连完成实时图像的传输，不过由于时间的缘故，我们目前只实现了图像数据的采集，而图像检测和识别等有关机器视觉方面的高级功能暂时还未完成。
+  以下图片展示了Breeze远程控制站所集成的实时视频流采集功能。摄像头安装在四轴飞行器的顶部，可通过2.4GHz无线图传与PC相连完成实时图像的传输，不过由于时间的缘故，我们目前只实现了图像数据的采集，而图像检测和识别等有关机器视觉方面的高级功能暂时还未完成。最后，Breeze远程控制站的代码可以点击[这里](https://github.com/microdynamics-quadcopter/breeze_remote_control)获得。
 
   ![breeze_remote_control_2](/images/breeze/software/breeze_remote_control_2.png)
 
 - #### Breeze飞行控制站
 
+  Breeze飞行控制站是我根据西工大布树辉老师在GitHub上开源的[Qt飞行仪表盘插件](https://github.com/bushuhui/qFlightInstruments)和西工大舞蹈机器人基地马文科学长所创立[HandsFree项目](https://github.com/HANDS-FREE)中HFLink代码的基础上进行重构开发而来。该软件外部的图形界面使用了目前Ubuntu下最流行和强大的Qt5框架，而内部则采用自定义的CommLink通信协议库实现Breeze和PC之间双向的数据传输。当然，依然受限于时间等客观因素，Breeze飞行控制站和上面介绍过的远程控制站一样目前只是一个Demo，很多功能还未实现，还需未来继续改进。
+
+  如下图所示，Breeze飞行控制站的界面主要分为**飞行指示器**、**飞行状态**和**飞行数据**共三个区域，其中**飞行指示器**区域通过三个仪表盘分别显示Breeze微型四轴飞行器实时的飞行姿态、海拔高度和磁场方向等数据，左下角的**飞行状态**区域用于显示四轴飞行器当前的推力值、四个电机的转速值以及电池电量值等，而右下角的**飞行数据**区域则以浮点数的形式展现**飞行指示器**和**飞行状态**中的数值，使数据大小的显示更为直观。最后，Breeze飞行控制站的代码可以点击[这里](https://github.com/microdynamics-quadcopter/breeze_flight_control_station)获得。
+
   ![breeze_flight_control_station](/images/breeze/software/breeze_flight_control_station.png)
+
+- #### 匿名科创地面站
+
+- #### APM Planner
 
 ### 软件接口协议
 
