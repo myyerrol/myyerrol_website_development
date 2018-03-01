@@ -25,7 +25,23 @@ comments: true
 
 ### 地面控制站
 
+- #### Breeze远程控制站
+
+  如下图所示，Breeze远程控制站是我在Windows操作系统下使用Qt5进行编写的，代码里面主要调用了Qt官方的串口库和摄像头驱动库。它实现的功能比较简单，主要包含以下两个功能，其中第一个功能是该远程控制站软件可通过我们自定义的串口通信协议实时获取Breeze微型四轴飞行器当前的飞行姿态数据并显示在接收窗口内，另一个功能则是能够根据当前键盘上被按下的按键来发送对应的控制命令给四轴飞行器，从而完成操作者对Breeze微型四轴飞行器的远程控制。
+
+  ![breeze_remote_control_1](/images/breeze/software/breeze_remote_control_1.png)
+
+  以下图片展示了Breeze远程控制站所集成的实时视频流采集功能。摄像头安装在四轴飞行器的顶部，可通过2.4GHz无线图传与PC相连完成实时图像的传输，不过由于时间的缘故，我们目前只实现了图像数据的采集，而图像检测和识别等有关机器视觉方面的高级功能暂时还未完成。
+
+  ![breeze_remote_control_2](/images/breeze/software/breeze_remote_control_2.png)
+
+- #### Breeze飞行控制站
+
+  ![breeze_flight_control_station](/images/breeze/software/breeze_flight_control_station.png)
+
 ### 软件接口协议
+
+未完待续。。。
 
 ## 总结
 
