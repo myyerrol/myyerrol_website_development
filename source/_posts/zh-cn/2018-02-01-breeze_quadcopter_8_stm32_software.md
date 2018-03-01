@@ -45,7 +45,23 @@ comments: true
 
 - #### 匿名科创地面站
 
-- #### APM Planner
+  ![anotc_gcs_1](/images/breeze/software/anotc_gcs_1.png)
+
+  ![anotc_gcs_2](/images/breeze/software/anotc_gcs_2.png)
+
+  ![anotc_gcs_3](/images/breeze/software/anotc_gcs_3.png)
+
+  ![anotc_gcs_4](/images/breeze/software/anotc_gcs_4.png)
+
+- #### Mission Planner
+
+  Mission Planner是ArduPilot开源项目的全功能地面站软件，它支持固定翼飞行器、旋翼飞行器和地面车，由于软件基于C#和.Net环境进行开发，所以仅支持Windows操作系统。Mission Planner可以给全自主车辆提供强大的配置工具和动力学控制能力。
+
+  Mission Planner软件的主要功能有：为控制板提供固件加载；设定、配置及调整机器到最优性能；通过在地图上用鼠标点击相应位置来规划，保存及加载自动任务给控制板；下载及分析由控制板创建的任务记录；与PC飞行模拟器连接，提供完整硬件闭环的UAV模拟器；通过合适的遥控器来监控飞行器状态、记录遥控数据、分析遥控记录以及可在FPV（第一人称视角）模式下控制你的机器。
+
+  ![mission_planner_1](/images/breeze/software/mission_planner_1.jpg)
+
+  ![mission_planner_2](/images/breeze/software/mission_planner_2.jpg)
 
 ### 软件接口协议
 
