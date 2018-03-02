@@ -55,13 +55,21 @@ comments: true
 
 - #### Mission Planner
 
-  Mission Planner是ArduPilot开源项目的全功能地面站软件，它支持固定翼飞行器、旋翼飞行器和地面车，由于软件基于C#和.Net环境进行开发，所以仅支持Windows操作系统。Mission Planner可以给全自主车辆提供强大的配置工具和动力学控制能力。
+  Mission Planner是ArduPilot开源项目的全功能地面站软件，它支持固定翼飞行器、旋翼飞行器和地面车，由于软件基于C#和.Net环境进行开发，所以仅支持Windows操作系统。Mission Planner可以给全自主移动机器提供强大的配置工具和动力学控制能力。
 
   Mission Planner软件的主要功能有：为控制板提供固件加载；设定、配置及调整机器到最优性能；通过在地图上用鼠标点击相应位置来规划，保存及加载自动任务给控制板；下载及分析由控制板创建的任务记录；与PC飞行模拟器连接，提供完整硬件闭环的UAV模拟器；通过合适的遥控器来监控飞行器状态、记录遥控数据、分析遥控记录以及可在FPV（第一人称视角）模式下控制你的机器。
 
   ![mission_planner_1](/images/breeze/software/mission_planner_1.jpg)
 
   ![mission_planner_2](/images/breeze/software/mission_planner_2.jpg)
+
+- #### Crazyfile地面站
+
+  Crazyflie地面站是BitCraze团队专门为Crazyflie微型四轴飞行器所打造的桌面PC客户端 ，它支持Windows、GNU/Linux和Mac系统（具体安装方法请点击[这里](https://github.com/bitcraze/crazyflie-clients-python/blob/develop/README.md)查看），可实现四轴飞行器的远程控制、烧写固件、设置参数并记录数据等功能。Crazyflie地面站与四轴飞行器之间的数据通信以及用于控制四轴飞行器的CRTP协议的实现均基于[Crazyflie Lib Python](https://github.com/bitcraze/crazyflie-lib-python)项目所完成。最后，有关于更多内容请访问Crazyflie地面站的[官方Wiki](https://wiki.bitcraze.io/doc:crazyflie:client:pycfclient:index)。
+
+  ![crazyflie_gcs_1](/images/breeze/software/crazyflie_gcs_1.png)
+
+  ![crazyflie_gcs_2](/images/breeze/software/crazyflie_gcs_2.png)
 
 ### 软件接口协议
 
