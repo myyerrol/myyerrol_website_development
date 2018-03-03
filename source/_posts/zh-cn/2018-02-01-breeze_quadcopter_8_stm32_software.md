@@ -45,6 +45,18 @@ comments: true
 
 - #### 匿名科创地面站
 
+  匿名地面站就是针对飞控学习者、开发者设计开发的一个专用软件，由匿名科创团队（ANO TC）独立编写，软件性能优异，界面友好。通过多年的改进，已经成为调试飞控必不可少的软件之一。软件主要功能有：
+
+  - **用户自定义数据分析功能**：既然是面对开发者设计的上位机，飞控那些固定的数据肯定是不够用的，开发者可能需要观察各种数据的波形，进行分析，匿名地面站可以让用户自定义一帧数据的格式，并对该帧数据进行解析，获得用户设置好的各种数据，并可以分别绘制波形。
+
+  - **高速波形绘制功能**：可以将飞控的各种参数，实时发送至上位机（地面站），并且实时绘制多达20个数据的波形，数据更新频率可达1000hz以上，这将大大方便对例如滤波算法的调试，可以实时将传感器原始数据、滤波后数据发送至上位机，绘制各自的波形，进行比较，以便对滤波算法进行调整。
+
+  - **飞控状态显示功能**：可以通过3D模型、地平仪、各项参数通道值等方式，实时显示飞控的状态。
+
+  - **飞控参数设置功能**：上位机提供多达18组PID数据的读取与写入功能，开发者都可以自由使用，方便进行各项参数的设置、调节，并且通信采用返回验证逻辑，保证飞控接收到的参数是准确的。
+
+  - **数据的EXCEL写入功能**：上位机支持将多种数据，实时写入到excel文件，方便开发者使用Matlab等软件进行数据分析。
+
   ![anotc_gcs_1](/images/breeze/software/anotc_gcs_1.png)
 
   ![anotc_gcs_2](/images/breeze/software/anotc_gcs_2.png)
@@ -52,6 +64,14 @@ comments: true
   ![anotc_gcs_3](/images/breeze/software/anotc_gcs_3.png)
 
   ![anotc_gcs_4](/images/breeze/software/anotc_gcs_4.png)
+
+  ![anotc_gcs_5](/images/breeze/software/anotc_gcs_5.png)
+
+  ![anotc_gcs_6](/images/breeze/software/anotc_gcs_6.png)
+
+  ![anotc_gcs_7](/images/breeze/software/anotc_gcs_7.png)
+
+  ![anotc_gcs_8](/images/breeze/software/anotc_gcs_8.png)
 
 - #### Mission Planner
 
