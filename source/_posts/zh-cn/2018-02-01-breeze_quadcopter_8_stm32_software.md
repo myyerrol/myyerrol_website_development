@@ -93,9 +93,13 @@ comments: true
 
 ### 软件接口协议
 
-- #### Breeze CommLink
+- #### CommLink
 
-- #### MavLink
+  CommLink是Breeze微型四轴飞行器所采用的数据通信协议栈，此协议栈内有采用USART（基于 CP2102 转串口芯片）和SPI（基于NRF24L01射频模块）两套接口实现的通信协议。其中USART通信协议主要负责将四轴飞行器自身的实时飞行姿态数据发送给远程PC端的地面站，而SPI通信协议则负责解析远程遥控端发送的控制指令。
+
+  ![breeze_communication_link](/images/breeze/software/breeze_communication_link.png)
+
+- #### MAVLink
 
 ## 总结
 
