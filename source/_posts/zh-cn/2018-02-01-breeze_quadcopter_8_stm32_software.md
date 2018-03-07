@@ -109,7 +109,7 @@ comments: true
 
   ![mavlink_protocal](/images/breeze/software/mavlink_protocal.png)
 
-  MAVLink协议最早由苏黎世联邦理工学院计算机视觉与几何实验组的Lorenz Meier于2009年创建，并以LGPL开源协议形式进行发布。MAVLink协议是在串口通讯基础上的一种更高层的开源通讯协议，广泛应用于地面站软件与小型无人载具之间的通讯，同时也应用在载具内部子系统的通信中。MAVLink协议是以消息库的形式来定义参数传输的规则，更多详细内容请访问[官网](http://www.qgroundcontrol.org/mavlink/start)。
+  MAVLink协议最早由苏黎世联邦理工学院计算机视觉与几何实验组的Lorenz Meier于2009年创建，并以LGPL开源协议形式进行发布。MAVLink协议是在串口通讯基础上的一种更高层的开源通讯协议，广泛应用于地面站软件与小型无人载具之间的通讯，同时也应用在载具内部子系统的通信中。MAVLink协议是以消息库的形式来定义参数传输的规则，具体协议的内容可点击[这里](http://mavlink.org/messages/common)查看。
 
 ## 总结
 
