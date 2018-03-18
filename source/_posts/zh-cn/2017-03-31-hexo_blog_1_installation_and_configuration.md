@@ -52,7 +52,13 @@ Hexo是一个简洁且强大的博客框架。
 $> wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 ```
 
-安装完之后，使用以下命令来安装Node.js
+执行完命令之后，可使用以下命令来安装最新长期支持版本的Node.js：
+
+```sh
+$> nvm install --lts
+```
+
+或安装最新稳定版本的Node.js：
 
 ```sh
 $> nvm install stable
@@ -164,7 +170,7 @@ $> npm install hexo-deployer-git --save
   根据E-mail地址生成特定的ssh密钥
 
   ```sh
-  $> ssh-keygen -t rsa -c "your_email@xxx.com"
+  $> ssh-keygen -t rsa -C "your_email@xxx.com"
   ```
 
   **{% alert warning %}
