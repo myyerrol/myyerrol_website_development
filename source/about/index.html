@@ -122,9 +122,111 @@ layout: page
     <div class="breakline">
       ------------------&nbsp;&nbsp;
       <span class="badge">
+        &nbsp;&nbsp;2016年&nbsp;&nbsp;
+      </span>&nbsp;&nbsp;
+      ------------------
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-code fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2015年12月30日</span>
+      </div>
+      <div class="line-content-box">
+        完成基于MySQL+Qt的图书馆管理系统。该系统实现的功能有：用户登录功能、管理员功能（包含图书管理、读者管理和借阅管理）和读者功能（包含图书检索、图书借阅和续借归还）。软件采用Qt作为软件的主界面，并使用Qt中的API来连接MySQL数据库并对其中的数据进行添加、编辑、更新和删除等操作。代码点击<a href="https://github.com/myyerrol/library_management_system" target="_blank">这里</a>获得。<br>
+        <img
+        src="https://img.shields.io/github/license/myyerrol/library_management_system.svg"
+        style="float: left; margin-right: 5px">
+        <img src="https://img.shields.io/github/stars/myyerrol/library_management_system.svg"
+        style="float: left; margin-right: 5px">
+        <img
+        src="https://img.shields.io/github/forks/myyerrol/library_management_system.svg"
+        style="float: left; margin-right: 5px">
+      </div>
+    </div>
+
+    <div class="breakline">
+      ------------------&nbsp;&nbsp;
+      <span class="badge">
+        &nbsp;&nbsp;2015年&nbsp;&nbsp;
+      </span>&nbsp;&nbsp;
+      ------------------
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-code fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2015年12月30日</span>
+      </div>
+      <div class="line-content-box">
+        设计基于MIPS指令集的多周期CPU。首先根据书中的MIPS架构图将每个CPU指令的执行过程分为取指、译码、执行、访存和回写这五个主要部分，其中每个部分均采用Verilog硬件描述语言来编写相应的模块，并根据模块之间的逻辑关系建立起数据通路。该多周期CPU实现了50多条基本指令并且全部在Modesim上仿真通过，由于协处理器实现起来难度较大，所以MIPS的浮点类指令没有考虑。
+      </div>
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-microchip fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2015年02月20日</span>
+      </div>
+      <div class="line-content-box">
+        为Raspberry Pi移植Nokia 5110显示屏驱动。首先进入内核编译选项，把驱动编译成内核模块并且添加对FrameBuffer的支持，FrameBuffer是设备驱动接口，它相当于显存的映像，若将其映射到进程地址空间，则可以直接对屏幕进行读写操作，使用方便的同时又具有很好的实时性，然后我们要做的就是利用SPI通讯方式，把屏幕内容写入到内核新增的FrameBuffer设备，即Nokia 5110中去，最后只要配置启动文件，就能实现开机自动加载。
+      </div>
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-code fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2015年02月05日</span>
+      </div>
+      <div class="line-content-box">
+        构建自己的Linux操作系统（LFS）。LFS制作的核心是工具链的制作以及修改工具链的依赖方式，首先需要主系统先编译生成预工具链，再由预工具链生成临时工具链，之后调整工具链，使临时工具链变为内部依赖从而能自己编译构建临时系统，最后由临时系统代替主系统来完成后续目标系统工具链的制作，再次调整工具链使得目标系统能自给自足，完成余下软件包的编译、安装与配置。
+      </div>
+    </div>
+
+    <div class="breakline">
+      ------------------&nbsp;&nbsp;
+      <span class="badge">
         &nbsp;&nbsp;2014年&nbsp;&nbsp;
       </span>&nbsp;&nbsp;
       ------------------
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-microchip fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2014年08月29日</span>
+      </div>
+      <div class="line-content-box">
+        制作基于Arduino的微型激光雕刻机。机械部分主要以废旧的光驱为主体，两个带有导轨的步进电机组件和激光头分别被当作X轴、Y轴和Z轴；电路部分使用Arduino来分别控制继电器和两路步进电机驱动模块；软件部分采用<a href="https://github.com/grbl/grbl" target="_blank">Grbl</a>将G代码通过串口方式发送给Arduino，Arduino再将得到的G代码转换成相应电信号，从而精确地控制两路步进电机的转动和继电器的开与关。
+      </div>
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-microchip fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2014年08月22日</span>
+      </div>
+      <div class="line-content-box">
+        制作基于Arduino的小型四自由度机械臂。机械部分主要是由多种连杆机构所组成，它使得机械臂可以灵活地进行左右、前后、高低等位置的变换；电子部分采用Arduino控制板并将摇杆模块和舵机信号线分别连接到它的模拟和PWM引脚上；软件部分是循环检测摇杆模拟电压值并将它映射成舵机的相应角度数，从而实现对机械臂的控制。
+      </div>
     </div>
 
     <div class="line-item">
