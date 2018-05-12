@@ -103,19 +103,63 @@ layout: page
   <div class="panel-heading">
     <span class="fa fa-clock-o"></span><strong> 我的时间线</strong>
   </div>
+
   <div class="line-warp">
     <div class="timeline-header">
       <span class="badge"><span class="fa fa-clock-o"></span>我的时间线</span>
     </div>
+
     <div class="line-item">
       <div class="line-icon-warp ">
-        <span class="fa-stack fa-lg" >
+        <span class="fa-stack" >
           <i class="fa fa-circle fa-stack-2x" style="color: #ffc125"></i>
           <i class="fa fa-lightbulb-o fa-stack-1x" style="color: #ffffff"></i>
         </span>
         <span class="badge"> &nbsp;&nbsp;刚才&nbsp;&nbsp; </span>
       </div>
       <div class="line-content-box">
+      </div>
+    </div>
+
+    <div class="breakline">
+      ------------------&nbsp;&nbsp;
+      <span class="badge">
+        &nbsp;&nbsp;2017年&nbsp;&nbsp;
+      </span>&nbsp;&nbsp;
+      ------------------
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #cd5c5c"></i>
+          <i class="fa fa-book fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2017年5月30日</span>
+      </div>
+      <div class="line-content-box">
+        完成计算机学院本科毕业设计论文《微型四轴飞行器的飞控系统设计》
+      </div>
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-microchip fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2017年02月25日</span>
+      </div>
+      <div class="line-content-box">
+        制作基于Arduino的小型十八自由度六足机器人。该机器人主控采用的是目前流行的Arduino Nano，由于Arduino的硬PWM引脚较少，使用软件模拟PWM又不是特别稳定，所以采用Arduino+舵机控制板的总体架构，Arduino主要负责处理传感器数据，并将遥控指令解析之后通过串口发送给底层的舵机控制板，而舵机控制板则根据特定的通信协议，对串口数据进行解析并将获得的PWM同时发送给相应的舵机，从而完成对舵机的控制。代码点击<a href="https://github.com/myyerrol/hexapod_bionic_robot" target="_blank">这里</a>获得。<br>
+        <img
+        src="https://img.shields.io/github/license/myyerrol/hexapod_bionic_robot.svg"
+        style="float: left; margin-right: 5px">
+        <img src="https://img.shields.io/github/stars/myyerrol/hexapod_bionic_robot.svg"
+        style="float: left; margin-right: 5px">
+        <img
+        src="https://img.shields.io/github/forks/myyerrol/hexapod_bionic_robot.svg"
+        style="float: left; margin-right: 5px">
       </div>
     </div>
 
@@ -131,9 +175,72 @@ layout: page
       <div class="line-icon-warp">
         <span class="fa-stack">
           <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-microchip fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2016年07月30日</span>
+      </div>
+      <div class="line-content-box">
+        制作基于Nvidia Jetson TK1+Arduino的简单轮式机器人。该项目主要是在Jeston TK1上使用OpenCV库来做人脸的检测和识别并将识别到的结果通过串口发送给Arduino，Arduino接收到数据后再根据车前方的超声波模块来一起控制电机的转速和方向。代码点击<a href="https://github.com/myyerrol/woodbox_mobile_car" target="_blank">这里</a>获得。<br>
+        <img
+        src="https://img.shields.io/github/license/myyerrol/woodbox_mobile_car.svg"
+        style="float: left; margin-right: 5px">
+        <img src="https://img.shields.io/github/stars/myyerrol/woodbox_mobile_car.svg"
+        style="float: left; margin-right: 5px">
+        <img
+        src="https://img.shields.io/github/forks/myyerrol/woodbox_mobile_car.svg"
+        style="float: left; margin-right: 5px">
+      </div>
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
           <i class="fa fa-code fa-stack-1x" style="color: #ffffff"></i>
         </span>
-        <span class="badge">2015年12月30日</span>
+        <span class="badge">2016年06月20日</span>
+      </div>
+      <div class="line-content-box">
+        完成基于Pascal语言的简单编译器。该编译器分别使用<a href="https://www.gnu.org/software/flex" target="_blank">Flex</a>和<a href="https://www.gnu.org/software/bison" target="_blank">Bison</a>来做词法和语法分析，并可在语法分析的过程中动态生成四元式和抽象语法树等中间代码表示。由于时间缘故，目前该编译器只实现了前端的语法分析，后端的汇编代码生成部分并没有涉及到。代码点击<a href="https://github.com/myyerrol/pascal_simple_compiler" target="_blank">这里</a>获得。<br>
+        <img
+        src="https://img.shields.io/github/license/myyerrol/pascal_simple_compiler.svg"
+        style="float: left; margin-right: 5px">
+        <img src="https://img.shields.io/github/stars/myyerrol/pascal_simple_compiler.svg"
+        style="float: left; margin-right: 5px">
+        <img
+        src="https://img.shields.io/github/forks/myyerrol/pascal_simple_compiler.svg"
+        style="float: left; margin-right: 5px">
+      </div>
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-code fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2016年06月15日</span>
+      </div>
+      <div class="line-content-box">
+        完成基于MySQL+Qt的银行ATM系统。该系统模拟实现的功能有：查询、转账、改密、存款和取款等。软件系统架构与下面的图书馆管理系统类似。代码点击<a href="https://github.com/myyerrol/automatic_teller_machine_system" target="_blank">这里</a>获得。<br>
+        <img
+        src="https://img.shields.io/github/license/myyerrol/automatic_teller_machine_system.svg"
+        style="float: left; margin-right: 5px">
+        <img src="https://img.shields.io/github/stars/myyerrol/automatic_teller_machine_system.svg"
+        style="float: left; margin-right: 5px">
+        <img
+        src="https://img.shields.io/github/forks/myyerrol/automatic_teller_machine_system.svg"
+        style="float: left; margin-right: 5px">
+      </div>
+    </div>
+
+    <div class="line-item">
+      <div class="line-icon-warp">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color: #6ad421"></i>
+          <i class="fa fa-code fa-stack-1x" style="color: #ffffff"></i>
+        </span>
+        <span class="badge">2016年01月10日</span>
       </div>
       <div class="line-content-box">
         完成基于MySQL+Qt的图书馆管理系统。该系统实现的功能有：用户登录功能、管理员功能（包含图书管理、读者管理和借阅管理）和读者功能（包含图书检索、图书借阅和续借归还）。软件采用Qt作为软件的主界面，并使用Qt中的API来连接MySQL数据库并对其中的数据进行添加、编辑、更新和删除等操作。代码点击<a href="https://github.com/myyerrol/library_management_system" target="_blank">这里</a>获得。<br>
