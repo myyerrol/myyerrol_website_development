@@ -716,6 +716,11 @@ comments: true
 
 ![raspberry_pi_simple_car_5](http://media.myyerrol.io/images/raspberry_pi_simple_car/raspberry_pi_simple_car_5.jpg)
 
+<div style="height: 0; padding-bottom: 60%; position: relative;">
+  <iframe width="498" height="510" src="http://player.youku.com/embed/XNzMzMzcxNjU2" frameborder="0" allowfullscreen="" style="position: absolute; height: 100%; width: 100%;">
+  </iframe>
+</div>
+
 ## 总结
 
 虽然现在回过头来再看自己当初大一做的项目，觉得原理非常简单，但就是它让我第一次体验到了做软硬件项目的乐趣，同时也让我开始真正喜欢上了嵌入式开发，并逐渐走上了专业化的道路。每个人都应该有自己的梦想，那这个简单的轮式小车就是我梦想的起点，激励着我不断向前！
