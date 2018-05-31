@@ -19,15 +19,11 @@ comments: true
 
 ## 概述
 
-该简单轮式机器人是一个比较传统的入门级智能小车项目，它拥有遥控、避障、和等功能
-
-最后，该机器人的代码可以从我的GitHub[仓库](https://github.com/myyerrol/raspberry_pi_simple_car)获得
+简单轮式机器人是一个比较传统的入门级智能小车项目，它拥有蓝牙远程遥控、超声波避障、红外边缘检测和红外巡线（未完成）等功能。系统的硬件核心为Arduino和Raspberry Pi，这里我选择Arduino和Raspberry Pi首先是因为它们在国内外DIY界非常流行，有很多资料可以参考。此外，Arduino官方提供有很多库，方便读取硬件传感器的数据，非常适合作为机器人系统的下位机，而Raspberry Pi可以运行GNU/Linux操作系统，拥有友好的开发界面以及强大的计算性能（相对于Arduino而言），被用作机器人的大脑非常合适。简单轮式机器人的软件是开源的，具体的代码可以从我的GitHub[仓库](https://github.com/myyerrol/raspberry_pi_simple_car)获得。
 
 ## 原理
 
 ### 硬件
-
-该轮式机器人的硬件核心由Arduino和Raspberry Pi组成，这里先简要介绍一下：Arduino是基于ATmega系列芯片的8位微控制器，开发团队对其硬件和软件进行了封装，大大简化用户的二次开发难度；Raspberry Pi则是基于ARM Cortex-A系列的微型计算机，它拥有强大的处理能力，可以在较短的时间内完成对大量数据的计算工作。这里我选择Arduino和Raspberry Pi首先是因为它们在国内外DIY界非常流行，有很多资料可以参考。此外，Arduino官方提供有很多库，方便读取硬件传感器的数据，非常适合作为机器人系统的下位机，而Raspberry Pi可以运行GNU/Linux操作系统，实时性虽差但是却拥有友好的用户界面，并且可以使用Python来做数据计算，作为上位机顺理成章。
 
 当然，最初我是想只用Raspberry Pi来作为机器人的感知和控制核心，毕竟自己之前从来没有在GNU/Linux操作系统上使用高级编程语言来控制过底层硬件，不过后来经测试Raspberry Pi只能通过软件模拟出并不稳定的PWM后，我还是放弃了这个想法。。。以下是该机器人的硬件系统连接图：
 
