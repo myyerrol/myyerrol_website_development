@@ -19,7 +19,9 @@ comments: true
 
 ## 概述
 
-简单轮式机器人是一个比较传统的入门级智能小车项目，它拥有蓝牙远程遥控、超声波避障、红外边缘检测和红外巡线（未完成）等功能。系统的硬件核心为Arduino和Raspberry Pi，这里我选择Arduino和Raspberry Pi首先是因为它们在国内外DIY界非常流行，有很多资料可以参考。此外，Arduino官方提供有很多库，方便读取硬件传感器的数据，非常适合作为机器人系统的下位机，而Raspberry Pi可以运行GNU/Linux操作系统，拥有友好的开发界面以及强大的计算性能（相对于Arduino而言），被用作机器人的大脑非常合适。简单轮式机器人的软件是开源的，具体的代码可以从我的GitHub[仓库](https://github.com/myyerrol/raspberry_pi_simple_car)获得。
+简单轮式机器人是一个比较传统的入门级智能小车项目，它拥有蓝牙远程遥控、超声波避障、红外边缘检测和红外巡线（未完成）等功能。系统的硬件核心主控为Arduino和Raspberry Pi，这里我选择Arduino和Raspberry Pi主要是因为Arduino官方提供有很多库函数，方便读取硬件传感器的数据，非常适合作为机器人系统的下位机；而Raspberry Pi可以运行GNU/Linux操作系统，拥有友好的开发界面以及强大的计算性能（相对于Arduino而言），被用作机器人的上位机有着独特的优势。此外，简单轮式机器人的软件是开源的，具体代码可以从我的GitHub[仓库](https://github.com/myyerrol/raspberry_pi_simple_car)上获得。
+
+![raspberry_pi_simple_car_1](http://media.myyerrol.io/images/raspberry_pi_simple_car/raspberry_pi_simple_car_1.jpg)
 
 ## 原理
 
@@ -707,8 +709,6 @@ comments: true
 ### 成果
 
 以下是制作完成后的成果图：
-
-![raspberry_pi_simple_car_1](http://media.myyerrol.io/images/raspberry_pi_simple_car/raspberry_pi_simple_car_1.jpg)
 
 ![raspberry_pi_simple_car_2](http://media.myyerrol.io/images/raspberry_pi_simple_car/raspberry_pi_simple_car_2.jpg)
 
