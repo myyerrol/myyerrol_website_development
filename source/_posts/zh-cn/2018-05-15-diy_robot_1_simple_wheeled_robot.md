@@ -542,7 +542,7 @@ comments: true
 
   > raspberry_pi_simple_car_run_3.py
 
-  该代码实现的功能与上面的测试代码2类似，只不过图形界面本代码里使用的是[Pygame](https://www.pygame.org/)而不是之前的[Tkinter]（https://docs.python.org/2/library/tkinter.html）。
+  该代码实现的功能与上面的测试代码2类似，只不过图形界面本代码里使用的是[Pygame](https://www.pygame.org/)而不是之前的[Tkinter](https://docs.python.org/2/library/tkinter.html)。
 
   ```py
   import sys
