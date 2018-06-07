@@ -130,5 +130,5 @@ No matter where you are, whether it's a quarter mile away or half way across the
 ![team_xmbot](/images/guiyang/team/team_xmbot.jpg)
 
 {% alert info %}
-普通个人转载请注明出处。获得许可后，要求转载时保留注明出处和网站链接，谢谢！
+本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
 {% endalert %}
