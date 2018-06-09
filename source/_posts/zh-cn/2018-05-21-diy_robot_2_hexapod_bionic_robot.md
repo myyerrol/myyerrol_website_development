@@ -25,7 +25,47 @@ comments: true
 
 小型六足仿生机器人是一个拥有十八个关节自由度的迷你多足机器人，它可以实现红外遥控、超声波避障等基本功能。机器人的硬件核心为Arduino Nano，并采用串口通信的方式与24路舵机控制板进行数据交互，从而间接完成对所有舵机旋转角度的精确控制，最终使机器人能够以各种不同的步态进行移动。当然，这个机器人项目的软件依旧开源，具体代码可以从我的GitHub[仓库](https://github.com/myyerrol/hexapod_bionic_robot)上获得。
 
+![hexapod_bionic_robot_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_1.jpg)
+
 ## 过程
+
+### 机械
+
+![hexapod_bionic_robot_mechanics_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_1.jpg)
+
+![hexapod_bionic_robot_mechanics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_2.jpg)
+
+![hexapod_bionic_robot_mechanics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_3.jpg)
+
+![hexapod_bionic_robot_mechanics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_4.jpg)
+
+![hexapod_bionic_robot_mechanics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_5.jpg)
+
+![hexapod_bionic_robot_mechanics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_6.jpg)
+
+![hexapod_bionic_robot_mechanics_7](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_7.jpg)
+
+![hexapod_bionic_robot_mechanics_8](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_8.jpg)
+
+![hexapod_bionic_robot_mechanics_9](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_9.jpg)
+
+![hexapod_bionic_robot_mechanics_10](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_10.jpg)
+
+![hexapod_bionic_robot_mechanics_11](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_11.jpg)
+
+### 电子
+
+![hexapod_bionic_robot_electronics_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_1.jpg)
+
+![hexapod_bionic_robot_electronics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_2.jpg)
+
+![hexapod_bionic_robot_electronics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_3.jpg)
+
+![hexapod_bionic_robot_electronics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_4.jpg)
+
+![hexapod_bionic_robot_electronics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_5.jpg)
+
+![hexapod_bionic_robot_electronics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_6.jpg)
 
 ## 原理
 
@@ -36,6 +76,23 @@ comments: true
 ### 软件
 
 ## 成果
+
+以下是制作完成后的成果图和测试视频：
+
+![hexapod_bionic_robot_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_2.jpg)
+
+![hexapod_bionic_robot_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_3.jpg)
+
+![hexapod_bionic_robot_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_4.jpg)
+
+![hexapod_bionic_robot_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_5.jpg)
+
+![hexapod_bionic_robot_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_6.jpg)
+
+<div style="height: 0; padding-bottom: 60%; position: relative;">
+  <iframe width="498" height="510" src="http://player.youku.com/embed/XMzY1MTU4OTczNg" frameborder="0" allowfullscreen="" style="position: absolute; height: 100%; width: 100%;">
+  </iframe>
+</div>
 
 ## 总结
 
