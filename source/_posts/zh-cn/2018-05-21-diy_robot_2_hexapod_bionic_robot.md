@@ -27,7 +27,7 @@ comments: true
 
 ![hexapod_bionic_robot_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_1.jpg)
 
-## 过程
+## 制作
 
 ### 机械
 
