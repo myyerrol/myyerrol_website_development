@@ -29,29 +29,39 @@ comments: true
 
 ## 制作
 
+六足机器人的整个制作过程主要分为机械和电子两部分，其中机械部分我是根据懒猫侠在其博客上发布的[第五版六足肢体装配](http://hellorobot.blog.163.com/blog/static/185444129201373023256527/)教程来完成所有拼装的，由于教程中每一步的图片都非常清楚，所以机械这部分没花费我太多的时间和精力。而电子部分虽然原理难度不大，但是在空间有限的洞洞板上能将原件布局好并完成焊接确实也需要下一些功夫。接下来，我会详细地讲解制作过程中的细节以及我所遇到过的问题。
+
 ### 机械
 
-![hexapod_bionic_robot_mechanics_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_1.jpg)
+- #### 六足小腿
 
-![hexapod_bionic_robot_mechanics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_2.jpg)
+  ![hexapod_bionic_robot_mechanics_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_1.jpg)
 
-![hexapod_bionic_robot_mechanics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_3.jpg)
+  ![hexapod_bionic_robot_mechanics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_2.jpg)
 
-![hexapod_bionic_robot_mechanics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_4.jpg)
+- #### 六足关节
 
-![hexapod_bionic_robot_mechanics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_5.jpg)
+  ![hexapod_bionic_robot_mechanics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_3.jpg)
 
-![hexapod_bionic_robot_mechanics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_6.jpg)
+  ![hexapod_bionic_robot_mechanics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_4.jpg)
 
-![hexapod_bionic_robot_mechanics_7](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_7.jpg)
+  ![hexapod_bionic_robot_mechanics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_5.jpg)
 
-![hexapod_bionic_robot_mechanics_8](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_8.jpg)
+  ![hexapod_bionic_robot_mechanics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_6.jpg)
 
-![hexapod_bionic_robot_mechanics_9](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_9.jpg)
+  ![hexapod_bionic_robot_mechanics_7](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_7.jpg)
 
-![hexapod_bionic_robot_mechanics_10](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_10.jpg)
+- #### 六足大腿
 
-![hexapod_bionic_robot_mechanics_11](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_11.jpg)
+  ![hexapod_bionic_robot_mechanics_8](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_8.jpg)
+
+  ![hexapod_bionic_robot_mechanics_9](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_9.jpg)
+
+- #### 六足整体
+
+  ![hexapod_bionic_robot_mechanics_10](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_10.jpg)
+
+  ![hexapod_bionic_robot_mechanics_11](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_11.jpg)
 
 ### 电子
 
@@ -72,6 +82,8 @@ comments: true
 ### 硬件
 
 以下是该小型仿生六足机器人的硬件系统连接图：
+
+![hexapod_bionic_robot_fritzing](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_fritzing.png)
 
 ### 软件
 
