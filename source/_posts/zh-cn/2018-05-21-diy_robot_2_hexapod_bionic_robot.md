@@ -37,11 +37,19 @@ comments: true
 
 - #### 六足小腿
 
+  如下图所示，六足的小腿部分主要由两片PVC材质的肢体通过叠加而成，而关节部分则使用的是9G金属齿舵机，只要两个自攻螺丝便可将PVC肢体牢牢固定在舵机上，从而保证六足小腿在与地面接触时可以有足够的力量来支撑整个躯体。
+
   ![hexapod_bionic_robot_mechanics_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_1.jpg)
+
+  因为是六足机器人，所以同样的小腿要做六个。**注意:机器人的躯体每边有三个小腿，左右两两对称，所以在组装的时候肢体和舵机安装的位置是有讲究的，要保证结构对称且不能装反。**。
 
   ![hexapod_bionic_robot_mechanics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_2.jpg)
 
-- #### 六足关节
+- #### 六足大腿
+
+  **关节**
+
+  六足的中腿比小腿复杂一些，
 
   ![hexapod_bionic_robot_mechanics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_3.jpg)
 
@@ -53,7 +61,9 @@ comments: true
 
   ![hexapod_bionic_robot_mechanics_7](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_7.jpg)
 
-- #### 六足大腿
+  ---
+
+  **大腿**
 
   ![hexapod_bionic_robot_mechanics_8](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_8.jpg)
 
