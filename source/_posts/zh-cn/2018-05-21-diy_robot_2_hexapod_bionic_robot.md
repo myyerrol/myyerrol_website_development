@@ -13,7 +13,7 @@ comments: true
 
 ## 前言
 
-这个小型六足机器人是我在大四做的，是我大学本科生涯的最后一个个人项目。至于为什么我要做六足机器人，还要从高考完之后说起：当时刚考完的我一直想做一些有意思的事情，直到有一天我发现了一个叫[PVCBOT](http://www.diy-bot.net/?project=pvcbot)的网站，里面记录了很多如何使用PVC材料来制作简单机器人的教程，其中有一款叫做**PVC六足机器昆虫（见下图）**的机器人彻底震撼了我，当时看完教程之后我就下定决心也要做一个类似的六足机器人，于是我便从[懒猫侠](https://link.zhihu.com/?target=http%3A//hellorobot.blog.163.com/)前辈那里购买了六足机器人套件（说实话，确实花了不少钱），并打算按照提供的教程完成自己的六足机器人，但无奈当时的我所掌握的知识太少，什么单片机、串口通信、舵机PWM、电源管理、传感器、舵机控制板等都不懂，特别是机械结构方面我更是一窍不通，所以大一那会儿我还闹出了笑话：用硬纸板做六足机器人的肢体，在安装好舵机并通电测试后，眼睁睁地看着自己的“纸板六足”在舵机的震动下不断地解体。。。
+这个小型六足机器人是我在大四做的，是我大学本科生涯的最后一个个人项目。至于为什么我要做六足机器人，还要从高考完之后说起：当时刚考完的我一直想做一些有意思的事情，直到有一天我发现了一个叫[PVCBOT](http://www.diy-bot.net/?project=pvcbot)的网站，里面记录了很多如何使用PVC材料来制作简单机器人的教程，其中有一款叫做**PVC六足机器昆虫（见下图）**的机器人彻底震撼了我，当时看完教程之后我就下定决心也要做一个类似的六足机器人，于是我便从[懒猫侠](https://link.zhihu.com/?target=http%3A//hellorobot.blog.163.com/)前辈那里购买了六足机器人套件（目前应该已经绝版了），并打算按照提供的教程完成自己的六足机器人，但无奈当时的我所掌握的知识太少，什么单片机、串口通信、舵机PWM、电源管理、传感器、舵机控制板等都不懂，特别是机械结构方面我更是一窍不通，所以大一那会儿我还闹出了笑话：用硬纸板做六足机器人的肢体，在安装好舵机并通电测试后，眼睁睁地看着自己的“纸板六足”在舵机的震动下不断地解体。。。
 
 <!--more-->
 
@@ -52,11 +52,11 @@ comments: true
 
   ![hexapod_bionic_robot_mechanics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_3.jpg)
 
-  同样，我们要重复以上的安装步骤再制作出六个类似的肢体结构。不过在制作的过程中也要注意机器人左右两侧各三个肢体结构要保持对称。
+  接着我们要重复以上的安装步骤再制作出六个类似的肢体结构。不过在制作的过程中也要注意机器人左右两侧各三个肢体结构要保持对称。
 
   ![hexapod_bionic_robot_mechanics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_4.jpg)
 
-  将六个舵机分别插入到之前预留好的肢体空槽里，并保证每组的两个舵机在位置上是互相垂直的，即下图中舵机圆形旋转轴的朝向要一前一上。
+  然后我们需要将六个舵机分别插入到之前预留好的肢体空槽里，并保证每组的两个舵机在位置上是互相垂直的，即下图中舵机圆形旋转轴的朝向要一前一上。
 
   ![hexapod_bionic_robot_mechanics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_5.jpg)
 
@@ -64,26 +64,32 @@ comments: true
 
   ![hexapod_bionic_robot_mechanics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_6.jpg)
 
-  分别使用两条塑料扎带对每组关节进行进一步的加固，其中一条从固定片上方穿过，起到束紧固定片的作用，而另一条则穿过关节侧面的小孔对结构进行固定。
+  最后分别使用两条塑料扎带对每组关节进行进一步的加固，其中一条从固定片上方穿过，起到束紧固定片的作用，而另一条则穿过关节侧面的小孔对结构进行固定。
 
   ![hexapod_bionic_robot_mechanics_7](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_7.jpg)
 
   ---
 
   **大腿**
-
+  六足的大腿是由两个PVC材质的长方形连杆组成，从下图中可以很清楚地看到每个连杆的左右两侧均安装有配套的舵盘，它们的作用主要是用于连接六足的小腿关节和大腿关节。
 
   ![hexapod_bionic_robot_mechanics_8](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_8.jpg)
 
+- #### 六足足体
 
+  如下图所示，使用螺丝将之前已经制作好六对小腿和大腿肢体对应连接在一起。虽然拧螺丝本身没什么难度，但是在哪个位置用螺丝来固定舵机是有规定的，**即舵机在被肢体连接固定之前要让其旋转轴回归到原始的中点位置上（旋转范围为0~180°的舵机，其中点位置为90°）**，这样做的目的是让所有的舵机都能够拥有最合适的运动范围，从而防止出现机器人在移动时其足体运动不对称情况的发生。至于如何让舵机回归中点，一种办法是使用现成的舵机调试版，只要移动旋钮便可调节舵机的位置；另一种是编写Arduino程序，让舵机在上电后自动归中。我用的是第二种方法，感觉效果还不错。
 
   ![hexapod_bionic_robot_mechanics_9](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_9.jpg)
 
-- #### 六足整体
+  接下来，我们要把六足的足体全部安装到其顶部躯体上。同理，在安装前要确保需要连接固定的舵机已经回归到中点位置，除此之外还要提前规定好躯体的哪一侧是机器人的头部，哪一端是机器人的尾部，不要在安装的时候把足体装反了。
 
   ![hexapod_bionic_robot_mechanics_10](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_10.jpg)
 
+  如图所示，我们首先可以找一个稍微有点高度的物品将机器人顶部垫高，然后使用扎带依次将每个足体的三条舵机线捆绑起来，这样不仅看上去更加美观，也便于整理和连线，不过这样做最重要的意义在于：**可有效阻止舵机线与运动中的足体发生缠绕甚至被扯断情况的出现**，毕竟自己大学在机器人基地的时候就曾亲身经历过电机线在机械臂移动的过程中被狠狠地扯断的悲剧。。。
+
   ![hexapod_bionic_robot_mechanics_11](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_11.jpg)
+
+  最后，我们只需要把锂电池用扎带固定在底部躯体的尾部，并将供电线和充电线分别引出，再把所有已经扎好的舵机线按照顺序塞到躯体当中，并用螺丝将顶部和底部两个躯体拧紧合二为一。至此，六足的机械部分便算大功告成了。
 
 ### 电子
 
