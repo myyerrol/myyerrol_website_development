@@ -41,23 +41,30 @@ comments: true
 
   ![hexapod_bionic_robot_mechanics_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_1.jpg)
 
-  因为是六足机器人，所以同样的小腿要做六个。**注意:机器人的躯体每边有三个小腿，左右两两对称，所以在组装的时候肢体和舵机安装的位置是有讲究的，要保证结构对称且不能装反。**。
+  因为是六足机器人，所以同样结构的小腿要再做五个出来。**注意:机器人的躯体每边有三个小腿，左右两两对称，所以在组装的时候肢体和舵机安装的位置是有讲究的，要保证结构对称且不能装反**。
 
   ![hexapod_bionic_robot_mechanics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_2.jpg)
 
 - #### 六足大腿
 
   **关节**
-
-  六足的中腿比小腿复杂一些，
+  六足大腿的关节结构比之前介绍过的小腿关节要略微复杂一些，因为大腿的关节包含了机器人足体上下和前后两个维度的运动，所以需要两个舵机来实现。如下图所示，首先我们使用螺丝将一个舵机固定在方形的关节肢体里。
 
   ![hexapod_bionic_robot_mechanics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_3.jpg)
 
+  同样，我们要重复以上的安装步骤再制作出六个类似的肢体结构。不过在制作的过程中也要注意机器人左右两侧各三个肢体结构要保持对称。
+
   ![hexapod_bionic_robot_mechanics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_4.jpg)
+
+  将六个舵机分别插入到之前预留好的肢体空槽里，并保证每组的两个舵机在位置上是互相垂直的，即下图中舵机圆形旋转轴的朝向要一前一上。
 
   ![hexapod_bionic_robot_mechanics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_5.jpg)
 
+  接下来安装六足大腿关节的固定片，即将固定片卡到下图中正面那个舵机的圆形旋转轴上。固定片，顾名思义是用来固定的，用在这里主要是防止关节处的两个舵机因足体的震动而彼此之间出现位置上的偏移。
+
   ![hexapod_bionic_robot_mechanics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_6.jpg)
+
+  分别使用两条塑料扎带对每组关节进行进一步的加固，其中一条从固定片上方穿过，起到束紧固定片的作用，而另一条则穿过关节侧面的小孔对结构进行固定。
 
   ![hexapod_bionic_robot_mechanics_7](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_7.jpg)
 
@@ -65,7 +72,10 @@ comments: true
 
   **大腿**
 
+
   ![hexapod_bionic_robot_mechanics_8](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_8.jpg)
+
+
 
   ![hexapod_bionic_robot_mechanics_9](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_9.jpg)
 
