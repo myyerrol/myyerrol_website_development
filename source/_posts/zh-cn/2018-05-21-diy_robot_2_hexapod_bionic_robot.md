@@ -101,19 +101,25 @@ comments: true
 
   下图是电源管理模块的背面。为了让焊接后的电路保持整齐、美观，我尽可能采用锡接走线的方式来完成各元件的电气连接，而没办法走线的地方才使用传统的飞线进行连接。尽管锡接走线的优点很明显，但是它的缺点也比较突出：一个是浪费焊锡，另一个就是容易短路，其中短路问题对机器人的影响还是挺严重的，我记得自己之前就有一次不小心把已经上电的电源管理模块随意放在六足机器人的顶部躯体上，令我没想到的是固定躯体的螺丝头部正好卡在电路背面电源正负极锡接走线的中间，所以结果可想而知。。。
 
-  所以，在上电测试之前，大家一定要先用万能表对焊接过的电路进行短路测试，一定要确保没有多余的焊锡渣残留在电路板上，而且对于使用锡接走线方式焊接的电路板，一定不要让其背面直接与潜在具有导电功能的介质进行接触，可以适时使用铜柱将板子架高或者用热熔胶把板子背面全都覆盖住，以防止短路问题的发生。
+  所以，在上电测试之前，大家要先用万能表对焊接过的电路进行短路测试，一定要确保没有多余的焊锡渣残留在电路板上，而且对于使用锡接走线方式焊接的电路板，一定不要让其背面直接与潜在具有导电功能的介质进行接触，可以适时使用铜柱将板子架高或者用热熔胶把板子背面全都覆盖住，以防止短路问题的发生。
 
   ![hexapod_bionic_robot_electronics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_2.jpg)
 
-
+  在确保电路不存在任何可能潜在的短路问题后，可像下图所示的那样，对电路模块进行上电测试。测试主要检测电源降压是否达到预期设定的数值，开关的通断逻辑是否正确等。
 
   ![hexapod_bionic_robot_electronics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_3.jpg)
 
 - #### 控制单元
 
+  下图是机器人的控制单元模块。该控制单元模块主要由Arduino Nano控制板、HMC58883L电子罗盘传感器、MPU6050惯性测量传感器（图中的底座上未插入）、Hc-SR04超声波传感器和红外接收管等组成，为了方便在模块出现问题时能够对其进行更换，我在洞洞板上焊接了一些棑母底座，这样模块就可以直接插在棑母底座上，拆卸很方便。此外，有关电路原理部分的详细介绍可以阅读下面的**原理**章节。
+
   ![hexapod_bionic_robot_electronics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_4.jpg)
 
+  下图是控制单元模块的背面。跟上面已经介绍过的电源管理模块一样，我使用的依然是锡接走线+飞线的方式对元件进行焊接，由于电气连接比较多，所以焊完之后要对电路进行更加全面和仔细的检查。
+
   ![hexapod_bionic_robot_electronics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_5.jpg)
+
+  如下图所示，由于我的Arduino Nano控制板的USB转串口在之前的寻光小车实验中因短路问题被烧坏了，所以我用的是专门为Arduino最小系统烧写Bootloader的USBtinyISP编程器来下载程序。经测试，所有模块均能正常工作，那么接下来的工作就只剩下将机器人全部组装好，然后编写、调试代码了。
 
   ![hexapod_bionic_robot_electronics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_6.jpg)
 
