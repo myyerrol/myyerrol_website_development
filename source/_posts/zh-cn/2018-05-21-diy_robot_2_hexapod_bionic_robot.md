@@ -93,17 +93,29 @@ comments: true
 
 ### 电子
 
-![hexapod_bionic_robot_electronics_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_1.jpg)
+- #### 电源管理
 
-![hexapod_bionic_robot_electronics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_2.jpg)
+  下图是机器人的电源管理模块。在图中可以很清楚地看到我使用了一个LM2596 DC-DC直流可调降压模块来将7.4v 850mAh锂电池组的一路电压降到5V，用于给Arduino Nano主控制板供电；而另一路我使用的是D25XB80大功率整流桥，它拥有标称800V的最大逆向电压和25A的额定前向电流，在锂电池组充满电的情况下（标称7.4v的锂电池组充满电的电压大概在8.4v左右），连接一片D25XB80可以使电压整体降到大概6.9v，经测试给24路舵机控制板和18个舵机供电是没有问题的。至于原理部分，大家可以看一下懒猫侠写的[六足机器人动力的分析  ](http://hellorobot.blog.163.com/blog/static/18544412920116255419787/)这篇博文，里面讲得非常清楚。
 
-![hexapod_bionic_robot_electronics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_3.jpg)
+  ![hexapod_bionic_robot_electronics_1](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_1.jpg)
 
-![hexapod_bionic_robot_electronics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_4.jpg)
+  下图是电源管理模块的背面。为了让焊接后的电路保持整齐、美观，我尽可能采用锡接走线的方式来完成各元件的电气连接，而没办法走线的地方才使用传统的飞线进行连接。尽管锡接走线的优点很明显，但是它的缺点也比较突出：一个是浪费焊锡，另一个就是容易短路，其中短路问题对机器人的影响还是挺严重的，我记得自己之前就有一次不小心把已经上电的电源管理模块随意放在六足机器人的顶部躯体上，令我没想到的是固定躯体的螺丝头部正好卡在电路背面电源正负极锡接走线的中间，所以结果可想而知。。。
 
-![hexapod_bionic_robot_electronics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_5.jpg)
+  所以，在上电测试之前，大家一定要先用万能表对焊接过的电路进行短路测试，一定要确保没有多余的焊锡渣残留在电路板上，而且对于使用锡接走线方式焊接的电路板，一定不要让其背面直接与潜在具有导电功能的介质进行接触，可以适时使用铜柱将板子架高或者用热熔胶把板子背面全都覆盖住，以防止短路问题的发生。
 
-![hexapod_bionic_robot_electronics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_6.jpg)
+  ![hexapod_bionic_robot_electronics_2](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_2.jpg)
+
+
+
+  ![hexapod_bionic_robot_electronics_3](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_3.jpg)
+
+- #### 控制单元
+
+  ![hexapod_bionic_robot_electronics_4](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_4.jpg)
+
+  ![hexapod_bionic_robot_electronics_5](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_5.jpg)
+
+  ![hexapod_bionic_robot_electronics_6](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_electronics_6.jpg)
 
 ## 原理
 
