@@ -133,6 +133,260 @@ comments: true
 
 ### 软件
 
+- #### 核心类库
+
+  > hexapod_bionic_robot.h
+
+  该头文件定义了`HexapodBionicRobot`类，里面声明了机器人避障、处理红外编码信息、处理超声波距离、获取红外编码信息、获取超声波距离和移动机器人躯体等核心函数。
+
+  ```cpp
+  #ifndef HEXAPOD_BIONIC_ROBOT_H
+  #define HEXAPOD_BIONIC_ROBOT_H
+
+  #include <Arduino.h>
+  #include <IRremote.h>
+
+  #define PIN_IR      2
+  #define PIN_TX      3
+  #define PIN_RX      4
+  #define PIN_TRIG    5
+  #define PIN_ECHO    6
+  #define PIN_LED     13
+  #define DIR_INIT    1
+  #define DIR_STOP    1
+  #define DIR_FRONT   2
+  #define DIR_BACK    3
+  #define DIR_LEFT    4
+  #define DIR_RIGHT   5
+  #define MODE_REMOTE 25
+  #define MODE_AUTO   26
+  #define RADIX       10
+  #define RUNTIME     2400
+  #define TIMEOUT     30000
+
+  class HexapodBionicRobot
+  {
+  public:
+      HexapodBionicRobot(IRrecv *ir_receiver, decode_results *ir_results);
+      void avoidFrontObstacle(void);
+      void handleInfraredInformation(void);
+      void handleUltrasonicDistance(void);
+      void moveRobotBody(uint8_t direction, uint8_t times);
+      uint32_t getInfraredInformation(void);
+      float getUltrasonicDistance(void);
+  private:
+      int             mode_flag_;
+      float           duration_;
+      float           distance_;
+      IRrecv         *ir_receiver_;
+      decode_results *ir_results_;
+  };
+
+  #endif // HEXAPOD_BIONIC_ROBOT_H
+
+  ```
+
+  ---
+
+  > hexapod_bionic_robot.cpp
+
+  该源文件实现了`HexapodBionicRobot`类里面所有已经声明的函数，其中`getInfraredInformation()`函数调用了官方的`IRremote`库，可以实时获取红外遥控器所发送的红外编码，而`handleInfraredInformation()`函数则会将获取到的红外编码与已经定义好的进行比对，若符合则跳转入相应的代码块进行处理（机器人前后左右的移动，以及遥控模式或自动模式切换等），当然程序也会通过调用`avoidFrontObstacle()`函数来判断是否在遥控六足机器人移动的过程中，机器人前方的障碍物距离躯体较近，若距离小于事先设定的阈值，则机器人便会自动后退或停止以进行避让。
+
+  ```cpp
+  #include "hexapod_bionic_robot.h"
+
+  #define DEBUG 1
+
+  HexapodBionicRobot::HexapodBionicRobot(IRrecv *ir_recviver,
+                                         decode_results *ir_results)
+      : ir_receiver_(ir_recviver),
+        ir_results_(ir_results)
+  {
+      pinMode(PIN_LED, OUTPUT);
+      pinMode(PIN_TRIG, OUTPUT);
+      pinMode(PIN_ECHO, INPUT);
+
+      mode_flag_ = MODE_REMOTE;
+
+      duration_ = 0.0;
+      distance_ = 0.0;
+  }
+
+  void HexapodBionicRobot::avoidFrontObstacle(void)
+  {
+      float distance = getUltrasonicDistance();
+      Serial.println(distance);
+
+      if (distance == false) {
+          return ;
+      }
+      else if (distance <= 2.5) {
+          moveRobotBody(DIR_STOP, 2);
+      }
+      else if (distance <= 5.0) {
+          moveRobotBody(DIR_BACK, 2);
+      }
+  }
+
+  void HexapodBionicRobot::handleUltrasonicDistance(void)
+  {
+      float distance = getUltrasonicDistance();
+
+      if (distance == false) {
+          return ;
+      }
+      else if (distance <= 5.0) {
+          digitalWrite(PIN_LED, HIGH);
+  #if DEBUG
+          Serial.println("Warning! Distance is too close!!!");
+  #endif
+      }
+      else {
+          digitalWrite(PIN_LED, LOW);
+      }
+  #if DEBUG
+      Serial.print("Distance: ");
+      Serial.print(distance);
+      Serial.println("cm");
+  #endif
+      delay(100);
+  }
+
+  void HexapodBionicRobot::handleInfraredInformation(void)
+  {
+      float distance = 0.0;
+      uint32_t ir_results = getInfraredInformation();
+
+      if (ir_results == false) {
+          return ;
+      }
+      else {
+  #if DEBUG
+          Serial.print("Infrared code: ");
+          Serial.println(ir_results, HEX);
+  #endif
+          if (ir_results == 0XFF629D) {
+              mode_flag_ = MODE_REMOTE;
+          }
+          else if (ir_results == 0XFFE21D) {
+              mode_flag_ = MODE_AUTO;
+          }
+
+          if (mode_flag_ == MODE_REMOTE) {
+              digitalWrite(PIN_LED, LOW);
+              if (ir_results == 0xFF02FD) {
+                  moveRobotBody(DIR_FRONT, 2);
+                  delay(RUNTIME);
+              }
+              else if (ir_results == 0xFF9867) {
+                  moveRobotBody(DIR_BACK, 2);
+                  delay(RUNTIME);
+              }
+              else if (ir_results == 0xFFE01F) {
+                  moveRobotBody(DIR_LEFT, 2);
+                  delay(RUNTIME);
+              }
+              else if (ir_results == 0xFF906f) {
+                  moveRobotBody(DIR_RIGHT, 2);
+                  delay(RUNTIME);
+              }
+              else if (ir_results == 0xFFA857) {
+                  moveRobotBody(DIR_STOP, 2);
+                  delay(RUNTIME);
+              }
+              avoidFrontObstacle();
+          }
+          else if (mode_flag_ == MODE_AUTO) {
+              digitalWrite(PIN_LED, HIGH);
+              while (ir_results != 0XFF629D) {
+                  ir_results = getInfraredInformation();
+                  moveRobotBody(DIR_FRONT, 2);
+                  delay(RUNTIME);
+                  avoidFrontObstacle();
+              }
+              mode_flag_ = MODE_REMOTE;
+          }
+      }
+  }
+
+  void HexapodBionicRobot::moveRobotBody(uint8_t direction, uint8_t times)
+  {
+      char string_direction[5];
+      char string_times[5];
+
+      itoa(direction, string_direction, RADIX);
+      itoa(times, string_times, RADIX);
+
+      Serial.print("#");
+      Serial.print(string_direction);
+      Serial.print("G");
+      Serial.print(string_times);
+      Serial.println("C");
+  }
+
+  uint32_t HexapodBionicRobot::getInfraredInformation(void)
+  {
+      if (ir_receiver_->decode(ir_results_)) {
+          ir_receiver_->resume();
+          return ir_results_->value;
+      }
+      else {
+          return false;
+      }
+  }
+
+  float HexapodBionicRobot::getUltrasonicDistance(void)
+  {
+      duration_ = 0.0;
+      distance_ = 0.0;
+
+      digitalWrite(PIN_TRIG, LOW);
+      delayMicroseconds(10);
+      digitalWrite(PIN_TRIG, HIGH);
+      delayMicroseconds(10);
+      digitalWrite(PIN_TRIG, LOW);
+
+      duration_ = pulseIn(PIN_ECHO, HIGH, TIMEOUT);
+
+      if (duration_ == 0.0) {
+          return false;
+      }
+      else {
+          distance_ = duration_ * 0.017;
+          return distance_;
+      }
+  }
+
+  ```
+
+- #### 测试代码
+
+  > hexapod_bionic_robot_test.ino
+
+  该测试代码的原理非常简单，首先`setup()`函数会以115200的波特率初始化并打开串口，然后Arduino Nano会向串口发送`#1G2C`（1号动作组循环运行2次）让六足机器人站立起来，紧接着程序会使能红外接收管，让其可以接收遥控器发送的红外编码。等初始化结束后，主程序会跳转到`loop()`函数执行`HexapodBionicRobot`类对象的`handleInfraredInformation（）`函数完成红外遥控以及超声波避障等功能。
+
+  ```cpp
+  #include <IRremote.h>
+  #include <hexapod_bionic_robot.h>
+
+  IRrecv         g_ir_receiver(PIN_IR);
+  decode_results g_ir_results;
+
+  void setup()
+  {
+      Serial.begin(115200);
+      Serial.println("#1G2C");
+      g_ir_receiver.enableIRIn();
+  }
+
+  void loop()
+  {
+      HexapodBionicRobot hexapod_bionic_robot(&g_ir_receiver, &g_ir_results);
+      hexapod_bionic_robot.handleInfraredInformation();
+  }
+
+  ```
+
 ## 成果
 
 以下是制作完成后的成果图和测试视频：
@@ -153,6 +407,8 @@ comments: true
 </div>
 
 ## 总结
+
+
 
 通过这个六足机器人项目，我明白了要做好一个机器人除了要掌握各种机械、电子和软件等方面的知识之外，还需要坚定的决心和永不言弃的精神，只要不断坚持自己的理想并为此不懈努力，总有一天会收获只属于自己的成功。
 
