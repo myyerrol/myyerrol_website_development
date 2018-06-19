@@ -131,6 +131,20 @@ comments: true
 
 ![hexapod_bionic_robot_fritzing](http://media.myyerrol.io/images/hexapod_bionic_robot/hexapod_bionic_robot_fritzing.png)
 
+- #### 舵机控制
+
+  **金属齿舵机**
+
+  **舵机控制板**
+
+- #### 电源管理
+
+- #### 核心主控
+
+- #### 数据感知
+
+- #### 数据通信
+
 ### 软件
 
 - #### 核心类库
