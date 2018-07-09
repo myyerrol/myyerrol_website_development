@@ -13,7 +13,7 @@ comments: true
 
 ## 前言
 
-几周之前我拿到了maksyuki所设计的Breezeduino板子，Breezeduino是一个基于ATmega328P-AU芯片（32引脚QTFP封装）的AVR单片机最小系统板，由于现在Arduino非常流行，所以我们也顺理成章地给Breezeduino刷入了最新的Arduino Nano固件（至于熔丝位的配置我会在之后的软件那部分再进行介绍），使其可以通过Arduino所提供的软件封装来编写嵌入式程序。在能够正常烧写Blink程序后，我在想如何能把这个板子用起来，首先进入我脑海里的是做一个游戏机，因为游戏机的硬件原理不难而且还可以自己DIY写一些小游戏去玩，比较有意思，目前国外类似的开源项目有[MAKERbuino](https://www.makerbuino.com/)和[Gamebuino](https://gamebuino.com/)，做得已经相当不错了。不过在经过一番深思熟虑后，我还是决定回归我最喜欢的老本行——机器人，因为对于我来说做一个可以与物理世界进行交互的机器人要比其只能在游戏机的OLED 12864屏幕里能跑能跳要有意思的多。
+今年春节左右我拿到了[maksyuki](https://github.com/maksyuki)所设计的Breezeduino板子，Breezeduino是一个基于ATmega328P-AU芯片（32引脚QTFP封装）的AVR单片机最小系统板，由于现在Arduino非常流行，所以我们也顺理成章地给Breezeduino刷入了最新的Arduino Nano固件（至于熔丝位的配置我会在之后的软件那部分再进行介绍），使其可以通过Arduino所提供的软件封装来编写嵌入式程序。在能够正常烧写Blink程序后，我在想如何能把这个板子用起来，首先进入我脑海里的是做一个游戏机，因为游戏机的硬件原理不难而且还可以自己DIY写一些小游戏去玩，比较有意思，目前国外类似的开源项目有[MAKERbuino](https://www.makerbuino.com/)和[Gamebuino](https://gamebuino.com/)，做得已经相当不错了。不过在经过一番深思熟虑后，我还是决定回归我最喜欢的老本行——机器人，因为对于我来说做一个可以与物理世界进行交互的机器人要比其只能在游戏机的OLED 12864屏幕里能跑能跳要有意思的多。
 
 <!--more-->
 
