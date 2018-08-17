@@ -16,9 +16,9 @@ comments: true
 
 <!--more-->
 
-![ted_quadcopter_1](/images/ted/ted_quadcopter_1.jpg)
+![ted_quadcopter_1](http://media.myyerrol.io/images/ted/ted_quadcopter_1.jpg)
 
-![ted_quadcopter_2](/images/ted/ted_quadcopter_2.jpg)
+![ted_quadcopter_2](http://media.myyerrol.io/images/ted/ted_quadcopter_2.jpg)
 
 一转眼到了大三下学期，我从舞蹈机器人机基地退役。一个偶然的机会，我从[maksyuki](https://github.com/maksyuki)那里得知有一个叫做[Crazyflie](https://www.bitcraze.io)的微型四轴飞行器，这一次我算是打从心底里被震撼到了，以下是几点原因：
 
@@ -34,7 +34,7 @@ comments: true
 
   除了以上两点有关技术层面的优势，Crazyflie微型四轴飞行器项目还有一个最令我无法抗拒的因素——丰富的文档。说实话，我从来没有看到过一家不以盈利为主要目的团队可以将自己的开源项目文档写得如此详细，但是Bitcraze团队做到了，他们这种乐于分享的精神实在是值得我们学习。
 
-  ![crazyflie](/images/crazyflie/crazyflie.jpg)
+  ![crazyflie](http://media.myyerrol.io/images/crazyflie/crazyflie.jpg)
 
 总之，这次在看过Crazyflie微型四轴项目之后，我脑海中有关自制四轴飞行器的想法又被重新唤醒了，于是我们创建了MicroDynamics团队，而Breeze微型四轴项目也就因此顺利地诞生了。
 
@@ -66,7 +66,7 @@ MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭�
 
   Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是硬件的架构图：
 
-  ![breeze_hardware_architecture](/images/breeze/hardware/breeze_hardware_architecture.png)
+  ![breeze_hardware_architecture](http://media.myyerrol.io/images/breeze/hardware/breeze_hardware_architecture.png)
 
   **电机驱动模块**
   电机驱动模块主要负责接收主控制器发过来的PWM（脉冲宽度调制）信号来控制四轴飞行器每个有刷空心杯电机的转速。
@@ -87,7 +87,7 @@ MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭�
 
   Breeze微型四轴飞行器的嵌入式系统架构如下图所示，其中主要包含硬件设备、底层驱动、外设模块和飞控算法等四个部分。
 
-  ![breeze_embedded_architecture](/images/breeze/embedded/breeze_embedded_architecture.png)
+  ![breeze_embedded_architecture](http://media.myyerrol.io/images/breeze/embedded/breeze_embedded_architecture.png)
 
   **硬件设备**
   硬件设备部分包含上面第介绍过的电路模块：电机驱动、电源管理、传感器、无线通信以及主控制器。
@@ -109,9 +109,9 @@ MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭�
   由于我们MicroDynamics团队将正式着手开发新一代的微型四轴飞行器，所以Breeze微型四轴飞行器的代码不会再被开发和维护，目前已有内容仅供学习使用。
   {% endalert %}
 
-  ![github_microdynamics](/images/microdynamics/github_microdynamics.png)
+  ![github_microdynamics](http://media.myyerrol.io/images/microdynamics/github_microdynamics.png)
 
-  ![github_microdynamics_quadcopter](/images/microdynamics/github_microdynamics_quadcopter.png)
+  ![github_microdynamics_quadcopter](http://media.myyerrol.io/images/microdynamics/github_microdynamics_quadcopter.png)
 
 ### 开源协议
 

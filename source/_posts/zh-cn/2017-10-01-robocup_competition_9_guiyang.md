@@ -33,7 +33,7 @@ comments: true
 
   以下图片展示的是我们晓萌机器人在自主导航调试中有关进门环节的情况，由于门刚开始是处于关闭的状态，所以机器人需要通过激光传感器不断地检测门的开启或关闭状态来判断是否让自己进门。除此之外，门的宽度较窄，为了保证晓萌在进门的时候不会撞到两边的门框，我们在原有SLAM算法的基础之上进行了定制，融合了地图中的边缘信息，使得机器人能够顺利地过门。
 
-  ![debug_navigation](/images/guiyang/debug/debug_navigation.jpg)
+  ![debug_navigation](http://media.myyerrol.io/images/guiyang/debug/debug_navigation.jpg)
 
   ---
 
@@ -41,15 +41,15 @@ comments: true
 
   自主识别和抓取物体项目是我们这一次赛前调试的重点内容。早在暑假的时候，我就已经完成了大部分机械臂控制和规划算法的编写工作，不过为了追求整个抓取项目的鲁棒性，我和其他几名队友商量之后还是决定简化机械臂的控制，即只让机械臂负责末端夹持器Z轴高度的变化，而对于末端夹持器其余两个维度的位置调整则交给了更加成熟的底盘模块（使用底盘的前进、后退以及旋转功能来实现）。如下几个图所示，经过大量的调试，简化版的机械臂抓取策略还是相当稳定的，基本上只要图像模块能够识别到物体，机械臂就能将其抓取并放到柜子（由于当时经费紧张，所以我们用桌子和纸箱搭了一个简易的两层“柜子”）的下面一层中，不过缺点也很明显，那就是晓萌完成一次完整的抓取流程需要花费很多时间（主要浪费在底盘多次前进、后退以及缓慢的旋转上），这个问题我们会在比赛之后赛进行改进，以提高晓萌机械臂的抓取效率。
 
-  ![debug_object_manipulation_1](/images/guiyang/debug/debug_object_manipulation_1.jpg)
+  ![debug_object_manipulation_1](http://media.myyerrol.io/images/guiyang/debug/debug_object_manipulation_1.jpg)
 
-  ![debug_object_manipulation_2](/images/guiyang/debug/debug_object_manipulation_2.jpg)
+  ![debug_object_manipulation_2](http://media.myyerrol.io/images/guiyang/debug/debug_object_manipulation_2.jpg)
 
-  ![debug_object_manipulation_3](/images/guiyang/debug/debug_object_manipulation_3.jpg)
+  ![debug_object_manipulation_3](http://media.myyerrol.io/images/guiyang/debug/debug_object_manipulation_3.jpg)
 
-  ![debug_object_manipulation_4](/images/guiyang/debug/debug_object_manipulation_4.jpg)
+  ![debug_object_manipulation_4](http://media.myyerrol.io/images/guiyang/debug/debug_object_manipulation_4.jpg)
 
-  ![debug_object_manipulation_5](/images/guiyang/debug/debug_object_manipulation_5.jpg)
+  ![debug_object_manipulation_5](http://media.myyerrol.io/images/guiyang/debug/debug_object_manipulation_5.jpg)
 
 ### 比赛
 
@@ -57,37 +57,37 @@ comments: true
 
   由于RoboZoo仅是一个展示项目，没有太多涉及技术方面的内容，而且其它几个重要的比赛项目占据了我们大部分的调试时间，所以我们算是在比赛开始前几天才想出一个比较有创意的比赛方案出来。如下图所示，晓萌机器人做静态展示，而其前面的大红机器人（我们基地的上古舞蹈机器人）则在海报上进行动态的舞蹈展示，可惜的是我们本来的设计方案是让晓萌机器人通过语音来命令大红来开始跳舞，但由于现场噪音太大，几次尝试都没有成果，所以我们索性直接通过人的语音来启动大红，不过最后结果还是不错的，我们在这个项目上拿了第一名。
 
-  ![robozoo](/images/guiyang/competition/robozoo/robozoo.jpg)
+  ![robozoo](http://media.myyerrol.io/images/guiyang/competition/robozoo/robozoo.jpg)
 
 - #### Speech Recognition
 
   在语音识别这个项目上，技术裁判会根据电脑上安装有的[GPSRCmdGen](https://github.com/kyordhel/GPSRCmdGen)软件所随机生成的问题序列来询问机器人，机器人需要通过语音重复识别到的问题然后再进行回答，问题总共有15个，每答对一个就加一定的分数，最后哪个队得分高则排在前面。我们晓萌队在语音识别这个单项上依然发挥得非常出色，我记得最后的成绩是正确答对13个问题，效果拔群。
 
-  ![speech_recognition](/images/guiyang/competition/speech_recognition/speech_recognition.jpg)
+  ![speech_recognition](http://media.myyerrol.io/images/guiyang/competition/speech_recognition/speech_recognition.jpg)
 
 - #### Face Recognition
 
   人脸识别项目考察机器人如何在人群中找到特定的目标人物。机器人首先需要在比赛开始之后向人群前进一段距离，到达指定的识别地点之后，机器人要通过摄像头来捕捉前排坐在椅子上和后排站立的人的脸部信息，等到机器人成功识别出目标之后，只需走向目标人物并用语音向裁判说明即可。不过由于该项难度较大，除了中科大的可佳能够轻松完成之外，没有队伍可以成功地执行完整个任务流程，当然我们晓萌队在这个项目上得分也不高，看来之后还要继续努力。
 
-  ![face_recognition_1](/images/guiyang/competition/face_recognition/face_recognition_1.jpg)
+  ![face_recognition_1](http://media.myyerrol.io/images/guiyang/competition/face_recognition/face_recognition_1.jpg)
 
-  ![face_recognition_2](/images/guiyang/competition/face_recognition/face_recognition_2.jpg)
+  ![face_recognition_2](http://media.myyerrol.io/images/guiyang/competition/face_recognition/face_recognition_2.jpg)
 
 - #### Navigation
 
   自主导航项目要求机器人在室内能够准确到达几个目标位置点，并在整个移动过程中避开桌椅、墙壁等障碍物。那天的比赛中，我们晓萌机器人在前两轮表现不佳，机器人在裁判下令比赛开始之后并没有移动（当时我们都焦急得满头大汗），我们分析问题主要出在晓萌机器人在进门阶段时没有正常地检测到房门已被打开，所以底盘模块负责人壕神在第三轮比赛前的短暂准备时间内对代码进行了一些调整，还好最后一轮比赛我们的晓萌机器人能够正常地运行，并且完成了一部分比赛任务，总算之前的努力没有白费。
 
-  ![navigation_1](/images/guiyang/competition/navigation/navigation_1.jpg)
+  ![navigation_1](http://media.myyerrol.io/images/guiyang/competition/navigation/navigation_1.jpg)
 
-  ![navigation_2](/images/guiyang/competition/navigation/navigation_2.jpg)
+  ![navigation_2](http://media.myyerrol.io/images/guiyang/competition/navigation/navigation_2.jpg)
 
-  ![navigation_3](/images/guiyang/competition/navigation/navigation_3.jpg)
+  ![navigation_3](http://media.myyerrol.io/images/guiyang/competition/navigation/navigation_3.jpg)
 
-  ![navigation_4](/images/guiyang/competition/navigation/navigation_4.jpg)
+  ![navigation_4](http://media.myyerrol.io/images/guiyang/competition/navigation/navigation_4.jpg)
 
-  ![navigation_5](/images/guiyang/competition/navigation/navigation_5.jpg)
+  ![navigation_5](http://media.myyerrol.io/images/guiyang/competition/navigation/navigation_5.jpg)
 
-  ![navigation_6](/images/guiyang/competition/navigation/navigation_6.jpg)
+  ![navigation_6](http://media.myyerrol.io/images/guiyang/competition/navigation/navigation_6.jpg)
 
 - #### Object Recognition & Manipulation
 
@@ -95,25 +95,25 @@ comments: true
 
   最后轮到我们出场了，我们在把晓萌机器人摆放在白线（比赛开始位置）上之后，由我来启动晓萌机器人的比赛程序（因为我是机械臂模块的负责人），虽然要启动的7条命令我早已烂熟于心，但是当全场所有人的目光都投向你的时候，未免还是有些紧张。在成功启动所有程序之后，比赛正式开始，第一轮比赛我们识别错了物体，问题可能出在策略模块对所抓物体的选择上，所以在第二轮前的准备时间里，耀神和芳姐讨论之后决定将要抓取的物体名称直接固化在状态机程序中，也就是说我们提前要在两个物品中选一个去抓。最后的事实证明，我们赌赢了但是非常遗憾的是我们离晓萌机器人在正式比赛中成功自主识别和抓取物品这一里程碑事件就差了几个厘米的距离。因为底盘从白线处前进到识别位置时差了几个厘米，导致Kinect没能识别到物体，后来在比赛结束之后，我们把晓萌机器人往前移动了几个厘米，果然程序都一切正常地执行下去了……。
 
-  ![object_manipulation_1](/images/guiyang/competition/object_manipulation/object_manipulation_1.jpg)
+  ![object_manipulation_1](http://media.myyerrol.io/images/guiyang/competition/object_manipulation/object_manipulation_1.jpg)
 
-  ![object_manipulation_2](/images/guiyang/competition/object_manipulation/object_manipulation_2.jpg)
+  ![object_manipulation_2](http://media.myyerrol.io/images/guiyang/competition/object_manipulation/object_manipulation_2.jpg)
 
-  ![object_manipulation_3](/images/guiyang/competition/object_manipulation/object_manipulation_3.jpg)
+  ![object_manipulation_3](http://media.myyerrol.io/images/guiyang/competition/object_manipulation/object_manipulation_3.jpg)
 
-  ![object_manipulation_4](/images/guiyang/competition/object_manipulation/object_manipulation_4.jpg)
+  ![object_manipulation_4](http://media.myyerrol.io/images/guiyang/competition/object_manipulation/object_manipulation_4.jpg)
 
-  ![object_manipulation_5](/images/guiyang/competition/object_manipulation/object_manipulation_5.jpg)
+  ![object_manipulation_5](http://media.myyerrol.io/images/guiyang/competition/object_manipulation/object_manipulation_5.jpg)
 
-  ![object_manipulation_6](/images/guiyang/competition/object_manipulation/object_manipulation_6.jpg)
+  ![object_manipulation_6](http://media.myyerrol.io/images/guiyang/competition/object_manipulation/object_manipulation_6.jpg)
 
 ### 团队
 
 我们这一届晓萌团队在之前学长开发的基础上对机器人的整体架构进行全新的变革。机械部分：忧神设计了新的机械手爪并为晓萌机器人的显示屏、麦克风和摄像头等设备提供了结实的固定支架；电子部分：东神和派大星为嵌入式系统编写了新的机械臂位置控制算法；软件部分：壕神提高了底盘模块的自主导航能力，耀神根据比赛规则编写了基于状态机跳转的新策略模块，张凡让语音识别的准确度得到进一步的提高，芳姐和刘琪则实现了基于OpenCV和PCL等图像技术的物体和人脸识别算法，朋为我们翻译了英文的比赛规则并为复杂算法提供数学支持，而我负责编写了机械臂的控制和规划算法。总之，团队的阶段性成功离不开每一位成员的辛苦努力和付出，也希望之后的晓萌团队可以发展得越来越好。
 
-![team_cloth_and_logo](/images/guiyang/team/team_cloth_and_logo.jpg)
+![team_cloth_and_logo](http://media.myyerrol.io/images/guiyang/team/team_cloth_and_logo.jpg)
 
-![team_group_photo](/images/guiyang/team/team_group_photo.jpg)
+![team_group_photo](http://media.myyerrol.io/images/guiyang/team/team_group_photo.jpg)
 
 ## 总结
 
@@ -127,7 +127,7 @@ comments: true
 
 No matter where you are, whether it's a quarter mile away or half way across the world. The most important thing in life will always be the people in this room, right here, right now. You'll always be with me. And you'll always be my brother.
 
-![team_xmbot](/images/guiyang/team/team_xmbot.jpg)
+![team_xmbot](http://media.myyerrol.io/images/guiyang/team/team_xmbot.jpg)
 
 {% alert info %}
 本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！

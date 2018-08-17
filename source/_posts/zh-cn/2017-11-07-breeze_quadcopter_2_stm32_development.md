@@ -170,7 +170,7 @@ comments: true
   $> make all
   ```
 
-  ![breeze_make_all](/images/breeze/embedded/breeze_make_all.png)
+  ![breeze_make_all](http://media.myyerrol.io/images/breeze/embedded/breeze_make_all.png)
 
 - #### 烧写或调试程序
 
@@ -178,13 +178,13 @@ comments: true
   $> make burn
   ```
 
-  ![breeze_make_burn](/images/breeze/embedded/breeze_make_burn.png)
+  ![breeze_make_burn](http://media.myyerrol.io/images/breeze/embedded/breeze_make_burn.png)
 
   ```bash
   $> make Debug
   ```
 
-  ![breeze_make_debug](/images/breeze/embedded/breeze_make_debug.png)
+  ![breeze_make_debug](http://media.myyerrol.io/images/breeze/embedded/breeze_make_debug.png)
 
 ## 总结
 

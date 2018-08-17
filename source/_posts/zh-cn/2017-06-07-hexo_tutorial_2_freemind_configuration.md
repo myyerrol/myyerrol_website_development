@@ -302,7 +302,7 @@ disqus_shortname: myyerrol
 
 **1. 注册或登录Disqus**
 
-![disqus_login_and_signup](/images/disqus/disqus_login_and_signup.png)
+![disqus_login_and_signup](http://media.myyerrol.io/images/disqus/disqus_login_and_signup.png)
 
 打开[Disqus](https://disqus.com/)主页，可以看到，Disqus 支持 Facebook，Twitter以及 Google 登录，当然也可以用邮箱注册一个账号，如果是注册的账号，需要验证一下邮箱。
 
@@ -310,11 +310,11 @@ disqus_shortname: myyerrol
 
 登陆后，在[Disqus](https://disqus.com/)主页选择**GET STARTED**按钮，会出现如下界面：
 
-![disqus_get_started](/images/disqus/disqus_get_started.png)
+![disqus_get_started](http://media.myyerrol.io/images/disqus/disqus_get_started.png)
 
 选择**I want to install Disqus on my site**选项后，接着会出现下面的界面：
 
-![disqus_create_site](/images/disqus/disqus_create_site.png)
+![disqus_create_site](http://media.myyerrol.io/images/disqus/disqus_create_site.png)
 
 - **Website Name:**
 你的网站名字，可以随便起，但最好和你的网站相关。
@@ -327,7 +327,7 @@ disqus_shortname: myyerrol
 
 在填写完上面的内容之后，点击**Create Site**，等待页面的跳转。接下来在页面的左侧点击**Configure Disqus**
 
-![disqus_configuration](/images/disqus/disqus_configuration.png)
+![disqus_configuration](http://media.myyerrol.io/images/disqus/disqus_configuration.png)
 
 - **Website Name:**
 自动从上面创建站点的步骤中读取，不需要手填。
