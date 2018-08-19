@@ -26,15 +26,15 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 我记得自己从宾馆出来之后，在路上走了一段时间，刚开始路边都是一些居民住宅区和自营小餐馆，可是随着道路一转，一个庞大且点缀有光点的建筑物突然映入我的眼帘，原来那就是胖胖学长所说的国际会展中心（因为之前学长们曾经在这个场馆参加过比赛，所以对场馆及其周围很熟悉）。我走近一看，感觉整个国际会展中心建的还是相当现代化，虽然我不是学建筑出身的，但是会展中心所呈现出来的那种庄严气势还是给我留下了非常深刻的印象。
 
-![competition_venue_1](http://media.myyerrol.io/images/hefei/day_0/competition_venue_1.jpg)
+![competition_venue_1](http://media.myyerrol.io/images/robocup/hefei/day_0/competition_venue_1.jpg)
 
 从上图中可以看到，国际会展中心的工作人员为了迎接RoboCup这一世界顶级的机器人赛事，正在紧锣密鼓地准备参赛队伍的调试区域、比赛的场地以及各大参展商的展台。
 
-![competition_venue_2](http://media.myyerrol.io/images/hefei/day_0/competition_venue_2.jpg)
+![competition_venue_2](http://media.myyerrol.io/images/robocup/hefei/day_0/competition_venue_2.jpg)
 
 国际会展中心的周围也是高楼林立，可以看到这个区域周边经济发展得应该还算不错。而且会展中心的外围也早就拉上条幅，升起气球，为赛事的成功举办烘托气氛。
 
-![competition_venue_3](http://media.myyerrol.io/images/hefei/day_0/competition_venue_3.jpg)
+![competition_venue_3](http://media.myyerrol.io/images/robocup/hefei/day_0/competition_venue_3.jpg)
 
 这张照片是我从会展中心旁边的玻璃环形人行天桥上所拍下来的，从图中可以看到，远处的会展中心坐落在茫茫的夜色之中，似乎预示着即将有重大的事情发生。
 
@@ -42,25 +42,25 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 以下照片均是我在会展中心周围所拍，内容以庆祝RoboCup机器人比赛举办和欢迎来自世界各地的参赛队伍为主要主题。虽然当时夜色已经很晚了，但是你依然能从这些宣传海报中感受到合肥这个城市对机器人的喜爱。
 
-![display_board_1](http://media.myyerrol.io/images/hefei/day_0/display_board_1.jpg)
+![display_board_1](http://media.myyerrol.io/images/robocup/hefei/day_0/display_board_1.jpg)
 
-![display_board_2](http://media.myyerrol.io/images/hefei/day_0/display_board_2.jpg)
+![display_board_2](http://media.myyerrol.io/images/robocup/hefei/day_0/display_board_2.jpg)
 
-![display_board_3](http://media.myyerrol.io/images/hefei/day_0/display_board_3.jpg)
+![display_board_3](http://media.myyerrol.io/images/robocup/hefei/day_0/display_board_3.jpg)
 
-![display_board_4](http://media.myyerrol.io/images/hefei/day_0/display_board_4.jpg)
+![display_board_4](http://media.myyerrol.io/images/robocup/hefei/day_0/display_board_4.jpg)
 
-![display_board_5](http://media.myyerrol.io/images/hefei/day_0/display_board_5.jpg)
+![display_board_5](http://media.myyerrol.io/images/robocup/hefei/day_0/display_board_5.jpg)
 
-![display_board_6](http://media.myyerrol.io/images/hefei/day_0/display_board_6.jpg)
+![display_board_6](http://media.myyerrol.io/images/robocup/hefei/day_0/display_board_6.jpg)
 
-![display_board_7](http://media.myyerrol.io/images/hefei/day_0/display_board_7.jpg)
+![display_board_7](http://media.myyerrol.io/images/robocup/hefei/day_0/display_board_7.jpg)
 
 ### 赛前调试
 
 当我从外面超市买了一些零食回来的时候，发现下图中的两个大神正在探讨如何将ROS下的自主导航框架与刚从学长那里借来的Robopeak RPLIDAR低成本激光传感器（即图中发绿色光的物体，因为根据BSR项目的要求，价格昂贵的传感器一律不允许使用）进行融合。虽然RPLIDAR官方提供有ROS驱动包，但在实际调试过程还需对其源码进行一定的修改才能获得比较好的使用效果。
 
-![competition_debug](http://media.myyerrol.io/images/hefei/day_0/competition_debug.jpg)
+![competition_debug](http://media.myyerrol.io/images/robocup/hefei/day_0/competition_debug.jpg)
 
 ## 总结
 

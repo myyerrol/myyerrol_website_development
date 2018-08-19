@@ -24,25 +24,25 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 BSR项目预赛进行到了第二阶段的争夺当中，我们团队的每个人也是竭尽所能来帮助晓萌机器人走得更远，还好功夫不负有心人，我们最后以预赛第四名的成绩进入到之后BSR项目的决赛阶段（第一名是中科大的可佳低成本移动平台，第二名是上交大的蛟龙机器人，第三名是来自洛阳理工的低成本机器人），算是惊险晋级。
 
-![bsr_1](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_1.jpg)
+![bsr_1](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_1.jpg)
 
-![bsr_2](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_2.jpg)
+![bsr_2](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_2.jpg)
 
-![bsr_3](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_3.jpg)
+![bsr_3](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_3.jpg)
 
-![bsr_4](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_4.jpg)
+![bsr_4](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_4.jpg)
 
-![bsr_5](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_5.jpg)
+![bsr_5](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_5.jpg)
 
-![bsr_6](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_6.jpg)
+![bsr_6](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_6.jpg)
 
-![bsr_7](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_7.jpg)
+![bsr_7](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_7.jpg)
 
-![bsr_8](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_8.jpg)
+![bsr_8](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_8.jpg)
 
-![bsr_9](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_9.jpg)
+![bsr_9](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_9.jpg)
 
-![bsr_10](http://media.myyerrol.io/images/hefei/day_5/bsr/bsr_10.jpg)
+![bsr_10](http://media.myyerrol.io/images/robocup/hefei/day_5/bsr/bsr_10.jpg)
 
 ## 总结
 

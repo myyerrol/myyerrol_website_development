@@ -37,27 +37,27 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
   **Poster Session & Reception**
   该环节是RoboCup@Home项目的传统组成部分，它规定每个参赛队伍都必须事先准备好有关自己机器人的技术海报，并在现场向裁判和各队领队进行简要的讲解，其目的主要是为了加强各队之间的技术交流，以便促进RoboCup@Home项目的不断发展。
 
-  ![schedule](http://media.myyerrol.io/images/hefei/day_2/robocup@home/schedule/schedule.jpg)
+  ![schedule](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/schedule/schedule.jpg)
 
 - #### 机器人
 
   从下图可以看到，每个队伍都在积极准备明天各自的比赛项目，其中有一部分队伍的队员正在用视觉传感器对物体进行训练，以便为之后的物体识别和抓取项目做好充足的准备。
 
-  ![robot_1](http://media.myyerrol.io/images/hefei/day_2/robocup@home/robot/robot_1.jpg)
+  ![robot_1](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/robot/robot_1.jpg)
 
-  ![robot_2](http://media.myyerrol.io/images/hefei/day_2/robocup@home/robot/robot_2.jpg)
+  ![robot_2](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/robot/robot_2.jpg)
 
-  ![robot_3](http://media.myyerrol.io/images/hefei/day_2/robocup@home/robot/robot_3.jpg)
+  ![robot_3](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/robot/robot_3.jpg)
 
-  ![robot_4](http://media.myyerrol.io/images/hefei/day_2/robocup@home/robot/robot_4.jpg)
+  ![robot_4](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/robot/robot_4.jpg)
 
-  ![robot_5](http://media.myyerrol.io/images/hefei/day_2/robocup@home/robot/robot_5.jpg)
+  ![robot_5](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/robot/robot_5.jpg)
 
-  ![robot_6](http://media.myyerrol.io/images/hefei/day_2/robocup@home/robot/robot_6.jpg)
+  ![robot_6](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/robot/robot_6.jpg)
 
-  ![robot_7](http://media.myyerrol.io/images/hefei/day_2/robocup@home/robot/robot_7.jpg)
+  ![robot_7](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/robot/robot_7.jpg)
 
-  ![robot_8](http://media.myyerrol.io/images/hefei/day_2/robocup@home/robot/robot_8.jpg)
+  ![robot_8](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/robot/robot_8.jpg)
 
 - #### 技术海报
 
@@ -67,37 +67,37 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
   因为当初我是竖着用手机对海报进行拍照的，所以照片显示在博客里也就横过来了。如果你用的是手机或平板电脑浏览本文章的话，请直接将屏幕顺时针旋转90度即可，但是如果你用的是电脑的话，那就只能请你向左歪脑袋或者直接下载照片进行查看了。
   {% endalert %}
 
-  ![poster_1](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_1.jpg)
+  ![poster_1](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_1.jpg)
 
-  ![poster_2](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_2.jpg)
+  ![poster_2](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_2.jpg)
 
-  ![poster_3](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_3.jpg)
+  ![poster_3](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_3.jpg)
 
-  ![poster_4](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_4.jpg)
+  ![poster_4](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_4.jpg)
 
-  ![poster_5](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_5.jpg)
+  ![poster_5](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_5.jpg)
 
-  ![poster_6](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_6.jpg)
+  ![poster_6](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_6.jpg)
 
-  ![poster_7](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_7.jpg)
+  ![poster_7](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_7.jpg)
 
-  ![poster_8](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_8.jpg)
+  ![poster_8](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_8.jpg)
 
-  ![poster_9](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_9.jpg)
+  ![poster_9](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_9.jpg)
 
-  ![poster_10](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_10.jpg)
+  ![poster_10](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_10.jpg)
 
-  ![poster_11](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_11.jpg)
+  ![poster_11](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_11.jpg)
 
-  ![poster_12](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_12.jpg)
+  ![poster_12](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_12.jpg)
 
-  ![poster_13](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_13.jpg)
+  ![poster_13](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_13.jpg)
 
-  ![poster_14](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_14.jpg)
+  ![poster_14](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_14.jpg)
 
-  ![poster_15](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_15.jpg)
+  ![poster_15](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_15.jpg)
 
-  ![poster_16](http://media.myyerrol.io/images/hefei/day_2/robocup@home/poster/poster_16.jpg)
+  ![poster_16](http://media.myyerrol.io/images/robocup/hefei/day_2/robocup@home/poster/poster_16.jpg)
 
 ## 总结
 

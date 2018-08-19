@@ -31,7 +31,7 @@ comments: true
 
   经过五个多小时的路程，我们终于来到了牡丹之城——洛阳。在处理完宾馆的入住手续之后，我们就跟随着志愿者来到了当地非常有名的**小街锅贴**店进行用餐。话说这家店做的锅贴味道还真不错，虽然我在北京吃过几次**褡裢火烧**，但都不如这家店做得外皮香脆、肉馅多汁（直到后来才知道**小街锅贴**是河南的老字号和非物质文化遗产，怪不得做的那么好吃）。
 
-  ![fired_dumpling](http://media.myyerrol.io/images/luoyang/food/fired_dumpling.jpg)
+  ![fired_dumpling](http://media.myyerrol.io/images/robocup/luoyang/food/fired_dumpling.jpg)
 
   在饱餐一顿之后，我们回到宾馆开始了对机器人底盘的调试工作。尽管后来熬夜到了很晚，但是一想到明天就可以在比赛会场看到其他参赛队伍的服务机器人，所有的劳累就都被抛到了脑后。
 
@@ -39,11 +39,11 @@ comments: true
 
   第二天一早，根据志愿者的热心介绍，我们来到了学校附近的**龙鳞路第一家牛肉汤**店铺喝汤。在洛阳，喝汤是人们挥之不去的习惯，所以我们也入乡随俗，跟随着志愿者一起买饼，然后边喝牛肉汤边吃自己手撕的饼丝，味道确实相当不错。
 
-  ![beef_broth](http://media.myyerrol.io/images/luoyang/food/beef_broth.jpg)
+  ![beef_broth](http://media.myyerrol.io/images/robocup/luoyang/food/beef_broth.jpg)
 
 ### 注册
 
-![registration](http://media.myyerrol.io/images/luoyang/registration/registration.jpg)
+![registration](http://media.myyerrol.io/images/robocup/luoyang/registration/registration.jpg)
 
 在完成比赛的注册之后，我们终于来到了比赛场馆——河南科技大学西苑校区体育馆。在这里，我们遇到了几个国内技术水平较高的参赛队伍，接下来对他们进行简单的介绍。
 
@@ -51,7 +51,7 @@ comments: true
 
 - #### 晓萌队
 
-  ![team_xm](http://media.myyerrol.io/images/luoyang/team/team_xm.jpg)
+  ![team_xm](http://media.myyerrol.io/images/robocup/luoyang/team/team_xm.jpg)
 
   **简介：**
   晓萌队来自西北工业大学舞蹈机器人基地，由学长们于2010年所创建。经过五年时间的发展，我们的晓萌机器人已经发展到了第三代半（因为相比于第三代，只在原有的基础上添加了新机械臂，所以按照汪学长的意思，目前的晓萌机器人只能算是第三代半，而不是第四代），其中涉及的很多开发技术技术都已逐渐走向成熟。接下来我按照机械、电子和软件这三个层面来对当前晓萌机器人进行简要的介绍。
@@ -69,42 +69,42 @@ comments: true
 
 - #### 东风队
 
-  ![team_dongfeng](http://media.myyerrol.io/images/luoyang/team/team_dongfeng.jpg)
+  ![team_dongfeng](http://media.myyerrol.io/images/robocup/luoyang/team/team_dongfeng.jpg)
 
   **简介：**
   东风队来自第二炮兵工程大学（现火箭军工程大学）。
 
 - #### <span id="jump">侏罗纪队</span>
 
-  ![team_zhuluoji](http://media.myyerrol.io/images/luoyang/team/team_zhuluoji.jpg)
+  ![team_zhuluoji](http://media.myyerrol.io/images/robocup/luoyang/team/team_zhuluoji.jpg)
 
   **简介：**
   侏罗纪队来自西北师范大学。
 
 - #### Sun@Home
 
-  ![team_sun@home](http://media.myyerrol.io/images/luoyang/team/team_sun@home.jpg)
+  ![team_sun@home](http://media.myyerrol.io/images/robocup/luoyang/team/team_sun@home.jpg)
 
   **简介：**
   Sun@Home队来自于北京信息科技大学。
 
 - #### BIT@Home
 
-  ![team_bit@home](http://media.myyerrol.io/images/luoyang/team/team_bit@home.jpg)
+  ![team_bit@home](http://media.myyerrol.io/images/robocup/luoyang/team/team_bit@home.jpg)
 
   **简介：**
   BIT@Home队来自北京理工大学。
 
 - #### 自强队
 
-  ![team_ziqiang](http://media.myyerrol.io/images/luoyang/team/team_ziqiang.jpg)
+  ![team_ziqiang](http://media.myyerrol.io/images/robocup/luoyang/team/team_ziqiang.jpg)
 
   **简介：**
   自强队来自上海大学。
 
 - #### 创之风队
 
-  ![team_chuangzhifeng](http://media.myyerrol.io/images/luoyang/team/team_chuangzhifeng.jpg)
+  ![team_chuangzhifeng](http://media.myyerrol.io/images/robocup/luoyang/team/team_chuangzhifeng.jpg)
 
   **简介：**
   创之风队来自上海应用技术学院。

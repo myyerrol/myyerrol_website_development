@@ -24,31 +24,31 @@ RoboCup即机器人世界杯，是目前世界上级别规格最高、影响力�
 
 BSR项目的决赛日终于到来，而我们晓萌队也是非常早地进入到了国际会展中心来进行赛前调试。关于决赛，每个参赛队伍共有两次机会，我们在第一轮的比赛过程中表现出色，如下图2-6所示，晓萌机器人有惊无险地避开了放置在道路中间的垃圾桶，并成功地到达了几个由裁判所随机指定的位置点，而第二轮比赛我们的机器人出现了一些问题，基本上只能在原地或附近地方打转，没能继续完成比赛。总的来说，我们的决赛成绩还是相当不错的，但是很可惜，由于最终的成绩是由预赛和决赛两个阶段共同决定，即预赛成绩带入到决赛当中，所以受到预赛得分的影响，我们最后排名第四，没能实现奖项上的突破，不过我们还是对自己的付出和努力十分满意。
 
-![bsr_1](http://media.myyerrol.io/images/hefei/day_6/bsr/bsr_1.jpg)
+![bsr_1](http://media.myyerrol.io/images/robocup/hefei/day_6/bsr/bsr_1.jpg)
 
-![bsr_2](http://media.myyerrol.io/images/hefei/day_6/bsr/bsr_2.jpg)
+![bsr_2](http://media.myyerrol.io/images/robocup/hefei/day_6/bsr/bsr_2.jpg)
 
-![bsr_3](http://media.myyerrol.io/images/hefei/day_6/bsr/bsr_3.jpg)
+![bsr_3](http://media.myyerrol.io/images/robocup/hefei/day_6/bsr/bsr_3.jpg)
 
-![bsr_4](http://media.myyerrol.io/images/hefei/day_6/bsr/bsr_4.jpg)
+![bsr_4](http://media.myyerrol.io/images/robocup/hefei/day_6/bsr/bsr_4.jpg)
 
-![bsr_5](http://media.myyerrol.io/images/hefei/day_6/bsr/bsr_5.jpg)
+![bsr_5](http://media.myyerrol.io/images/robocup/hefei/day_6/bsr/bsr_5.jpg)
 
-![bsr_6](http://media.myyerrol.io/images/hefei/day_6/bsr/bsr_6.jpg)
+![bsr_6](http://media.myyerrol.io/images/robocup/hefei/day_6/bsr/bsr_6.jpg)
 
-![bsr_7](http://media.myyerrol.io/images/hefei/day_6/bsr/bsr_7.jpg)
+![bsr_7](http://media.myyerrol.io/images/robocup/hefei/day_6/bsr/bsr_7.jpg)
 
-![bsr_8](http://media.myyerrol.io/images/hefei/day_6/bsr/bsr_8.jpg)
+![bsr_8](http://media.myyerrol.io/images/robocup/hefei/day_6/bsr/bsr_8.jpg)
 
 ### 合影
 
 我们的比赛结束了，也是时候该与RoboCup合肥国际赛说再见了。在临走之前，我们晓萌团队在一起进行了合影留念，希望我们有朝一日可以真正地站在RoboCup国际赛的舞台上，并继续在追逐梦想的道路上不断前进！
 
-![group_photo_1](http://media.myyerrol.io/images/hefei/day_6/group_photo/group_photo_1.jpg)
+![group_photo_1](http://media.myyerrol.io/images/robocup/hefei/day_6/group_photo/group_photo_1.jpg)
 
-![group_photo_2](http://media.myyerrol.io/images/hefei/day_6/group_photo/group_photo_2.jpg)
+![group_photo_2](http://media.myyerrol.io/images/robocup/hefei/day_6/group_photo/group_photo_2.jpg)
 
-![group_photo_3](http://media.myyerrol.io/images/hefei/day_6/group_photo/group_photo_3.jpg)
+![group_photo_3](http://media.myyerrol.io/images/robocup/hefei/day_6/group_photo/group_photo_3.jpg)
 
 ## 总结
 
