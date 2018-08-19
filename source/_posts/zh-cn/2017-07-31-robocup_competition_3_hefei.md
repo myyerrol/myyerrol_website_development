@@ -5,7 +5,7 @@ tags:
   - RoboCup
 categories: RoboCup比赛系列
 description: 本篇文章介绍RoboCup合肥国际赛第一天的相关内容。
-feature: /images/robocup/robocup2015.png
+feature: /images/feature/robocup2015.png
 toc: true
 comments: true
 ---

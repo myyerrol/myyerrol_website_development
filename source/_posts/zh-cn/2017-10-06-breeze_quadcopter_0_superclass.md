@@ -5,7 +5,7 @@ tags:
   - Micro Quadcopter
 categories: Breeze微型四轴系列
 description: 本篇文章介绍Breeze微型四轴系列的总纲。
-feature: /images/breeze/breeze.png
+feature: /images/feature/breeze.png
 toc: true
 comments: true
 ---

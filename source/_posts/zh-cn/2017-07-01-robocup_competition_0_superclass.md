@@ -6,7 +6,7 @@ tags:
   - RoboCup@Home
 categories: RoboCup比赛系列
 description: 本篇文章介绍RoboCup比赛系列的总纲。
-feature: /images/robocup/robocup.png
+feature: /images/feature/robocup.png
 toc: true
 comments: true
 ---

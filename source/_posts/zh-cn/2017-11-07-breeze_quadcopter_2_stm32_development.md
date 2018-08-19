@@ -11,7 +11,7 @@ tags:
   - OpenOCD
 categories: Breeze微型四轴系列
 description: 本篇文章介绍Breeze微型四轴飞行器STM32嵌入式开发-开发环境搭建的相关内容。
-feature: /images/breeze/breeze.png
+feature: /images/feature/breeze.png
 toc: true
 comments: true
 ---

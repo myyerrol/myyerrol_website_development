@@ -6,7 +6,7 @@ tags:
   - RoboCup@Home
 categories: RoboCup比赛系列
 description: 本篇文章介绍RoboCup贵阳公开赛的相关内容。
-feature: /images/robocup/robocup@home.jpg
+feature: /images/feature/robocup@home.jpg
 toc: true
 comments: true
 ---
