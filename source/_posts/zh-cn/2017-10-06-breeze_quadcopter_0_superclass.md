@@ -66,7 +66,7 @@ MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭�
 
   Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是硬件的架构图：
 
-  ![breeze_hardware_architecture](http://media.myyerrol.io/images/breeze/hardware/breeze_hardware_architecture.png)
+  ![breeze_hardware_architecture](http://media.myyerrol.io/images/project/breeze_quadcopter/hardware/breeze_hardware_architecture.png)
 
   **电机驱动模块**
   电机驱动模块主要负责接收主控制器发过来的PWM（脉冲宽度调制）信号来控制四轴飞行器每个有刷空心杯电机的转速。
@@ -87,7 +87,7 @@ MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭�
 
   Breeze微型四轴飞行器的嵌入式系统架构如下图所示，其中主要包含硬件设备、底层驱动、外设模块和飞控算法等四个部分。
 
-  ![breeze_embedded_architecture](http://media.myyerrol.io/images/breeze/embedded/breeze_embedded_architecture.png)
+  ![breeze_embedded_architecture](http://media.myyerrol.io/images/project/breeze_quadcopter/embedded/breeze_embedded_architecture.png)
 
   **硬件设备**
   硬件设备部分包含上面第介绍过的电路模块：电机驱动、电源管理、传感器、无线通信以及主控制器。
