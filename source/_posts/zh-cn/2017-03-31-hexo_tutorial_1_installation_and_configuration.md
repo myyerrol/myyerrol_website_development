@@ -179,11 +179,11 @@ $> npm install hexo-deployer-git --save
 
 - 登录GitHub并点击**Setting**选项。
 
-  ![github_settings](http://media.myyerrol.io/images/github/github_settings.png)
+  ![github_settings](http://media.myyerrol.io/images/hexo/github/github_settings.png)
 
 - 使用文本编辑器打开`.ssh`文件夹下的`id_rsa.pub`文件，将里面的内容添加到你的GitHub账户设置中的**SSH Key**中去。
 
-  ![github_ssh_keys](http://media.myyerrol.io/images/github/github_ssh_keys.png)
+  ![github_ssh_keys](http://media.myyerrol.io/images/hexo/github/github_ssh_keys.png)
 
 - 再次打开Shell软件（Windows下**Git Bash**，Ubuntu下为默认的**Terminal**），输入以下命令
 
@@ -203,11 +203,11 @@ $> npm install hexo-deployer-git --save
 
 - 登录你的GitHub，点击**New repository**。
 
-  ![github_new_repository](http://media.myyerrol.io/images/github/github_new_repository.png)
+  ![github_new_repository](http://media.myyerrol.io/images/hexo/github/github_new_repository.png)
 
 - 填写仓库的名字和相关描述。
 
-  ![github_create_repository](http://media.myyerrol.io/images/github/github_create_repository.png)
+  ![github_create_repository](http://media.myyerrol.io/images/hexo/github/github_create_repository.png)
 
   **{% textcolor danger %}
     在设置界面上填写Repository name时一定要注意，仓库的名字是固定的。即your_name.github.io
