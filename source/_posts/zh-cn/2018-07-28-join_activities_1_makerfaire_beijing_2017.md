@@ -6,7 +6,7 @@ tags:
   - Maker
 categories: 参与活动系列
 description: 本篇文章介绍自己参与2017北京Maker Faire大会的相关内容。
-feature: /images/feature/maker_faire_bejing_2017.jpg
+feature: /images/feature/makerfaire_bejing_2017.jpg
 toc: true
 comments: true
 ---
