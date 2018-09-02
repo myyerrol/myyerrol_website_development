@@ -4,7 +4,7 @@ date: 2018-07-05 20:00:00
 tags:
   - Activities
 categories: 参与活动系列
-description: 本篇文章介绍参与活动系列的总纲。
+description: 本篇文章介绍《参与活动系列》的总纲。
 feature: /images/feature/activity.jpg
 toc: true
 comments: true
@@ -28,6 +28,8 @@ comments: true
 [参与活动系列（三）：2018世界机器人大会](http://myyerrol.io/zh-cn/2018/08/18/join_activities_3_wrc_2018/)
 
 ## 总结
+
+中国有句古话叫做：**天下没有不散的筵席**，活动举办得再好也有结束的那一天，这对于我们这些亲身参与其中的人来说，的确是个不小的打击。不过也许正是因为活动持续时间的短暂，才会让我们更加珍惜自己在其中所经历过的时光，更加坚定我们从活动中所要追寻的那种热爱。不管怎样，但愿时间逐渐流走的时候，我们还能保持最开始时的那份初心。
 
 {% alert info %}
 本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
