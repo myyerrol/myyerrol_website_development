@@ -4,7 +4,7 @@ date: 2017-04-15 09:00:00
 tags:
   - ROS
 categories: ROS经验总结系列
-description: 本篇文章介绍ROS经验总结系列的总纲。
+description: 本篇文章介绍《ROS经验总结系列》的总纲。
 feature: /images/feature/ros.png
 toc: true
 comments: true
@@ -32,7 +32,7 @@ comments: true
 
 ## 总纲
 
-以下是我原创的ROS经验总结系列文章：
+以下是我原创的《ROS经验总结系列》文章：
 
 [ROS经验总结系列（零）：总纲](http://myyerrol.io/zh-cn/2017/04/15/ros_experience_0_superclass/)
 [ROS经验总结系列（一）：晓萌机器人系统](http://myyerrol.io/zh-cn/2017/04/18/ros_experience_1_xmbot_system/)

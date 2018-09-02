@@ -5,7 +5,7 @@ tags:
   - RoboCup
   - RoboCup@Home
 categories: RoboCup比赛系列
-description: 本篇文章介绍RoboCup比赛系列的总纲。
+description: 本篇文章介绍《RoboCup比赛系列》的总纲。
 feature: /images/feature/robocup.png
 toc: true
 comments: true
@@ -87,7 +87,7 @@ comments: true
 
 ## 总纲
 
-以下是我原创的RoboCup比赛系列文章：
+以下是我原创的《RoboCup比赛系列》文章：
 
 [RoboCup比赛系列（零）：总纲](http://myyerrol.io/zh-cn/2017/07/01/robocup_competition_0_superclass/)
 [RoboCup比赛系列（一）：中国服务机器人大赛](http://myyerrol.io/zh-cn/2017/07/11/robocup_competition_1_luoyang/)

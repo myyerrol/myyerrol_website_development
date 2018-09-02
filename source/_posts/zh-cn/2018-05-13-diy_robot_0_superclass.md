@@ -5,7 +5,7 @@ tags:
   - DIY
   - Robot
 categories: 自制机器人系列
-description: 本篇文章介绍自制机器人系列的总纲。
+description: 本篇文章介绍《自制机器人系列》的总纲。
 feature: /images/feature/robot.png
 toc: true
 comments: true
@@ -21,7 +21,7 @@ comments: true
 
 ## 总纲
 
-以下是我原创的自制机器人系列文章：
+以下是我原创的《自制机器人系列》文章：
 
 [自制机器人系列（零）：总纲](http://myyerrol.io/zh-cn/2018//05/13/diy_robot_0_superclass/)
 [自制机器人系列（一）：简单轮式机器人](http://myyerrol.io/zh-cn/2018/05/15/diy_robot_1_simple_wheeled_robot/)

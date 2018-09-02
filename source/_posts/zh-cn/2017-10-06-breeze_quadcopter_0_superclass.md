@@ -4,7 +4,7 @@ date: 2017-10-06 22:30:00
 tags:
   - Micro Quadcopter
 categories: Breeze微型四轴系列
-description: 本篇文章介绍Breeze微型四轴系列的总纲。
+description: 本篇文章介绍《Breeze微型四轴系列》的总纲。
 feature: /images/feature/breeze.png
 toc: true
 comments: true
@@ -121,7 +121,7 @@ MicroDynamics团队拥有其所有项目的版权，而对于项目中所用到�
 
 ## 总纲
 
-以下是我原创的Breeze微型四轴系列文章：
+以下是我原创的《Breeze微型四轴系列》文章：
 
 [Breeze微型四轴系列（零）：总纲](http://myyerrol.io/zh-cn/2017/10/06/breeze_quadcopter_0_superclass/)
 [Breeze微型四轴系列（一）：硬件电路板设计](http://myyerrol.io/zh-cn/2017/10/21/breeze_quadcopter_1_hardware_design/)
