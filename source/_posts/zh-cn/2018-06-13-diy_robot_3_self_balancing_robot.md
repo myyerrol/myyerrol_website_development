@@ -33,6 +33,10 @@ comments: true
 
   我买的是带有AB双向增量式磁性霍尔编码器的N20减速电机，减速比为1：30，额定转速正好在300rpm左右。在买的时候一定要注意**电机的使用电压，因为同样的减速比，不同电压型号的N20减速电机其额定转速是不一样的！**至于TB链接就不发了，直接在首页中搜索“N20减速电机 码盘”就能找到。如下图所示，两个N20减速电机被紧紧地固定在机器人底座上：
 
+  ![self_balancing_robot_motor_1](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_motor_1.jpg)
+
+  ![self_balancing_robot_motor_2](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_motor_2.jpg)
+
 - #### 电机驱动层
 
   电机驱动层负责驱动两个N20减速电机的转速和转向。同样，彭神在硬件需求中对电机驱动模块的选择进行了简要的介绍：
@@ -40,6 +44,10 @@ comments: true
   > 电机驱动 | 普通尺寸的电机推荐TB6612驱动芯片，比L298的效率高不易发热（平均电流1.2A左右，功率更大请选L298或其他驱动）；迷你电机用L9110s模块即可，便宜也很小巧。
 
   目前据我了解到的情况，国内外做的自平衡小车其电机驱动用的基本上全是TB6612芯片，本来我也想用该芯片的，不过不知道自己从元器件收纳箱的哪个角落找到了一个之前买的但一直没用的L298N模块，而且加上彭神在[Arduino中文社区](https://www.arduino.cn/)发表的第一代[自平衡机器人-【蛋黄物语】](https://www.arduino.cn/thread-6246-1-1.html)中用的电机驱动也是L298N，所以本着不浪费的原则，我就索性用L298N作为本平衡机器人的电机驱动。不过由于L298N模块比TB6612模块高很多，所以最后制作完成的机器人也要比传统的自平衡机器人高很多。以下是电机驱动层的高清图：
+
+  ![self_balancing_robot_driver_1](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_driver_1.jpg)
+
+  ![self_balancing_robot_driver_2](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_driver_2.jpg)
 
 - #### 电源管理层
 
@@ -51,13 +59,35 @@ comments: true
 
   最后如图所示，我在升压模块的左侧焊了两个接线端子分别用于将升压后的电源通过导线输送给L298N和Breezeduino，而在右下角我添加了一个单刀双掷拨动开关用于控制锂电池电源的输入，而绿色LED和电阻构成的电路则方便判断当前电源通断的状态，即LED亮表示锂电池已经接入电路， 电源管理层可以正常工作；而LED灭则表示锂电池没有接入电路中，此时可以使用带有Micro USB接头的手机线给锂电池进行充电。
 
+  ![self_balancing_robot_power_1](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_power_1.jpg)
+
+  ![self_balancing_robot_power_2](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_power_2.jpg)
+
+  ![self_balancing_robot_power_3](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_power_3.jpg)
+
+  ![self_balancing_robot_power_4](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_power_4.jpg)
+
 - #### 主控处理层
 
   主控处理层是整个自平衡机器人的控制核心，它包含有Breezeduino微控制器和相关供电电路，主要用于接收传感器和电机编码器的数据并根据PID算法进行数学计算，最后通过控制电机的转向和转速来实现机器人自平衡的最终效果。
 
   首先详细介绍一下Breezeduino微控制器。如下图所示，Breezeduino板子是使用EAGLE软件进行设计的，EAGLE在国内的知名度并不是很高，用的人估计也不是很多，不过作为一款优秀的跨平台（Windows、GNU\Linux、Mac）PCB设计软件，它在国外开源硬件界还是非常流行的，比如大名鼎鼎的Arduino以及SparkFun公司大部分的硬件都是用EAGLE进行设计的，它简单易学而又足够强大，在画简单的PCB时其性能足以媲美Altium、Cadance SPB以及PADS等传统大型PCB设计软件。好了言归正传，Breezeduino的硬件原理其实很简单，就是实现了一个单片机的最小系统电路并将芯片的其他引脚通过排针的方式引出，便于功能扩展。
 
+  ![self_balancing_robot_mcu_1](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_mcu_1.png)
+
+  ![self_balancing_robot_mcu_2](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_mcu_2.png)
+
+  ![self_balancing_robot_mcu_3](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_mcu_3.jpg)
+
   如下图所示，除了Breezeduino微控制器之外，在本层洞洞板上我还焊了两个接线端子用于为电机编码器提供标准的5V电源（来源于L298N模块的5V输出端口），而板子左上角和右上角分别焊有排母和排针，分别用于连接OLED 12864显示屏的IIC接口和L298N的6个电机控制接口（4个用于控制左右两个电机的转向，2个用于PWM调速）。
+
+  ![self_balancing_robot_mcu_4](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_mcu_4.jpg)
+
+  ![self_balancing_robot_mcu_5](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_mcu_5.jpg)
+
+  ![self_balancing_robot_mcu_6](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_mcu_6.jpg)
+
+  ![self_balancing_robot_mcu_7](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_mcu_7.jpg)
 
 - #### 外设模块层
 
@@ -70,6 +100,12 @@ comments: true
   蓝牙模块采用SPP（Serial Port Profile）协议将蓝牙传输转变为传统的串口通信方式，主要用于该自平衡机器人的无线串口调试以及Android手机遥控。
 
   蜂鸣器和LED则主要用于表现机器人的某些情感状态，毕竟让机器人发个声、亮个灯要比什么都没有更能体现机器人中“人”的本意，不是吗？
+
+  ![self_balancing_robot_peripheral_1](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_peripheral_1.jpg)
+
+  ![self_balancing_robot_peripheral_2](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_peripheral_2.jpg)
+
+  ![self_balancing_robot_peripheral_3](http://media.myyerrol.io/images/project/self_balancing_robot/self_balancing_robot_peripheral_3.jpg)
 
 ### 软件
 
