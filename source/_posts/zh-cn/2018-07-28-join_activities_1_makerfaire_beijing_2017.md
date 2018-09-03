@@ -13,6 +13,8 @@ comments: true
 
 ## 前言
 
+我记得自己最早听说Maker Faire还是在高考结束的那个暑假，
+
 <!--more-->
 
 ## 总结
