@@ -19,7 +19,7 @@ comments: true
 
 <!--more-->
 
-## 参观
+## 展览
 
 ## 总结
 
