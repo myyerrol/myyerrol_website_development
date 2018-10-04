@@ -22,6 +22,16 @@ comments: true
 
 - #### 工业机器人
 
+  **FANUC**
+
+  **YASKAWA**
+
+  **ABB**
+
+  **KUKA**
+
+  **FESTO**
+
 - #### 服务机器人
 
 ### 比赛
