@@ -32,6 +32,8 @@ comments: true
 
   **FESTO**
 
+  **HRG**
+
 - #### 服务机器人
 
 ### 比赛
