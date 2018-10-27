@@ -23,7 +23,11 @@ comments: true
 
 ### 外景
 
+2017年北京Make Faire大会的举办地是在中华世纪坛。说起中华世纪坛，很多人都不会陌生，因为它是当年中国为了迎接21世纪新千年的到来而专门修建的，现在主要作为艺术馆而使用。也许是第一次参加Make Faire大会有些小激动，我很早就到了会场附近，
+
 ![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_1.jpg)
+
+![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_2.jpg)
 
 ### 展览
 
