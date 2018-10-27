@@ -21,14 +21,21 @@ comments: true
 
 ## 大会
 
+### 外景
+
+![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_1.jpg)
+
 ### 展览
+
+- #### 玩偶模型
+
+- #### 参展展位
 
 ### 比赛
 
 ### 纪念
 
 ## 总结
-
 
 {% alert info %}
 本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
