@@ -15,7 +15,7 @@ comments: true
 
 我记得高考完的那个暑假自己有一次去书店买书，在选书的过程中偶然在旁边的架子上发现好了几本名字叫做《爱上制作》的杂志，我当时出于好奇就翻看了其中的一本，里面介绍了很多国外大神制作的各种充满想象力和创造力的项目，内容不仅描述得非常详细而且还具有很强的可操作性，真的是让人越看越入迷，后来我还买了好几本回家看。就是从那时起我开始逐渐接触国外的创客项目，并喜欢上了这些项目背后所蕴含的那种创客文化。
 
-而作为美国乃至全世界创客文化的先驱，我相信很多人我一样，把[Make公司](https://makezine.com/)当作自己的偶像。我认为Make公司除了发行《爱上制作》等杂志或书籍之外，最大的贡献就是创建了**Make Faire**大会，它为各国的创客以及DIY爱好者们提供了一个绝佳的交流平台，有效促进了创客理念在全球的传播。北京从2015年开始连续举办了两届Mini Maker Faire大会，经过两年的努力，2017年的北京Maker Faire大会终于由Mini级升级为城市级，虽然大会的规模还比不上纽约和湾区，但是能够在家门口参加一次城市极的Make Faire大会，怎么说呢，也算是圆了自己的一个心愿吧。
+而作为美国乃至全世界创客文化的先驱，我相信很多人我一样，把[Make公司](https://makezine.com/)当作自己的偶像。我认为Make公司除了发行《爱上制作》等杂志或书籍之外，最大的贡献就是创建了**Maker Faire**大会，它为各国的创客以及DIY爱好者们提供了一个绝佳的交流平台，有效促进了创客理念在全球的传播。北京从2015年开始连续举办了两届Mini Maker Faire大会，经过两年的努力，2017年的北京Maker Faire大会终于由Mini级升级为城市级，虽然大会的规模还比不上纽约和湾区，但是能够在家门口参加一次城市极的Maker Faire大会，怎么说呢，也算是圆了自己的一个心愿吧。
 
 <!--more-->
 
@@ -23,7 +23,7 @@ comments: true
 
 ### 外景
 
-2017年北京Make Faire大会的举办地是在中华世纪坛。说起中华世纪坛，很多人都不会陌生，因为它是当年中国为了迎接21世纪新千年的到来而专门修建的，现在主要作为艺术馆而使用。也许是第一次参加Make Faire大会有些小激动，我很早就到了会场附近，说实话今年的Make Faire会场设计得非常巧妙，它主要由围绕着世纪坛日晷主体建筑外侧所搭建的一圈帐篷而组成，这样既能充分利用有限的空间，吸引更多的创客团体入驻，又便于工作人员组装和拆卸，
+2017年北京Maker Faire大会的举办地是在中华世纪坛。说起中华世纪坛，很多人都不会陌生，因为它是当年中国为了迎接21世纪新千年的到来而专门修建的，现在主要作为艺术馆而使用。也许是第一次参加Maker Faire大会有些小激动，我很早就赶到了会场附近，令人意想不到的是，会场周边道路两旁的灯柱上都挂着与大会有关的宣传海报，而且设计的相当精美，真恨不得拿一幅回家当作纪念。经过几分钟的路程，自己终于走到了会场的门口（如下图所示），尽管当时场馆还未开放，但是回忆起之前所看杂志中介绍的有关Maker Faire大会的各种精彩内容，内心还是未免有些兴奋。
 
 ![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_1.jpg)
 
@@ -34,6 +34,24 @@ comments: true
 ### 展览
 
 - #### 玩偶模型
+
+  ![doll_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_1.jpg)
+
+  ![doll_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_2.jpg)
+
+  ![doll_3](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_3.jpg)
+
+  ![doll_4](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_4.jpg)
+
+  ![doll_5](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_5.jpg)
+
+  ![doll_6](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_6.jpg)
+
+  ![doll_7](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_7.jpg)
+
+  ![doll_8](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_8.jpg)
+
+  ![doll_9](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_9.jpg)
 
 - #### 参展展位
 
