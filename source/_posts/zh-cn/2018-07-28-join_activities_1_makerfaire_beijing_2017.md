@@ -27,11 +27,13 @@ comments: true
 
 ![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_1.jpg)
 
-上午9点左右，Maker Faire大会正式开始。在会场入口的不远处，一个由各种不同形状的零件所组装成的恐龙模型就伫立在旁边，好像在用它张开的大嘴欢迎所有热爱DIY创客们的到来！
+上午9点左右，Maker Faire大会正式开始。在会场入口的不远处，一个由各种不同形状的零件所组装成的恐龙模型就伫立在旁边，好像在用它张开的大嘴欢迎所有热爱创客运动的爱好者的到来！
 
 ![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_2.jpg)
 
 ### 展览
+
+走到
 
 - #### 玩偶模型
 
