@@ -23,17 +23,19 @@ comments: true
 
 ### 外景
 
-2017年北京Maker Faire大会的举办地是在中华世纪坛。说起中华世纪坛，很多人都不会陌生，因为它是当年中国为了迎接21世纪新千年的到来而专门修建的，现在主要作为艺术馆而使用。也许是第一次参加Maker Faire大会有些小激动，我很早就赶到了会场附近，令人意想不到的是，会场周边道路两旁的灯柱上都挂着与大会有关的宣传海报，而且设计的相当精美，真恨不得拿一幅回家当作纪念。经过几分钟的路程，自己终于走到了会场的门口（如下图所示），尽管当时场馆还未开放，但是回忆起之前所看杂志中介绍的有关Maker Faire大会的各种精彩内容，内心还是未免有些兴奋。
+2017年北京Maker Faire大会的举办地是在中华世纪坛。说起中华世纪坛，很多人都不会陌生，因为它是当年中国为了迎接21世纪新千年的到来而专门修建的，现在主要作为艺术馆而使用。也许是第一次参加Maker Faire大会，我很早就赶到了会场附近，令人意想不到的是，会场周边道路两旁的灯柱上都挂着与大会有关的宣传海报，而且设计的相当精美，真恨不得拿一幅回家当作纪念。经过几分钟的路程，我终于走到了会场的门口（如下图所示），尽管当时场馆还未开放，但是回忆起自己之前在杂志中所看到的各种有关Maker Faire大会的精彩内容，内心还是显得很激动。
 
 ![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_1.jpg)
 
-
+上午9点左右，Maker Faire大会正式开始。在会场入口的不远处，一个由各种不同形状的零件所组装成的恐龙模型就伫立在旁边，好像在用它张开的大嘴欢迎所有热爱DIY创客们的到来！
 
 ![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_2.jpg)
 
 ### 展览
 
 - #### 玩偶模型
+
+
 
   ![doll_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_1.jpg)
 
@@ -56,6 +58,12 @@ comments: true
 - #### 参展展位
 
 ### 比赛
+
+![competition_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/competition/competition_1.jpg)
+
+![competition_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/competition/competition_2.jpg)
+
+![competition_3](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/competition/competition_3.jpg)
 
 ### 纪念
 
