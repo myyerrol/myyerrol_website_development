@@ -27,17 +27,15 @@ comments: true
 
 ![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_1.jpg)
 
-上午9点左右，Maker Faire大会正式开始。在会场入口的不远处，一个由各种不同形状的零件所组装成的恐龙模型就伫立在旁边，好像在用它张开的大嘴欢迎所有热爱创客运动的爱好者的到来！
+上午9点左右，Maker Faire大会正式开始，我也随着人流通过安检通道顺利进入到会场园区里，而在会场入口的不远处，一个由各种不同形状的零件所组装成的恐龙模型就伫立在旁边，好像在用它张开的大嘴欢迎所有热爱创客运动的爱好者的到来！
 
 ![exterior_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exterior/exterior_2.jpg)
 
 ### 展览
 
-走到
-
 - #### 玩偶模型
 
-
+  今年大会的组织方别出心裁地将Make官方的机器人模型分发给很多艺术家或设计师，让他们为其上色，并将最终完成好的机器人模型分散放置在展览会场的各个角落，以作为“集戳换礼”活动点的标志。相比于活动本身，我更喜欢这些机器人模型，它们不仅颜色各不相同，上色的方式也各有特色，有的是用喷漆喷上去的，有的是用油笔画上去的，还有的是用彩色3D打印直接替换已有的零件。总之，我在会场里转了好几圈，应该是把所有隐藏在角落里的机器人模型都用手机给拍了一遍，看来自己收集数据的习惯是改不了了。
 
   ![doll_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_1.jpg)
 
@@ -57,7 +55,7 @@ comments: true
 
   ![doll_9](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/dolls/doll_9.jpg)
 
-- #### 参展展位
+- #### 参展柜台
 
 ### 比赛
 
