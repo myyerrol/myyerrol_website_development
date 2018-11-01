@@ -59,6 +59,8 @@ comments: true
 
   **Banana Pi**
 
+  Banana Pi
+
   ![banana_pi_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/banana_pi/banana_pi_1.jpg)
 
   ![banana_pi_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/banana_pi/banana_pi_2.jpg)
