@@ -59,7 +59,7 @@ comments: true
 
   **Banana Pi**
 
-  Banana Pi
+  香蕉派（Banana Pi）是由广东比派科技有限公司主导的一个开源硬件项目，专注在ARM，MCU系列开源硬件开发板，提供全开放的软件与硬件平台,打造基础技术开发平台。全系列开源硬件产品，完整整合了语音，数据，视频系统平台。开发者可以灵活的在开源硬件基础平台上搭建各种应用平台。可以应用在物联网，AI人工智能 ，工业互联网控制，STEAM教育等各方面。
 
   ![banana_pi_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/banana_pi/banana_pi_1.jpg)
 
