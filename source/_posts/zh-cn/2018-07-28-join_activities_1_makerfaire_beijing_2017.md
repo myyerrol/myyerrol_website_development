@@ -59,13 +59,15 @@ comments: true
 
   **Banana Pi**
 
-  香蕉派（Banana Pi）是由广东比派科技有限公司主导的一个开源硬件项目，专注在ARM，MCU系列开源硬件开发板，提供全开放的软件与硬件平台,打造基础技术开发平台。全系列开源硬件产品，完整整合了语音，数据，视频系统平台。开发者可以灵活的在开源硬件基础平台上搭建各种应用平台。可以应用在物联网，AI人工智能 ，工业互联网控制，STEAM教育等各方面。
+  [香蕉派（Banana Pi）](https://www.banana-pi.org.cn/)是由广东比派科技有限公司主导的一个开源硬件项目，专注在ARM，MCU系列开源硬件开发板，提供全开放的软件与硬件平台,打造基础技术开发平台。全系列开源硬件产品，完整整合了语音，数据，视频系统平台。开发者可以灵活的在开源硬件基础平台上搭建各种应用平台。可以应用在物联网，AI人工智能 ，工业互联网控制，STEAM教育等各方面。
 
   ![banana_pi_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/banana_pi/banana_pi_1.jpg)
 
   ![banana_pi_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/banana_pi/banana_pi_2.jpg)
 
-  **Brick R**
+  **Brick 'R' knowledge**
+
+  [Brick 'R' knowledge](https://www.brickrknowledge.de/zh-hans/)是一种创新性的接插系统，它以独特的设计将电子电路化繁为简，使高深的电子技术变得直观而简单。Brick 'R' knowledge模块使用起来非常方便，系统连接可靠，还允许用户加入多种模块组件，甚至与Bricks系统外的传感器和电子元件相连接，以此开发出更为复杂的电路系统。而在软件上，Bricks的编程套装，不仅可以用C语言完成编程，还可以用Scratch完成部分编程设计，这大大简化入门级用户学习编程的难度，使得学习电子知识变得快乐和有趣。
 
   ![brick_r_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/brick_r/brick_r_1.jpg)
 
