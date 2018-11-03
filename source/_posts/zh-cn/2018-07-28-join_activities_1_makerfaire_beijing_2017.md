@@ -73,13 +73,17 @@ comments: true
 
   ![brick_r_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/brick_r/brick_r_2.jpg)
 
-  **Music Robot**
+  **Robot Band**
 
-  ![music_robot_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/music_robot/music_robot_1.jpg)
+  Robot Band是一个来自日本的机器人乐队，他们曾多次参加在美国湾区举办的Maker Faire大会，是个不折不扣的明星团队。Robot Band机器人乐队主体由几个人型机器人组成，其中有敲鼓的，有敲风琴的，还有表演唱歌的，它们彼此之间配合十分默契，演奏出的音乐有一种机器人独有的机械感，非常动听！
 
-  ![music_robot_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/music_robot/music_robot_2.jpg)
+  ![robot_band_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/robot_band/robot_band_1.jpg)
+
+  ![robot_band_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/robot_band/robot_band_2.jpg)
 
   **Innobot**
+
+  [Innobot](http://www.uptech-robot.com/product/nobot/676.html)是[博创尚和](http://www.uptech-robot.com/)公司推出的模块化机器人，其种类丰富的ABS塑料结构件搭配高强度的镁铝合金结构件可搭建各种灵活而坚固的结构形态，并以电机为动力单元，以各类传感器为感知单元，连接到机器人的核心控制器上（基于Arduino开源硬件），通过界面简单、直观的图形化编程软件（基于Scratch开源软件）或IDE编程软件对机器人编程控制程序，完成设计的功能或任务。
 
   ![innobot_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/innobot/innobot_1.jpg)
 
