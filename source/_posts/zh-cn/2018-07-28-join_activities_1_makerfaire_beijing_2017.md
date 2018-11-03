@@ -59,7 +59,7 @@ comments: true
 
   **Banana Pi**
 
-  [香蕉派（Banana Pi）](https://www.banana-pi.org.cn/)是由广东比派科技有限公司主导的一个开源硬件项目，专注在ARM，MCU系列开源硬件开发板，提供全开放的软件与硬件平台,打造基础技术开发平台。全系列开源硬件产品，完整整合了语音，数据，视频系统平台。开发者可以灵活的在开源硬件基础平台上搭建各种应用平台。可以应用在物联网，AI人工智能 ，工业互联网控制，STEAM教育等各方面。
+  [Banana Pi（香蕉派）](https://www.banana-pi.org.cn/)是由广东比派科技有限公司主导的一个开源硬件项目，专注在ARM，MCU系列开源硬件开发板，提供全开放的软件与硬件平台,打造基础技术开发平台。全系列开源硬件产品，完整整合了语音，数据，视频系统平台。开发者可以灵活的在开源硬件基础平台上搭建各种应用平台。可以应用在物联网，AI人工智能 ，工业互联网控制，STEAM教育等各方面。
 
   ![banana_pi_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/banana_pi/banana_pi_1.jpg)
 
@@ -106,6 +106,8 @@ comments: true
   ![kittenbot_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/kittenbot/kittenbot_2.jpg)
 
   **Makeblock**
+
+  [Makeblock（童心制物）](https://www.makeblock.com/cn/)成立于2013年，是一家全球领先的STEAM教育解决方案提供商，其产品曾多次荣获德国红点、德国iF和美国IDEA等设计大奖，是目前国际STEAM教育领域里的“准独角兽”公司。在我的印象里，Makeblock早在成立之初那几年就已经在创客领域拥有非常高的人气了，那会儿《无线电》杂志和创客论坛经常会介绍如何用Makeblock的金属积木来搭建各种模块化的机器人，而本次大会Makeblock依旧没有让广大的机器人爱好者失望，他们带来的有旗下的[mBot](https://www.makeblock.com/cn/steam-kits/mbot)、[mBot Ranger](https://www.makeblock.com/cn/steam-kits/mbot-ranger)和[Airblock](https://www.makeblock.com/cn/steam-kits/airblock)等明星产品，无论是在机械设计的严谨性上，还是软件编程的易用性上，Makeblock的机器人均表现得非常出色，希望未来Makeblock能够继续帮助更多人享受创造的乐趣！
 
   ![makeblock_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/makeblock/makeblock_1.jpg)
 
