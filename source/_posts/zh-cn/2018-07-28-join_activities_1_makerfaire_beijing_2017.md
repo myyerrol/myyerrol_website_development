@@ -91,11 +91,15 @@ comments: true
 
   **IronBot**
 
+  IronBot是[匠客信息科技](http://www.robospace.cc/)公司推出的智能编程机器人套件，它具有进阶组装、图形编程、智能交互和个性定制等四大核心功能，旨在培养青少年的动手能力与想象力，使孩子们能够在实践中锻炼自己的逻辑思维，并学习到相关的机器人知识。
+
   ![ironbot_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/ironbot/ironbot_1.jpg)
 
   ![ironbot_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/ironbot/ironbot_2.jpg)
 
   **KittenBot**
+
+  [KittenBot](http://www.kittenbot.cn/#/home)是小喵科技公司所打造的智能教育机器人品牌，本次Maker Faire大会KittenBot带来了旗下的两款热门产品，分别为MiniLFR迷你巡线小车和KittenBot基础小车套件（如下图所示）。硬件上它们的主控板均与Arduino UNO兼容，具有很好的扩展性，软件则基于目前流行的Scratch图形化编程工具进行了二次开发，非常方便初学者学习和使用。
 
   ![kittenbot_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/kittenbot/kittenbot_1.jpg)
 
