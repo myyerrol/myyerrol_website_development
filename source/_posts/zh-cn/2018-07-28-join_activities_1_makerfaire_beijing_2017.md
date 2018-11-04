@@ -127,11 +127,13 @@ comments: true
 
   ![quadcopter_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/quadcopters/quadcopter_2.jpg)
 
-  在场馆的航模展示柜台附近闲逛的时候，自己偶遇一个小型的四轴飞行器，基本的电子模块均有配备，而且令人感到意外的是，飞行器上面还搭载了一个小型的图传，真是"麻雀虽小五脏俱全"。尽管功能上不及之前介绍的两种自拍无人机，但是乍一看它还是很可爱的。
+  在场馆的航模展示柜台附近闲逛的时候，自己偶遇了一台小型的四轴飞行器，它配备有完整的电子控制模块，而且令人感到意外的是，飞行器上面还搭载了一个小型的图传，可以实现远距离的图像实时传输，真是"麻雀虽小五脏俱全"。尽管功能上不及之前介绍的两种自拍无人机，但是乍一看它还是很可爱的。
 
   ![quadcopter_3](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/quadcopters/quadcopter_3.jpg)
 
   **Others**
+
+  以下图片集中展示了一些公司和个人创客们所做的作品，其中有可变形的多足机器人，有能够书写毛笔字的装置，还有各种基于开源模块搭建的机器人，种类非常多，真是让人大饱眼福。
 
   ![other_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/others/other_1.jpg)
 
@@ -155,7 +157,7 @@ comments: true
 
 ### 比赛
 
-比赛向来都是Maker Faire大会的传统节目，今年也不例外。与往届相类似，今年比赛的主体依旧面向广大的青少年，比赛的种类有很多，有工程机器人搬用比赛（主要比机器人搬运零件的准确度和速度），还有轮式机器人足球比赛以及MakeX赞助的机器人对垒赛（我不太懂这个比赛规则，但是感觉应该是两方机器人通过发射炮弹来攻击对方的保龄球，在规定时间内，谁击倒保龄球的数量多谁便获胜），这些比赛的难度基本都在当前年龄阶段青少年的理解范围之内，对于提高青少年的动手能力是很有帮助的。
+比赛向来都是Maker Faire大会的传统节目，今年也不例外。与往届相类似，今年比赛的主体依旧面向广大的青少年，比赛的种类有很多，有工程机器人搬用比赛（主要比机器人搬运零件的准确度和速度），还有轮式机器人足球比赛以及MakeX（由Makeblock创立）赞助的机器人对垒赛（我不太懂这个比赛规则，但是感觉应该是两方机器人通过发射炮弹来攻击对方的保龄球，在规定时间内，谁击倒保龄球的数量多谁便获胜），这些比赛的难度基本都在当前年龄阶段青少年的理解范围之内，对于提高青少年的动手能力是很有帮助的。
 
 ![competition_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/competition/competition_1.jpg)
 
@@ -165,7 +167,11 @@ comments: true
 
 ### 纪念
 
+
+
 ## 总结
+
+
 
 {% alert info %}
 本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
