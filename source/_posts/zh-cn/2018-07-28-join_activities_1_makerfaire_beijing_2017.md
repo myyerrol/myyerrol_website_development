@@ -167,7 +167,9 @@ comments: true
 
 ### 纪念
 
+Maker Faire大会除了各路创客大神富有想象力的作品之外，官方提供的纪念品也非常精美。在参观结束后，我一口气在特许商店里购买了徽章、贴纸和衣服等具有Maker Faire元素的纪念品，每个都做工精良，非常有纪念意义。
 
+![souvenir](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/souvenir/souvenir.jpg)
 
 ## 总结
 
