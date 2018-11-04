@@ -121,9 +121,13 @@ comments: true
 
   **Quadcopters**
 
+  四轴无人机是向来都是近几年Maker Faire大会的常客，今年参展的有[零度智控](https://www.zerotech.com)公司推出的[DOBBY](https://www.zerotech.com/#/dobby)自拍无人机和零零无限科技公司自主设计的[Hover Canmera](https://gethover.com/?d=pc&c=cn)跟拍无人机，其中零度智控的工作人员在大会现场临时搭建了一个正方形的防护笼，场地内布满了二维码，应该是要演示多无人机的自主协同飞行，可惜由于自己时间有限，没能看到无人机的精彩演出。
+
   ![quadcopter_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/quadcopters/quadcopter_1.jpg)
 
   ![quadcopter_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/quadcopters/quadcopter_2.jpg)
+
+  在场馆的航模展示柜台附近闲逛的时候，自己偶遇一个小型的四轴飞行器，基本的电子模块均有配备，而且令人感到意外的是，飞行器上面还搭载了一个小型的图传，真是"麻雀虽小五脏俱全"。尽管功能上不及之前介绍的两种自拍无人机，但是乍一看它还是很可爱的。
 
   ![quadcopter_3](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/quadcopters/quadcopter_3.jpg)
 
