@@ -18,21 +18,11 @@ comments: true
 
 ## 大会
 
+### 外景
+
 ### 展览
 
 - #### 工业机器人
-
-  **FANUC**
-
-  **YASKAWA**
-
-  **ABB**
-
-  **KUKA**
-
-  **FESTO**
-
-  **HRG**
 
 - #### 服务机器人
 
