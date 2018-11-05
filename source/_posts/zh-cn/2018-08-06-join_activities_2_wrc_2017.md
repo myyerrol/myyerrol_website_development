@@ -28,6 +28,10 @@ comments: true
 
 ### 比赛
 
+- #### Robocom
+
+- #### Quadcopter
+
 ## 总结
 
 {% alert info %}
