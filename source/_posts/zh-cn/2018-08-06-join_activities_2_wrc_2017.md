@@ -28,6 +28,8 @@ comments: true
 
 ![exterior_1](http://media.myyerrol.io/images/activities/wrc_2017/exterior/exterior_1.jpg)
 
+历经千辛万苦，自己总算是随着人群通过安检进入到了场馆外围的广场，
+
 ![exterior_2](http://media.myyerrol.io/images/activities/wrc_2017/exterior/exterior_2.jpg)
 
 ### 展览
