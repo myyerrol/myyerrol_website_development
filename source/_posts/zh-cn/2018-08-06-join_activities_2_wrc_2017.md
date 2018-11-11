@@ -28,7 +28,7 @@ comments: true
 
 ![exterior_1](http://media.myyerrol.io/images/activities/wrc_2017/exterior/exterior_1.jpg)
 
-历经千辛万苦，自己总算是随着人群通过安检进入到了场馆外围的广场，
+历经千辛万苦，我总算是随着人群通过安检进入到了场馆外围的广场，还好场馆门口附近没有太多的人，自己掏出手机赶紧抓拍了一张留做纪念。
 
 ![exterior_2](http://media.myyerrol.io/images/activities/wrc_2017/exterior/exterior_2.jpg)
 
