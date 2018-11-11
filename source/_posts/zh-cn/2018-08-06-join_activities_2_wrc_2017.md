@@ -44,6 +44,10 @@ comments: true
 
 - #### Quadcopter
 
+![quadcopter_1](http://media.myyerrol.io/images/activities/wrc_2017/competition/quadcopter/quadcopter_1.jpg)
+
+![quadcopter_2](http://media.myyerrol.io/images/activities/wrc_2017/competition/quadcopter/quadcopter_2.jpg)
+
 ## 总结
 
 {% alert info %}
