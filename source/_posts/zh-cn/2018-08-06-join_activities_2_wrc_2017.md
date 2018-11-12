@@ -40,7 +40,7 @@ comments: true
 
 ### 比赛
 
-- #### Robocom
+- #### RoboCom
 
 - #### Quadcopter
 
