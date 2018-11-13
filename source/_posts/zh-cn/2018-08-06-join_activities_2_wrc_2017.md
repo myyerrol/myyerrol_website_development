@@ -28,7 +28,7 @@ comments: true
 
 ![exterior_1](http://media.myyerrol.io/images/activities/wrc_2017/exterior/exterior_1.jpg)
 
-历经千辛万苦，我总算是随着人群通过安检进入到了场馆外围的广场，还好场馆门口附近没有太多的人，自己掏出手机赶紧抓拍了一张留做纪念。
+历经千辛万苦，我总算是随着人群通过安检进入到了场馆外围的广场，还好场馆门口附近没有太多的人，自己赶紧掏出手机抓拍了一张留做纪念。
 
 ![exterior_2](http://media.myyerrol.io/images/activities/wrc_2017/exterior/exterior_2.jpg)
 
@@ -43,6 +43,8 @@ comments: true
 - #### RoboCom
 
 - #### Quadcopter
+
+无人机公开赛的比赛场地位于世界机器人大会的D馆。如下图所示，一走进D馆你立刻就能看到一个由防护网所围成的开阔区域，里面设置了很多带有LED灯带的标志杆和障碍物，选手需要以第一人称视角（FPV）远程操控竞速无人机绕比赛场地快速飞行，并穿越各种障碍，非常惊险刺激。我去的时候刚好就有一架四轴穿越机正在比赛，可惜还没飞完半圈就因碰到障碍物摔倒了地上。。。
 
 ![quadcopter_1](http://media.myyerrol.io/images/activities/wrc_2017/competition/quadcopter/quadcopter_1.jpg)
 
