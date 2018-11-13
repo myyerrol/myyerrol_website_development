@@ -42,13 +42,29 @@ comments: true
 
 - #### RoboCom
 
+  ![robocom_1](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_1.jpg)
+
+  ![robocom_2](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_2.jpg)
+
+  ![robocom_3](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_3.jpg)
+
+  ![robocom_4](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_4.jpg)
+
+  ![robocom_5](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_5.jpg)
+
+  ![robocom_6](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_6.jpg)
+
+  ![robocom_7](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_7.jpg)
+
+  ![robocom_8](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_8.jpg)
+
 - #### Quadcopter
 
-无人机公开赛的比赛场地位于世界机器人大会的D馆。如下图所示，一走进D馆你立刻就能看到一个由防护网所围成的开阔区域，里面设置了很多带有LED灯带的标志杆和障碍物，选手需要以第一人称视角（FPV）远程操控竞速无人机绕比赛场地快速飞行，并穿越各种障碍，非常惊险刺激。我去的时候刚好就有一架四轴穿越机正在比赛，可惜还没飞完半圈就因碰到障碍物摔倒了地上。。。
+  无人机公开赛的比赛场地位于世界机器人大会的D馆。如下图所示，一走进D馆你立刻就能看到一个由防护网所围成的开阔区域，里面设置了很多带有LED灯带的标志杆和障碍物，选手需要以第一人称视角（FPV）远程操控竞速无人机绕比赛场地快速飞行，并穿越各种障碍，非常惊险刺激。我去的时候刚好就有一架四轴穿越机正在比赛，可惜还没飞完半圈就因碰到障碍物摔倒了地上。。。
 
-![quadcopter_1](http://media.myyerrol.io/images/activities/wrc_2017/competition/quadcopter/quadcopter_1.jpg)
+  ![quadcopter_1](http://media.myyerrol.io/images/activities/wrc_2017/competition/quadcopter/quadcopter_1.jpg)
 
-![quadcopter_2](http://media.myyerrol.io/images/activities/wrc_2017/competition/quadcopter/quadcopter_2.jpg)
+  ![quadcopter_2](http://media.myyerrol.io/images/activities/wrc_2017/competition/quadcopter/quadcopter_2.jpg)
 
 ## 总结
 
