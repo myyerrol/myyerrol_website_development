@@ -42,21 +42,27 @@ comments: true
 
 - #### RoboCom
 
+  
+
   ![robocom_1](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_1.jpg)
+
+
 
   ![robocom_2](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_2.jpg)
 
   ![robocom_3](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_3.jpg)
 
+
+
   ![robocom_4](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_4.jpg)
 
   ![robocom_5](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_5.jpg)
 
+
+
   ![robocom_6](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_6.jpg)
 
   ![robocom_7](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_7.jpg)
-
-  ![robocom_8](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_8.jpg)
 
 - #### Quadcopter
 
