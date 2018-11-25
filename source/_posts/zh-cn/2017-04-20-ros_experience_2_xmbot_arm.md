@@ -541,7 +541,7 @@ xm_arm:
 
 下图是MoveIt的总体框架：
 
-![MoveIt! Architecture](http://moveit.ros.org/wordpress/wp-content/uploads/2013/12/Overview.0012.jpg)
+![MoveIt! Architecture](http://moveit.ros.org/assets/images/robots_old/Overview.0012.jpg)
 
 这张图我在学习MoveIt!的时候看过很多遍，理解这个架构图对于学习MoveIt!非常重要。从图中可以看到，**move_group**是MoveIt!最核心的部分。它将其他独立的组件集成到一起，为使用者提供了一系列可以使用的命令和服务。
 
@@ -586,7 +586,7 @@ xm_arm:
 
 在MoveIt!中，运动规划算法是由运动规划器算出来的。当然，运动规划算法有很多，每一个运动规划器都是MoveIt的一个插件，可以根据需求选用不同的规划算法。MoveIt!默认使用的是[OMPL](http://ompl.kavrakilab.org)。OMPL(Open Motion Planning Library)是开源运动规划库的简写，它提供基于随机化的运动规划器。
 
-![Motion Planning Pipeline](http://moveit.ros.org/wordpress/wp-content/uploads/2013/12/Overview.002.jpg)
+![Motion Planning Pipeline](http://moveit.ros.org/assets/images/robots_old/Overview.002.jpg)
 
 - 运动规划请求：
   在让运动规划器进行运动规划之前，我们要先发送一个运动规划的请求。这个请求可以是新的机械臂或末端执行器的位置。为了让运动规划器规划出来的轨迹符合要求，我们需要指定一些约束条件：
@@ -629,13 +629,13 @@ xm_arm:
 
 **Planning Scene**
 
-![Planning Scene](http://moveit.ros.org/wordpress/wp-content/uploads/2013/12/Overview.0031.jpg)
+![Planning Scene](http://moveit.ros.org/assets/images/robots_old/Overview.0031.jpg)
 
 Planning Scene用来表示机械臂周围的外部世界并且保存机械臂自己本身的状态。它通过监听对应的Topic来获取关节状态信息、传感器信息。并可以根据传感器信息和用户的输入，生成机器人周围3D世界空间的表示。
 
 **3D Perception**
 
-![3D Perception](http://moveit.ros.org/wordpress/wp-content/uploads/2013/12/Overview.004.jpg)
+![3D Perception](http://moveit.ros.org/assets/images/robots_old/Overview.004.jpg)
 
 简单来说，3D Perception使用插件来获取点云和深度图像数据，并据此生成[OctoMap](http://octomap.github.io)，为之后机械臂的碰撞检测提供基础。
 
