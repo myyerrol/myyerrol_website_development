@@ -42,27 +42,17 @@ comments: true
 
 - #### RoboCom
 
-  
+  根据官网的介绍，RoboCom国际公开比赛主要面向青少年，通过对抗类、任务类和创意类3种不同的赛事形式，将团队协作、问题解决、科学发现等内容与比赛相结合，用于锻炼青少年对机器人技术的理解和掌握程度，并最大程度地激发青少年对机器人技术的兴趣。虽然我没太看懂RoboCom的比赛规则，但可以确定的是，它在国内的影响力还是相当可以的，我在比赛场地周围转了一圈，发现连很多外省市的小学都派队参加该项赛事，而且赛事组织方还邀请了一些国外队伍参加比赛（“国际赛”的头衔也算勉强够得上吧）。总之抛开技术水平不谈，能吸引如此之多的青少年投入到机器人的学习和制作当中去，RoboCom比赛还是很有积极意义的。
 
   ![robocom_1](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_1.jpg)
-
-
 
   ![robocom_2](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_2.jpg)
 
   ![robocom_3](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_3.jpg)
 
-
-
   ![robocom_4](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_4.jpg)
 
   ![robocom_5](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_5.jpg)
-
-
-
-  ![robocom_6](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_6.jpg)
-
-  ![robocom_7](http://media.myyerrol.io/images/activities/wrc_2017/competition/robocom/robocom_7.jpg)
 
 - #### Quadcopter
 
