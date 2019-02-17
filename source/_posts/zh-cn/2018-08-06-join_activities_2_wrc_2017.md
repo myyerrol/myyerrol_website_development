@@ -42,6 +42,113 @@ comments: true
 
 - #### 工业机器人
 
+  **FANUC**
+  ![fanuc](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/fanuc/fanuc.jpg)
+
+  **YAKSAWA**
+  ![yaskawa](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/yaskawa/yaskawa.jpg)
+
+  **ABB**
+  ![abb](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/abb/abb.jpg)
+
+  **KUKA**
+  ![kuka](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/kuka/kuka.jpg)
+
+  **FESTO**
+  ![festo_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_1.jpg)
+
+  ![festo_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_2.jpg)
+
+  ![festo_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_3.jpg)
+
+  **Rethink Robotics**
+  ![rethink_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_1.jpg)
+
+  ![rethink_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_2.jpg)
+
+  ![rethink_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_3.jpg)
+
+  **Unviersal Robot**
+  ![ur_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/ur/ur_1.jpg)
+
+  ![ur_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/ur/ur_2.jpg)
+
+  ![ur_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/ur/ur_3.jpg)
+
+  **Surgical System**
+  ![surgical_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/surgical/surgical_1.jpg)
+
+  ![surgical_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/surgical/surgical_2.jpg)
+
+  ![surgical_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/surgical/surgical_3.jpg)
+
+  **DLR**
+  ![dlr_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/dlr/dlr_1.jpg)
+
+  ![dlr_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/dlr/dlr_2.jpg)
+
+  **TerBee**
+  ![terabee_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/terabee/terabee_1.jpg)
+
+  ![dlr_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/terabee/terabee_2.jpg)
+
+  **HRG**
+  ![hrg_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_1.jpg)
+
+  ![hrg_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_2.jpg)
+
+  ![hrg_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_3.jpg)
+
+  ![hrg_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_4.jpg)
+
+  ![hrg_5](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_5.jpg)
+
+  ![hrg_6](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_6.jpg)
+
+  **SIASUN**
+  ![siasun_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/siasun/siasun_1.jpg)
+
+  ![siasun_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/siasun/siasun_2.jpg)
+
+  ![siasun_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/siasun/siasun_3.jpg)
+
+  ![siasun_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/siasun/siasun_4.jpg)
+
+  ![siasun_5](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/siasun/siasun_5.jpg)
+
+  **CALT**
+  ![calt_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/calt/calt_1.jpg)
+
+  ![calt_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/calt/calt_2.jpg)
+
+  ![calt_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/calt/calt_3.jpg)
+
+  ![calt_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/calt/calt_4.jpg)
+
+  **LeiShenIS**
+  ![leishen_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/leishen/leishen_1.jpg)
+
+  ![leishen_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/leishen/leishen_2.jpg)
+
+  **AICRobo**
+  ![aicrobo](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/aicrobo/aicrobo.jpg)
+
+  **XRIP**
+  ![xrip_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_1.jpg)
+
+  ![xrip_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_2.jpg)
+
+  ![xrip_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_3.jpg)
+
+  ![xrip_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_4.jpg)
+
+  **Other**
+  ![nachi](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/nachi.jpg)
+
+  ![gsk](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/gsk.jpg)
+
+  ![elibot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/elibot.jpg)
+
 - #### 服务机器人
 
 ### 比赛
