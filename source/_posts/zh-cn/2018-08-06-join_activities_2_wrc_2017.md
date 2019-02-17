@@ -34,6 +34,12 @@ comments: true
 
 ### 展览
 
+- #### 展示机器人
+
+  ![pianobot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/show_robot/pianobot.jpg)
+
+  ![artrobot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/show_robot/artrobot.jpg)
+
 - #### 工业机器人
 
 - #### 服务机器人
