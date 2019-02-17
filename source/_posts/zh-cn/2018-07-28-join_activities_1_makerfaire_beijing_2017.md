@@ -58,7 +58,6 @@ comments: true
 - #### 参展柜台
 
   **Banana Pi**
-
   [Banana Pi（香蕉派）](https://www.banana-pi.org.cn/)是由广东比派科技有限公司主导的一个开源硬件项目，专注在ARM，MCU系列开源硬件开发板，提供全开放的软件与硬件平台,打造基础技术开发平台。全系列开源硬件产品，完整整合了语音，数据，视频系统平台。开发者可以灵活的在开源硬件基础平台上搭建各种应用平台。可以应用在物联网，AI人工智能 ，工业互联网控制，STEAM教育等各方面。
 
   ![banana_pi_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/banana_pi/banana_pi_1.jpg)
@@ -66,7 +65,6 @@ comments: true
   ![banana_pi_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/banana_pi/banana_pi_2.jpg)
 
   **Brick 'R' knowledge**
-
   [Brick 'R' knowledge](https://www.brickrknowledge.de/zh-hans/)是一种创新性的接插系统，它以独特的设计将电子电路化繁为简，使高深的电子技术变得直观而简单。Brick 'R' knowledge模块使用起来非常方便，系统连接可靠，还允许用户加入多种模块组件，甚至与Bricks系统外的传感器和电子元件相连接，以此开发出更为复杂的电路系统。而在软件上，Bricks的编程套装，不仅可以用C语言完成编程，还可以用Scratch完成部分编程设计，这大大简化入门级用户学习编程的难度，使得学习电子知识变得快乐和有趣。
 
   ![brick_r_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/brick_r/brick_r_1.jpg)
@@ -74,7 +72,6 @@ comments: true
   ![brick_r_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/brick_r/brick_r_2.jpg)
 
   **Robot Band**
-
   Robot Band是一个来自日本的机器人乐队，他们曾多次参加在美国湾区举办的Maker Faire大会，是个不折不扣的明星团队。Robot Band机器人乐队主体由几个人型机器人组成，其中有敲鼓的，有敲风琴的，还有表演唱歌的，它们彼此之间配合十分默契，演奏出的音乐有一种机器人独有的机械感，非常动听！
 
   ![robot_band_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/robot_band/robot_band_1.jpg)
@@ -82,7 +79,6 @@ comments: true
   ![robot_band_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/robot_band/robot_band_2.jpg)
 
   **Innobot**
-
   [Innobot](http://www.uptech-robot.com/product/nobot/676.html)是[博创尚和](http://www.uptech-robot.com/)公司推出的模块化机器人，其种类丰富的ABS塑料结构件搭配高强度的镁铝合金结构件可搭建各种灵活而坚固的结构形态，并以电机为动力单元，以各类传感器为感知单元，连接到机器人的核心控制器上（基于Arduino开源硬件），通过界面简单、直观的图形化编程软件（基于Scratch开源软件）或IDE编程软件对机器人编程控制程序，完成设计的功能或任务。
 
   ![innobot_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/innobot/innobot_1.jpg)
@@ -90,7 +86,6 @@ comments: true
   ![innobot_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/innobot/innobot_2.jpg)
 
   **IronBot**
-
   IronBot是[匠客信息科技](http://www.robospace.cc/)公司推出的智能编程机器人套件，它具有进阶组装、图形编程、智能交互和个性定制等四大核心功能，旨在培养青少年的动手能力与想象力，使孩子们能够在实践中锻炼自己的逻辑思维，并学习到相关的机器人知识。
 
   ![ironbot_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/ironbot/ironbot_1.jpg)
@@ -98,7 +93,6 @@ comments: true
   ![ironbot_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/ironbot/ironbot_2.jpg)
 
   **KittenBot**
-
   [KittenBot](http://www.kittenbot.cn/#/home)是小喵科技公司所打造的智能教育机器人品牌，本次Maker Faire大会KittenBot带来了旗下的两款热门产品，分别为MiniLFR迷你巡线小车和KittenBot基础小车套件（如下图所示）。硬件上它们的主控板均与Arduino UNO兼容，具有很好的扩展性，软件则基于目前流行的Scratch图形化编程工具进行了二次开发，非常方便初学者学习和使用。
 
   ![kittenbot_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/kittenbot/kittenbot_1.jpg)
@@ -106,7 +100,6 @@ comments: true
   ![kittenbot_2](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/kittenbot/kittenbot_2.jpg)
 
   **Makeblock**
-
   [Makeblock（童心制物）](https://www.makeblock.com/cn/)成立于2013年，是一家全球领先的STEAM教育解决方案提供商，其产品曾多次荣获德国红点、德国iF和美国IDEA等设计大奖，是目前国际STEAM教育领域里的“准独角兽”公司。在我的印象里，Makeblock早在成立之初那几年就已经在创客领域拥有非常高的人气了，那会儿《无线电》杂志和创客论坛经常会介绍如何用Makeblock的金属积木来搭建各种模块化的机器人，而本次大会Makeblock依旧没有让广大的机器人爱好者失望，他们带来的有旗下的[mBot](https://www.makeblock.com/cn/steam-kits/mbot)、[mBot Ranger](https://www.makeblock.com/cn/steam-kits/mbot-ranger)和[Airblock](https://www.makeblock.com/cn/steam-kits/airblock)等明星产品，无论是在机械设计的严谨性上，还是软件编程的易用性上，Makeblock的机器人均表现得非常出色，希望未来Makeblock能够继续帮助更多人享受创造的乐趣！
 
   ![makeblock_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/makeblock/makeblock_1.jpg)
@@ -120,7 +113,6 @@ comments: true
   ![makeblock_5](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/makeblock/makeblock_5.jpg)
 
   **Quadcopters**
-
   四轴无人机是向来都是近几年Maker Faire大会的常客，今年参展的有[零度智控](https://www.zerotech.com)公司推出的[DOBBY](https://www.zerotech.com/#/dobby)自拍无人机和零零无限科技公司自主设计的[Hover Canmera](https://gethover.com/?d=pc&c=cn)跟拍无人机，其中零度智控的工作人员在大会现场临时搭建了一个正方形的防护笼，场地内布满了二维码，应该是要演示多无人机的自主协同飞行，可惜由于自己时间有限，没能看到无人机的精彩演出。
 
   ![quadcopter_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/quadcopters/quadcopter_1.jpg)
@@ -132,7 +124,6 @@ comments: true
   ![quadcopter_3](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/quadcopters/quadcopter_3.jpg)
 
   **Others**
-
   以下图片集中展示了一些公司和个人创客们所做的作品，其中有可变形的多足机器人，有能够书写毛笔字的装置，还有各种基于开源模块搭建的机器人，种类非常多，真是让人大饱眼福。
 
   ![other_1](http://media.myyerrol.io/images/activities/makerfaire_beijing_2017/exhibition/booths/others/other_1.jpg)
