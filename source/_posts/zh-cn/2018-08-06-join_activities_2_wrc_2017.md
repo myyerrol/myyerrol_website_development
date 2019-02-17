@@ -90,7 +90,7 @@ comments: true
   **TerBee**
   ![terabee_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/terabee/terabee_1.jpg)
 
-  ![dlr_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/terabee/terabee_2.jpg)
+  ![terabee_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/terabee/terabee_2.jpg)
 
   **HRG**
   ![hrg_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_1.jpg)
@@ -125,14 +125,6 @@ comments: true
 
   ![calt_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/calt/calt_4.jpg)
 
-  **LeiShenIS**
-  ![leishen_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/leishen/leishen_1.jpg)
-
-  ![leishen_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/leishen/leishen_2.jpg)
-
-  **AICRobo**
-  ![aicrobo](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/aicrobo/aicrobo.jpg)
-
   **XRIP**
   ![xrip_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_1.jpg)
 
@@ -142,6 +134,14 @@ comments: true
 
   ![xrip_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_4.jpg)
 
+  **AICRobo**
+  ![aicrobo](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/aicrobo/aicrobo.jpg)
+
+  **LeiShenIS**
+  ![leishen_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/leishen/leishen_1.jpg)
+
+  ![leishen_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/leishen/leishen_2.jpg)
+
   **Other**
   ![nachi](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/nachi.jpg)
 
@@ -150,6 +150,77 @@ comments: true
   ![elibot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/elibot.jpg)
 
 - #### 服务机器人
+
+  **SoftBank Robotics**
+  ![softbank_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/softbank/softbank_1.jpg)
+
+  ![softbank_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/softbank/softbank_2.jpg)
+
+  **PowerVision**
+  ![powervision_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/powervision/powervision_1.jpg)
+
+  ![powervision_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/powervision/powervision_2.jpg)
+
+  **UBTECH**
+  ![ubtech](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/ubtech/ubtech.jpg)
+
+  **CANBOT**
+  ![canbot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/canbot/canbot.jpg)
+
+  **Sanbot**
+  ![sanbot_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/sanbot/sanbot_1.jpg)
+
+  ![sanbot_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/sanbot/sanbot_2.jpg)
+
+  ![sanbot_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/sanbot/sanbot_3.jpg)
+
+  **KEENON**
+  ![keenon_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/keenon/keenon_1.jpg)
+
+  ![keenon_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/keenon/keenon_2.jpg)
+
+  ![keenon_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/keenon/keenon_3.jpg)
+
+  ![keenon_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/keenon/keenon_4.jpg)
+
+  **Roobo**
+  ![roobo_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/roobo/roobo_1.jpg)
+
+  ![roobo_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/roobo/roobo_2.jpg)
+
+  **HFAI**
+  ![hfai_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/hfai/hfai_1.jpg)
+
+  ![hfai_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/hfai/hfai_2.jpg)
+
+  ![hfai_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/hfai/hfai_3.jpg)
+
+  **ECOVACS**
+  ![ecovacs_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/ecovacs/ecovacs_1.jpg)
+
+  ![ecovacs_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/ecovacs/ecovacs_2.jpg)
+
+  **DOBOT**
+  ![dobot_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/dobot/dobot_1.jpg)
+
+  ![dobot_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/dobot/dobot_2.jpg)
+
+  **TurtleBot**
+  ![turtlebot_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/turtlebot/turtlebot_1.jpg)
+
+  ![turtlebot_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/turtlebot/turtlebot_2.jpg)
+
+  **EAI**
+  ![eai_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/eai/eai_1.jpg)
+
+  ![eai_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/eai/eai_2.jpg)
+
+  **Other**
+  ![iflytek](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/other/iflytek.jpg)
+
+  ![slamtec](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/other/slamtec.jpg)
+
+  ![jd](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/other/jd.jpg)
 
 ### 比赛
 
