@@ -36,7 +36,15 @@ comments: true
 
 - #### 展示机器人
 
+  **Pianobot**
+  如下图所示，一个身着燕尾服的机器人正坐在钢琴前准备弹奏音乐，没错，它就是在本次世界机器人大会上出尽风头的机器人钢琴家——Teo Tronico（特奥特劳尼克）。根据官方的介绍，这位机器人钢琴家总共拥有53根手指，由于每根手指都包含有相当多的关节（即机械自由度）且关节的动态控制做得非常出色，因此特奥特劳尼克能够极为准确、灵活地在钢琴上进行弹奏，速度之快，即使是世界上最顶尖的音乐大师，恐怕也很难与之相匹敌。
+
+  此外，特奥特劳尼克还拥有令人叹为观止的“记忆力”，它能够准确地“记住”超过1000首含有复杂旋律的钢琴曲，并进行极其精准地演奏。人类无法记住的大量音符，一经录制，特奥特劳尼克就能够分毫无差地为你演绎。不过非常可惜的是，我来到展位的时候表演已经结束了，只能再等下一次了。
+
   ![pianobot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/show_robot/pianobot.jpg)
+
+  **ARTRobot**
+
 
   ![artrobot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/show_robot/artrobot.jpg)
 
@@ -189,6 +197,7 @@ comments: true
   ![roobo_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/roobo/roobo_2.jpg)
 
   **HFAI**
+
   ![hfai_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/hfai/hfai_1.jpg)
 
   ![hfai_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/hfai/hfai_2.jpg)
