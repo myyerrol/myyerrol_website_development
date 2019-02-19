@@ -44,7 +44,7 @@ comments: true
   ![pianobot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/show_robot/pianobot.jpg)
 
   **ARTRobot**
-
+  北京钢铁侠科技作为国内第一家专门从事高级双足机器人研发的科技公司，在本次世界机器人大会上首次携ART双足机器人家族的三代产品集体亮相。从下图中可以非常清楚地看到，ART双足机器人初代机仅有腰部以下的机械结构，但是到了最新的第三代，机器人已经拥有了十指灵巧手，可以说在功能上相比前两代已经有了质的飞跃。根据官方的介绍，ART机器人目前主要应用于高校的人工智能以及机器人相关技术专业的科研实验当中，当然虽说该款机器人的性能非常出色，但是其高昂的价格确实也不是闹着玩的，看来也许只有不差钱的实验室和企业能用得起了。
 
   ![artrobot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/show_robot/artrobot.jpg)
 
