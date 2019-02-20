@@ -51,6 +51,8 @@ comments: true
 - #### 工业机器人
 
   **FANUC**
+  FANUC作为工业机器人四大家族之一，在本次世界机器人大会上仅展示了LR Mate 200iC小型五轴机械臂，
+
   ![fanuc](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/fanuc/fanuc.jpg)
 
   **YAKSAWA**
