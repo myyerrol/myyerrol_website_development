@@ -68,6 +68,8 @@ comments: true
   ![abb](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/abb/abb.jpg)
 
   **KUKA**
+  KUKA（库卡）是工业机器人四大家族里创立时间最早的，库卡于1898年在德国的奥格斯堡成立，目前的主要客户来自汽车制造领域，同时也专注于向工业生产过程中提供先进的自动化解决方案。库卡的机器人产品统一涂装为代表活泼的橙黄色，而且外形设计也非常新颖、精致，被公认是四大家族里机器人“颜值”最高的，当然不要以为库卡只是靠脸吃饭的，能长期入围四大家族，必然是有几把刷子的。库卡的核心技术在于**软件的易用性**，它的二次开发做得很好，就算完全没有技术基础的初学者，在短时间内也可以轻松上手操作，而在人机交互界面上，为迎合中国人的使用习惯（你懂的），库卡将界面做得很简单，让用户像玩游戏一样就可以操作专业的机械臂。
+
   ![kuka](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/kuka/kuka.jpg)
 
   **FESTO**
