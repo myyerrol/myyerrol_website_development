@@ -77,9 +77,11 @@ comments: true
 
   ![festo_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_1.jpg)
 
-
+  下图展示的是费斯托最新研制的气动轻型协作机械臂[BionicCobot](https://www.festo.com.cn/group/zh/cms/12746.htm)，根据官方的介绍，BionicCobot机械臂采用了人类运动学原理（肌肉之间的相互作用）进行设计，并且得益于其独特且先进的驱动概念，机械臂移动的速度和力度能够得到精确的控制，而最重要的是，在发生碰撞的情况下，该款协作机械臂的气动装置能够自动缩回，不会对操作者构成任何威胁。
 
   ![festo_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_2.jpg)
+
+
 
   ![festo_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_3.jpg)
 
