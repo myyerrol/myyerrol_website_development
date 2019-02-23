@@ -81,7 +81,7 @@ comments: true
 
   ![festo_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_2.jpg)
 
-
+  由于参观时间有限，我没能看到费斯托公司下午的仿生蜻蜓和飞行水母的动态演示，不过通过下面这张图片，我想大家就可以很清楚地看到费斯托展台的人气有多么火爆，我敢肯定它的仿生机器人绝对是本届世界机器人里最受欢迎的明星！
 
   ![festo_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_3.jpg)
 
