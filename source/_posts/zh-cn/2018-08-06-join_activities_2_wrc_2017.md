@@ -73,7 +73,11 @@ comments: true
   ![kuka](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/kuka/kuka.jpg)
 
   **FESTO**
+  FESTO（费斯托）成立于1925年，总部位于德国的埃斯林根，是全球气动和电驱动自动化技术领域的领导厂商。除了在传统的工业与流程自动化领域提供软硬件的全套解决方案之外，费斯托还在前沿技术创新领域里投入了大量的研发精力，其中最为惊艳的黑科技产品就是其采用自家的**仿生学习网络**技术所创造出的一系列整体外观和运动性能都极为逼真的仿生机器人，而在本次世界机器人大会上，费斯托不负众望带来了仿生蜻蜓[BionicOpter](https://www.festo.com.cn/group/zh/cms/10224.htm)和飞行水母[AirJelly](https://www.festo.com.cn/group/zh/cms/10244.htm)两大展品，说心里话如果不是自己亲眼看到仿生蜻蜓机器人，真的很难想象FESTO能将如此高度复杂的飞行特性付诸实现，不得不说德国的工业设计水平简直是逆天般的存在。
+
   ![festo_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_1.jpg)
+
+
 
   ![festo_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_2.jpg)
 
