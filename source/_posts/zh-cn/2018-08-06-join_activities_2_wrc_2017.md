@@ -61,6 +61,10 @@ comments: true
   ![yaskawa](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/yaskawa/yaskawa.jpg)
 
   **ABB**
+  ABB同属于工业机器人四大家族之一，来自于瑞士苏黎世，是由两个百年历史的国际性企业——瑞典的ASEA和瑞士的BBC Brown Boveri在1988年合并而成的。ABB的核心技术是**强大的运动控制系统**，对于机器人自身来说，最大的难点在于如何将机器人的运动控制做到又快又稳，而ABB的核心优势就是运动控制，可以说ABB的机器人运动控制算法在四大家族里是最好的，不仅仅有全面的运动控制解决方案，产品的使用和技术文档也编写得非常详细。
+
+  在本次世界机器人大会，ABB带来了如下图所示的双臂协作机器人YuMi，YuMi机器人每个手臂拥有七个自由度，并同时配备了创新的力传感技术，这使得机械臂具有很高的灵敏度和灵活度，适用于各种精度要求非常高的工作，比如3C部件以及其他小型零部件的包装和测试等。
+
   ![abb](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/abb/abb.jpg)
 
   **KUKA**
