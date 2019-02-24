@@ -86,6 +86,8 @@ comments: true
   ![festo_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_3.jpg)
 
   **Rethink Robotics**
+  Rethink机器人
+
   ![rethink_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_1.jpg)
 
   ![rethink_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_2.jpg)
