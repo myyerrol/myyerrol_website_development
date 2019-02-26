@@ -86,7 +86,7 @@ comments: true
   ![festo_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_3.jpg)
 
   **Rethink Robotics**
-  Rethink机器人公司由被誉为“现代机器人之父”的Rodney Brooks（机器人领域绝对的顶级大神）于2008年所创立，与UR公司同为智能人机协作机器人发展的先驱。
+  Rethink机器人公司由Rodney Brooks于2008年所创立，与UR公司同为智能人机协作机器人发展的先驱。
 
   ![rethink_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_1.jpg)
 
