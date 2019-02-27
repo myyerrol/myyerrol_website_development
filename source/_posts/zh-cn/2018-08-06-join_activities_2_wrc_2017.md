@@ -86,7 +86,7 @@ comments: true
   ![festo_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_3.jpg)
 
   **Rethink Robotics**
-  Rethink机器人公司由Rodney Brooks于2008年所创立，与UR公司同为智能人机协作机器人发展的先驱。
+  Rethink机器人公司由Rodney Brooks于2008年所创立，与UR公司同为智能人机协作机器人发展的先驱。在本次世界机器人大会上，Rethink带来了旗下唯一的两款协作机器人Baxter和Sawyer，
 
   ![rethink_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_1.jpg)
 
