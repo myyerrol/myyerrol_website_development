@@ -105,7 +105,9 @@ comments: true
 
   ![ur_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/ur/ur_3.jpg)
 
-  **Surgical System**
+  **Intuitive Surgical**
+  Intuitive Surgical（中文名为**直觉外科**）公司联合IBM、麻省理工和Heartport公司共同研发了下图中的具有划时代意义的达芬奇外科手术系统，其设计理念是通过使用微创的方法，实施复杂的外科手术。简单来说，达芬奇机器人就是一种高级的腹腔镜系统，外科医生需坐在控制台前通过操纵特殊的控制器来远程控制床旁机械臂系统末端执行器在患者体内的运动并对病灶进行精确处理，从而代替传统人手完成整套外科手术。
+
   ![surgical_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/surgical/surgical_1.jpg)
 
   ![surgical_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/surgical/surgical_2.jpg)
@@ -113,6 +115,7 @@ comments: true
   ![surgical_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/surgical/surgical_3.jpg)
 
   **DLR**
+
   ![dlr_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/dlr/dlr_1.jpg)
 
   ![dlr_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/dlr/dlr_2.jpg)
