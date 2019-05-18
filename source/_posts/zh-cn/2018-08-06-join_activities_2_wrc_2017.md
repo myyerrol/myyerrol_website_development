@@ -86,7 +86,9 @@ comments: true
   ![festo_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/festo/festo_3.jpg)
 
   **Rethink Robotics**
-  Rethink机器人公司由Rodney Brooks于2008年所创立，与UR公司同为智能人机协作机器人发展的先驱。在本次世界机器人大会上，Rethink带来了旗下唯一的两款协作机器人Baxter和Sawyer，其中的Baxter
+  Rethink机器人公司由Rodney Brooks于2008年所创立，与UR公司同为智能人机协作机器人发展的先驱。在本次世界机器人大会上，Rethink带来了旗下唯一的两款协作机器人Baxter和Sawyer，其中的Baxter我之前参加RoboCup合肥国际赛的时候就曾经见过，主要得益于其特有的串联弹性驱动器，使得用户能够更为精准地控制Baxter的机械臂的执行和反馈力，从而避免安全事故的发生。
+
+  Sawyer是Rethink公司最新推出的一款具有革命性的智能协作机器人，据官方介绍其包含有7个自由度，伸展范围可达1260mm，同时有效工作载荷达到4公斤，自重只有19公斤，这意味着Sawyer机器人可以被安装在狭窄的空间中，代替人类进行高质量的工作。此外，其还拥有有先进的嵌入式视觉系统和独特的柔顺控制技术，使其能够和Baxter一样与人类并肩进行安全、高效的工作。
 
   ![rethink_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_1.jpg)
 
@@ -95,6 +97,8 @@ comments: true
   ![rethink_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/rethink/rethink_3.jpg)
 
   **Unviersal Robot**
+  UR机器人公司来自丹麦，是人机协作机器人的全球领导企业，在本次世界机器人大会上UR公司带来了其标志性的UR3和UR5机器臂，并现场为观众演示机械臂倒茶和抓取甜点等绝活，虽然自己之前在学习ROS MoveIt!的时候就曾接触过UR机械臂并跑过简单的仿真程序，但是亲眼看到UR机械臂以如此平滑且精确的移动完成物品的抓取和放置，我还是不禁感叹道：如果我们的服务机器人晓萌也能做到这点的话，也许参加RoboCup机器人世界杯对于我们来说就不再是奢望了。。。
+
   ![ur_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/ur/ur_1.jpg)
 
   ![ur_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/ur/ur_2.jpg)
