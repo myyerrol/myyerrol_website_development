@@ -115,12 +115,15 @@ comments: true
   ![surgical_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/surgical/surgical_3.jpg)
 
   **DLR**
+  说心里话在来之前，我还真没想到大名鼎鼎的DLR也会参加世界机器人大会，因为据我所知DLR开发的都是非常高级的机器人，应该很少会在公众面前进行展示，所以当我看到DLR的展位时，内心其实是非常惊讶的。当然这里有必要向读者介绍一下DLR是什么，DLR（即Deutsches Zentrum für Luft- und Raumfahrt）中文名为德国宇航中心，总部位于科隆，主要负责与航空航天有关的大型研究项目，其下属的机器人和机电一体化中心是欧洲最优秀的机器人实验室之一，下图中工作人员正在使用体感手套演示的机械臂以及照片中的Rollin's Justin机器人都是该中心最具代表性的研究成果。
 
   ![dlr_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/dlr/dlr_1.jpg)
 
   ![dlr_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/dlr/dlr_2.jpg)
 
   **TerBee**
+  在欣赏完DLR机械臂的精彩演示之后，我决定去别的展台看看，刚出DLR展位不远就在拐角处遇到了一个名叫TerBee的参展商，原本我以为它就是卖超声波传感器的，可是当我下意识地瞥了一眼他们的电脑显示屏后才发现这些传感器模组并不简单，因为根据演示视频，TerBee团队已经可以将传感器采集到的数据与ROS中的SLAM算法进行深度融合，从而实现小型移动机器人或四轴飞行器的实时定位与导航。总体感觉非常屌，不过看了一下官网其售价确实也不便宜，要是国内也有类似性能的产品就好了。。。
+
   ![terabee_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/terabee/terabee_1.jpg)
 
   ![terabee_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/terabee/terabee_2.jpg)
