@@ -129,6 +129,8 @@ comments: true
   ![terabee_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/terabee/terabee_2.jpg)
 
   **HRG**
+  HRG(HIT Robot Group)中文名为哈工大机器人集团，顾名思义它是一个从哈工大走出来的机器人公司，不得不承认，哈工大在国内无论是在机器人科研领域还是在机器人产业落地方面均处于领先地位。本次世界机器人大会，HRG主要展示了自主研发的特种机器人（比如有特种救援机器人、管道检测机器人）、全自主水下航行器、固定翼以及多旋翼无人机和应用于工业领域的大型或轻型机械臂，其产品涉及的领域比较广，技术水平一流，希望在不久的将来HRG能够逐步替代四大家族，让更多中国公司用上国产的工业机器人等高端设备。
+
   ![hrg_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_1.jpg)
 
   ![hrg_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_2.jpg)
@@ -142,6 +144,8 @@ comments: true
   ![hrg_6](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/hrg/hrg_6.jpg)
 
   **SIASUN**
+  新松是国内除了HRG之外的另一个工业机器人巨头，隶属于中科院，拥有非常强大的技术研发能力，工业机器人产品也远销海内外，口碑相当不错。在本次世界机器人大会上，新松除了展示了几种常规型号的机械臂之外，给我留下印象比较深的是新松最近才推出的双臂协作机器人，从下面的巨型横幅海报就能看出，这款协作机器人外观非常漂亮，全身上下都透露着工业设计的美感，而且在机器人演示画沙画的过程中，左右两个机械臂配合得非常好，无论是精度还是速度都不亚于人类画师，看来如果人类再不努力的话，未来很有可能要面临失业的风险。
+
   ![siasun_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/siasun/siasun_1.jpg)
 
   ![siasun_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/siasun/siasun_2.jpg)
