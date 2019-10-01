@@ -157,6 +157,10 @@ comments: true
   ![siasun_5](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/siasun/siasun_5.jpg)
 
   **CALT**
+  CALT对于很多军工科研院所的员工或者打算未来投身国防建设的学生们来说，这都是一个如雷贯耳的名字，没错它就是著名的中国运载火箭技术研究院，简称航天科技一院，主要承担与运载火箭相关的研究，基本上到目前为止中国所有已经发射过或在研的火箭型号均由该院设计，整体科研水平非常强。可是令人惊讶的是，一个研究导弹和火箭的科研院所，竟然会参加世界机器人大会，这对于同样在航天系统工作的我来说是不可想象的。
+
+  这次一院参展的产品主要有常规工业机械臂、双臂智能协作机器人以及主打智能制造的机器人分拣系统，感觉技术水平在国内应该算前列，而且听说部分零件采用的是航天级别的材料和加工工艺，所以产品质量肯定也没话说。总之，一院在军民融合这块还是下了很大功夫的，希望之后可以加大投入力度，让更多的航天技术应用到我们的实际生活中来。
+
   ![calt_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/calt/calt_1.jpg)
 
   ![calt_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/calt/calt_2.jpg)
