@@ -169,29 +169,18 @@ comments: true
 
   ![calt_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/calt/calt_4.jpg)
 
-  **XRIP**
-  ![xrip_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_1.jpg)
-
-  ![xrip_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_2.jpg)
-
-  ![xrip_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_3.jpg)
-
-  ![xrip_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/xrip/xrip_4.jpg)
-
-  **AICRobo**
-  ![aicrobo](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/aicrobo/aicrobo.jpg)
-
-  **LeiShenIS**
-  ![leishen_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/leishen/leishen_1.jpg)
-
-  ![leishen_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/leishen/leishen_2.jpg)
-
   **Other**
-  ![nachi](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/nachi.jpg)
+  除了以上介绍的几个大型展台之外，工业机器人展厅里面还有很多中小型的机器人企业，它们也带来自己最新研制的机器人，比如下图中爱啃萝卜（AICRobo）的仓储物流机器人，艾利特的高精度机械臂，镭神公司的激光雷达系列以及香河产业基地所孵化的各种自主机器人，虽然技术上可能无法与国内外大公司相比，但是在某些细分领域内这些机器人公司还是很有竞争力的。
 
-  ![gsk](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/gsk.jpg)
+  ![aicrobo](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/aicrobo.jpg)
 
   ![elibot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/elibot.jpg)
+
+  ![leishen](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/leishen.jpg)
+
+  ![xrip_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/xrip_1.jpg)
+
+  ![xrip_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/industrial_robot/other/xrip_2.jpg)
 
 - #### 服务机器人
 
