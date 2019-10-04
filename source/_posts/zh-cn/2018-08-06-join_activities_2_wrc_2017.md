@@ -204,11 +204,13 @@ comments: true
   ![ubtech](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/ubtech/ubtech.jpg)
 
   **CANBOT**
-
+  康利优蓝是国内另外一家服务机器人巨头，其最新研发的优友U05机器人大家肯定不会陌生，因为自2015年问世以来，优友U05不但在政务、司法、银行、展馆、医院、交通、电力、地产等上百种商业场景中得到应用，而且更是频繁出席各类重大活动和各大综艺节目，成为了明星机器人。除了名气大之外，它本身最大的技术特点在于其强大的智能交互特性，优友U05不仅可以实现基础的语音识别，还能听明白语音语调，并从人的语气上推测出你的心情，这使得机器人理解人类的感受成为可能。
 
   ![canbot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/canbot/canbot.jpg)
 
   **Sanbot**
+  三宝机器人
+
   ![sanbot_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/sanbot/sanbot_1.jpg)
 
   ![sanbot_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/sanbot/sanbot_2.jpg)
