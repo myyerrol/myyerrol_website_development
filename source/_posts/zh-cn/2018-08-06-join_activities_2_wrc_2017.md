@@ -209,29 +209,32 @@ comments: true
   ![canbot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/canbot/canbot.jpg)
 
   **Sanbot**
-  三宝机器人
+  三宝机器人也是国内一家专注于服务机器人研发的公司，在本次世界机器人大会上主要展示了旗下主打的小精灵系列（下图2）和最新研发的金刚系列商用服务机器人（下图1），其中小精灵系列机器人跟国内很多同类型产品一样也配备了智能的语音和人脸识别模块，而且应用场景也是类似的，主要集中在高端家庭、海关、医疗、银行、农业、政府、教育、商业中心、零售、展览馆等领域，看来国内这块竞争还是比较激烈的。
 
   ![sanbot_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/sanbot/sanbot_1.jpg)
 
   ![sanbot_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/sanbot/sanbot_2.jpg)
 
-  ![sanbot_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/sanbot/sanbot_3.jpg)
-
   **KEENON**
+  擎朗智能机器人公司也是做商用服务机器人这块的，但是跟国内很多公司不同的是，擎朗主要专注于室内无人配送领域服务机器人的自主研发和生产，主要应用于餐厅配送、酒店服务、医疗配送、快递/外卖配送等场景，这次参展产品主要有引领机器人、运输机器人和酒店机器人，它们均配备了独立的传感器和计算模块，可以实现全自主的移动和感知，从现场实际的体验来看，这些机器人的综合性能还是很不错的。
+
   ![keenon_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/keenon/keenon_1.jpg)
 
   ![keenon_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/keenon/keenon_2.jpg)
 
   ![keenon_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/keenon/keenon_3.jpg)
 
-  ![keenon_4](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/keenon/keenon_4.jpg)
-
   **Roobo**
+  儒博机器人公司主打智能教育机器人市场，在本次世界机器人大会上他们带来了DOMGY智能宠物机器人（下图1），它不仅能识别文字信息，还能掌握语言的节奏和情绪，判断人物的性格特征并进行深度学习。据官方的介绍，通过对计算机视觉的运用，DOMGY能识别家庭中的成员和宠物，完成家庭空间的3D识别，还能按照主人设定的路径进行安全巡逻，捕捉异常画面并及时拍照上传APP提醒主人，它俨然已经成为了一只陪伴家庭的智能宠物。
+
+  此外，令我比较感兴趣的是儒博还展示了凡尼（FARNESE）大型服务机器人（下图2），尽管它所具有的功能和特点与上面介绍过的几家公司的产品相类似，但是其外观设计还是非常简洁、漂亮的，有点Pepper的影子。
+
   ![roobo_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/roobo/roobo_1.jpg)
 
   ![roobo_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/roobo/roobo_2.jpg)
 
   **HFAI**
+
 
   ![hfai_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/hfai/hfai_1.jpg)
 
