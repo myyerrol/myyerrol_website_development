@@ -234,7 +234,7 @@ comments: true
   ![roobo_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/roobo/roobo_2.jpg)
 
   **HFAI**
-
+  荷福机器人集团虽然名字我觉得起的不是很好听，但是他们展示的机器人，技术水平还是非常高的，其中最有名的当属以姚明身体1:1的比例所打造的高仿真投篮机器人，它堪称本届大会最具人气机器人，无论什么时候其周围都会围着一群观众，不过很可惜的是我没等到姚明机器人的现场投篮表演。 此外，荷福还展示了最新的炬石双足直立行走机器人，从外观上看与日本本田的ASIMO机器人有几分神似，不知道其性能究竟如何。
 
   ![hfai_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/hfai/hfai_1.jpg)
 
@@ -243,26 +243,29 @@ comments: true
   ![hfai_3](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/hfai/hfai_3.jpg)
 
   **ECOVACS**
+  科沃斯这个公司我相信很多人都对其并不陌生，因为他们主打的扫地机器人和擦窗机器人国内市场的占有率非常高，据统计在家庭清洁机器人领域，每销售3台清洁机器人中就有2台来自科沃斯，从中可见科沃斯技术水平之高。而相比于其王牌的地宝和窗宝机器人，科沃斯推出的旺宝（下图2）则主要应用于B2B商用领域（银行大厅、政务办公大厅、电信营业厅、电力行业、大型超市、金融证券、教育教学等），为商户提供系统服务，可以有效降低终端门店人员成本，提高管理效率。
+
   ![ecovacs_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/ecovacs/ecovacs_1.jpg)
 
   ![ecovacs_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/ecovacs/ecovacs_2.jpg)
 
-  **DOBOT**
-  ![dobot_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/dobot/dobot_1.jpg)
-
-  ![dobot_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/dobot/dobot_2.jpg)
-
-  **TurtleBot**
-  ![turtlebot_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/turtlebot/turtlebot_1.jpg)
-
-  ![turtlebot_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/turtlebot/turtlebot_2.jpg)
-
   **EAI**
+  EAI公司主要专注于机器人移动解决方案，目前已有产品为各种型号的高精度激光雷达和智能自主移动平台，技术水平我觉得还是非常厉害的，因为毕竟我曾在大学的舞蹈机器人基地待过，我知道使用ROS和激光传感器来跑一个稳定的SLAM还是很不简单的。
+
   ![eai_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/eai/eai_1.jpg)
 
   ![eai_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/eai/eai_2.jpg)
 
+  **DOBOT**
+  越疆科技的DOBOT魔术师机械臂我早在上大二那会儿就已经知道了，因为开源硬件Arduino正好在那个时候开始火遍全中国，而DOBOT应该是当时全球第一款基于Arduino的桌面级高精度机械臂，在创客领域里非常有名。时过境迁，现在回过头来再看DOBOT机械臂，自己心中的热情还是不减当年，我想等以后自己有钱了，一定要买一台回家好好玩玩，弥补一下当初的遗憾。
+
+  ![dobot_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/dobot/dobot_1.jpg)
+
+  ![dobot_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/dobot/dobot_2.jpg)
+
   **Other**
+  服务机器人展厅内的公司实在是太多了，我在这里就不再一一展开介绍了，除了上述介绍的几家具有代表性的服务机器人公司之外，还有比如大名鼎鼎的科大讯飞、思岚科技和京东神秘的X事业部等企业，我相信随着国家开始加大对服务机器人产业的投入，未来中国的服务机器人不仅能够真正地帮助到人们，还能走出国门，造福全世界！
+
   ![iflytek](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/other/iflytek.jpg)
 
   ![slamtec](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/other/slamtec.jpg)
