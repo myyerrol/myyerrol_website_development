@@ -185,19 +185,27 @@ comments: true
 - #### 服务机器人
 
   **SoftBank Robotics**
+  在本次世界机器人大会上，软银机器人公司带来了其最新研制的Pepper服务机器人，其实早在2015年RoboCup机器人世界杯那会儿，我就曾近距离接触过该公司（那会儿叫Aldebaran Robotics，后来被收购后才改名为软银机器人）旗下的另一款机器人Nao，它简约的外观、灵活的动作以及强大的AI都给我留下了非常深刻的印象。
+
+  在亲眼目睹Pepper机器人之后，我相信很多人都会跟我有相同的感受：**这个机器人的颜值也太高了吧！**无论是机器人躯体的哪个部位，工业设计都堪称完美，简直难以用语言来形容。此外，Pepper机器人还能够与人类进行语言上的交流，并通过判断人类的面部表情来理解人类的情感，因此其也被称作“情感机器人”，这使得其在客户导流、精准营销、互动娱乐等领域有着非常大的应用价值。
+
   ![softbank_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/softbank/softbank_1.jpg)
 
   ![softbank_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/softbank/softbank_2.jpg)
 
   **PowerVision**
-  ![powervision_1](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/powervision/powervision_1.jpg)
+  如下图所示，这家来自中国的机器人公司所展示的无人机外观设计非常独特，它的机体没有采用传统四轴飞行器十字形的机架，而是直接将飞行器的外壳做成蛋形，这使得其在收纳时无需拆卸桨叶和脚架，大大增加了其便携性。非常幸运的是，我来到展台的时候刚好赶上工作人员在防护笼里进行飞行演示，无人机移动起来比现象中的要灵活，而且悬停也很稳定，总之很赞！
 
-  ![powervision_2](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/powervision/powervision_2.jpg)
+  ![powervision](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/powervision/powervision.jpg)
 
   **UBTECH**
+  作为国内两大服务机器人巨头之一，优必选（UBTECH）也参展了本次世界机器人大会，除了之前一直人气较高的阿尔法机器人之外，本次我比较关注的是优必选最新推出的克鲁泽商用服务机器人，它使用了高精度的U-SLAM立体导航避障系统，通过实时定位与地图构建技术，使得机器人能够在移动过程中实现自主定位和避障。此外，克鲁泽能够以多模态即通过文字、语音、视觉、动作、环境等多种感官进行人机交互，应用场景非常丰富。
+
   ![ubtech](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/ubtech/ubtech.jpg)
 
   **CANBOT**
+
+
   ![canbot](http://media.myyerrol.io/images/activities/wrc_2017/exhibition/service_robot/canbot/canbot.jpg)
 
   **Sanbot**
@@ -281,6 +289,8 @@ comments: true
   ![quadcopter_2](http://media.myyerrol.io/images/activities/wrc_2017/competition/quadcopter/quadcopter_2.jpg)
 
 ## 总结
+
+
 
 {% alert info %}
 本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
