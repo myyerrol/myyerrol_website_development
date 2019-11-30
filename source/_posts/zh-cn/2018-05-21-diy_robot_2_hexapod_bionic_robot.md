@@ -431,8 +431,11 @@ comments: true
 
 ![hexapod_bionic_robot_6](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_6.jpg)
 
-<div style="height: 0; padding-bottom: 60%; position: relative;">
-  <iframe width="498" height="510" src="http://player.youku.com/embed/XMzY1MTU4OTczNg" frameborder="0" allowfullscreen="" style="position: absolute; height: 100%; width: 100%;">
+<div style="height:0; padding-bottom:65%; position:relative;">
+  <!-- <iframe width="498" height="510" src="http://player.youku.com/embed/XMzY1MTU4OTczNg" frameborder="0" allowfullscreen="" style="position:absolute; height:100%; width:100%;">
+  </iframe> -->
+
+  <iframe src="//player.bilibili.com/player.html?aid=77588129&cid=132731779&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
   </iframe>
 </div>
 
