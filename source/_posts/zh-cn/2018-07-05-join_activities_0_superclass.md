@@ -2,7 +2,7 @@
 title: 参与活动系列（零）：总纲
 date: 2018-07-05 20:00:00
 tags:
-  - Activities
+  - 活动
 categories: 参与活动系列
 description: 本篇文章介绍《参与活动系列》的总纲。
 feature: /images/feature/activity.jpg

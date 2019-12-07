@@ -6,7 +6,6 @@ tags:
   - STM32
   - GNU/Linux
   - ARM-GCC
-  - StartupFile
 categories: Breeze微型四轴系列
 description: 本篇文章介绍Breeze微型四轴飞行器STM32嵌入式开发-启动文件的相关内容。
 feature: /images/feature/breeze.png
