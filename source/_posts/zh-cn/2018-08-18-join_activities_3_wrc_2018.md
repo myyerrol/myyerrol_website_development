@@ -20,7 +20,15 @@ comments: true
 
 ### 外景
 
+![exterior_1](http://media.myyerrol.io/images/activities/wrc_2018/exterior/exterior_1.jpg)
+
+![exterior_2](http://media.myyerrol.io/images/activities/wrc_2018/exterior/exterior_2.jpg)
+
+![exterior_3](http://media.myyerrol.io/images/activities/wrc_2018/exterior/exterior_3.jpg)
+
 ### 论坛
+
+- #### 开始前
 
 - #### 演讲1
 
