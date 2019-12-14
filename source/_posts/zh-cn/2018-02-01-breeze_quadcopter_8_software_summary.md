@@ -29,11 +29,11 @@ comments: true
 
   如下图所示，Breeze远程控制站是我在Windows操作系统下使用Qt5进行编写的，代码里面主要调用了Qt官方的串口库和摄像头驱动库。它实现的功能比较简单，主要包含以下两个功能，其中第一个功能是该远程控制站软件可通过我们自定义的串口通信协议实时获取Breeze微型四轴飞行器当前的飞行姿态数据并显示在接收窗口内，另一个功能则是能够根据当前键盘上被按下的按键来发送对应的控制命令给四轴飞行器，从而完成操作者对Breeze微型四轴飞行器的远程控制。
 
-  ![breeze_remote_control_1](http://media.myyerrol.io/images/project/breeze_quadcopter/software/breeze_remote_control_1.png)
+  ![breeze_remote_control_1](http://media.myyerrol.io/images/quadcopter/breeze/software/breeze_remote_control_1.png)
 
   以下图片展示了Breeze远程控制站所集成的实时视频流采集功能。摄像头安装在四轴飞行器的顶部，可通过2.4GHz无线图传与PC相连完成实时图像的传输，不过由于时间的缘故，我们目前只实现了图像数据的采集，而图像检测和识别等有关机器视觉方面的高级功能暂时还未完成。最后，Breeze远程控制站的代码可以点击[这里](https://github.com/microdynamics-quadcopter/breeze_remote_control)获得。
 
-  ![breeze_remote_control_2](http://media.myyerrol.io/images/project/breeze_quadcopter/software/breeze_remote_control_2.png)
+  ![breeze_remote_control_2](http://media.myyerrol.io/images/quadcopter/breeze/software/breeze_remote_control_2.png)
 
 - #### Breeze飞行控制站
 
@@ -41,7 +41,7 @@ comments: true
 
   如下图所示，Breeze飞行控制站的界面主要分为**飞行指示器**、**飞行状态**和**飞行数据**共三个区域，其中**飞行指示器**区域通过三个仪表盘分别显示Breeze微型四轴飞行器实时的飞行姿态、海拔高度和磁场方向等数据，左下角的**飞行状态**区域用于显示四轴飞行器当前的推力值、四个电机的转速值以及电池电量值等，而右下角的**飞行数据**区域则以浮点数的形式展现**飞行指示器**和**飞行状态**中的数值，使数据大小的显示更为直观。最后，Breeze飞行控制站的代码可以点击[这里](https://github.com/microdynamics-quadcopter/breeze_flight_control_station)获得。
 
-  ![breeze_flight_control_station](http://media.myyerrol.io/images/project/breeze_quadcopter/software/breeze_flight_control_station.png)
+  ![breeze_flight_control_station](http://media.myyerrol.io/images/quadcopter/breeze/software/breeze_flight_control_station.png)
 
 - #### 匿名科创地面站
 
@@ -59,21 +59,21 @@ comments: true
 
     。。。
 
-  ![anotc_gcs_1](http://media.myyerrol.io/images/project/breeze_quadcopter/software/anotc_gcs_1.png)
+  ![anotc_gcs_1](http://media.myyerrol.io/images/quadcopter/breeze/software/anotc_gcs_1.png)
 
-  ![anotc_gcs_2](http://media.myyerrol.io/images/project/breeze_quadcopter/software/anotc_gcs_2.png)
+  ![anotc_gcs_2](http://media.myyerrol.io/images/quadcopter/breeze/software/anotc_gcs_2.png)
 
-  ![anotc_gcs_3](http://media.myyerrol.io/images/project/breeze_quadcopter/software/anotc_gcs_3.png)
+  ![anotc_gcs_3](http://media.myyerrol.io/images/quadcopter/breeze/software/anotc_gcs_3.png)
 
-  ![anotc_gcs_4](http://media.myyerrol.io/images/project/breeze_quadcopter/software/anotc_gcs_4.png)
+  ![anotc_gcs_4](http://media.myyerrol.io/images/quadcopter/breeze/software/anotc_gcs_4.png)
 
-  ![anotc_gcs_5](http://media.myyerrol.io/images/project/breeze_quadcopter/software/anotc_gcs_5.png)
+  ![anotc_gcs_5](http://media.myyerrol.io/images/quadcopter/breeze/software/anotc_gcs_5.png)
 
-  ![anotc_gcs_6](http://media.myyerrol.io/images/project/breeze_quadcopter/software/anotc_gcs_6.png)
+  ![anotc_gcs_6](http://media.myyerrol.io/images/quadcopter/breeze/software/anotc_gcs_6.png)
 
-  ![anotc_gcs_7](http://media.myyerrol.io/images/project/breeze_quadcopter/software/anotc_gcs_7.png)
+  ![anotc_gcs_7](http://media.myyerrol.io/images/quadcopter/breeze/software/anotc_gcs_7.png)
 
-  ![anotc_gcs_8](http://media.myyerrol.io/images/project/breeze_quadcopter/software/anotc_gcs_8.png)
+  ![anotc_gcs_8](http://media.myyerrol.io/images/quadcopter/breeze/software/anotc_gcs_8.png)
 
 - #### Mission Planner
 
@@ -81,17 +81,17 @@ comments: true
 
   Mission Planner软件的主要功能有：为控制板提供固件加载；设定、配置及调整机器到最优性能；通过在地图上用鼠标点击相应位置来规划，保存及加载自动任务给控制板；下载及分析由控制板创建的任务记录；与PC飞行模拟器连接，提供完整硬件闭环的UAV模拟器；通过合适的遥控器来监控飞行器状态、记录遥控数据、分析遥控记录以及可在FPV（第一人称视角）模式下控制你的机器。
 
-  ![mission_planner_1](http://media.myyerrol.io/images/project/breeze_quadcopter/software/mission_planner_1.jpg)
+  ![mission_planner_1](http://media.myyerrol.io/images/quadcopter/breeze/software/mission_planner_1.jpg)
 
-  ![mission_planner_2](http://media.myyerrol.io/images/project/breeze_quadcopter/software/mission_planner_2.jpg)
+  ![mission_planner_2](http://media.myyerrol.io/images/quadcopter/breeze/software/mission_planner_2.jpg)
 
 - #### Crazyfile地面站
 
   Crazyflie地面站是BitCraze团队专门为Crazyflie微型四轴飞行器所打造的桌面PC客户端 ，它支持Windows、GNU/Linux和Mac系统（具体安装方法请点击[这里](https://github.com/bitcraze/crazyflie-clients-python/blob/develop/README.md)查看），可实现四轴飞行器的远程控制、烧写固件、设置参数并记录数据等功能。Crazyflie地面站与四轴飞行器之间的数据通信以及用于控制四轴飞行器的CRTP协议的实现均基于[Crazyflie Lib Python](https://github.com/bitcraze/crazyflie-lib-python)项目所完成。最后，有关于更多内容请访问Crazyflie地面站的[官方Wiki](https://wiki.bitcraze.io/doc:crazyflie:client:pycfclient:index)。
 
-  ![crazyflie_gcs_1](http://media.myyerrol.io/images/project/breeze_quadcopter/software/crazyflie_gcs_1.png)
+  ![crazyflie_gcs_1](http://media.myyerrol.io/images/quadcopter/breeze/software/crazyflie_gcs_1.png)
 
-  ![crazyflie_gcs_2](http://media.myyerrol.io/images/project/breeze_quadcopter/software/crazyflie_gcs_2.png)
+  ![crazyflie_gcs_2](http://media.myyerrol.io/images/quadcopter/breeze/software/crazyflie_gcs_2.png)
 
 ### 软件接口协议
 
@@ -103,11 +103,11 @@ comments: true
 
   CommLink是Breeze微型四轴飞行器所采用的数据通信协议栈，此协议栈内有采用USART（基于 CP2102 转串口芯片）和SPI（基于NRF24L01射频模块）两套接口实现的通信协议。如下图所示，其中USART通信协议主要负责将四轴飞行器自身的实时飞行姿态数据发送给远程PC端的地面站，而SPI通信协议则负责解析远程遥控端发送的控制指令。
 
-  ![breeze_communication_link](http://media.myyerrol.io/images/project/breeze_quadcopter/software/breeze_communication_link.png)
+  ![breeze_communication_link](http://media.myyerrol.io/images/quadcopter/breeze/software/breeze_communication_link.png)
 
 - #### MAVLink
 
-  ![mavlink_protocal](http://media.myyerrol.io/images/project/breeze_quadcopter/software/mavlink_protocal.png)
+  ![mavlink_protocal](http://media.myyerrol.io/images/quadcopter/breeze/software/mavlink_protocal.png)
 
   MAVLink协议最早由苏黎世联邦理工学院计算机视觉与几何实验组的Lorenz Meier于2009年创建，并以LGPL开源协议形式进行发布。MAVLink协议是在串口通讯基础上的一种更高层的开源通讯协议，广泛应用于地面站软件与小型无人载具之间的通讯，同时也应用在载具内部子系统的通信中。MAVLink协议是以消息库的形式来定义参数传输的规则，具体协议的内容可点击[这里](http://mavlink.org/messages/common)查看。
 

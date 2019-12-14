@@ -25,7 +25,7 @@ comments: true
 
 小型六足仿生机器人是一个拥有十八个关节自由度的迷你多足机器人，它可以实现红外遥控、超声波避障等基本功能。机器人的硬件核心为Arduino Nano，并采用串口通信的方式与24路舵机控制板进行数据交互，从而间接完成对所有舵机旋转角度的精确控制，最终使机器人能够以各种不同的步态进行移动。当然，这个机器人项目的软件依旧开源，具体代码可以从我的GitHub[仓库](https://github.com/myyerrol/hexapod_bionic_robot)上获得。
 
-![hexapod_bionic_robot_1](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_1.jpg)
+![hexapod_bionic_robot_1](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_1.jpg)
 
 ## 制作
 
@@ -39,55 +39,55 @@ comments: true
 
   如下图所示，六足的小腿部分主要由两片PVC材质的肢体通过叠加而成，而关节部分则使用的是9G金属齿舵机，只要两个自攻螺丝便可将PVC肢体牢牢固定在舵机上，从而保证六足小腿在与地面接触时可以有足够的力量来支撑整个躯体。
 
-  ![hexapod_bionic_robot_mechanics_1](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_1.jpg)
+  ![hexapod_bionic_robot_mechanics_1](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_1.jpg)
 
   因为是六足机器人，所以同样结构的小腿要再做五个出来。**注意：机器人的躯体每边有三个小腿，左右两两对称，所以在组装的时候肢体和舵机安装的位置是有讲究的，要保证结构对称且不能装反**。
 
-  ![hexapod_bionic_robot_mechanics_2](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_2.jpg)
+  ![hexapod_bionic_robot_mechanics_2](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_2.jpg)
 
 - #### 六足大腿
 
   **关节**
   六足大腿的关节结构比之前介绍过的小腿关节要略微复杂一些，因为大腿的关节包含了机器人足体上下和前后两个维度的运动，所以需要两个舵机来实现。如下图所示，首先我们使用螺丝将一个舵机固定在方形的关节肢体里。
 
-  ![hexapod_bionic_robot_mechanics_3](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_3.jpg)
+  ![hexapod_bionic_robot_mechanics_3](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_3.jpg)
 
   接着我们要重复以上的安装步骤再制作出六个类似的肢体结构。不过在制作的过程中也要注意机器人左右两侧各三个肢体结构要保持对称。
 
-  ![hexapod_bionic_robot_mechanics_4](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_4.jpg)
+  ![hexapod_bionic_robot_mechanics_4](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_4.jpg)
 
   然后我们需要将六个舵机分别插入到之前预留好的肢体空槽里，并保证每组的两个舵机在位置上是互相垂直的，即下图中舵机圆形旋转轴的朝向要一前一上。
 
-  ![hexapod_bionic_robot_mechanics_5](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_5.jpg)
+  ![hexapod_bionic_robot_mechanics_5](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_5.jpg)
 
   接下来安装六足大腿关节的固定片，即将固定片卡到下图中正面那个舵机的圆形旋转轴上。固定片，顾名思义是用来固定的，用在这里主要是防止关节处的两个舵机因足体的震动而彼此之间出现位置上的偏移。
 
-  ![hexapod_bionic_robot_mechanics_6](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_6.jpg)
+  ![hexapod_bionic_robot_mechanics_6](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_6.jpg)
 
   最后分别使用两条塑料扎带对每组关节进行进一步的加固，其中一条从固定片上方穿过，起到束紧固定片的作用，而另一条则穿过关节侧面的小孔对结构进行固定。
 
-  ![hexapod_bionic_robot_mechanics_7](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_7.jpg)
+  ![hexapod_bionic_robot_mechanics_7](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_7.jpg)
 
   ---
 
   **大腿**
   六足的大腿是由两个PVC材质的长方形连杆组成，从下图中可以很清楚地看到每个连杆的左右两侧均安装有配套的舵盘，它们的作用主要是用于连接六足的小腿关节和大腿关节。
 
-  ![hexapod_bionic_robot_mechanics_8](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_8.jpg)
+  ![hexapod_bionic_robot_mechanics_8](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_8.jpg)
 
 - #### 六足足体
 
   如下图所示，使用螺丝将之前已经制作好的六对小腿和大腿肢体对应连接在一起。虽然拧螺丝本身没什么难度，但是在哪个位置用螺丝来固定舵机还是有规定的：**即舵机在被肢体连接固定之前要让其旋转轴回归到原始的中点位置上（旋转范围为0~180°的舵机，其中点位置为90°）**，这样做的目的是让所有的舵机都能够拥有最合适的运动范围，从而防止机器人在移动时出现足体运动不对称的情况。至于如何让舵机回归中点，一种办法是使用现成的舵机调试版，只要移动旋钮便可调节舵机的位置；另一种是编写Arduino程序，让舵机在上电后自动归中。我用的是第二种方法，感觉效果还不错。
 
-  ![hexapod_bionic_robot_mechanics_9](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_9.jpg)
+  ![hexapod_bionic_robot_mechanics_9](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_9.jpg)
 
   接下来，我们要把六足的足体全部安装到其顶部躯体上。同理，在安装前要确保需要连接固定的舵机已经回归到中点位置，除此之外还要提前规定好躯体的哪一侧是机器人的头部，哪一端是机器人的尾部，不要在安装的时候把足体装反了。
 
-  ![hexapod_bionic_robot_mechanics_10](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_10.jpg)
+  ![hexapod_bionic_robot_mechanics_10](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_10.jpg)
 
   如图所示，我们首先可以找一个稍微有点高度的物品将机器人顶部垫高，然后使用扎带依次将每个足体的三条舵机线捆绑起来，这样不仅看上去更加美观，便于之后的整理和连线，而且也**可以有效阻止舵机线与运动中的足体发生缠绕甚至被扯断等情况的出现**，毕竟自己大学在机器人基地的时候就曾亲身经历过电机线在机械臂移动的过程中被狠狠地扯断的悲剧。。。
 
-  ![hexapod_bionic_robot_mechanics_11](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_11.jpg)
+  ![hexapod_bionic_robot_mechanics_11](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_mechanics_11.jpg)
 
   最后，我们只需要把锂电池用扎带固定在底部躯体的尾部，然后将供电线和充电线分别引出，再把所有已经扎好的舵机线按照顺序塞到躯体当中，并用螺丝将顶部和底部两个躯体拧紧合二为一便大功告成了（由于这部分没有拍照，所以就用文字叙述了orz）。
 
@@ -97,31 +97,31 @@ comments: true
 
   下图是机器人的电源管理模块。电源管理模块主要包含电源、降压电路和控制电路等，具体的原理部分请看下面**原理**中的**电源管理**章节。
 
-  ![hexapod_bionic_robot_electronics_1](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_electronics_1.jpg)
+  ![hexapod_bionic_robot_electronics_1](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_electronics_1.jpg)
 
   下图是电源管理模块的背面。为了让焊接后的电路保持整齐、美观，我尽可能采用锡接走线的方式来完成各元件的电气连接，而没办法走线的地方才使用传统的飞线进行连接。尽管锡接走线的优点很明显，但是它的缺点也比较突出：一个是浪费焊锡，另一个就是容易短路，其中短路问题对机器人的影响还是挺严重的，我记得自己之前就有一次不小心把已经上电的电源管理模块随意放在六足机器人的顶部躯体上，令我没想到的是固定躯体的螺丝的头部正好卡在电路背面电源正负极锡接走线的中间，所以结果可想而知。。。
 
   所以，在上电测试之前，大家要先用万能表对焊接过的电路进行短路测试，一定要确保没有多余的焊锡渣残留在电路板上，而且对于使用锡接走线方式焊接的电路板，一定不要让其背面直接与潜在具有导电功能的介质进行接触，可以适当地使用铜柱将板子架高或者用热熔胶把板子背面全都覆盖住，以防止短路问题的发生。
 
-  ![hexapod_bionic_robot_electronics_2](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_electronics_2.jpg)
+  ![hexapod_bionic_robot_electronics_2](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_electronics_2.jpg)
 
   在确保电路不存在任何可能潜在的短路问题后，可像下图所示的那样，对电路模块进行上电测试。测试主要检测电源降压是否达到预期设定的数值，开关的通断逻辑是否正确等。
 
-  ![hexapod_bionic_robot_electronics_3](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_electronics_3.jpg)
+  ![hexapod_bionic_robot_electronics_3](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_electronics_3.jpg)
 
 - #### 控制单元
 
   下图是机器人的控制单元模块。该控制单元模块主要由Arduino Nano控制板、HMC58883L电子罗盘传感器、MPU6050惯性测量传感器（图中的底座上未插入）、HC-SR04超声波传感器和红外接收管等组成，为了方便在模块出现问题时能够对其进行更换，我在洞洞板上焊接了一些棑母底座，这样模块就可以直接插在棑母底座上，拆卸很方便。此外，有关电路原理部分的详细介绍可以阅读下面的**原理**章节。
 
-  ![hexapod_bionic_robot_electronics_4](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_electronics_4.jpg)
+  ![hexapod_bionic_robot_electronics_4](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_electronics_4.jpg)
 
   下图是控制单元模块的背面。跟上面已经介绍过的电源管理模块一样，我使用的依然是锡接走线+飞线的方式对元件进行焊接，由于电气连接比较多，所以焊完之后要对电路进行更加全面和仔细的检查。
 
-  ![hexapod_bionic_robot_electronics_5](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_electronics_5.jpg)
+  ![hexapod_bionic_robot_electronics_5](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_electronics_5.jpg)
 
   如下图所示，由于我的Arduino Nano控制板的USB转串口在之前的寻光小车实验中因短路问题被烧坏了，所以我用的是专门为Arduino最小系统板烧写Bootloader的USBtinyISP编程器来下载程序。经测试，所有模块均能正常工作，那么接下来的工作就只剩下将机器人全部组装好，然后编写和调试代码了。
 
-  ![hexapod_bionic_robot_electronics_6](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_electronics_6.jpg)
+  ![hexapod_bionic_robot_electronics_6](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_electronics_6.jpg)
 
 ## 原理
 
@@ -129,7 +129,7 @@ comments: true
 
 以下是该小型仿生六足机器人的硬件系统连接图：
 
-![hexapod_bionic_robot_fritzing](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_fritzing.png)
+![hexapod_bionic_robot_fritzing](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_fritzing.png)
 
 由上图可知，六足机器人的硬件系统主要由舵机控制、电源管理、核心主控、数据感知和数据通信共五部分组成，接下来进行详细的介绍：
 
@@ -421,15 +421,15 @@ comments: true
 
 以下是制作完成后的成果图和测试视频：
 
-![hexapod_bionic_robot_2](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_2.jpg)
+![hexapod_bionic_robot_2](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_2.jpg)
 
-![hexapod_bionic_robot_3](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_3.jpg)
+![hexapod_bionic_robot_3](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_3.jpg)
 
-![hexapod_bionic_robot_4](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_4.jpg)
+![hexapod_bionic_robot_4](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_4.jpg)
 
-![hexapod_bionic_robot_5](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_5.jpg)
+![hexapod_bionic_robot_5](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_5.jpg)
 
-![hexapod_bionic_robot_6](http://media.myyerrol.io/images/project/hexapod_bionic_robot/hexapod_bionic_robot_6.jpg)
+![hexapod_bionic_robot_6](http://media.myyerrol.io/images/robots/hexapod_bionic_robot/hexapod_bionic_robot_6.jpg)
 
 <div style="height:0; padding-bottom:65%; position:relative;">
   <!-- <iframe width="498" height="510" src="http://player.youku.com/embed/XMzY1MTU4OTczNg" frameborder="0" allowfullscreen="" style="position:absolute; height:100%; width:100%;">
