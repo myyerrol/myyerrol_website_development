@@ -16,10 +16,10 @@ comments: true
 
 <!--more-->
 
-<!-- <div style="height:0; padding-bottom:65%; position:relative;">
+<div style="height:0; padding-bottom:65%; position:relative;">
   <iframe src="//player.bilibili.com/player.html?aid=3425211&cid=5431884&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
   </iframe>
-</div> -->
+</div>
 
 当时看完这个视频之后，我内心的真实想法是：**原来这个世界还真存在着知音啊！**，两位小哥互不相识，但却能在钢琴上联手完成如此震撼人心的即兴弹奏，从头到尾他们弹奏的每一个音符都配合得几乎天衣无缝，而且最关键的是他们很享受指尖在琴键上不断跳跃的这个过程，这让我对音乐演奏有了与之前不同的理解：**享受音乐本身才是学习乐器演奏的灵魂所在**。也就是从那个时候开始，我喜欢上了街头钢琴这种独特的艺术表现方式，同时也下定决心希望能用自己的双手，弹奏出令人感动的音乐！（下图是自己从油管上下载的一些街头钢琴视频）
 
@@ -63,7 +63,22 @@ comments: true
 
   最后这部分是关于视频剪辑的，如原先发给EOP，但是在看到大神的视频后，决心自学剪辑，要有自己的风格等。
 
+  <div style="height:0; padding-bottom:65%; position:relative;">
+    <iframe src="//player.bilibili.com/player.html?aid=56925900&cid=99421400&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
+    </iframe>
+  </div>
+
 - #### 入门阶段
+
+  <div style="height:0; padding-bottom:65%; position:relative;">
+    <iframe src="//player.bilibili.com/player.html?aid=59608264&cid=103838635&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
+    </iframe>
+  </div>
+
+  <div style="height:0; padding-bottom:65%; position:relative;">
+    <iframe src="//player.bilibili.com/player.html?aid=74282426&cid=127209489&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
+    </iframe>
+  </div>
 
 <!-- ## 经验
 
