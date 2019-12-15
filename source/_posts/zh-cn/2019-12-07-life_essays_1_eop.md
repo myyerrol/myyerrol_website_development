@@ -16,12 +16,12 @@ comments: true
 
 <!--more-->
 
-<div style="height:0; padding-bottom:65%; position:relative;">
+<!-- <div style="height:0; padding-bottom:65%; position:relative;">
   <iframe src="//player.bilibili.com/player.html?aid=3425211&cid=5431884&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
   </iframe>
-</div>
+</div> -->
 
-当时看完这个视频之后，我内心的真实想法是：**原来这个世界还真存在着知音啊！**，两位小哥互不相识，但却能在钢琴上联手完成如此震撼人心的即兴弹奏，从头到尾他们弹奏的每一个音符都配合得几乎天衣无缝，而且最关键的是他们很享受指尖在琴键上不断跳跃的这个过程，这让我对音乐演奏有了与之前不同的理解：**享受音乐本身才是学习乐器演奏的灵魂所在**。也就是从那个时候开始，我喜欢上了街头钢琴这种独特的艺术表现方式，同时也下定决心希望能用自己的双手，弹奏出令人感动的音乐！（下图是自己从油管上下载的一些街头钢琴视频）
+当时看完这个视频之后，我内心的真实想法是：**原来这个世界还真存在着知音啊！**两位小哥互不相识，但却能在钢琴上联手完成如此震撼人心的即兴弹奏，从头到尾他们弹奏的每一个音符都配合得几乎天衣无缝，而且最关键的是他们很享受指尖在琴键上不断跳跃的这个过程，这让我对音乐演奏有了与之前不同的理解：**享受音乐本身才是学习乐器演奏的灵魂所在**。也就是从那个时候开始，我喜欢上了街头钢琴这种独特的艺术表现方式，同时也下定决心希望能用自己的双手，弹奏出令人感动的音乐！（下图是自己从油管上下载的一些街头钢琴视频）
 
 ![street_piano](http://media.myyerrol.io/images/essays/eop/street_piano.png)
 
@@ -61,16 +61,20 @@ comments: true
 
   我记得自己当时录了两个晚上也没录出一个能听的，估计重录的次数都得有上百次了，心里的挫败感非常强，不过好在经过几天的努力，自己最终还是录出来了一个没有错误且完整的弹奏视频，当时录完之后我的心情可以毫不夸张地说，那就跟我大二时独自一人完成LFS编译并可以正常启动系统时一样的激动万分！当然在高兴之余，我也更加坚信下面这句话：**只要决心足够坚定，无论采取何种方法，都必定会取得成功！**
 
-  最后这部分是关于视频剪辑的，如原先发给EOP，但是在看到大神的视频后，决心自学剪辑，要有自己的风格等。
+  最后这部分是关于视频剪辑的，其实当初我在官网上观看其他网友弹奏的视频时就已经注意到几乎每个视频都是经过后期处理的，而且剪辑风格非常类似，后来经过深入了解之后才知道，原来只要你将录好的视频发送给EOP，那边的编辑就会帮你完成视频剪辑的工作，从而让你的视频变得更加有感染力。虽然这样省时省力，但是缺点也很明显，即**无法彰显自己的风格**，可是自己心目中理想的剪辑风格又是什么样的呢？就在一筹莫展之时，**腾飞kelly**大神的[《secret base -君がくれたもの》](https://www.bilibili.com/video/av53434335)视频让我如梦方醒，没错，这就是我想要的：一个包含剧情、弹奏和字幕等多种元素的剪辑风格，我觉得这种带有故事情节的剪辑效果给观众带来的视觉冲击力更强，而且更能让观众在欣赏歌曲弹奏的同时，产生心灵上的共鸣。
 
-  <div style="height:0; padding-bottom:65%; position:relative;">
+  通过在B站上看视频，自学Pr，形成了自己的一套剪辑标准  
+
+  ![eop_clip](http://media.myyerrol.io/images/essays/eop/eop_clip.png)
+
+  <!-- <div style="height:0; padding-bottom:65%; position:relative;">
     <iframe src="//player.bilibili.com/player.html?aid=56925900&cid=99421400&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
     </iframe>
-  </div>
+  </div> -->
 
 - #### 入门阶段
 
-  <div style="height:0; padding-bottom:65%; position:relative;">
+  <!-- <div style="height:0; padding-bottom:65%; position:relative;">
     <iframe src="//player.bilibili.com/player.html?aid=59608264&cid=103838635&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
     </iframe>
   </div>
@@ -78,7 +82,7 @@ comments: true
   <div style="height:0; padding-bottom:65%; position:relative;">
     <iframe src="//player.bilibili.com/player.html?aid=74282426&cid=127209489&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
     </iframe>
-  </div>
+  </div> -->
 
 <!-- ## 经验
 
