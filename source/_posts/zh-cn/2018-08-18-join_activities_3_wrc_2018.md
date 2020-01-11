@@ -35,19 +35,45 @@ comments: true
 
 ### 论坛
 
-- #### 开始前
-
 - #### 演讲1
+
+  第一位演讲者是来自意大利比萨圣安娜高等学校生物机器人研究所的Paolo Dario教授，他本次演讲的内容主要关于机器人为什么能够成为继当前互联网之后引领下一次科技革命的主力军，以及它将如何改变我们的未来生活等。
+
+  ![speech_a_1](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_a/speech_a_1.jpg)
+
+  ![speech_a_2](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_a/speech_a_2.jpg)
 
 - #### 演讲2
 
+  第二位演讲者是来自天津大学的王树新教授，他的研究方向是医疗手术机器人这块儿，通过现场的演讲可以得知王教授的科研团队已经攻克了一系列涉及医疗机器人末端力度控制、操作精确性以及移动平滑性等技术难点，感觉在国内圈子里应该属于顶尖水平。
+
+  ![speech_b_1](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_b/speech_b_1.jpg)
+
+  ![speech_b_2](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_b/speech_b_2.jpg)
+
 - #### 演讲3
+
+  第三位演讲者是来自哈尔滨工业大学的赵杰教授，他本次演讲的内容并不涉及学术研究方面，而是比较有针对性地对国内机器人在科研、生产与应用方面所遇到的一些问题进行了深刻的剖析，比如核心零部件的突破将推动机器人成本的降低、技工贸和贸工技对机器人产业的影响、价格战对机器人产业发展的消极影响等。
+
+  ![speech_c_1](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_c/speech_c_1.jpg)
+
+  ![speech_c_2](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_c/speech_c_2.jpg)
 
 - #### 演讲4
 
+  接下来的这位演讲者是我之前在申请论坛票的时候就非常关注的（因为著名的DJI公司就来源于该学者所在的实验室），没错他就是大名鼎鼎的香港科技大学机器人研究院院长王煜，这次他演讲的话题为时下最流行的软体机器人，其中主要涉及有生物启发与使用技术、弹性骨骼系统、连续介质力学的超弹性理论等非常高深的内容。
+
+  ![speech_d_1](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_d/speech_d_1.jpg)
+
+  ![speech_d_2](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_d/speech_d_2.jpg)
+
 - #### 演讲5
 
-- #### 演讲6
+  最后，美国麻省理工学院机械工程系副教授Alberto Rodriguez作了题为《我们离自动灵巧机器人还有多远》的主题演讲，其中涉及的主要内容为：机械臂Manipulation的定义与技术发展、物体的抓取和处理等。
+
+  ![speech_e_1](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_e/speech_e_1.jpg)
+
+  ![speech_e_2](http://media.myyerrol.io/images/activities/wrc_2018/forum/speech_e/speech_e_2.jpg)
 
 ### 展览
 
