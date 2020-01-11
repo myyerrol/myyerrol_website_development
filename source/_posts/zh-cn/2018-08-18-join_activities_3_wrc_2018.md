@@ -25,11 +25,13 @@ comments: true
 
 ### 外景
 
+今年世界机器人大会的举办地依然是在北京的亦创国际会展中心，鉴于去年庞大的观众数量，这次我很早就赶到了会场附近去兑换证件，说心里话在兑换之前，我内心还是有些紧张的，毕竟关于自己之前在网上申请论坛票并且收到主办方确认短信这件事，我依然持有半信半疑的态度，可是当志愿者在扫完二维码之后真的将论坛VIP证和相关材料交到我手中的时候，原先的一切顾虑都烟消云散，总之非常期待接下来各种学界大佬的学术演讲。
+
 ![exterior_1](http://media.myyerrol.io/images/activities/wrc_2018/exterior/exterior_1.jpg)
 
-![exterior_2](http://media.myyerrol.io/images/activities/wrc_2018/exterior/exterior_2.jpg)
+如下图所示，主办方今年专门在会场D展区旁边开辟了一个很大的户外空间用于展示大型地面无人系统，我简单看了一下外边滚动播放的显示屏，里面介绍了像救援机器人、多轮无人车、多足机器人等那些平常只会出现在高校实验室或研究所里的机器人，整体技术水平都非常高，看来这次主办方在吸引更多的专业观众前来观看以及向国内外媒体展示中国最新自主研制的高级机器人方面上可没少下功夫。
 
-![exterior_3](http://media.myyerrol.io/images/activities/wrc_2018/exterior/exterior_3.jpg)
+![exterior_2](http://media.myyerrol.io/images/activities/wrc_2018/exterior/exterior_2.jpg)
 
 ### 论坛
 
@@ -48,6 +50,8 @@ comments: true
 - #### 演讲6
 
 ### 展览
+
+- #### 展示机器人
 
 - #### 工业机器人
 
