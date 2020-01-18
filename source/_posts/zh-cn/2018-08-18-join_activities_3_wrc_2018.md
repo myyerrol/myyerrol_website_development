@@ -98,7 +98,13 @@ comments: true
 - #### 科研机器人
 
   **BIT**
+  参加世界机器人大会的国内高校其实并不是很多，而其中最具代表性便是北理工了，他们这次带来的展品依次为下图中的汇童6P机器人、电动并联式轮足机器人哪吒和快速感知处理仿生眼系统，其中最新研制的汇童6P机器人作为国内高级仿人机器人之一，除了可以实现“摔滚走爬”（即摔倒后爬起、翻滚、行走、爬行）等多种仿人模态的运动之外，其自身对复杂环境的适应能力也非常强，我觉得如果以后汇童机器人的水平能够得到更大幅度提升的话，参加DARPA技术挑战赛也许并不是梦想。
 
+  ![bit_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/research_robot/bit/bit_1.jpg)
+
+  ![bit_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/research_robot/bit/bit_2.jpg)
+
+  ![bit_3](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/research_robot/bit/bit_3.jpg)
 
 - #### 特种机器人
 
