@@ -102,7 +102,11 @@ comments: true
 
   ![bit_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/research_robot/bit/bit_1.jpg)
 
+  北理哪吒（BIT-NAZA）由北理工自动化学院运动驱动与控制研究团队开发，其创造性地采用了六自由度并联式一体化电动缸技术，使其可以实现轮式、足式和轮足复合式运动，在保证机器人移动速度和灵活性的同时，也大大提高了系统对复杂地形的适应能力，未来在军事装备运载和民用抢险救灾等领域均有非常广阔的应用前景。最后，有关哪吒机器人的其他内容可查看[这篇文章](http://www.bit.edu.cn/xww/lgxb21/149122.htm)。
+
   ![bit_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/research_robot/bit/bit_2.jpg)
+
+  据官方介绍，快速感知处理仿生眼系统（为什么名称都这么高大上）突破了仿生球形眼球机构与协调运动控制、免摄像机标定仿生凝视立体定位、模拟前庭反射仿生电子稳像、基于旋转运动补偿及纹理映射的三维建模重构、多目标快速并行识别处理等关键技术，有效提升了机器人的三维环境感知、目标识别与定位能力，为促进仿生机器人的智能化发展奠定了坚实的基础。
 
   ![bit_3](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/research_robot/bit/bit_3.jpg)
 
