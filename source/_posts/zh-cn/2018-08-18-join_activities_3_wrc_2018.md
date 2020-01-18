@@ -79,10 +79,16 @@ comments: true
 
 - #### 展示机器人
 
-  **Tinavi**
-  ![tinavi](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/show_robot/tinavi/tinavi.jpg)
+  **DeepRobotics**
+  下图中的机器人是本次世界机器人大会我最期待的机器人之一，没错它就是云深处科技公司开发的四足仿生机器人——绝影，随着近几年波士顿动力持续在足式机器人领域发力，国内很多高校和科研院所也开始自主研发四足机器人，其中作为新生代力量的两大代表之一（另一个为下面要介绍的宇树科技Unitree），来源于浙大的云深处科技在经过前期实验室的技术积累后，成功地研制并生产出了具备出色运动能力的绝影机器人，从现场演示来看，绝影拥有精确的地形感知和优异的踩空后平衡快速恢复能力，这使得它在走过工作人员放置在地上的塑料垫时依然可以保持自身平衡，稳定性和灵活性之强令人咋舌。
+
+  ![deeprobotics](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/show_robot/deeprobotics/deeprobotics.jpg)
 
   **Unitree**
+  云深处科技对面便是宇树科技的开放式展区，虽然面积远没有内场那些机器人公司大，但是其在国内机器人圈子里的知名度却是非常高的，这主要得益于其创始人王兴兴同学曾经在硕士期间独自完成了XDog四足机器人的设计和开发工作。我记得当时知乎上发布的有关XDog的测试视频所带给我的震惊程度丝毫不亚于波士顿动力的那些逆天宣传片，因为对于我来说一位中国研究生能够在中国这样的高等教育体制下独自做出如此高级复杂的机器人，而且性能在某些方面还不输给国外那些顶尖机器人实验室所做的，毫不夸张地说，这绝对算得上是国内机器人科研界的奇迹了！
+
+  好了言归正传，据我现场所了解的情况来看，宇树科技最新推出的莱卡狗（如下图所示）配备有全新研发的高扭矩电机系统、电机驱动模块以及主控制单元模块，这使得机器人的动力性能在大幅度提升的同时，其运动稳定性依然可以保持在非常高的水平，可以实现诸如拉动重物、被踹不倒、攀爬斜坡、乱石行走等案例，目测在国内外同等条件下均属一流水平。
+
   ![unitree](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/show_robot/unitree/unitree.jpg)
 
 - #### 工业机器人
@@ -90,6 +96,9 @@ comments: true
 - #### 服务机器人
 
 - #### 科研机器人
+
+  **BIT**
+
 
 - #### 特种机器人
 
@@ -108,7 +117,7 @@ comments: true
   ![robosea_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/robosea/robosea_2.jpg)
 
   **Other**
-
+  如下图所示，除了上面两家特种机器人公司之外，还有一些不是很有名的公司也参加了特种机器人的展会，这里由于篇幅缘故就不再展开讲解了，感兴趣的可以自行上网查看。
 
   ![other_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/other/other_1.jpg)
 
