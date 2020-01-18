@@ -79,11 +79,40 @@ comments: true
 
 - #### 展示机器人
 
+  **Tinavi**
+  ![tinavi](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/show_robot/tinavi/tinavi.jpg)
+
+  **Unitree**
+  ![unitree](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/show_robot/unitree/unitree.jpg)
+
 - #### 工业机器人
 
 - #### 服务机器人
 
+- #### 科研机器人
+
 - #### 特种机器人
+
+  **CITIC**
+  特种机器人国内做得比较好的当属中信重工，说实话我原来以为中信集团只做银行、证券等金融方面的业务，可是没想到他们下属的[中信重工](http://www.citichmc.com/)子公司却从事机器人和智能装备等实体制造业领域的技术研发和产品落地工作，而且做得相当不错，根据官网的介绍，重工旗下目前推出五大系列共三十余款特种机器人产品，广泛应用于消防、市政、电力、矿山及石化等多种环境，下面两个图即分别为消防灭火和水下搜救特种机器人。
+
+  ![citic_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/citic/citic_1.jpg)
+
+  ![citic_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/citic/citic_2.jpg)
+
+  **RoboSea**
+  在面积不算大的特种机器人展区里，最吸引我的就是下图中的这个仿生鲨鱼机器人，不仅外形做得非常逼真，而且性能也很出色，据现场的工作人员介绍可知这款机器人名叫ROBO-SHARK，定位为高航速、低噪音的远洋仿生水下机器人平台，它使用三关节仿生尾鳍取代螺旋桨推进器，航行速度最高可达10节，且相较传统螺旋桨驱动方式能更加有效地降低产品的运行噪声，节省水下航行时所消耗的能量。此外，该产品外壳均由吸音材料制成，隐蔽性强，不会对原有海洋生物造成影响。总之通过交流，我发现这家初创公司除了上面的仿生鲨鱼，还研制了很多其他类型的机器人，而且涵盖消费级、企业级和教育科研等各个领域（比如下面第2个图的Robo-ROV、RoboRun和Robo-Fish），有兴趣的朋友可以去他们官网看看。
+
+  ![robosea_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/robosea/robosea_1.jpg)
+
+  ![robosea_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/robosea/robosea_2.jpg)
+
+  **Other**
+
+
+  ![other_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/other/other_1.jpg)
+
+  ![other_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/other/other_2.jpg)
 
 ## 总结
 
