@@ -96,26 +96,28 @@ comments: true
 - #### 服务机器人
 
   **UBTECH**
-  作为国内数一数二的服务机器人领导厂商，优必选今年不仅展示了其最新研制的Alpha系列仿人机器人悟空，还将自己的业务范围扩展到了AI教育与安防巡检等新兴领域，代表产品分别为下图中的Jimu（请忽视两个靠在包装盒上的Alpha机器人）和ATRIS机器人，其中Jimu机器人是最受现场家长和孩子们喜爱的，因为无论是机器人本身的工业设计，还是通俗易懂的可视化编程界面，优必选都做得非常出色，而且再加上机器人本身又包含有格斗、足球、篮球、变形和工程等多种元素，所以其受到青少年们的追捧也就不足为奇了。
+  作为国内数一数二的服务机器人领导厂商，优必选今年不仅展示了其最新研制的Alpha系列仿人机器人悟空，还将自己的业务范围扩展到了AI教育与安防巡检等新兴领域，代表产品分别为下图中的Jimu（请忽视两个靠在包装盒上的Alpha机器人）和ATRIS机器人，其中Jimu机器人是最受现场家长和孩子们喜爱的，因为无论是机器人本身的工业设计，还是通俗易懂的可视化编程界面，优必选都做得非常出色，而且再加上机器人本身又包含有格斗、足球、篮球、变形和工程等多种元素，所以其受到青少年朋友们的追捧也就不足为奇了。
 
-  而ATRIS智能巡检机器人则可以说是刷新了我对优必选公司的认识，毕竟优必选最早是靠小型仿人双足机器人起家的，头一次看到履带车这种大块头还真让人有些不适应。根据官方的介绍，ATRIS拥有U-SLAM自主导航、主动人脸识别、可见光+热成像监控等先进技术，可以全方位地守护和保障各种场景下的公共安全。
-  
+  而ATRIS智能巡检机器人则可以说是刷新了我对优必选公司的认识，毕竟优必选最早是靠小型仿人双足机器人起家的，所以头一次看到履带车这种大块头还真让人有些不适应。根据官方的介绍，ATRIS拥有U-SLAM自主导航、主动人脸识别、可见光+热成像监控等先进技术，可以多场景全方位地守护和保障公共安全，市场应用潜力非常大。
+
   ![ubtech_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/ubtech/ubtech_1.jpg)
 
   ![ubtech_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/ubtech/ubtech_2.jpg)
 
   **PADBOT**
+  派宝机器人在本次世界机器人大会上展示了其自主研发的多款智能服务机器人，其中比较典型的是下图中的PadBot X2商用服务机器人，它具有两个高清分辨率的电子显示屏，可以针对不同的垂直行业客户显示不同的内容，此外其还集成有目前应用最为广泛的室内自主导航、人体感应唤醒、主动人脸和语音识别等相关技术，综合水平在国内服务机器人圈子里应该算是比较强的。
 
-
-  ![padbot_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/padbot/padbot_1.jpg)
-
-  ![padbot_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/padbot/padbot_2.jpg)
+  ![padbot](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/padbot/padbot.jpg)
 
   **ZRFN**
+  在本次世界机器人大会上，中瑞福宁作为近几年国内服务机器人领域里异军突起的一股新兴力量，展出了旗下的很多明星产品，其中最令我感到震惊的是下图中的P-Care高级服务机器人，根据官方的介绍，P-Care是中瑞福宁结合欧洲最先进的机器人研发技术与中国优良的生产能力、全力投入自主研发的一款综合服务型机器人，通过综合运用人工智能技术（包括SLAM、图像处理、深度学习、人脸识别、物体识别、环境感知、语义识别、心智学习、语音识别等），可在非接触状态下定时采集传感器信息，诊断人体状况，并可以与人进行语义上的智能交互。
+
+  我相信随着中国人口老龄化程度的不断加深，很多家庭必然需要花费更多的时间来照顾老年人的生活，而P-Care机器人的问世则可以大大减轻子女和护工在老年人生活料理和情绪安抚方面的工作压力，同时也能够在某种程度上提升老年人的生活质量，让他们生活得更加幸福和快乐。
 
   ![zrfn](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/zrfn/zrfn.jpg)
 
   **Other**
+  服务机器人展区其实还有很多其他的机器人公司参展，但是由于篇幅以及时间的缘故，这里就不展开讲解了，下面放一些图片供大家伙欣赏，感兴趣的同学可以自行上公司官网进行了解。
 
   ![aiwa](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/other/aiwa.jpg)
 
