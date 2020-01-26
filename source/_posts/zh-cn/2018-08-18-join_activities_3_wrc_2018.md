@@ -95,6 +95,38 @@ comments: true
 
 - #### 服务机器人
 
+  **UBTECH**
+  作为国内数一数二的服务机器人领导厂商，优必选今年不仅展示了其最新研制的Alpha系列仿人机器人悟空，还将自己的业务范围扩展到了AI教育与安防巡检等新兴领域，代表产品分别为下图中的Jimu（请忽视两个靠在包装盒上的Alpha机器人）和ATRIS机器人，其中Jimu机器人是最受现场家长和孩子们喜爱的，因为无论是机器人本身的工业设计，还是通俗易懂的可视化编程界面，优必选都做得非常出色，而且再加上机器人本身又包含有格斗、足球、篮球、变形和工程等多种元素，所以其受到青少年们的追捧也就不足为奇了。
+
+  而ATRIS智能巡检机器人则可以说是刷新了我对优必选公司的认识，毕竟优必选最早是靠小型仿人双足机器人起家的，头一次看到履带车这种大块头还真让人有些不适应。根据官方的介绍，ATRIS拥有U-SLAM自主导航、主动人脸识别、可见光+热成像监控等先进技术，可以全方位地守护和保障各种场景下的公共安全。
+  
+  ![ubtech_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/ubtech/ubtech_1.jpg)
+
+  ![ubtech_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/ubtech/ubtech_2.jpg)
+
+  **PADBOT**
+
+
+  ![padbot_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/padbot/padbot_1.jpg)
+
+  ![padbot_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/padbot/padbot_2.jpg)
+
+  **ZRFN**
+
+  ![zrfn](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/zrfn/zrfn.jpg)
+
+  **Other**
+
+  ![aiwa](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/other/aiwa.jpg)
+
+  ![gaussian](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/other/gaussian.jpg)
+
+  ![iben](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/other/iben.jpg)
+
+  ![lingyi](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/other/lingyi.jpg)
+
+  ![sibot](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/service_robot/other/sibot.jpg)
+
 - #### 科研机器人
 
   **BIT**
