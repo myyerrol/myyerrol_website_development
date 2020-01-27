@@ -93,6 +93,34 @@ comments: true
 
 - #### 工业机器人
 
+  **FRANKA**
+  ![franka](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/franka/franka.jpg)
+
+  **SMC**
+  ![smc_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/smc/smc_1.jpg)
+
+  ![smc_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/smc/smc_2.jpg)
+
+  **SIASUN**
+  ![siasun_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/siasun/siasun_1.jpg)
+
+  ![siasun_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/siasun/siasun_2.jpg)
+
+  **HANS**
+  ![hans_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hans/hans_1.jpg)
+
+  ![hans_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hans/hans_2.jpg)
+
+  **HS**
+  ![hs_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hs/hs_1.jpg)
+
+  ![hs_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hs/hs_2.jpg)
+
+  **HY**
+  ![hy_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hy/hy_1.jpg)
+
+  ![hy_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hy/hy_2.jpg)
+
 - #### 服务机器人
 
   **UBTECH**
