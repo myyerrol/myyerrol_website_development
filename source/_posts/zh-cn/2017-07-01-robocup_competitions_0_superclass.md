@@ -89,16 +89,16 @@ comments: true
 
 以下是我原创的《RoboCup比赛系列》文章：
 
-[RoboCup比赛系列（零）：总纲](http://myyerrol.io/zh-cn/2017/07/01/robocup_competition_0_superclass/)
-[RoboCup比赛系列（一）：中国服务机器人大赛](http://myyerrol.io/zh-cn/2017/07/11/robocup_competition_1_luoyang/)
-[RoboCup比赛系列（二）：RoboCup合肥国际赛前一天](http://myyerrol.io/zh-cn/2017/07/21/robocup_competition_2_hefei/)
-[RoboCup比赛系列（三）：RoboCup合肥国际赛第一天](http://myyerrol.io/zh-cn/2017/07/31/robocup_competition_3_hefei/)
-[RoboCup比赛系列（四）：RoboCup合肥国际赛第二天](http://myyerrol.io/zh-cn/2017/08/11/robocup_competition_4_hefei/)
-[RoboCup比赛系列（五）：RoboCup合肥国际赛第三天](http://myyerrol.io/zh-cn/2017/08/21/robocup_competition_5_hefei/)
-[RoboCup比赛系列（六）：RoboCup合肥国际赛第四天](http://myyerrol.io/zh-cn/2017/08/31/robocup_competition_6_hefei/)
-[RoboCup比赛系列（七）：RoboCup合肥国际赛第五天](http://myyerrol.io/zh-cn/2017/09/11/robocup_competition_7_hefei/)
-[RoboCup比赛系列（八）：RoboCup合肥国际赛第六天](http://myyerrol.io/zh-cn/2017/09/21/robocup_competition_8_hefei/)
-[RoboCup比赛系列（九）：RoboCup贵阳公开赛](http://myyerrol.io/zh-cn/2017/10/01/robocup_competition_9_guiyang/)
+[RoboCup比赛系列（零）：总纲](http://myyerrol.io/zh-cn/2017/07/01/robocup_competitions_0_superclass/)
+[RoboCup比赛系列（一）：中国服务机器人大赛](http://myyerrol.io/zh-cn/2017/07/11/robocup_competitions_1_luoyang/)
+[RoboCup比赛系列（二）：RoboCup合肥国际赛前一天](http://myyerrol.io/zh-cn/2017/07/21/robocup_competitions_2_hefei/)
+[RoboCup比赛系列（三）：RoboCup合肥国际赛第一天](http://myyerrol.io/zh-cn/2017/07/31/robocup_competitions_3_hefei/)
+[RoboCup比赛系列（四）：RoboCup合肥国际赛第二天](http://myyerrol.io/zh-cn/2017/08/11/robocup_competitions_4_hefei/)
+[RoboCup比赛系列（五）：RoboCup合肥国际赛第三天](http://myyerrol.io/zh-cn/2017/08/21/robocup_competitions_5_hefei/)
+[RoboCup比赛系列（六）：RoboCup合肥国际赛第四天](http://myyerrol.io/zh-cn/2017/08/31/robocup_competitions_6_hefei/)
+[RoboCup比赛系列（七）：RoboCup合肥国际赛第五天](http://myyerrol.io/zh-cn/2017/09/11/robocup_competitions_7_hefei/)
+[RoboCup比赛系列（八）：RoboCup合肥国际赛第六天](http://myyerrol.io/zh-cn/2017/09/21/robocup_competitions_8_hefei/)
+[RoboCup比赛系列（九）：RoboCup贵阳公开赛](http://myyerrol.io/zh-cn/2017/10/01/robocup_competitions_9_guiyang/)
 
 ## 总结
 

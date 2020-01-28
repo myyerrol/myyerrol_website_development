@@ -1,5 +1,5 @@
 ---
-title: Breeze微型四轴系列（八）：软件开发总结
+title: Breeze微型四轴系列（六）：软件开发总结
 date: 2018-02-01 20:00:00
 tags:
   - Micro Quadcopter

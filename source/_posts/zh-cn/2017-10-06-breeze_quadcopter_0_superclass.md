@@ -127,11 +127,9 @@ MicroDynamics团队拥有其所有项目的版权，而对于项目中所用到�
 [Breeze微型四轴系列（一）：硬件电路板设计](http://myyerrol.io/zh-cn/2017/10/21/breeze_quadcopter_1_hardware_design/)
 [Breeze微型四轴系列（二）：STM32嵌入式开发-开发环境搭建](http://myyerrol.io/zh-cn/2017/11/07/breeze_quadcopter_2_stm32_development/)
 [Breeze微型四轴系列（三）：STM32嵌入式开发-Makefile详解](http://myyerrol.io/zh-cn/2017/11/18/breeze_quadcopter_3_stm32_makefile/)
-[Breeze微型四轴系列（四）：STM32嵌入式开发-链接脚本原理](http://myyerrol.io/zh-cn/2017/12/01/breeze_quadcopter_4_stm32_linkscript/)
-[Breeze微型四轴系列（五）：STM32嵌入式开发-启动文件讲解](http://myyerrol.io/zh-cn/2017/12/16/breeze_quadcopter_5_stm32_start_file/)
-[Breeze微型四轴系列（六）：STM32嵌入式开发-代码编写规范](http://myyerrol.io/zh-cn/2017/12/30/breeze_quadcopter_6_stm32_code_guide/)
-[Breeze微型四轴系列（七）：STM32嵌入式开发-飞控算法理论](http://myyerrol.io/zh-cn/2018/01/15/breeze_quadcopter_7_stm32_flight_control/)
-[Breeze微型四轴系列（八）：软件开发总结](http://myyerrol.io/zh-cn/2018/02/01/breeze_quadcopter_8_software_summary/)
+[Breeze微型四轴系列（四）：STM32嵌入式开发-代码编写规范](http://myyerrol.io/zh-cn/2017/12/30/breeze_quadcopter_6_stm32_code_guide/)
+[Breeze微型四轴系列（五）：STM32嵌入式开发-飞控算法理论](http://myyerrol.io/zh-cn/2018/01/15/breeze_quadcopter_7_stm32_flight_control/)
+[Breeze微型四轴系列（六）：软件开发总结](http://myyerrol.io/zh-cn/2018/02/01/breeze_quadcopter_8_software_summary/)
 
 ## 总结
 
