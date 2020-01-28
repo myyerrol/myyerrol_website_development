@@ -94,32 +94,36 @@ comments: true
 - #### 工业机器人
 
   **FRANKA**
+  Franka Emika公司来自于工业自动化强国之一的德国，是最近几年国际上最具发展潜力的协作机器人公司之一，他们推出的七自由度机械臂（如下图所示）在兼具高精度、高灵活性的同时，亦提供有非常友好的人机交互操作体验，使得企业用户或研究人员无需专业知识即可快速地掌握其使用方法并轻松完成各种自动化任务的部署。当然除了以上两点之外，Franka机械臂还有一个最大的优势就是它集成有ROS接口，可以很方便地使用ROS MoveIt!框架进行二次开发，这对其软件生态环境的发展无疑有相当大的好处（我之前在重新学习MoveIt!时就曾研究过Franka机械臂，相关代码可以在[这里](https://github.com/myyerrol/learning_moveit)找到）。
+
   ![franka](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/franka/franka.jpg)
 
   **SMC**
+  SMC公司我原先一直以为是中国人创办的，因为他们的办公地点就在北京经济技术开发区，离世界机器人大会会场非常近，可是后来经朋友的介绍才得知这是一家总部位于日本东京都，拥有气动元件世界领先制造技术的跨国公司，其产品以品种齐全、可靠性高、经济耐用、能满足众多领域不同用户的需求而闻名于世。好了言归正传，在本次大会上，SMC公司主要展示了几套集成有压缩空气净化、气动辅助、方向控制和执行器等元件的工业自动化解决方案（如下图所示），虽然我不是很看得懂，但是感觉其技术水平应该是非常高的。
+
   ![smc_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/smc/smc_1.jpg)
 
-  ![smc_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/smc/smc_2.jpg)
+  ![smc_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/smc/smc_2.jpg)
 
   **SIASUN**
+  在本次大会上，新松展示了炫舞机器人、协作机器人、蛇形臂机器人和服务机器人等创新产品，其中最受观众们喜爱的就是下图中的这款曾艳亮相于平昌冬奥会“北京八分钟”演出的炫舞机器人，根据官方的介绍，炫舞机器人在户外复杂环境下的精确导航、人机协同运动、核心系统及零部件国产化等技术层面上均实现了巨大的突破，这无疑表明新松在中高端机器人自主研发方面的综合实力已经达到国际一流水平。
+
   ![siasun_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/siasun/siasun_1.jpg)
+
+  除了上面的炫舞机器人之外，新松还带来了最新的基于SCR5协作机器人+AR技术所演绎的人机协作生产新模式——PCB板搬运。据官方的介绍，SCR5协作机器人整合了视觉相机、激光传感器和气动抓取系统，可以通过传感器来识别托盘的高度，并将其数据转化为连续的运动轨迹，从而引导机器人完成PCB板的自主抓取和放置等操作任务。此外，新松SCR5协作机器人还搭载有AR技术，能够实时显示机器人及生产状态信息，在大大提高了其人机交互性、协作性的同时，也极大地促进了工作效率的提升。
 
   ![siasun_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/siasun/siasun_2.jpg)
 
-  **HANS**
-  ![hans_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hans/hans_1.jpg)
+  **Other**
+  其他工业机器人公司展示的产品都比较类似，基本上都是各种类型的机械臂，没有什么太多的新意，这里就不再详细进行介绍了，下面放几张图以供大家参考。
 
-  ![hans_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hans/hans_2.jpg)
+  ![hans](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/other/hans.jpg)
 
-  **HS**
-  ![hs_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hs/hs_1.jpg)
+  ![hs](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/other/hs.jpg)
 
-  ![hs_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hs/hs_2.jpg)
+  ![hy_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/other/hy_1.jpg)
 
-  **HY**
-  ![hy_1](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hy/hy_1.jpg)
-
-  ![hy_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/hy/hy_2.jpg)
+  ![hy_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/industrial_robot/other/hy_2.jpg)
 
 - #### 服务机器人
 
@@ -196,6 +200,12 @@ comments: true
   ![other_2](http://media.myyerrol.io/images/activities/wrc_2018/exhibition/special_robot/other/other_2.jpg)
 
 ## 总结
+
+
+
+
+
+经过一整天马不停蹄的参观，终于到了要跟2017世界机器人大会说再见的时候了，说心里话这是我人生第一次参加如此正式的机器人博览会，全程内心都是处于非常激动和兴奋的状态，看到了很多国内外技术领先的机器人，也深刻体会到了中国与发达国家在工业自动化、高精度组件制造等方面之间所存在的巨大差距，我希望中国未来可以在工业基础领域投入更多的精力、物力与财力，让我们的智能机器人也能用上高精度的零件，从而实现更加智能化、复杂化的应用。
 
 {% alert info %}
 本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
