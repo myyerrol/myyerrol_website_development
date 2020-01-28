@@ -24,19 +24,19 @@ comments: true
 
   **DJI**
 
-  ![flight_control_dji](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_dji.jpg)
+  ![flight_control_dji](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_dji.jpg)
 
   目前国内做四轴飞行器的公司有很多，其中做飞控系统最好的当属大疆创新（DJI）。大疆创新（DJI）目前拥有NAZE、WooKong以及A系列的多种商业飞控系统，其中作为NAZA飞控系列的最新一代产品，N3多旋翼飞控系统采用DJI最新的控制导航算法，新增内置的双IMU冗余设计，可实现数据实时互为备份，并结合全新内减震结构设计，赋予了飞行器更高的可靠性，为无人机爱好者及行业应用探索者提供稳定而全面的系统级解决方案。
 
   **Crazepony**
 
-  ![flight_control_crazepony](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_crazepony.png)
+  ![flight_control_crazepony](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_crazepony.png)
 
   Crazepony微型四轴飞行器由深圳创客火（Maker Fire）公司设计、制造并发行，其内置的飞控算法可以实现飞行器的定高悬停、有头（X模式）和无头模式飞行等功能。相比于商业飞控来说，Crazepony的飞控开源（包括源代码、原理图、工作原理、系统框架、设计思路等），且核心算法部分有详细的教程文档，既方便各大高校的学生和爱好者学习相关知识，也利于进行二次开发，以实现自己的创意。
 
   **MiniFly**
 
-  ![flight_control_alientek](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_alientek.png)
+  ![flight_control_alientek](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_alientek.png)
 
   MiniFly是广州市星翼电子科技有限公司（ALIENTEK）最新推出的一款开源微型四轴飞行器，它所使用的飞控算法可以支持：定高和手动飞行、4D翻飞、抛飞、有头（X模式）和无头模式飞行、一键起飞和降落等功能。由于MiniFly微型四轴的硬件电路设计主要是基于国外的Crazeflie项目修改而来，所以其硬件性能在国内同等规格的四轴飞行器里绝对算是一流的，当然强大的硬件性能也为MiniFly实现更为复杂的飞控算法提供了一个绝佳的平台。
 
@@ -46,37 +46,37 @@ comments: true
 
   **APM**
 
-  ![flight_control_apm](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_apm.png)
+  ![flight_control_apm](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_apm.png)
 
   APM(ArduPilot Mega)是在2007年由DIY无人机社区（DIY Drones）推出的飞控产品，是当今最为成熟的开源硬件项目。APM基于Arduino开源平台，对多处硬件做出了改进，包括加速度计、陀螺仪和磁力计组合惯性测量单元（IMU）。由于APM良好的可定制性，APM在全球航模爱好者范围内迅速传播开来。通过开源软件Mission Planner，开发者可以对APM进行相应的配置，接受并显示传感器的数据，使用Google Map完成自动驾驶等功能。除此之外，APM连接外置GPS传感器以后能够增强飞行的稳定性，并能够完成自主起降、自主航线飞行、回家、定高、定点等丰富的飞行模式。APM可以使用外置的超声波传感器和光流传感器，在室内实现定高和定点飞行。
 
   **PX4**
 
-  ![flight_control_px4](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_px4.png)
+  ![flight_control_px4](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_px4.png)
 
   PX4是一个软硬件开源项目（遵守BSD协议），目的在于为学术、爱好和工业团体提供一款低成本、高性能的高端自驾仪。这个项目源于苏黎世联邦理工大学的计算机视觉与几何实验室、自主系统实验室和自动控制实验室的PIXHawk项目。于2004年推出的PIXHawk飞控是PX4飞控的升级版本，它拥有PX4和APM两套固件和相应的地面站软件。该飞控是目前全世界飞控产品中硬件规格最高的产品，也是当前爱好者手中最炙手可热的产品。PIXHawk拥有168MHz的运算频率，并突破性地采用了整合硬件浮点运算核心的Cortex-M4的单片机作为主控芯片，内置两套陀螺和加速度计MEMS传感器，互为补充矫正，内置三轴磁场传感器并可以外接一个三轴磁场传感器，同时可外接一主一备两个GPS传感器，在故障时自动切换。
 
   **CC3D**
 
-  ![flight_control_cc3d](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_cc3d.png)
+  ![flight_control_cc3d](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_cc3d.png)
 
   CC3D是Openpilot旗下最流行的飞控系统，此飞控板只采用一颗72MHz的32位STM32单片机和一颗MPU6000就能够完成四旋翼、固定翼、直升机的姿态控制飞行。与所有开源飞控不同，它不需要GPS融合或者磁场传感器参与修正，就能保持长时间的姿态控制，而且通过设置就可以更改飞机种类、飞行模式、支持云台增稳等功能。此外，CC3D飞控编译完的固件容量只有大约100KB，代码效率令人惊叹，而且其地面站软件集成了完整的电子地图，可以通过电台实时监测飞机状态。
 
   **MWC**
 
-  ![flight_control_mwc](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_mwc.jpg)
+  ![flight_control_mwc](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_mwc.jpg)
 
   MultiWiiCopter(MWC)飞控是一款典型的Arduino衍生产品，是专为多旋翼开发的低成本飞控，它完整地保留了Arduino IDE开发和Arduino设备升级和使用的方法。由于成本低、架构简单、固件比较成熟，因此该飞控在国内外拥有大量爱好者。除了支持常见的四、六、八旋翼以外，该飞控的最大特点是支持很多奇特的飞行器类型，比如三旋翼、Y4型多旋翼（其中两轴为上下对置）等。
 
   **PPZ**
 
-  ![flight_control_ppz](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_ppz.jpg)
+  ![flight_control_ppz](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_ppz.jpg)
 
   Paparazzi(PPZ)是一个软硬件全开源的项目，它始于2003年，开发目标是建立一个配置灵活且性能强大的开源飞控项目。PPZ的一大特点是，该开源飞控方案中除了常见的飞控硬件、飞控软件和地面站软件之外，还包含地面站硬件，包括各种调制解调器、天线等设备。从功能上讲，PPZ已经接近一个小型的无人机系统了。该开源项目的另一个特点是采用Ubuntu操作系统，它将全部地面站软件和开发环境集成于该系统下，官方称之为Live CD。一张CD加飞控硬件就可完成从开发到使用的全部工作。PPZ目前最流行的硬件版本拥有大量的扩展接口，方便开发者进行DIY。
 
   **Crazeflie**
 
-  ![flight_control_crazeflie](http://media.myyerrol.io/images/quadcopter/breeze/embedded/flight_control_crazeflie.png)
+  ![flight_control_crazeflie](http://media.myyerrol.io/images/quadcopters/breeze/embedded/flight_control_crazeflie.png)
 
   Crazeflie是国外最著名的微型四轴飞行器开源项目，它由三个来自瑞典的嵌入式工程师所创建，目的是使用尽可能少的零件来构造一款可以在室内使用的小型飞行机器人。得益于其出色、严谨的硬件电路设计、稳定且可靠的飞控系统以及模块化的扩展能力，Crazeflie四轴飞行器可以完成很多同类型四轴飞行器无法做到的高难度实验任务。除此之外，Bitcraze团队还为Crazeflie微型四轴飞行器项目编写了大量的使用和发教程，方便全世界的四轴爱好者们进行学习和开发（国内Crazepony和MiniFly两大开源微型四轴项目就在很大程度上参考了Crazeflie中的一些设计理念和内容）。
 
@@ -88,7 +88,7 @@ comments: true
 
   与传统的直升机相比，四轴飞行器有着下列的优势：各个旋翼对机身所施加的反扭矩与旋翼的旋转方向相反，因此当处于同一对角线的两个电机向相同方向旋转时（不同对角线上的电机转向相反），就可以平衡旋翼对机身的反扭矩。
 
-  ![breeze_motor_layout](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_motor_layout.jpg)
+  ![breeze_motor_layout](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_motor_layout.jpg)
 
   如上图所示，根据用户自定义的机头的位置不同，四轴飞行器可以分为×模式和+模式。×模式的机头方向位于两个电机之间，而+模式的机头方向位于某一个电机上。×和+就是表示正对机头方向时飞行器的形状。相对而言，×模式稳定一些，但动作更灵活。但如果要完成翻跟头等特技动作，可能需要用+模式。
 
@@ -96,7 +96,7 @@ comments: true
 
   四轴飞行器在空间共有6个自由度（分别沿3个坐标轴作平移和旋转动作），这6个自由度的控制都可以通过调节不同电机的转速来实现。基本运动状态分别为：垂直运动、俯仰运动、滚转运动、偏航运动、前后运动和侧向运动。
 
-  ![breeze_motion_a](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_motion_a.jpg)
+  ![breeze_motion_a](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_motion_a.jpg)
 
   **垂直运动**
   垂直运动相对来说比较容易。在上图(a)中，因有两对电机转向相反，可以平衡其对机身的反扭矩，当同时增加四个电机的输出功率，旋翼转速增加使得总的拉力增大，当总拉力足以克服整机的重量时，四轴飞行器便离地垂直上升。反之，同时减小四个电机的输出功率，四轴飞行器则垂直下降，直至平衡落地，实现了沿Z轴的垂直运动。当外界扰动量为零时，在旋翼产生的升力等于飞行器的自重时，飞行器便保持悬停状态。保证四个旋翼转速同步增加或减小是垂直运动的关键。
@@ -106,7 +106,7 @@ comments: true
 
   ---
 
-  ![breeze_motion_b](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_motion_b.jpg)
+  ![breeze_motion_b](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_motion_b.jpg)
 
   **滚转运动**
   与上图(b)原理相同，在图(c)中，改变电机2和电机4的转速，保持电机1和电机3的转速不变，则可使机身绕X轴旋转（正向和反向），实现四轴飞行器的滚转运动。
@@ -116,7 +116,7 @@ comments: true
 
   ---
 
-  ![breeze_motion_c](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_motion_c.jpg)
+  ![breeze_motion_c](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_motion_c.jpg)
 
   **前后运动**
   要想实现飞行器在水平面内前后、左右的运动，必须在水平面内对飞行器施加一定的力。在图(e)中，增加电机3转速，使拉力增大，相应减小电机1转速，使拉力减小，同时保持其他两个电机转速不变，反扭矩仍然要保持平衡。按图(b)的理论，飞行器首先发生一定程度的倾斜，从而使旋翼拉力产生水平分量，因此可以实现飞行器的前飞运动。向后飞行与向前飞行正好相反。当然在图(b)和图(c)中，飞行器在产生俯仰、翻滚运动的同时也会产生沿X、Y轴的水平运动。
@@ -138,7 +138,7 @@ comments: true
 
 总之，定时器4中断是核心中断，所有的飞控算法都是在这里实现的，机身的稳定也是依靠这个中断来实现的。接下来，本文章将结合程序执行流程图来详细地讲解定时器4中断内部的组织结构和实现的功能：
 
-![breeze_embedded_flowchart](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_embedded_flowchart.png)
+![breeze_embedded_flowchart](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_embedded_flowchart.png)
 
 如上图所示，程序会在主循环中不断轮询各个定时器的标志位，从而产生三个大小不同的时间段。在这些时间段内，系统便可以完成像接收遥控器指令、更新传感器数据以及更新电机控制等任务。主程序通过划分不同频率的定时器循环，使得所有任务可以分时并发地执行，这有效地降低了函数串行执行时的延时问题，并且提高了主控对资源的利用率。
 
@@ -152,11 +152,11 @@ comments: true
 
   在这个循环之中，STM32会读取MPU6050和MS5611数据并进行融合。因为本论文采用的是软件解算MPU6050的姿态，所以读取的数据应为陀螺仪和加速度计的AD值，之后再将数据进行标定、滤波、校正后通过四元数融合得到三轴欧拉角，具体如下图所示：
 
-  ![breeze_pid_loop_single](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_pid_loop_single.png)
+  ![breeze_pid_loop_single](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_pid_loop_single.png)
 
   加速度传感器采集数据容易失真，造成姿态解算出来的欧拉角错误。只用角度单环的情况下，系统很难稳定运行，因此可以加入角速度作为内环。角速度由陀螺仪采集数据输出，采集值一般不存在受外界影响情况，抗干扰能力强，并且角速度变化灵敏，当受外界干扰时回复迅速增强了系统的鲁棒性。
 
-  ![breeze_pid_loop_double](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_pid_loop_double.png)
+  ![breeze_pid_loop_double](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_pid_loop_double.png)
 
   如上图所示，把角度作为外环，角速度作为内环，即通过将角度环的输出值作为角速度环的输入来进行姿态双环PID控制。
 
@@ -182,7 +182,7 @@ comments: true
 
   姿态是用来描述一个刚体的固连坐标系和参考坐标系之间的角位置关系。四轴飞行器使用的参考坐标系是当地水平坐标系，即地理坐标系，而其自身的固连坐标系叫做载体坐标系。地理坐标系有很多种，如下图所示，这里使用的是比较常用的**NED**（即“北东地”）坐标系。
 
-  ![breeze_coordinate_geography](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_coordinate_geography.png)
+  ![breeze_coordinate_geography](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_coordinate_geography.png)
 
   ---
 
@@ -190,7 +190,7 @@ comments: true
 
   通常我们一般选择把`$X$`轴作为四轴飞行器的正前方，那么俯仰角`$\theta$`则为载体绕`$Y$`轴旋转的角度，指向水平面以下为正，指向水平面以上为负，角度范围从−90°至90°；翻滚角`$\phi$`为载体绕`$X$`轴旋转的角度，坐标`$Y$`指向水平面以上为正，指向水平面以下为负，角度范围从−180°至180°；而航向角`$\psi$`为机体绕`$Z$`轴旋转的角度，俯视图逆时针为正，顺时针为负。
 
-  ![breeze_coordinate_body](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_coordinate_body.jpg)
+  ![breeze_coordinate_body](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_coordinate_body.jpg)
 
   ---
 
@@ -204,7 +204,7 @@ comments: true
 
     欧拉角由莱昂哈德·欧拉创立，用来描述刚体在三维欧几里得空间的取向。对于在三维空间里的一个参考系，任何坐标系的取向，都可以用三个欧拉角来表现。参考系又称为实验室参考系，是静止不动的，而坐标系则固定于刚体，随着刚体的旋转而旋转。
 
-    ![breeze_euler_angles](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_euler_angles.png)
+    ![breeze_euler_angles](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_euler_angles.png)
 
     地理坐标系`$OX_{n}Y_{n}Z_{n}$`与载体坐标系`$OX_{b}Y_{b}Z_{b}$`之间的坐标变换矩阵即方向余弦矩阵可以通过三次基本旋转得到。对应的旋转变换矩阵为：
 
@@ -342,7 +342,7 @@ comments: true
 
   姿态解算的核心在于旋转，旋转共有4种表示方式：矩阵、欧拉角、轴角和四元数。其中矩阵适合变换向量，欧拉角最直观，轴角则适合几何推导，而在组合旋转方面，四元数表示最佳。因为姿态解算需要频繁组合旋转并用旋转变换向量，所以应采用四元数来保存飞行器的姿态（地理坐标系中的俯仰/翻滚/航向角）。下图是姿态解算的整个流程：
 
-  ![breeze_attitude_flowchart](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_attitude_flowchart.png)
+  ![breeze_attitude_flowchart](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_attitude_flowchart.png)
 
   如上图所示，STM32会通过IIC总线采集MPU6050中陀螺仪和加速度计的AD值，之后再通过姿态解算算法得到飞行器当前的姿态（姿态使用四元数表示），然后将四元数转化为欧拉角，用于后面的姿态PID控制。
 
@@ -374,7 +374,7 @@ comments: true
 
   PID控制是最常见，应用最为广泛的自动反馈系统。PID控制器由偏差的比例（P: Proportional）、积分（I: Integral）和微分（D: Derivative）来对被控对象进行控制。这里的积分或微分都是偏差对时间的积分或微分。
 
-  ![breeze_pid](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_pid.png)
+  ![breeze_pid](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_pid.png)
 
   对于一个自动反馈控制系统来说，共有以下几个基本指标：
 
@@ -408,7 +408,7 @@ comments: true
 
   **单环PID控制**
 
-  ![breeze_pid_loop_angle](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_pid_loop_angle.png)
+  ![breeze_pid_loop_angle](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_pid_loop_angle.png)
 
   如上图所示，输入的期望角度就是远程遥控端控制飞行器的角度值，反馈当前角度就是由传感器测得的飞行器角度，这里的角度值分别指的是翻滚角、俯仰角和航向角，在做PID控制计算的时候，它们是相互独立的。这里以翻滚角为例，介绍一下PID计算的全过程：
 
@@ -438,7 +438,7 @@ comments: true
 
   角度单环PID控制算法仅仅考虑了四轴飞行器的角度信息，如果要增加四轴飞行器的稳定性并提高控制质量，可以使用下面的角度/角速度串级PID控制算法：
 
-  ![breeze_pid_loop_cascade](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_pid_loop_cascade.png)
+  ![breeze_pid_loop_cascade](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_pid_loop_cascade.png)
 
   如上图所示，串级PID控制算法其实就是将角度环PID和角速度环PID控制算法串联了起来，因为两个控制器比单个能控制更多的变量，因此它增强了系统的抗干扰性，使得四轴飞行器的适应能力更强。它的计算过程如下：
 
@@ -488,7 +488,7 @@ comments: true
 
   目前，Breeze微型四轴飞行器拥有一个板载的高精度气压计MS5611，所以可以实现高度的自主悬停。在水平面上，虽然该飞行器还装备有一个小型的摄像头图传模块，但由于视觉算法部分还存在着一些问题，所以目前仅靠3轴加速度计和3轴陀螺仪数据来做的双环PID控制是无法使其在水平面上做到真正意义上的自主悬停的。以下简单地讲解一下目前Breeze微型四轴飞行器所使用的高度双环PID控制算法：
 
-  ![breeze_pid_loop_height](http://media.myyerrol.io/images/quadcopter/breeze/embedded/breeze_pid_loop_height.png)
+  ![breeze_pid_loop_height](http://media.myyerrol.io/images/quadcopters/breeze/embedded/breeze_pid_loop_height.png)
 
   如上图所示，由于MS5611气压计的精度为10cm，所以需要融合加速度计互补滤波得到较为准确的高度值。用高度作为外环，速度作为内环形成高度双环PID控制，最后调节输出油门以实现Z轴的自主悬停。
 

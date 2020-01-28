@@ -23,7 +23,7 @@ comments: true
 
 Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是硬件的架构图：
 
-![breeze_hardware_architecture](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_hardware_architecture.png)
+![breeze_hardware_architecture](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_hardware_architecture.png)
 
 **电机驱动模块**
 电机驱动模块主要负责接收主控制器发过来的PWM（脉冲宽度调制）信号来控制四轴飞行器每个有刷空心杯电机的转速。
@@ -44,7 +44,7 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 ### KiCad
 
-![kicad_logo](http://media.myyerrol.io/images/quadcopter/breeze/hardware/logo_kicad.png)
+![kicad_logo](http://media.myyerrol.io/images/quadcopters/breeze/hardware/logo_kicad.png)
 
 - #### 简介
 
@@ -54,11 +54,11 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
   以下是我前期在Ubuntu 14.04上用KiCad软件所设计的Breeze微型四轴飞行器PCB图，由于KiCad软件不像Altium Designer那样带有各种IC封装生成的向导功能，所以当时我是边看IC的Datasheet边用KiCad的PCB库编辑功能来进行封装的绘制，这个过程很花费时间，不过也确实让我学到一些PCB封装设计方面的技巧和经验（比如根据手焊或机焊方式的不同来确定IC四周引脚的长宽度等）。最后很遗憾的是，由于我们对Breeze微型四轴飞行器的功能需求进行了较大的变更并考虑到后期PCB打板制作方面的问题，因此我们决定放弃KiCad转而使用Altium Designer来完成PCB电路板的设计工作（这也是为什么下图中的PCB没有完成的原因），但有一点我不得不说，作为一个开源且跨平台的EDA软件，KiCad真的很好上手，而且它在国外Hack界拥有非常高的人气的，毕竟[Crazyflie](https://www.bitcraze.io)和[Pixhawk](https://pixhawk.org)两大知名的开源项目都曾使用KiCad作为其PCB设计的工具。
 
-  ![breeze_pcb_kicad](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_pcb_kicad.png)
+  ![breeze_pcb_kicad](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_pcb_kicad.png)
 
 ### Altium Designer
 
-![altium_logo](http://media.myyerrol.io/images/quadcopter/breeze/hardware/logo_altium.jpg)
+![altium_logo](http://media.myyerrol.io/images/quadcopters/breeze/hardware/logo_altium.jpg)
 
 - #### 简介
 
@@ -68,11 +68,11 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
   下图所展示的就是我最终用Altium Designer所完成的Breeze微型四轴飞行器的PCB文件，该PCB采用双面布局走线、双面覆铜处理、四层电路板设计。除此之外，我对连接有直流电机器件的电源线路进行了加粗处理，以提高电流对电机的驱动能力，还有就是由于该PCB使用了陶瓷天线（下图最中间上面那个突出的长方形区域），为了减少电源层对其信号传输的干扰，我对四层电路板中的VCC和GND层进行了分割处理，即将陶瓷天线元器件下方的VCC和GND层掏空，这样电流不从陶瓷天线的底部通过，自然便可降低由电流所产生的电磁干扰。最后总结一下，Altium Designer这款EDA软件是我用过的PCB设计工具（其它有KiCad和Cadence SPB）中对初学者最友好的，原因主要得益于其美观的人机交互界面、便捷强大的设计功能和丰富的教程案例，总之，如果你是刚开始接触PCB设计的新人，我推荐你学习Altium Designer。
 
-  ![breeze_pcb_altium](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_pcb_altium.png)
+  ![breeze_pcb_altium](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_pcb_altium.png)
 
 ### Cadence SPB
 
-![cadence_logo](http://media.myyerrol.io/images/quadcopter/breeze/hardware/logo_cadence.jpg)
+![cadence_logo](http://media.myyerrol.io/images/quadcopters/breeze/hardware/logo_cadence.jpg)
 
 - #### 简介
 
@@ -104,7 +104,7 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 - #### 原理
 
-  ![breeze_motor](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_motor.png)
+  ![breeze_motor](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_motor.png)
 
   Breeze微型四轴飞行器使用的是有刷空心杯电机，所以电机的控制属于有刷直流电机控制，这相对于无刷电调来说要简单很多。只需要将信号的驱动能力增大，就可以驱动有刷电机。
 
@@ -138,41 +138,41 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 - #### 原理
 
-  ![breeze_power_battery](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_power_battery.png)
+  ![breeze_power_battery](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_power_battery.png)
 
   当不连接USB，而仅采用电池供电时，BQ24075对电池进行放电管理，其10号引脚输出的VCOM信号使电路中的2N7002场效应管导通，R22和R26两个电阻对电池进行分压，此时处理器开始不断地采样VBAT的值，如果VBAT的值过低，处理器就会给MAX16054发送SYSOFF信号，使其关断系统，防止因电池过放而导致的损害。
 
-  ![breeze_power_nuf2221w1t2](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_power_nuf2221w1t2.png)
+  ![breeze_power_nuf2221w1t2](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_power_nuf2221w1t2.png)
 
   NUF2221W1T2在电路中的作用主要是对USB进行缓冲或保护，防止因为USB的错误导致电路系统出现意外情况。
 
-  ![breeze_power_max16054](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_power_max16054.png)
+  ![breeze_power_max16054](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_power_max16054.png)
 
   MAX16054电路右上部分的2N7002场效应管以及10K欧姆的电阻组成了可控的下拉。VUSB连接到USB供电端，若有USB供电，则场效应管导通，从而BQ24075的SYSOFF引脚被拉低，此时BQ24075不会识别处理器间接发送过来的关机信号。保证了在使用USB进行调试的时候，不会因为此时电池电压低而出现关机的情况。
 
-  ![breeze_power_bq24075](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_power_bq24075.png)
+  ![breeze_power_bq24075](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_power_bq24075.png)
 
   BQ24075 充电时的参数可以通过连接不同阻值大小的电阻来确定，以下是具体的计算公式：
 
   **快速充电电流（ISET）**
-  ![breeze_formula_1](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_formula_1.jpg)
+  ![breeze_formula_1](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_formula_1.jpg)
 
   **输入电流限制（ILIM）**
-  ![breeze_formula_2](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_formula_2.jpg)
+  ![breeze_formula_2](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_formula_2.jpg)
 
   **快速充电安全定时器（TMR）**
-  ![breeze_formula_3](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_formula_3.jpg)
+  ![breeze_formula_3](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_formula_3.jpg)
 
   根据以上官方提供的公式和电路图中的电阻阻值，可以得出此时BQ24075的快速充电电流为740mA，输入电流限制为1.3A，安全定时器为80min左右。
 
-  ![breeze_power_tps79301_vcca](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_power_tps79301_vcca.png)
+  ![breeze_power_tps79301_vcca](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_power_tps79301_vcca.png)
 
-  ![breeze_power_tps79301_vcc](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_power_tps79301_vcc.png)
+  ![breeze_power_tps79301_vcc](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_power_tps79301_vcc.png)
 
-  ![breeze_power_tps79301_guide](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_power_tps79301_guide.png)
+  ![breeze_power_tps79301_guide](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_power_tps79301_guide.png)
 
   TPS79301可调输出的稳压值可以通过以下计算公式得到：
-  ![breeze_formula_4](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_formula_4.jpg)
+  ![breeze_formula_4](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_formula_4.jpg)
 
   首先以上图中的模拟电源部分为例讲解。根据官方提供的连接关系图，可以得知上述公式中的R1和R2分别对应模拟电源部分中的R和R9，因此计算得到输出的VCCA电压为2.8V。
 
@@ -199,11 +199,11 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 - #### 原理
 
-  ![breeze_sensor_mpu6050](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_sensor_mpu6050.png)
+  ![breeze_sensor_mpu6050](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_sensor_mpu6050.png)
 
-  ![breeze_sensor_hmc5883l](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_sensor_hmc5883l.png)
+  ![breeze_sensor_hmc5883l](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_sensor_hmc5883l.png)
 
-  ![breeze_sensor_ms5611](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_sensor_ms5611.png)
+  ![breeze_sensor_ms5611](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_sensor_ms5611.png)
 
   MPU6050和MS5611连接到STM32的主IIC总线上，而HMC5883L连接到MPU6050的从IIC总线上。在初始化MPU6050时，可以设置主IIC总线和从IIC总线直通，这样STM32就可以直接通过主IIC总线访问从IIC总线，从而读取HMC5883L中的数据了。
 
@@ -219,9 +219,9 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 - #### 原理
 
-  ![breeze_wireless](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_wireless.png)
+  ![breeze_wireless](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_wireless.png)
 
-  ![breeze_wireless_guide](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_wireless_guide.png)
+  ![breeze_wireless_guide](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_wireless_guide.png)
 
   Breeze微型四轴飞行器的无线通信电路主要参考了上图的官方示例，并在原有的基础之上修改了部分GPIO引脚的功能，使其可以对电源管理模块进行监视和控制。除此之外，nRF51822芯片使用USART接口与主控STM32进行数据的交互，而且预留的SCLK和SDIO也方便之后使用J-Link的SWD模式来进行代码的下载和调试。
 
@@ -241,11 +241,11 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 - #### 原理
 
-  ![breeze_controller_stm32f103t6u6](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_controller_stm32f103t6u6.png)
+  ![breeze_controller_stm32f103t6u6](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_controller_stm32f103t6u6.png)
 
   如上图所示，该电路包含了STM32的最小系统：复位电路、外部时钟电路、启动模式选择电路和电源退耦电路等。查阅意法半导的官方手册可以知道，STM32系列单片机都是低电平复位。于是采用如图所示的方法，将NRST引脚连接到对应的复位电路中。该电路图中STM32外接了一个16MHz的无源晶振，通过内部倍频，STM32的系统时钟最高可达72MHz。STM32的启动模式分为三种，可以从下面的表格给出：
 
-  ![breeze_table](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_table.png)
+  ![breeze_table](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_table.png)
 
   电路图中STM32的BOOT0引脚默认是被拉低的，即STM32默认是运行在正常工作模式下的。BOOT0和BOOT1引脚的电平都可以进行配置以满足不同的实际需求。
 
@@ -253,11 +253,11 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
   因为电容对频率高的信号，呈现低阻性，对直流呈现高阻特性。电源上的噪声对地平面而言就是一个交流信号，交流信号能通过电容到达地平面，而电源本身是直流的，电容对它会呈现出无穷大的阻力。因此，通过示波器可以看到，加了退耦电容的电源要比没加的波形要稳定得多。
 
-  ![breeze_controller_cp2102](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_controller_cp2102.png)
+  ![breeze_controller_cp2102](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_controller_cp2102.png)
 
   CP2102电路原理比较简单，它负责转换USB和RS232接口的电平，主要用于后期的代码调试中。
 
-  ![breeze_controller_expansion](http://media.myyerrol.io/images/quadcopter/breeze/hardware/breeze_controller_expansion.png)
+  ![breeze_controller_expansion](http://media.myyerrol.io/images/quadcopters/breeze/hardware/breeze_controller_expansion.png)
 
   扩展电路将主控制器和无线通信模块中的一些引脚引到排插上，提高了四轴飞行器的可扩展性，并方便了之后的代码下载和调试。
 

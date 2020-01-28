@@ -20,7 +20,7 @@ comments: true
 
 <!--more-->
 
-![xm_arm](https://github.com/myyerrol/xm_arm_workspace/raw/master/.images/xm_arm.jpg)
+![xm_arm](http://media.myyerrol.io/images/ros/xmbot/xm_arm.jpg)
 
 ## 技术介绍
 
@@ -36,7 +36,7 @@ comments: true
 
 ### 软件
 
-![xm_arm_software_architecture](https://github.com/myyerrol/xm_arm_workspace/raw/master/.images/xm_arm_software_architecture.png)
+![xm_arm_software_architecture](http://media.myyerrol.io/images/ros/xmbot/xm_arm_software_architecture.png)
 
 从软件架构图中可以很清楚的看到，机械臂的软件层主要由三个部分组成，从下到上依次为：硬件接口层、运动规划层和任务决策层。
 
@@ -267,7 +267,7 @@ $> rosrun xm_arm_teleop xm_arm_teleop_position_keyboard
 
 你可以使用键盘上的按键来控制机械臂每个关节的移动位置。
 
-![xm_arm_control_gazebo](https://github.com/myyerrol/xm_arm_workspace/raw/master/.images/xm_arm_control_gazebo.png)
+![xm_arm_control_gazebo](http://media.myyerrol.io/images/ros/xmbot/xm_arm_control_gazebo.png)
 
 - 硬件部分：
 
@@ -541,7 +541,7 @@ xm_arm:
 
 下图是MoveIt的总体框架：
 
-![MoveIt! Architecture](http://moveit.ros.org/assets/images/robots_old/Overview.0012.jpg)
+![MoveIt! Architecture](https://moveit.ros.org/assets/images/diagrams/move_group.png)
 
 这张图我在学习MoveIt!的时候看过很多遍，理解这个架构图对于学习MoveIt!非常重要。从图中可以看到，**move_group**是MoveIt!最核心的部分。它将其他独立的组件集成到一起，为使用者提供了一系列可以使用的命令和服务。
 
@@ -586,7 +586,7 @@ xm_arm:
 
 在MoveIt!中，运动规划算法是由运动规划器算出来的。当然，运动规划算法有很多，每一个运动规划器都是MoveIt的一个插件，可以根据需求选用不同的规划算法。MoveIt!默认使用的是[OMPL](http://ompl.kavrakilab.org)。OMPL(Open Motion Planning Library)是开源运动规划库的简写，它提供基于随机化的运动规划器。
 
-![Motion Planning Pipeline](http://moveit.ros.org/assets/images/robots_old/Overview.002.jpg)
+![Motion Planning Pipeline](https://moveit.ros.org/assets/images/diagrams/motion_planner.png)
 
 - 运动规划请求：
   在让运动规划器进行运动规划之前，我们要先发送一个运动规划的请求。这个请求可以是新的机械臂或末端执行器的位置。为了让运动规划器规划出来的轨迹符合要求，我们需要指定一些约束条件：
@@ -629,13 +629,13 @@ xm_arm:
 
 **Planning Scene**
 
-![Planning Scene](http://moveit.ros.org/assets/images/robots_old/Overview.0031.jpg)
+![Planning Scene](https://moveit.ros.org/assets/images/diagrams/planning_scene.png)
 
 Planning Scene用来表示机械臂周围的外部世界并且保存机械臂自己本身的状态。它通过监听对应的Topic来获取关节状态信息、传感器信息。并可以根据传感器信息和用户的输入，生成机器人周围3D世界空间的表示。
 
 **3D Perception**
 
-![3D Perception](http://moveit.ros.org/assets/images/robots_old/Overview.004.jpg)
+![3D Perception](https://moveit.ros.org/assets/images/diagrams/world_geometry.png)
 
 简单来说，3D Perception使用插件来获取点云和深度图像数据，并据此生成[OctoMap](http://octomap.github.io)，为之后机械臂的碰撞检测提供基础。
 
@@ -1268,9 +1268,9 @@ $> roslaunch xm_arm_bringup xm_arm_bringup_moveit_and_gazebo.launch
 
 在Rviz中，你可以使用末端执行器上的交互式Marker来移动机械臂到目标位置。接着，你可以在Planning Library的下拉式菜单中选择OMPL库中的某个特定规划算法。然后，点击Plan按钮，Rviz窗口中就会出现一条从初始位置到目标位置的运动轨迹并循环不断地播放。最后，点击Execute按钮，MoveIt!会将上一步规划出来的机械臂关节轨迹通过FollowJointTrajectoryAction接口发送给Gazebo中对应类型的Controller，使得Gazebo中的机械臂可以移动到目标位置，以下是测试的截图。注意：不同的规划算法所用的时间是不一样的。请尝试每一种算法，并记住最优算法的名字，这是为了之后方便在代码中对其进行调用做准备。
 
-![xm_arm_motion_planning_rviz](https://github.com/myyerrol/xm_arm_workspace/raw/master/.images/xm_arm_motion_planning_rviz.png)
+![xm_arm_motion_planning_rviz](http://media.myyerrol.io/images/ros/xmbot/xm_arm_motion_planning_rviz.png)
 
-![xm_arm_motion_planning_gazebo](https://github.com/myyerrol/xm_arm_workspace/raw/master/.images/xm_arm_motion_planning_gazebo.png)
+![xm_arm_motion_planning_gazebo](http://media.myyerrol.io/images/ros/xmbot/xm_arm_motion_planning_gazebo.png)
 
 第二个例子，我们来测试一下带有Avoid Collision的Motion Planning。同样的，请在终端中输入下列命令：
 
@@ -1280,9 +1280,9 @@ $> roslaunch xm_arm_bringup xm_arm_bringup_moveit_and_gazebo.launch
 
 因为我在Gazebo中给机器人的头部添加了深度传感器的插件，所以当你把桌子放到机器人前方的时候，MoveIt!可以立马从点云Topic中获取物体的信息，并在Rviz中生成可视化的OctoMap。在下一次做运动规划的时候，MoveIt!会将由正方体组成的OctoMap看成障碍物并考虑在内。图中，机械臂的初始位置为伸直形态，我将其从桌子的下方移动到了桌子的正上方，规划的效果如下图所示。
 
-![xm_arm_avoide_collision_rviz](https://github.com/myyerrol/xm_arm_workspace/raw/master/.images/xm_arm_avoide_collision_rviz.png)
+![xm_arm_avoide_collision_rviz](http://media.myyerrol.io/images/ros/xmbot/xm_arm_avoide_collision_rviz.png)
 
-![xm_arm_avoide_collision_gazebo](https://github.com/myyerrol/xm_arm_workspace/raw/master/.images/xm_arm_avoide_collision_gazebo.png)
+![xm_arm_avoide_collision_gazebo](http://media.myyerrol.io/images/ros/xmbot/xm_arm_avoide_collision_gazebo.png)
 
 当然，在使用MoveIt!对机械臂进行运动规划的时候并不是每一次都能成功，有些时候会出现超时报错的情况。遇到这种问题的时候，你可以尝试尝试其他OMPL算法，因为不同的OMPL算法可能对不同的情况有各自的优化。
 
