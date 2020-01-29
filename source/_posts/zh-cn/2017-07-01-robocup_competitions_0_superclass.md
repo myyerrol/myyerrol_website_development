@@ -6,7 +6,7 @@ tags:
   - RoboCup@Home
 categories: RoboCup比赛系列
 description: 本篇文章介绍《RoboCup比赛系列》的总纲。
-feature: /images/feature/robocup.png
+feature: http://media.myyerrol.io/images/features/robocup.png
 toc: true
 comments: true
 ---
@@ -27,7 +27,7 @@ comments: true
 
 ### RoboCup
 
-![robocup](/images/feature/robocup.png)
+![robocup](http://media.myyerrol.io/images/features/robocup.png)
 
 - #### 概述
 
@@ -77,7 +77,7 @@ comments: true
 
 ### RoboCup@Home
 
-![robocup@home](/images/feature/robocup@home.jpg)
+![robocup@home](http://media.myyerrol.io/images/features/robocup@home.jpg)
 
 - #### 概述
 

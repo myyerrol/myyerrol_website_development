@@ -5,7 +5,7 @@ tags:
   - RoboCup
 categories: RoboCup比赛系列
 description: 本篇文章介绍RoboCup合肥国际赛第三天的相关内容。
-feature: /images/feature/robocup_hefei.png
+feature: http://media.myyerrol.io/images/features/robocup_hefei.png
 toc: true
 comments: true
 ---

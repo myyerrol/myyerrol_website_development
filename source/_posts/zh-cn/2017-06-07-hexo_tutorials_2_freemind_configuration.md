@@ -6,7 +6,7 @@ tags:
   - Blog
 categories: Hexo博客教程系列
 description: 本篇文章介绍Freemind主题的配置。
-feature: /images/feature/hexo.png
+feature: http://media.myyerrol.io/images/features/hexo.png
 toc: true
 comments: true
 ---

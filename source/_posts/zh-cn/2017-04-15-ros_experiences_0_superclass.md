@@ -5,7 +5,7 @@ tags:
   - ROS
 categories: ROS经验总结系列
 description: 本篇文章介绍《ROS经验总结系列》的总纲。
-feature: /images/feature/ros.png
+feature: http://media.myyerrol.io/images/features/ros.png
 toc: true
 comments: true
 ---

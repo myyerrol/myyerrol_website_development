@@ -8,7 +8,7 @@ tags:
   - Qt
 categories: Breeze微型四轴系列
 description: 本篇文章介绍Breeze微型四轴飞行器软件开发的相关内容。
-feature: /images/feature/breeze.png
+feature: http://media.myyerrol.io/images/features/breeze.png
 toc: true
 comments: true
 ---

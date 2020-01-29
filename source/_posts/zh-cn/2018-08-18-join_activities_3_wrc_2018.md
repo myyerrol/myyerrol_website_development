@@ -6,7 +6,7 @@ tags:
   - Robot
 categories: 参与活动系列
 description: 本篇文章介绍自己参与2018世界机器人大会的相关内容。
-feature: /images/feature/wrc.jpg
+feature: http://media.myyerrol.io/images/features/wrc.jpg
 toc: true
 comments: true
 ---

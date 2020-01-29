@@ -6,7 +6,7 @@ tags:
   - Altium Designer
 categories: Breeze微型四轴系列
 description: 本篇文章介绍Breeze微型四轴飞行器硬件电路板设计的相关内容。
-feature: /images/feature/breeze.png
+feature: http://media.myyerrol.io/images/features/breeze.png
 toc: true
 comments: true
 ---

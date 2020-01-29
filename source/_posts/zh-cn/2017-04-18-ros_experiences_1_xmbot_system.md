@@ -5,7 +5,7 @@ tags:
   - ROS
 categories: ROS经验总结系列
 description: 本篇文章介绍ROS下机器人系统集成的相关经验。
-feature: /images/feature/xmbot.jpg
+feature: http://media.myyerrol.io/images/features/xmbot.jpg
 toc: true
 comments: true
 ---
