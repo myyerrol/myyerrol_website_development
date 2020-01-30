@@ -5,7 +5,7 @@ tags:
   - EOP
 categories: 生活随笔系列
 description: 本篇文章介绍自己与EOP键盘钢琴之间的故事。
-feature: http://media.myyerrol.io/images/features/eop.jpg
+feature: /images/features/eop.jpg
 toc: true
 comments: true
 ---

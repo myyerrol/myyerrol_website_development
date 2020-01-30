@@ -6,7 +6,7 @@ tags:
   - Robot
 categories: 自制机器人系列
 description: 本篇文章介绍自制小型六足仿生机器人的相关内容。
-feature: http://media.myyerrol.io/images/features/robot.png
+feature: /images/features/robot.png
 toc: true
 comments: true
 ---

@@ -5,7 +5,7 @@ tags:
   - Maker
 categories: 参与活动系列
 description: 本篇文章介绍自己参与2017北京Maker Faire大会的相关内容。
-feature: http://media.myyerrol.io/images/features/mf_beijing_2017.jpg
+feature: /images/features/mf_beijing_2017.jpg
 toc: true
 comments: true
 ---

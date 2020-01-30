@@ -6,7 +6,7 @@ tags:
   - Robot
 categories: 自制机器人系列
 description: 本篇文章介绍《自制机器人系列》的总纲。
-feature: http://media.myyerrol.io/images/features/robot.png
+feature: /images/features/robot.png
 toc: true
 comments: true
 ---

@@ -6,7 +6,7 @@ tags:
   - Blog
 categories: Hexo博客教程系列
 description: 本篇文章介绍Hexo的安装和基本配置。
-feature: http://media.myyerrol.io/images/features/hexo.png
+feature: /images/features/hexo.png
 toc: true
 comments: true
 ---
@@ -24,10 +24,10 @@ Git是著名的分布式版本控制软件，它可以对博客网站的仓库�
 - **GitHub Pages:**
 GitHub Pages是面向用户、组织和项目开放的公共静态页面搭建托管服务，博客站点可以被免费托管在GitHub上。
 
+<!--more-->
+
 - **Hexo:**
 Hexo是一个简洁且强大的博客框架。
-
-<!--more-->
 
 ## 安装
 
