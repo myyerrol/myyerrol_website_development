@@ -2,6 +2,7 @@
 title: 参与活动系列（二）：2017世界机器人大会
 date: 2018-08-06 21:30:00
 tags:
+  - 活动
   - WRC
   - Robot
 categories: 参与活动系列

@@ -2,6 +2,7 @@
 title: 参与活动系列（一）：2017北京Maker Faire大会
 date: 2018-07-28 07:30:00
 tags:
+  - 活动
   - Maker
 categories: 参与活动系列
 description: 本篇文章介绍自己参与2017北京Maker Faire大会的相关内容。

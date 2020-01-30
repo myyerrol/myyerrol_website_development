@@ -2,6 +2,8 @@
 title: 生活随笔系列（一）：我与EOP键盘钢琴
 date: 2019-12-07 10:30:00
 tags:
+  - 音乐
+  - 钢琴
   - EOP
 categories: 生活随笔系列
 description: 本篇文章介绍自己与EOP键盘钢琴之间的故事。
