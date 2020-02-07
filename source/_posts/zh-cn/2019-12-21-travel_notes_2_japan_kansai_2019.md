@@ -1,10 +1,11 @@
 ---
-title: 旅行游记系列（一）：日本关西赏枫九日自由行
+title: 旅行游记系列（二）：2019日本关西赏枫九日自由行
 date: 2019-12-21 09:30:00
 tags:
   - 旅行
   - 关西
   - 赏枫
+  - 自由行
 categories: 旅行游记系列
 description: 本篇文章记录自己第一次去日本关西赏枫的故事。
 feature: /images/features/japan_travel.jpg
