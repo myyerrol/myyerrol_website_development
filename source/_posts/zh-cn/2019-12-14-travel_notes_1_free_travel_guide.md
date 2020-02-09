@@ -5,7 +5,7 @@ tags:
   - 旅行
   - 自由行
 categories: 旅行游记系列
-description: 本篇文章记录自己在策划自由行的过程中所总结的一些经验。
+description: 本篇文章记录自己在自由行的过程中所总结的一些经验。
 feature:
 toc: true
 comments: true
