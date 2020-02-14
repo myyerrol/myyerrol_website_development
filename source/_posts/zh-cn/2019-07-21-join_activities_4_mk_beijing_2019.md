@@ -28,13 +28,41 @@ comments: true
 
 ## 现场
 
-### 周边环境
+### 剧场外景
+
+![exterior_1](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_1.jpg)
+
+![exterior_2](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_2.jpg)
+
+![exterior_3](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_3.jpg)
 
 ### 入场阶段
 
+- #### 排队入场
+
+  ![entrance_1](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_1.jpg)
+
+- #### 购买物品
+
+  ![entrance_2](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_2.jpg)
+
+  ![entrance_3](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_3.jpg)
+
+- #### 座位实拍
+
+  ![entrance_4](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_4.jpg)
+
+  ![entrance_5](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_5.jpg)
+
 ### 安可阶段
 
+![encore_1](http://media.myyerrol.io/images/activities/mk_beijing_2019/encore/encore_1.jpg)
+
+![encore_2](http://media.myyerrol.io/images/activities/mk_beijing_2019/encore/encore_2.jpg)
+
 ### 出待阶段
+
+
 
 ## 总结
 

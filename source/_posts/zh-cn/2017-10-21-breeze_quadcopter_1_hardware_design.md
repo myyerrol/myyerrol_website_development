@@ -76,7 +76,7 @@ Breeze微型四轴飞行器硬件电路主要由五个部分组成，以下是�
 
 - #### 简介
 
-  [Cadance SPB](https://www.cadence.com)Cadence旗下用于PCB板级设计的EDA软件。Cadence SPB是一套PCB板级设计完整解决方案，涵盖了从原理图设计到PCB设计以及生产加工装配输出的整个流程。Cadence SPB包括原理图输入设计工具，元件库管理工具，PCB设计工具和一个自动/交互式的强大的布线工具。
+  [Cadance SPB](https://www.cadence.com)是Cadence旗下用于PCB板级设计的EDA软件。Cadence SPB是一套PCB板级设计完整解决方案，涵盖了从原理图设计到PCB设计以及生产加工装配输出的整个流程。Cadence SPB包括原理图输入设计工具，元件库管理工具，PCB设计工具和一个自动/交互式的强大的布线工具。
 
   **OrCAD**
   Cadence OrCAD Capture是一款多功能的PCB原理图输入工具。OrCAD Capture作为行业标准的PCB原理图输入方式，是当今世界最流行的原理图输入工具之一，具有简单直观的用户设计界面。OrCAD Capture CIS具有功能强大的元件信息系统，可以在线和集中管理元件数据库，从而大幅提升电路设计的效率。
