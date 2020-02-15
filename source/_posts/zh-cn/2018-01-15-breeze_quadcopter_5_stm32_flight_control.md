@@ -10,6 +10,7 @@ description: 本篇文章介绍Breeze微型四轴飞行器STM32嵌入式开发-�
 feature: /images/features/breeze.png
 toc: true
 comments: true
+mathjax: true
 ---
 
 ## 前言

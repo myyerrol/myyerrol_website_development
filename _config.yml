@@ -75,4 +75,4 @@ deploy:
   branch: master
 
 # Disqus
-disqus_shortname: myyerrol
+# disqus_shortname: myyerrol
