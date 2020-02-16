@@ -42,7 +42,9 @@ comments: true
 
 有人曾经说过：**当你有好的想法时，就要立即去实现它**，特别是如果你从心底里热爱某种事物，你一定会迫不及待地想尽一切办法来完成它，尽管在实现的过程中会遇到很多困难，也会牺牲一些其它的东西，但是当你有朝一日能够看到自己的成果让更多的人受益时，我想没有什么比这更令人快乐的了。我们在组建团队之前也只是两个喜欢在大学里进行DIY的机器人爱好者，但我们希望可以通过自己的双手来为机器人社区做出自己的贡献，哪怕只要很少的一些。
 
-MicroDynamics团队在组建过程中曾在一定程度上受到基地马文科等学长所创建**Hands Free**项目的影响，有关其项目更详细的介绍，请访问[Hands Free项目官方Wiki](https://github.com/HANDS-FREE/HANDS-FREE.github.io/wiki)。MicroDynamics，顾名思义微型动力，它的名字分别取自Microsoft和BostonDynamics这两家伟大的公司。我们想做的就如同名字所体现的那样——搭建一个小型或微型的开源机器人平台，它要足够的便宜、易于开发并且拥有较强的动力学特性，可以让更多的大学生等机器人爱好者真正地参与到实体机器人的开发过程中来，并从中学到一些有价值的知识。
+MicroDynamics团队在组建过程中曾在一定程度上受到基地马文科等学长所创建**Hands Free**项目的影响，有关其项目更详细的介绍，请访问[Hands Free项目官方Wiki](https://github.com/HANDS-FREE/HANDS-FREE.github.io/wiki)。
+
+MicroDynamics，顾名思义微型动力，它的名字分别取自Microsoft和BostonDynamics这两家伟大的公司。我们想做的就如同名字所体现的那样——搭建一个小型或微型的开源机器人平台，它要足够的便宜、易于开发并且拥有较强的动力学特性，可以让更多的大学生等机器人爱好者真正地参与到实体机器人的开发过程中来，并从中学到一些有价值的知识。
 
 MicroDynamics团队目前从四轴飞行器平台开始，从底层到顶层搭建一套完整的、面向未来的开源机器人开发框架，以便降低模块之间的耦合性，提高机器人整体开发效率。关于MicroDynamics更多详细的开发资料，请访问[MicroDynamics团队GitHub](https://github.com/microdynamics)（包含开发规范、日志、工程模板）和[MicroDynamics Quadcopter项目GitHub](https://github.com/microdynamics-quadcopter)（包含硬件设计、软件代码）。
 
