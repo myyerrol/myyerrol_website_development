@@ -43,6 +43,16 @@ comments: true
 
   ![breeze_flight_control_station](http://media.myyerrol.io/images/quadcopters/breeze/software/breeze_flight_control_station.png)
 
+  **注意：由于后期自己对Breeze飞行控制站进行了重构，所以请以下方新版软件界面为准！**
+
+  ![breeze_fcs_1_flight_status](http://media.myyerrol.io/images/quadcopters/breeze/software/breeze_fcs_1_flight_status.png)
+
+  ![breeze_fcs_2_serial_console](http://media.myyerrol.io/images/quadcopters/breeze/software/breeze_fcs_2_serial_console.png)
+
+  ![breeze_fcs_3_data_plotter](http://media.myyerrol.io/images/quadcopters/breeze/software/breeze_fcs_3_data_plotter.png)
+
+  ![breeze_fcs_7_program_settings](http://media.myyerrol.io/images/quadcopters/breeze/software/breeze_fcs_7_program_settings.png)
+
 - #### 匿名科创地面站
 
   匿名地面站就是针对飞控学习者、开发者设计开发的一个专用软件，由匿名科创团队（ANO TC）独立编写，软件性能优异，界面友好。通过多年的改进，已经成为调试飞控必不可少的软件之一。软件主要功能有：
