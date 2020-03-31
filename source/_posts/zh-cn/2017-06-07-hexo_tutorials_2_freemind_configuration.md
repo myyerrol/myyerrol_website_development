@@ -49,20 +49,20 @@ Freemind主题内置了十几种颜色，可以通过配置进行修改。
 
 ### 安装Freemind主题
 
-```sh
+```bash
 $> cd your_blog
 $> git clone https://github.com/wzpan/hexo-theme-freemind.git themes/freemind
 ```
 
 ### 安装[hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap)插件
 
-```sh
+```bash
 $> npm install hexo-tag-bootstrap --save
 ```
 
 ### 安装[hexo-generator-search](https://github.com/paichyperiondev/hexo-generator-search)插件
 
-```sh
+```bash
 $> npm install hexo-generator-search --save
 ```
 
@@ -70,7 +70,7 @@ $> npm install hexo-generator-search --save
 
 ### Hexo目录
 
-```sh
+```bash
 |__ .deploy_git/
 |__ .git/
 |__ .gitignore
@@ -141,7 +141,7 @@ Git的忽略文件，用于忽略某些文件的版本管理。
 
 ### Freemind目录
 
-```sh
+```bash
 |__ .gitignore
 |__ _config.yaml
 |__ languages/
@@ -186,7 +186,7 @@ theme: freemind
 
 在网站首页，文章中的内容默认是全部展开的。你可以通过在文章中添加如下标签，来显示该标签以前文章中的所有内容（通过在文章相应位置插入一个**阅读全文**的按钮来实现），这样做可以让网站首页看起来较为简洁并且突出了每个文章的重点。
 
-```md
+```markdown
 <!--more-->
 ```
 
@@ -196,7 +196,7 @@ Freemind预先已经定义了**分类**、**标签**和**关于**页面的排版
 
 例如，为了能让**分类**页面可以在鼠标点击之后显示出来，你需要在`source/categories/`目录下创建一个`index.md`文件，其中的内容如下：
 
-```md
+```markdown
 ---
 title: 分类
 layout: categories
@@ -205,7 +205,7 @@ layout: categories
 
 **标签**页面的内容与上面类似，具体内容如下：
 
-```md
+```markdown
 ---
 title: 标签
 layout: tags
@@ -214,7 +214,7 @@ layout: tags
 
 最后**关于**页面中的内容如下：
 
-```md
+```markdown
 ---
 title: 关于
 layout: page
@@ -235,13 +235,13 @@ default_layout: freemind
 
 上面的配置（存在于`_config.yaml`文件中）修改了文章的默认布局，可以在终端里使用如下的命令来简化：
 
-```sh
+```bash
 $> hexo new "article"
 ```
 
 而不需要
 
-```sh
+```bash
 $> hexo new freemind "article"
 ```
 
@@ -249,7 +249,7 @@ $> hexo new freemind "article"
 
 因为Freemind主题在Hexo的基础之上，额外提供了一些新的front-matter选项，所以我创建了这个freemind布局（`scaffolds/freemind.md`）来更好地装饰整篇文章。以下是其中的具体内容：
 
-```md
+```markdown
 ---
 title: {{ title }}
 date: {{ date }}

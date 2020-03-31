@@ -125,7 +125,7 @@ comments: true
 因为我在把Makefile中的内容拷过来的时候，为了能够让其中的命令以Soft Wrap（Atom等现代编辑器所提供的功能，可以自动让一行文字在某个特定列换行显示）的形式进行显示，我把原本Makefile中的TAB全部替换成空格，并且在80列的边界处进行了换行处理，所以如果你想自己编写Makefile，请复制并编辑工程目录里的Makefile，而不要直接复制下面的内容到你自己的Makefile文件中，否则运行make肯定会报错！
 {% endalert %}
 
-```mk
+```makefile
 PROJECT := breeze_firmware_none
 
 DIR_DRIVERS   += ../Drivers/Driver_Clock/
@@ -273,7 +273,7 @@ clean:
 - #### 编译选项
 
   **工程命名**
-  ```mk
+  ```makefile
   PROJECT := breeze_firmware_none
   ```
 
@@ -282,7 +282,7 @@ clean:
   ---
 
   **目录引用**
-  ```mk
+  ```makefile
   DIR_DRIVERS   += ../Drivers/Driver_Clock/
   DIR_DRIVERS   += ../Drivers/Driver_Delay/
   DIR_DRIVERS   += ../Drivers/Driver_EEPROM/
@@ -335,7 +335,7 @@ clean:
   ---
 
   **源文件搜索**
-  ```mk
+  ```makefile
   SRC_C   += $(wildcard ../Libraries/CMSIS/*.c)
   SRC_C   += $(wildcard ../Libraries/FWLib/src/*.c)
   SRC_C   += $(wildcard $(addsuffix *.c, $(DIR_DRIVERS)))
@@ -390,7 +390,7 @@ clean:
   ---
 
   **链接脚本**
-  ```mk
+  ```makefile
   LINK_SCRIPT := ../Libraries/LinkScript/stm32f10x_flash.lds
   ```
 
@@ -399,7 +399,7 @@ clean:
   ---
 
   **编译器可执行程序**
-  ```mk
+  ```makefile
   CC_PREFIX := arm-none-eabi-
 
   CC        := $(CC_PREFIX)gcc
@@ -417,7 +417,7 @@ clean:
   ---
 
   **编译选项**
-  ```mk
+  ```makefile
   DDEFS += -DSTM32F10X_MD
   DDEFS += -DHSE_VALUE=8000000 -DUSE_STDPERIPH_DRIVER
 
@@ -469,7 +469,7 @@ clean:
   ---
 
   **编译标签**
-  ```mk
+  ```makefile
   FLAGS_MCU := -mcpu=$(MCU)
   FLAGS_AS  := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb
   FLAGS_C   := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb \
@@ -485,20 +485,20 @@ clean:
   ---
 
   - **MCU标签**
-    ```mk
+    ```makefile
     FLAGS_MCU := -mcpu=$(MCU)
     ```
 
     **-mcpu**选项用于指定目标处理器的名字（目前其值为cortex-m3）。GCC可通过该选项确定使用什么样的CPU指令集来生成对应的汇编代码，并确定目标处理器的性能调优。
 
   - **汇编标签**
-    ```mk
+    ```makefile
     FLAGS_AS  := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb
     ```
     **编译标签**中的`-c`选项指定编译器编译或汇编源文件，但并不进行链接；`-g`选项用于生成程序的调试信息，为之后的GDB调试提供基础；`-gdwarf-2`选项用于指定编译器生成DWARF-2格式的调试信息；`-mthumb`选项指定生成的代码能以**Thumb**状态运行。
 
   - **C编译标签**
-    ```mk
+    ```makefile
     FLAGS_C   := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb \
                  -fomit-frame-pointer -Wall -fverbose-asm $(DEFS)
     ```
@@ -506,7 +506,7 @@ clean:
     **C编译标签**除了**编译标签**中所讲过的内容，还有`-fomit-frame-pointer`、`-Wall`和`-fverbose-asm`。其中`-fomit-frame-pointer`选项减少了栈帧的切换和栈地址的保存，可提高程序性能；`-Wall`选项用于打开代码的所有可选警告；`-fverbose-asm`选项用于在生成的汇编代码中加入额外的注释信息来使汇编代码更具可读性。
 
   - **CXX编译标签**
-    ```mk
+    ```makefile
     FLAGS_CXX := $(SPECS) $(FLAGS_MCU) $(OPT) -c -g -gdwarf-2 -mthumb \
                  -fomit-frame-pointer -Wall -fverbose-asm -fno-exceptions \
                  -fno-rtti -fno-threadsafe-statics -fvisibility=hidden -std=c++11 \
@@ -516,7 +516,7 @@ clean:
     **CXX编译标签**中的`-fno-exceptions`选项用于禁用异常机制；`-fno-rtti`选项用于禁用C++运行时类型信息的生成；`-fno-threadsafe-statics`选项用于禁用局部静态变量的线程安全初始化；`fvisibility=hidden`选项用于隐藏ELF格式的符号名称；`-std=c++11`选项指定编译器使用C++ 11标准对源文件进行编译。
 
   - **链接标签**
-    ```mk
+    ```makefile
     FLAGS_LD  := $(SPECS) $(FLAGS_MCU) $(OPT) -lm -g -gdwarf-2 -mthumb \
                  -nostartfiles -Xlinker --gc-sections -T$(LINK_SCRIPT) \
                  -Wl,-Map=$(PROJECT).map,--cref,--no-warn-mismatch
@@ -529,7 +529,7 @@ clean:
     最后介绍一下由`-Xlinker`和`-Wl`所传递的选项的功能：`-gc-sections`选项用于指定编译器不把未在可执行程序中进行调用的函数链接到可执行程序中，这样做可在一定程度上节约FLASH和内存空间；`-Map=$(PROJECT).map`选项用于将链接的映射关系打印到标准输出上；`--cref`选项是**Cross Reference**的简写，用于输出交叉引用表；`--no-warn-mismatch`选项告诉链接器当出现**不匹配**的问题时，需要对其进行忽略。
 
   **调试器类型**
-  ```mk
+  ```makefile
   TYPE_BURN  := openocd_swd_flash
   TYPE_DEBUG := openocd_swd_debug
   TYPE_ERASE := openocd_swd_erase
@@ -540,20 +540,20 @@ clean:
 - #### 编译命令
 
   **伪目标定义**
-  ```mk
+  ```makefile
     .PHONY: all burn debug erase clean
   ```
 
   这里首先介绍一下什么是**伪目标**：伪目标并不是一个文件，而是一个标签，我们通常用它来执行某种特定的功能，比如使用`make clean`来清理编译过程中生成的中间文件，其中`clean`就是伪目标。当伪目标的取名与文件名不重复时，GNU/Make会自动将伪目标识别为标签，执行其中定义好的命令，但是如果伪目标与文件名重复，那么便会出现问题，举个简单的例子：Makefile文件中存在有如下的伪目标定义，且恰好该目录中有一个名为clean的文件：
 
-  ```mk
+  ```makefile
   clean:
       -rm -rf *.o
   ```
 
   这时若执行`make clean`命令，GNU/Make会以clean文件已存在且Makefile中的clean规则不存在依赖关系为由，不执行该操作。当然，为避免这种情况的发生，我们可以使用**.PHONY**关键字来显示地指明`clean`目标是一个伪目标，即就像下面这样：
 
-  ```mk
+  ```makefile
   .PHONY: clean
 
   clean:
@@ -564,7 +564,7 @@ clean:
 
   伪目标一般没有依赖的文件。但是，我们也可以为伪目标指定所依赖的文件。伪目标同样可以作为**默认目标**，只要将其放在第一个。一个示例就是，如果你的Makefile需要一口气生成若干个可执行文件，但你只想简单地敲一个make完事，并且，所有的目标文件都写在一个Makefile中，那么你可以使用伪目标这个特性：
 
-  ```mk
+  ```makefile
   all: $(OBJS) $(PROJECT).elf $(PROJECT).hex $(PROJECT).bin
       $(SIZE) $(PROJECT).elf
   ```
@@ -573,7 +573,7 @@ clean:
 
   当然，从上面的例子我们可以看出，目标也可以成为依赖。所以，伪目标同样也可成为依赖：
 
-  ```mk
+  ```makefile
   burn: $(TYPE_BURN)
   ```
 
@@ -582,7 +582,7 @@ clean:
   ---
 
   **编译规则**
-  ```mk
+  ```makefile
   all: $(OBJS) $(PROJECT).elf $(PROJECT).hex $(PROJECT).bin
       $(SIZE) $(PROJECT).elf
 
@@ -610,7 +610,7 @@ clean:
 
   举个例子，若存在以下的模式规则：
 
-  ```mk
+  ```makefile
   %.o : %.c
       <command>
   ```
@@ -646,7 +646,7 @@ clean:
 
   根据以上介绍的**模式规则**和**自动化变量**等高级用法，我们来具体地分析一下本项目Makefile中**编译规则**里的相关内容：
 
-  ```mk
+  ```makefile
   %.o: %.c
       $(CC) $(FLAGS_C) $(DIR_INCLUDE) $< -o $@
   ```
@@ -655,7 +655,7 @@ clean:
 
   同理，由于剩余的规则用法与上面讲的类似，这里就不过多进行介绍了，只依次简要地说明一下它们的功能：使用汇编器将所有[.s]文件汇编成[.o]文件；使用编译器将所有的[.o]文件链接成[.elf]格式文件；分别使用`$(HEX)`和`$(BIN)`工具将[.elf]文件转变成可供烧写的[.hex]和[.bin]文件。
 
-  ```mk
+  ```makefile
   %.o: %.s
       $(AS) $(FLAGS_AS) $< -o $@
 
@@ -672,7 +672,7 @@ clean:
 - #### 调试器命令
 
   **调试器定义**
-  ```mk
+  ```makefile
   burn:  $(TYPE_BURN)
   debug: $(TYPE_DEBUG)
   erase: $(TYPE_ERASE)
@@ -681,7 +681,7 @@ clean:
   确定**烧写**、**调试**和**擦除**等功能所使用的调试器命令。
 
   **烧写命令**
-  ```mk
+  ```makefile
   openocd_swd_flash: $(PROJECT).bin
       openocd -f interface/jlink.cfg -c "transport select swd" -f
       target/stm32f1x.cfg -c "init" -c "reset halt" -c "sleep 100" -c "wait_halt
@@ -727,7 +727,7 @@ clean:
 
   在介绍完以上有关OpenOCD的命令参数之后，相信大家对OpenOCD的用法有了一个基本的认识，接下来总结一下本项目OpenOCD的整个烧写流程：
 
-  ```txt
+  ```plain
   设置调试适配器驱动为J-Link。
   设置调试适配器使用SWD模式来进行数据传输。
   设置目标芯片的类型为STM32F1系列。
@@ -745,7 +745,7 @@ clean:
   ---
 
   **调试命令**
-  ```mk
+  ```makefile
   openocd_swd_debug: $(PROJECT).bin
       xterm -e openocd -f interface/jlink.cfg -c "transport select swd" -f
       target/stm32f1x.cfg -c "init" -c "halt" -c "reset halt" &
@@ -757,7 +757,7 @@ clean:
   ---
 
   **擦除命令**
-  ```mk
+  ```makefile
   openocd_swd_erase:
       openocd -f interface/jlink.cfg -c "transport select swd" -f
       target/stm32f1x.cfg  -c "init" -c "reset halt" -c "sleep 100" -c "stm32f1x
@@ -768,7 +768,7 @@ clean:
 
 - #### 清理命令
 
-  ```mk
+  ```makefile
   clean:
       -rm -rf $(OBJS)
       -rm -rf $(PROJECT).elf

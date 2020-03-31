@@ -31,7 +31,7 @@ comments: true
 
 - #### 缩写
 
-  ```txt
+  ```plain
   ---------------------
   缩写         外设单元
   ---------------------
@@ -708,7 +708,7 @@ comments: true
   case CMD_UP:
   {
       ProcessUp();
-      break;      
+      break;
   }
   case CMD_DOWN:
   {
@@ -716,7 +716,7 @@ comments: true
       if (...)
       {
           ...
-          break;          
+          break;
       }
       else
       {
@@ -798,7 +798,7 @@ comments: true
 
   示例：以下单词的缩写能够被大家基本认可。
 
-  ```txt
+  ```plain
   ---------------------------------------------------------------------
   单词         缩写       单词             缩写  单词           缩写
   ---------------------------------------------------------------------
@@ -835,7 +835,7 @@ comments: true
 
   根据变量的类型，需要在变量原有名字之前添加相应的前缀，以下是变量前缀的类型表：
 
-  ```txt
+  ```plain
   ---------------------
   变量前缀  解释
   ---------------------
@@ -855,7 +855,7 @@ comments: true
 
   示例：下面是一些在软件中常用的反义词组。
 
-  ```txt
+  ```plain
   ----------------------
   正义词      反义词
   ----------------------
@@ -1000,11 +1000,11 @@ comments: true
 
   示例：在源文件中，可按如下注释形式说明。
 
-  ```txt
+  ```plain
   ------------------------------------------------------------------------------
   RELATION      initRectValues inputRectValues printRectValues calculateRectArea
   ------------------------------------------------------------------------------
-  g_rect_length Create         Modify          Access          Access       
+  g_rect_length Create         Modify          Access          Access
   g_rect_width  Create         Modify          Access          Access/Modify
   ```
 

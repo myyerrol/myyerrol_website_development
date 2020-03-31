@@ -48,19 +48,19 @@ Hexo是一个简洁且强大的博客框架。
 
 安装Node.js的最佳方式是使用nvm。
 
-```sh
+```bash
 $> wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 ```
 
 执行完命令之后，可使用以下命令来安装最新长期支持版本的Node.js：
 
-```sh
+```bash
 $> nvm install --lts
 ```
 
 或安装最新稳定版本的Node.js：
 
-```sh
+```bash
 $> nvm install stable
 ```
 
@@ -74,7 +74,7 @@ $> nvm install stable
 
 直接通过命令行来安装
 
-```sh
+```bash
 $> sudo apt-get update
 $> sudo apt-get install git-core
 ```
@@ -87,25 +87,25 @@ $> sudo apt-get install git-core
 
 **方法一：**使用淘宝源来替换官方软件源
 
-```sh
+```bash
 $> npm config set registry https://registry.npm.taobao.org
 ```
 
 之后跟官方教程一样安装Hexo
 
-```sh
+```bash
 $> npm install -g hexo-cli
 ```
 
 **方法二：**使用淘宝镜像来替换官方镜像
 
-```sh
+```bash
 $> npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 之后就可以使用cnpm命令来安装Hexo了
 
-```sh
+```bash
 $> cnpm install -g hexo-cli
 ```
 
@@ -119,20 +119,20 @@ $> cnpm install -g hexo-cli
 
 切换目录到用户桌面
 
-```sh
+```bash
 $> cd ~/Desktop
 ```
 
 创建空文件夹，名字可以随便取，但最好跟你的博客有关
 
-```sh
+```bash
 $> mkdir xxx_blog
 $> cd xxx_blog
 ```
 
 初始化博客文件夹
 
-```sh
+```bash
 $> hexo init
 ```
 
@@ -142,13 +142,13 @@ Hexo-cli在这个过程中会将landscape主题包以及其所依赖的Hexo软�
 
 安装Hexo默认的依赖和插件
 
-```sh
+```bash
 $> npm install
 ```
 
 安装Git插件并保存为Hexo的依赖，为部署到GitHub Page做准备
 
-```sh
+```bash
 $> npm install hexo-deployer-git --save
 ```
 
@@ -162,14 +162,14 @@ $> npm install hexo-deployer-git --save
 
   配置全局的用户名和E-mail地址
 
-  ```sh
+  ```bash
   $> git config --global user.name "your_name"
   $> git config --global user.email "your_email@xxx.com"
   ```
 
   根据E-mail地址生成特定的ssh密钥
 
-  ```sh
+  ```bash
   $> ssh-keygen -t rsa -C "your_email@xxx.com"
   ```
 
@@ -187,13 +187,13 @@ $> npm install hexo-deployer-git --save
 
 - 再次打开Shell软件（Windows下**Git Bash**，Ubuntu下为默认的**Terminal**），输入以下命令
 
-  ```sh
+  ```bash
   $> ssh -T git@github.com
   ```
 
   如果Shell软件返回以下信息，就说明Git已经配置好了。
 
-  ```sh
+  ```bash
   $> Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
   ```
 

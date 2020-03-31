@@ -68,7 +68,7 @@ comments: true
 
   该库代码实现了GPIO引脚初始化函数、LED灯设置函数、蜂鸣器设置函数、电机控制函数、超声波测距函数和LCD1602显示函数，其中LCD1602显示函数调用了Python的SMBUS库来完成IIC数据通信，从而能将字符串显示在屏幕上（注意：SMBUS和IIC协议之间是存在区别的，但在Raspberry Pi上两者概念基本等同）。
 
-  ```py
+  ```python
   import time
   import smbus
   import RPi.GPIO as gpio
@@ -290,7 +290,7 @@ comments: true
 
   该代码调用了上面自己编写的机器人代码库，主要实现了超声波距离检测函数和键盘遥控函数，其中键盘遥控函数里面又根据所按按键的不同调用并组合上面代码库中的不同函数来完成某些特定的功能（比如机器人遇到障碍物后首先会发出警报，然后再进行相应的规避运动等）。
 
-  ```py
+  ```python
   import time
   import serial
   import random
@@ -487,7 +487,7 @@ comments: true
 
   该代码实现的功能比较简单，仅测试了机器人的电机遥控和超声波避障两个功能。
 
-  ```py
+  ```python
   import Tkinter as tk
   import RPi.GPIO as gpio
   from raspberry_pi_simple_car_lib import RaspberryPiSimpleCar
@@ -544,7 +544,7 @@ comments: true
 
   该代码实现的功能与上面的测试代码2类似，只不过图形界面本代码里使用的是[Pygame](https://www.pygame.org/)而不是之前的[Tkinter](https://docs.python.org/2/library/tkinter.html)。
 
-  ```py
+  ```python
   import sys
   import pygame
   from pygame.locals import *
@@ -586,7 +586,7 @@ comments: true
 
   该代码从逻辑上比较好理解，在`setup()`函数初始化引脚的模式和串口波特率后，主函数`loop()`会不断地从串口中读取字符数据，并根据字符的不同进行不同的处理工作。
 
-  ```c
+  ```cpp
   int      distance;
   int      distance_left;
   int      distance_right;
@@ -754,9 +754,6 @@ comments: true
 ![raspberry_pi_simple_car_5](http://media.myyerrol.io/images/robots/raspberry_pi_simple_car/raspberry_pi_simple_car_5.jpg)
 
 <div style="height:0; padding-bottom:65%; position:relative;">
-  <!-- <iframe width="498" height="510" src="http://player.youku.com/embed/XNzMzMzcxNjU2" frameborder="0" allowfullscreen="" style="position:absolute; height:100%; width:100%;">
-  </iframe> -->
-
   <iframe src="//player.bilibili.com/player.html?aid=77580434&cid=132719157&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
   </iframe>
 </div>

@@ -8,7 +8,7 @@ A brand new default theme for [Hexo].
 
 ### Install
 
-``` bash
+```bash
 $ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
 ```
 
@@ -20,14 +20,14 @@ Modify `theme` setting in `_config.yml` to `landscape`.
 
 ### Update
 
-``` bash
+```bash
 cd themes/landscape
 git pull
 ```
 
 ## Configuration
 
-``` yml
+```yaml
 # Header
 menu:
   Home: /
