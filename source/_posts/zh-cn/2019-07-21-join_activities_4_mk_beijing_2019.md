@@ -30,21 +30,29 @@ comments: true
 
 ### 剧场外景
 
-演唱会那天自己到的比较早，在领完念，我打算，说实话自己在北京待了那么多年，这还是我头一次去北展剧场，从建筑的外观上来看，北展剧场应当属于典型的前苏联风格建筑，剧场顶部的巨大圆形穹顶以及建筑外部层次分明的棱角无疑会让接近它的人产生一种庄严、肃穆的感觉，于是当时我就在心里想：能在如此富有历史感的剧场中观看麻衣的演唱会，又会是一种怎样的体验呢？
+麻衣北京演唱会那天正好是周五，为了避开下班高峰期且能及时领到限量纪念品，我中午请完假后就直奔北展剧场了。虽说自己从小就生活在北京，但这还是我第一次去北展剧场看演唱会，根据网上的介绍，北展剧场始建于1954年，起初是一个露天剧场，后来于1959年加盖顶棚才改建为目前的室内剧场，的确从下面的照片中可以看到，北展剧场顶部巨大的圆形穹顶以及建筑外部层次分明的棱角无疑会让接近它的人产生一种历史的沉重感，于是当时我就在心里想：**能在如此充满古典主义风格的剧场中观看麻衣的演唱会，到底会是一种怎样的体验呢？**
 
-![exterior_1](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_1.jpg)
+![北展剧场侧面全景图](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_1.jpg)
 
-![exterior_2](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_2.jpg)
 
-![exterior_3](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_3.jpg)
+
+![剧场售票处播放的麻衣演出信息](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_2.jpg)
+
+
+
+![剧场旁边的蒸汽机车和车厢模型](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_3.jpg)
 
 ### 入场阶段
 
 - #### 排队入场
 
+  在经过一段时间的等待之后，演唱会组织方终于打开剧场大门开始检票，总的来说在排队入场这块儿（如下图所示），麻衣的粉丝们做得还是相当不错的，整个过程都在组织方的协调下有条不紊地进行着，不过这里有一个小插曲，由于官方会在现场统一发放可控的发光手环，所以像荧光棒之类带有发光属性的应援物品是不被允许带入剧场内的，可是不知道是安检机器没检查出来还是等待入场的歌迷太多导致工作人员没顾上，我背包里的**国际应援站限量款应援棒**竟然“幸运”地没有被发现，不然被收走后再要回来可就不容易喽。
+
   ![entrance_1](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_1.jpg)
 
 - #### 购买物品
+
+  在顺利经过安检进入剧场之后，我以为能够很快地买到官方推出的周边产品，可是麻衣粉丝们的热情又一次颠覆了我的想象，原本面积不大的售卖区域可以说是在一眨眼的功夫之内就被歌迷们团团围住，好在最后经过自己的不懈努力，终于买到了下图所示的周边产品，不过说实话第一个纪念T恤衫的价格虚高非常明显，而且质量也非常堪忧（当时我买的是L号，可是回家一试发现衣服实际尺码至少得有XXL，这个锅组织方**路口文化**必须背），但是作为麻衣的忠实粉丝，我觉得再贵的纪念品也要收入囊中，毕竟此次中国巡演的机会非常难得，如果错过不买的话估计自己得后悔一辈子。
 
   ![entrance_2](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_2.jpg)
 
@@ -52,17 +60,23 @@ comments: true
 
 - #### 座位实拍
 
+  说心里话在来北展剧场看演唱会之前，我一直非常担心自己第21排的座位会离舞台非常远，因此在来现场之前我特意花了一些时间在网上选购了一个便携式望远镜，以便能够在现场“近距离”地欣赏麻衣姐的精彩表演，可是随着人群进入到剧场大厅之后，我欣喜地发现自己的座位其实距离舞台并不算太远，而且再加上长时间举着望远镜会非常累，所以最后就没用上，不过后来事实证明我的选择是非常明智的：**演唱会开始后我连应援都忙过不来，哪有功夫再举着笨重的望远镜呢？**。
+
   ![entrance_4](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_4.jpg)
 
   ![entrance_5](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_5.jpg)
 
 ### 安可阶段
 
+
+
 ![encore_1](http://media.myyerrol.io/images/activities/mk_beijing_2019/encore/encore_1.jpg)
 
 ![encore_2](http://media.myyerrol.io/images/activities/mk_beijing_2019/encore/encore_2.jpg)
 
 ### 出待阶段
+
+
 
 ![wait](http://media.myyerrol.io/images/activities/mk_beijing_2019/wait/wait.jpg)
 
