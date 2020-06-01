@@ -159,7 +159,7 @@ comments: true
       DISABLE = 0,
       ENABLE  = !DISABLE
   } FunctionalState;
-```
+  ```
 
   **错误类型**
   在文件`stm32f10x_type.h`中，我们错误状态类型类型的2个可能值为**成功**与**错误**。
