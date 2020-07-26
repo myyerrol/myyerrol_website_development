@@ -117,7 +117,7 @@ comments: true
 
   ![modelsim_8](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_8.png)
 
-  在弹出的文本保存窗口中，手动将文件名称修改为【license.dat】，并选择文件编码格式为【Unicode(UTF-8)】，最后点击【Save】按钮即可将生成的许可证文件保存到系统本地（推荐放到【~/Documents/license/modelsim】目录下）。
+  在弹出的文本保存窗口中，手动将文件名称修改为【license.dat】，并选择文件编码格式为【Unicode(UTF-8)】，最后点击【Save】按钮即可将生成的许可证文件保存到系统本地（推荐放到【~/Documents/License/modelsim】目录下）。
 
   最后，将破解补丁文件拷贝到ModelSim的安装目录下，并在赋予755可执行权限之后，使用管理员权限调用patch_calibre2011_linux脚本文件执行破解。
 
@@ -144,7 +144,7 @@ comments: true
   ```bash
   # Modelsim
   export PATH=/opt/modelsim/modeltech/linux:$PATH
-  export LM_LICENSE_FILE=$HOME/Documents/license/modelsim/license.dat
+  export LM_LICENSE_FILE=$HOME/Documents/License/modelsim/license.dat
   ```
 
   **备注：在锦大神的教程中，ModelSim可执行程序的环境变量设置的是64位目录（即【/opt/modelsim/modeltech/linux_x86_64 】），但是我设置成这个后，终端总是提示无法读取许可证文件，使用【lmutil lmdiag】命令也显示正常，最后我修改为上述的32位目录就好了，至于原因目前还不清楚。**
@@ -298,7 +298,7 @@ comments: true
   ```bash
   # Quartus II
   export PATH=/opt/altera/13.0sp1/quartus/bin:$PATH
-  export LM_LICENSE_FILE=$HOME/Documents/license/quartus/license.dat:$LM_LICENSE_FILE
+  export LM_LICENSE_FILE=$HOME/Documents/License/quartus/license.dat:$LM_LICENSE_FILE
   ```
 
 - #### 启动软件程序
