@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Home | myyerrol's blog
-subtitle: Home | myyerrol's blog
+title: "myyerrol的个人博客"
+subtitle: "首页"
 description: "This is my personal website, which uses the hexo system to build. Enter the following URL to access: http://myyerrol.io"
 author: myyerrol
 language: zh-cn
@@ -71,8 +71,7 @@ theme: freemind
 deploy:
   type: git
   repo: git@github.com:myyerrol/myyerrol.github.io.git
-  # repo: https://myyerrol:myyerrol1995125@github.com/myyerrol/myyerrol.github.io.git
   branch: master
 
 # Disqus
-# disqus_shortname: myyerrol
+disqus_shortname: myyerrol
