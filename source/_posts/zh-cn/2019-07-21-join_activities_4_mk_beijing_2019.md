@@ -10,6 +10,7 @@ description: 本篇文章介绍自己参与2019仓木麻衣北京演唱会的相
 feature: /images/features/mk_beijing_2019.jpg
 toc: true
 comments: true
+imageLabel: true
 ---
 
 ## 前言
