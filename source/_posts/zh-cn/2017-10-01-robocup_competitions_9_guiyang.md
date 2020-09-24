@@ -128,7 +128,3 @@ comments: true
 No matter where you are, whether it's a quarter mile away or half way across the world. The most important thing in life will always be the people in this room, right here, right now. You'll always be with me. And you'll always be my brother.
 
 ![team_xmbot](http://media.myyerrol.io/images/robocup/guiyang/team/team_xmbot.jpg)
-
-{% alert info %}
-本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
-{% endalert %}

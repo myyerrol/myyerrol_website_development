@@ -261,10 +261,6 @@ toc: true
 comments: true
 ---
 
-{% alert info %}
-本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
-{% endalert %}
-
 ```
 
 - **title:**
@@ -600,7 +596,3 @@ Baidu统计，用于统计访问量。
 ## 总结
 
 以上就是Freemind主题的基本配置方法，概括来说就是对Hexo根目录和Freemind目录下的两个_config.yaml文件进行配置。Hexo提供的主题有很多，大家可以去[Hexo主题](https://hexo.io/themes/)网站选择适合自己的主题来进行配置。最后，在下一篇文章中，我会介绍关于Freemind主题优化方面的配置。
-
-{% alert info %}
-本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
-{% endalert %}

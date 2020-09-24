@@ -303,7 +303,3 @@ comments: true
 最后，放上一张世界机器人大会主广场的照片作为纪念，明年咱们不见不散！
 
 ![exterior_3](http://media.myyerrol.io/images/activities/wrc_2017/exterior/exterior_3.jpg)
-
-{% alert info %}
-本博客所有文章除特别声明外，均采用CC BY-NC-SA 3.0许可协议。获得许可后，要求转载时注明文章出处和网站链接，谢谢！
-{% endalert %}
