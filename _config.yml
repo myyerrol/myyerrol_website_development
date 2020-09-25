@@ -75,3 +75,15 @@ deploy:
 
 # Disqus
 disqus_shortname: myyerrol
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+# NoFollow
+nofollow:
+  enable: true
+  exclude:
+  - myyerrol.io

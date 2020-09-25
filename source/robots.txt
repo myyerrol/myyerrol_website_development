@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /about/
+Allow: /archives/
+Allow: /categories/
+Allow: /page/
+Allow: /tags/
+Allow: /zh-cn/
+
+Disallow: /css/
+Disallow: /fancybox/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /images/
+Disallow: /img/
+
+Sitemap: https://myyerrol.io/sitemap.xml
+Sitemap: https://myyerrol.io/baidusitemap.xml
