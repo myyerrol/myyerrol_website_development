@@ -20,7 +20,7 @@ comments: true
 
 ## 技术
 
-![xm_system_architecture](http://media.myyerrol.io/images/ros/xmbot/xm_system_architecture.png)
+![xm_system_architecture](https://media.myyerrol.io/images/ros_experiences/others/xm_system_architecture.png)
 
 如上图所示，晓萌机器人的架构主要分为四层，分别为硬件层、嵌入式层、驱动层和软件层。
 
@@ -94,7 +94,7 @@ comments: true
 
   因为在软件组中，我主要负责机械臂软件部分，所以我对晓萌机械臂模块的开发还是有着比较深的理解和总结的。由于篇幅的缘故，我不在这里展开进行讲解。对于那些想了解如何开发机械臂的初学者来说，我会在下一篇系列博客中对此进行详细地总结。以下是机械臂的软件架构图，各位可以先睹为快：
 
-![xm_arm_software_architecture](http://media.myyerrol.io/images/ros/xmbot/xm_arm_software_architecture.png)
+![xm_arm_software_architecture](https://media.myyerrol.io/images/ros_experiences/others/xm_arm_software_architecture.png)
 
 ## 成果
 
