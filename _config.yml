@@ -74,7 +74,7 @@ deploy:
   branch: master
 
 # Disqus
-disqus_shortname: myyerrol
+# disqus_shortname: myyerrol
 
 # Sitemap
 sitemap:
@@ -86,4 +86,4 @@ baidusitemap:
 nofollow:
   enable: true
   exclude:
-  - myyerrol.io
+    - myyerrol.io

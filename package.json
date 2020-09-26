@@ -30,6 +30,8 @@
     "hexo-wordcount": "^3.0.2"
   },
   "scripts": {
-    "build": "hexo clean && hexo g && gulp"
+    "build": "hexo clean && hexo g && gulp",
+    "push": "hexo d && python push_urls.py",
+    "all": "npm run build && npm run push"
   }
 }
