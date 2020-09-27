@@ -57,27 +57,27 @@ comments: true
   $> sudo ./install.linux
   ```
 
-  ![modelsim_1](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_1.png)
+  ![modelsim_1](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_1.png)
 
   点击窗口中的【Install Products】选项。
 
-  ![modelsim_2](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_2.png)
+  ![modelsim_2](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_2.png)
 
   选择安装目录为【/opt/modelsim】，并点击【Next】按钮。
 
-  ![modelsim_3](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_3.png)
+  ![modelsim_3](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_3.png)
 
   勾选【10.2c】目录前面的多选框以安装全部内容，并点击【Next】按钮。
 
-  ![modelsim_4](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_4.png)
+  ![modelsim_4](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_4.png)
 
   点击【Agree】按钮。
 
-  ![modelsim_5](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_5.png)
+  ![modelsim_5](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_5.png)
 
   点击【Install】按钮进行安装。
 
-  ![modelsim_6](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_6.png)
+  ![modelsim_6](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_6.png)
 
   点击【Done】按钮关闭安装程序。
 
@@ -111,11 +111,11 @@ comments: true
 
   如果终端没有报错的话，系统会弹出下图所示的文本编辑器窗口。
 
-  ![modelsim_7](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_7.png)
+  ![modelsim_7](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_7.png)
 
   点击文本编辑器工具栏【File】下的【Save As】选项。
 
-  ![modelsim_8](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_8.png)
+  ![modelsim_8](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_8.png)
 
   在弹出的文本保存窗口中，手动将文件名称修改为【license.dat】，并选择文件编码格式为【Unicode(UTF-8)】，最后点击【Save】按钮即可将生成的许可证文件保存到系统本地（推荐放到【~/Documents/License/modelsim】目录下）。
 
@@ -183,7 +183,7 @@ comments: true
   $> vsim
   ```
 
-  ![modelsim_9](http://media.myyerrol.io/images/cpu/software_install_config/modelsim/modelsim_9.png)
+  ![modelsim_9](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/modelsim/modelsim_9.png)
 
 ### Quartus II
 
@@ -200,35 +200,35 @@ comments: true
   $> sudo /media/quartus/setup.sh
   ```
 
-  ![quartusii_1](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_1.png)
+  ![quartusii_1](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_1.png)
 
   点击【Next】按钮。
 
-  ![quartusii_2](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_2.png)
+  ![quartusii_2](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_2.png)
 
   选择【I accept the agreement】选项，然后点击【Next】按钮。
 
-  ![quartusii_3](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_3.png)
+  ![quartusii_3](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_3.png)
 
   选择安装目录为【/opt/altera/13.0sp1】，并点击【Next】按钮。
 
-  ![quartusii_4](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_4.png)
+  ![quartusii_4](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_4.png)
 
   使用默认的选项即可，点击【Next】按钮。
 
-  ![quartusii_5](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_5.png)
+  ![quartusii_5](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_5.png)
 
   使用默认的选项即可，点击【Next】按钮。
 
-  ![quartusii_6](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_6.png)
+  ![quartusii_6](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_6.png)
 
   点击【Next】按钮。
 
-  ![quartusii_7](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_7.png)
+  ![quartusii_7](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_7.png)
 
   如下图所示，安装程序会自动在桌面生成64位软件的快捷方式，至此Quartus II的主程序文件就全部安装完毕了。
 
-  ![quartusii_8](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_8.png)
+  ![quartusii_8](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_8.png)
 
 - #### 安装设备文件
 
@@ -240,23 +240,23 @@ comments: true
   $> sudo /media/quartus/components/DeviceInstall-13.0.1.232.run
   ```
 
-  ![quartusii_9](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_9.png)
+  ![quartusii_9](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_9.png)
 
   点击【Next】按钮。
 
-  ![quartusii_10](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_10.png)
+  ![quartusii_10](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_10.png)
 
   选择安装目录为【/opt/altera/13.0sp1】，并点击【Next】按钮。
 
-  ![quartusii_11](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_11.png)
+  ![quartusii_11](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_11.png)
 
   选择自己开发所需的设备，然后点击【Next】按钮。
 
-  ![quartusii_12](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_12.png)
+  ![quartusii_12](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_12.png)
 
   点击【Next】按钮。
 
-  ![quartusii_13](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_13.png)
+  ![quartusii_13](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_13.png)
 
   点击【Finish】按钮关闭安装程序。
 
@@ -279,15 +279,15 @@ comments: true
 
   双击桌面的Quartus II图标启动软件，此时软件会弹出许可证提醒窗口。
 
-  ![quartusii_14](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_14.png)
+  ![quartusii_14](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_14.png)
 
   点击【OK】按钮。
 
-  ![quartusii_15](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_15.png)
+  ![quartusii_15](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_15.png)
 
   选择之前修改过的【license.dat】文件，点击【Open】按钮。
 
-  ![quartusii_16](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_16.png)
+  ![quartusii_16](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_16.png)
 
   窗口出现以上内容，则表明软件破解成功。
 
@@ -315,7 +315,7 @@ comments: true
   $> quartus --64bit
   ```
 
-  ![quartusii_17](http://media.myyerrol.io/images/cpu/software_install_config/quartusii/quartusii_17.png)
+  ![quartusii_17](https://media.myyerrol.io/images/diy_cpu/1_software_install_config/quartusii/quartusii_17.png)
 
   **备注：一般情况下，双击快捷方式图标就能正常启动Quartus II，可是我每次这样启动时，软件总是提示我要重新选择许可证文件，而使用上述从终端启动的方法就没有问题，至于原因目前还不清楚。**
 

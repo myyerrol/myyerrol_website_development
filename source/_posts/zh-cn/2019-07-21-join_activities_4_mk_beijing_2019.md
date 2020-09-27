@@ -25,15 +25,15 @@ imageLabel: true
 
 麻衣北京演唱会那天正好是周五，为了避开下班高峰期且能及时领到限量纪念品，我中午请完假后就直奔北展剧场了。虽说自己从小就生活在北京，但这还是我第一次去北展剧场看演唱会，根据网上的介绍，北展剧场始建于1954年，起初是一个露天剧场，后来于1959年加盖顶棚才改建为目前的室内剧场，是**首批中国20世纪建筑遗产**之一，的确从下面的照片中可以看到，北展剧场顶部巨大的圆形穹顶以及建筑外部层次分明的棱角无疑会让接近它的人产生一种历史的沉重感，于是当时我就在心里想：**能在如此充满古典主义风格的剧场中观看麻衣的演唱会，到底会是一种怎样的体验呢？**
 
-![北展剧场侧面全景图](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_1.jpg)
+![北展剧场侧面全景图](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/exterior/exterior_1.jpg)
 
 我去的时候北展剧场售票处的电子大屏一直在轮流播放近期的演出资讯，果不其然里面也有麻衣的门票海报和演出时间等相关信息，趁着屏幕还没有切换到下一条内容的功夫我赶快掏出手机抓拍了一张以作纪念。
 
-![剧场售票处播放的麻衣演出信息](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_2.jpg)
+![剧场售票处播放的麻衣演出信息](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/exterior/exterior_2.jpg)
 
 北展剧场周围除了莫斯科餐厅以及南边的展览馆后湖外，我觉得最吸引人眼球的是下图中的这款编号为5039的**建设型蒸汽机车**，说起建设型机车很多铁路迷肯定不会陌生，它是新中国成立后制造的第一台干线货运蒸汽机车，曾广泛应用于华北地区的货运铁路网，为中国近代工业化的发展发挥了重要作用。据我所知目前全中国现存的建设型机车还不到30台，所以能够在北展剧场偶遇如此稀有的古董级蒸汽机车，也算是参加麻衣北京演出会收获的另外一种“福利”吧。
 
-![剧场旁边的蒸汽机车和车厢模型](http://media.myyerrol.io/images/activities/mk_beijing_2019/exterior/exterior_3.jpg)
+![剧场旁边的蒸汽机车和车厢模型](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/exterior/exterior_3.jpg)
 
 ### 入场阶段
 
@@ -41,23 +41,23 @@ imageLabel: true
 
   在经过一段时间的等待之后，演唱会组织方终于打开剧场大门开始检票，总的来说在排队入场这块儿（如下图所示），麻衣的粉丝们做得还是相当不错的，整个过程都在组织方的协调下有条不紊地进行着，不过这里有一个小插曲，由于官方会在现场统一发放可控的发光手环，所以像荧光棒之类带有发光属性的应援物品是不被允许带入剧场内的，可是不知道是安检机器没检查出来还是等待入场的歌迷太多导致工作人员没顾上，我背包里的**国际应援站限量款应援棒**竟然“幸运”地没有被发现，不然被收走后再要回来可就不容易喽。
 
-  ![剧场门口等待入场的麻衣粉丝们](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_1.jpg)
+  ![剧场门口等待入场的麻衣粉丝们](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/entrance/entrance_1.jpg)
 
 - #### 购买物品
 
   在顺利经过安检进入剧场之后，我以为能够很快地买到官方推出的周边产品，可是麻衣粉丝们的热情又一次颠覆了我的想象，原本面积不大的售卖区域可以说是在一眨眼的功夫之内就被歌迷们团团围住，好在最后经过自己的不懈努力，终于买到了下图所示的周边产品，不过说实话第一个纪念T恤衫的价格虚高非常明显，而且质量也非常堪忧（当时我买的是L号，可是回家一试发现衣服实际尺码至少得有XXL，这个锅组织方**路口文化**必须背），但是作为麻衣的忠实粉丝，我觉得再贵的纪念品也要收入囊中，毕竟此次中国巡演的机会非常难得，如果错过不买的话估计自己得后悔一辈子。
 
-  ![演唱会官方周边纪念品的购买凭证](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_2.jpg)
+  ![演唱会官方周边纪念品的购买凭证](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/entrance/entrance_2.jpg)
 
-  ![等待购买和领取周边纪念品的粉丝](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_3.jpg)
+  ![等待购买和领取周边纪念品的粉丝](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/entrance/entrance_3.jpg)
 
 - #### 座位实拍
 
   说心里话在来北展剧场看演唱会之前，我一直非常担心自己第21排的座位会离舞台非常远，因此在来现场之前我特意花了一些时间在网上选购了一个便携式望远镜，以便能够在现场“近距离”地欣赏麻衣姐的精彩表演，可是随着人群进入到剧场大厅之后，我欣喜地发现自己的座位其实距离舞台并不算太远，而且再加上长时间举着望远镜会非常累，所以最后就没用上，不过后来事实证明我的选择是非常明智的：**演唱会开始后我连应援都忙过不来，哪有功夫再举着笨重的望远镜呢？**。
 
-  ![暖场阶段播放的《渡月橋》MV](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_4.jpg)
+  ![暖场阶段播放的《渡月橋》MV](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/entrance/entrance_4.jpg)
 
-  ![从座位上拍的应援手幅和门票](http://media.myyerrol.io/images/activities/mk_beijing_2019/entrance/entrance_5.jpg)
+  ![从座位上拍的应援手幅和门票](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/entrance/entrance_5.jpg)
 
 ### 安可阶段
 
@@ -65,15 +65,15 @@ imageLabel: true
 
 终于在大家热情的呼唤之下，麻衣穿着北京场限定的黄色T恤衫又重回舞台开始演唱，第一首是麻衣粉丝们最期待的新歌《きみと恋のままで終われない いつも夢のままじゃいられない》，麻衣在日本的音番上唱过很多次这首歌，果然还是自己的演唱会发挥得最好；第二首是《Chance for you》，后面的中文大合唱环节让人非常感动，歌词也得很好而且麻衣的中文水平也相当不错；最后一首是永远不变的《Always》，那句不断反复的**“Always give my love to you”**可以说把演唱会的气氛推到了最高潮。
 
-![在舞台上致谢的麻衣团队](http://media.myyerrol.io/images/activities/mk_beijing_2019/encore/encore_1.jpg)
+![在舞台上致谢的麻衣团队](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/encore/encore_1.jpg)
 
-![麻衣写给歌迷们的感谢信](http://media.myyerrol.io/images/activities/mk_beijing_2019/encore/encore_2.jpg)
+![麻衣写给歌迷们的感谢信](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/encore/encore_2.jpg)
 
 ### 出待阶段
 
 演唱会结束之后，在国际应援站工作人员的协调和安排之下，我和其他麻衣粉丝来到剧场侧门参加出待活动，说实话这是我第一次能够有机会近距离看到心中的女神，内心真的是既兴奋又紧张，当然麻衣也没有让我们这些苦苦等了快40多分钟的铁粉们失望，一身黑色休闲装外加丸子头亮相简直不要太可爱，更令人感动的是麻衣并没有表现出丝毫的倦意，依旧满含笑容地向大家挥手致谢并热情地与大家合影留念，不过非常可惜的是由于前排的粉丝太多且受限于安保人员的阻拦，她还没走到我这边就先行乘车离开了，算是一个不小的遗憾吧。
 
-![麻衣跟粉丝们的大合影](http://media.myyerrol.io/images/activities/mk_beijing_2019/wait/wait.jpg)
+![麻衣跟粉丝们的大合影](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/wait/wait.jpg)
 
 ## 总结
 
@@ -83,4 +83,4 @@ imageLabel: true
 
 最后，作为歌迷的我们其实很清楚出道二十周年对于麻衣来说意味着什么，尽管她现在的人气远不如当年刚出道那会儿，期间也曾因为迷茫陷入生涯的低谷，但是就像她在《Chance for you》这首歌里写到的那样：**无悔地生活，创造在这里诞生的意义**，麻衣正在用不懈的努力证明自己作为歌手所存在的价值，没错她做到了，她所演唱的《名侦探柯南》主题曲系列已经成为很多90后成长之路上不可磨灭的记忆之一，此外，她也用积极向上的正能量感染了很多人，所以无论麻衣在将来会不会考虑隐退，还会不会再次来中国开演唱会，我都会永远支持Mai.K的！**Let’s GOAL！～薔薇色の人生～！**
 
-![领到的演唱会纪念品](http://media.myyerrol.io/images/activities/mk_beijing_2019/summary/summary.jpg)
+![领到的演唱会纪念品](https://media.myyerrol.io/images/join_activities/4_mk_beijing_2019/summary/summary.jpg)
