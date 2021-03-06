@@ -19,9 +19,9 @@ comments: true
 
 ## 概述
 
-简单轮式机器人其实是一个比较传统的入门级智能小车，它拥有蓝牙远程遥控、超声波避障、红外边缘检测和红外巡线（未完成）等功能，可以完成一些有趣的小实验。此外，简单轮式机器人的软件是开源的，具体代码可以从我的GitHub[仓库](https://github.com/myyerrol/raspberry_pi_simple_car)上获得。
+简单轮式机器人其实是一个比较传统的入门级智能小车，它拥有蓝牙远程遥控、超声波避障、红外边缘检测和红外巡线（未完成）等功能，可以完成一些有趣的小实验。此外，简单轮式机器人的软件是开源的，具体代码可以从我的GitHub[仓库](https://github.com/myyerrol/simple_wheeled_robot)上获得。
 
-![raspberry_pi_simple_car_1](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/raspberry_pi_simple_car_1.jpg)
+![simple_wheeled_robot_1](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/simple_wheeled_robot_1.jpg)
 
 ## 原理
 
@@ -29,7 +29,7 @@ comments: true
 
 以下是该简单轮式机器人的硬件系统连接图：
 
-![raspberry_pi_simple_car_fritzing](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/raspberry_pi_simple_car_fritzing.png)
+![simple_wheeled_robot_fritzing](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/simple_wheeled_robot_fritzing.png)
 
 - #### 核心主控
 
@@ -64,7 +64,7 @@ comments: true
 
 - #### Raspberry Pi库代码
 
-  > raspberry_pi_simple_car_lib.py
+  > simple_wheeled_robot_lib.py
 
   该库代码实现了GPIO引脚初始化函数、LED灯设置函数、蜂鸣器设置函数、电机控制函数、超声波测距函数和LCD1602显示函数，其中LCD1602显示函数调用了Python的SMBUS库来完成IIC数据通信，从而能将字符串显示在屏幕上（注意：SMBUS和IIC协议之间是存在区别的，但在Raspberry Pi上两者概念基本等同）。
 
@@ -86,7 +86,7 @@ comments: true
   lcd_address           = 0x27
   data_bus = smbus.SMBus(1)
 
-  class RaspberryPiSimpleCar:
+  class SimpleWheeledRobot:
       def __init__(self):
           gpio.setmode(gpio.BCM)
           gpio.setup(motor_run_left, gpio.OUT)
@@ -286,7 +286,7 @@ comments: true
 
 - #### Raspberry Pi测试代码1
 
-  > raspberry_pi_simple_car_run_1.py
+  > simple_wheeled_robot_run_1.py
 
   该代码调用了上面自己编写的机器人代码库，主要实现了超声波距离检测函数和键盘遥控函数，其中键盘遥控函数里面又根据所按按键的不同调用并组合上面代码库中的不同函数来完成某些特定的功能（比如机器人遇到障碍物后首先会发出警报，然后再进行相应的规避运动等）。
 
@@ -296,10 +296,10 @@ comments: true
   import random
   import Tkinter as tk
   import RPi.gpio as gpio
-  from raspberry_pi_simple_car_lib import RaspberryPiSimpleCar
+  from simple_wheeled_robot_lib import SimpleWheeledRobot
 
-  raspberry_pi_simple_car = RaspberryPiSimpleCar()
-  raspberry_pi_simple_car.initialize_lcd()
+  simple_wheeled_robot = SimpleWheeledRobot()
+  simple_wheeled_robot.initialize_lcd()
   port = "/dev/ttyUSB0"
   serial_to_arduino = serial.Serial(port, 9600)
   serial_from_arduino = serial.Serial(port, 9600)
@@ -307,7 +307,7 @@ comments: true
   serial_to_arduino.write('n')
 
   def detecte_distance():
-      distance = raspberry_pi_simple_car.get_distance()
+      distance = simple_wheeled_robot.get_distance()
 
       if distance >= 20:
           # Light up the green led.
@@ -318,11 +318,11 @@ comments: true
       elif distance < 10:
           # Light up the red led.
           serial_to_arduino.write('r')
-          raspberry_pi_simple_car.buzzing()
-          raspberry_pi_simple_car.__init__()
-          raspberry_pi_simple_car.go_reverse(2)
-          raspberry_pi_simple_car.__init__()
-          raspberry_pi_simple_car.go_pivot_right(2)
+          simple_wheeled_robot.buzzing()
+          simple_wheeled_robot.__init__()
+          simple_wheeled_robot.go_reverse(2)
+          simple_wheeled_robot.__init__()
+          simple_wheeled_robot.go_pivot_right(2)
 
       # Check the distance between wall and car's both sides.
       serial_to_arduino.write('k')
@@ -331,33 +331,33 @@ comments: true
 
       # Car is too close to the left wall.
       if data_from_arduino_int == 01:
-          raspberry_pi_simple_car.buzzing()
-          raspberry_pi_simple_car.__init__()
-          raspberry_pi_simple_car.go_right(2)
+          simple_wheeled_robot.buzzing()
+          simple_wheeled_robot.__init__()
+          simple_wheeled_robot.go_right(2)
       # Car is too close to the right wall.
       elif data_from_arduino_int == 10:
-          raspberry_pi_simple_car.buzzing()
-          raspberry_pi_simple_car.__init__()
-          raspberry_pi_simple_car.go_left(2)
+          simple_wheeled_robot.buzzing()
+          simple_wheeled_robot.__init__()
+          simple_wheeled_robot.go_left(2)
 
   def input_key(event):
-      raspberry_pi_simple_car.__init__()
+      simple_wheeled_robot.__init__()
       print 'Key', event.char
       key_press = event.char
       seconds = 0.05
 
       if key_press.lower() == 'w':
-          raspberry_pi_simple_car.go_forward(seconds)
+          simple_wheeled_robot.go_forward(seconds)
       elif key_press.lower() == 's':
-          raspberry_pi_simple_car.go_reverse(seconds)
+          simple_wheeled_robot.go_reverse(seconds)
       elif key_press.lower() == 'a':
-          raspberry_pi_simple_car.go_left(seconds)
+          simple_wheeled_robot.go_left(seconds)
       elif key_press.lower() == 'd':
-          raspberry_pi_simple_car.go_right(seconds)
+          simple_wheeled_robot.go_right(seconds)
       elif key_press.lower() == 'q':
-          raspberry_pi_simple_car.go_pivot_left(seconds)
+          simple_wheeled_robot.go_pivot_left(seconds)
       elif key_press.lower() == 'e':
-          raspberry_pi_simple_car.go_pivot_right(seconds)
+          simple_wheeled_robot.go_pivot_right(seconds)
       elif key_press.lower() == 'o':
           gpio.cleanup()
           # Move the servo in forward directory.
@@ -386,67 +386,67 @@ comments: true
               if x == 0:
                   for y in range(30):
                       detecte_distance()
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_forward(0.05)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_forward(0.05)
               elif x == 1:
                   for y in range(30):
                       detecte_distance()
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_left(0.05)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_left(0.05)
               elif x == 2:
                   for y in range(30):
                       detecte_distance()
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_right(0.05)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_right(0.05)
               elif x == 3:
                   for y in range(30):
                       detecte_distance()
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_pivot_left(0.05)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_pivot_left(0.05)
               elif x == 4:
                   for y in range(30):
                       detecte_distance()
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_pivot_right(0.05)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_pivot_right(0.05)
 
               data_from_arduino = serial_from_arduino.readline()
               data_from_arduino_int = int(data_from_arduino)
 
               if data_from_arduino_int == 1111:
-                  raspberry_pi_simple_car.__init__()
-                  raspberry_pi_simple_car.go_forward(0.05)
+                  simple_wheeled_robot.__init__()
+                  simple_wheeled_robot.go_forward(0.05)
                   if data_from_arduino_int == 1111:
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.stop()
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.stop()
                   elif data_from_arduino_int == 0000:
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_forward(0.05)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_forward(0.05)
                   elif data_from_arduino_int == 0100:
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_left(0.05)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_left(0.05)
                   elif data_from_arduino_int == 1000 or \
                        data_from_arduino_int == 1100:
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_left(0.08)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_left(0.08)
                   elif data_from_arduino_int == 0010:
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_right(0.05)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_right(0.05)
                   elif data_from_arduino_int == 0001 or \
                        data_from_arduino_int == 0011:
-                      raspberry_pi_simple_car.__init__()
-                      raspberry_pi_simple_car.go_right(0.08)
+                      simple_wheeled_robot.__init__()
+                      simple_wheeled_robot.go_right(0.08)
 
           serial_to_arduino.write('l')
 
       elif key_press.lower() == 'u':
           gpio.cleanup()
-          raspberry_pi_simple_car.print_lcd(1, 0, 'UltrasonicWare')
-          raspberry_pi_simple_car.print_lcd(1, 1, 'Distance:%.lf CM' %
-                                            raspberry_pi_simple_car.get_distance())
+          simple_wheeled_robot.print_lcd(1, 0, 'UltrasonicWare')
+          simple_wheeled_robot.print_lcd(1, 1, 'Distance:%.lf CM' %
+                                                simple_wheeled_robot.get_distance())
       else:
           pass
 
-      distance = raspberry_pi_simple_car.get_distance()
+      distance = simple_wheeled_robot.get_distance()
 
       if distance >= 20:
           serial_to_arduino.write('g')
@@ -454,22 +454,22 @@ comments: true
           serial_to_arduino.write('y')
       elif distance < 10:
           serial_to_arduino.write('r')
-          raspberry_pi_simple_car.buzzing()
-          raspberry_pi_simple_car.__init__()
-          raspberry_pi_simple_car.go_reverse(2)
+          simple_wheeled_robot.buzzing()
+          simple_wheeled_robot.__init__()
+          simple_wheeled_robot.go_reverse(2)
 
       serial_to_arduino.write('k')
       data_from_arduino = serial_from_arduino.readline()
       data_from_arduino_int = int(data_from_arduino)
 
       if data_from_arduino_int == 1:
-          raspberry_pi_simple_car.buzzing()
-          raspberry_pi_simple_car.__init__()
-          raspberry_pi_simple_car.go_right(2)
+          simple_wheeled_robot.buzzing()
+          simple_wheeled_robot.__init__()
+          simple_wheeled_robot.go_right(2)
       elif data_from_arduino_int == 10:
-          raspberry_pi_simple_car.buzzing()
-          raspberry_pi_simple_car.__init__()
-          raspberry_pi_simple_car.go_left(2)
+          simple_wheeled_robot.buzzing()
+          simple_wheeled_robot.__init__()
+          simple_wheeled_robot.go_left(2)
 
   try:
       command = tk.Tk()
@@ -483,17 +483,17 @@ comments: true
 
 - #### Raspberry Pi测试代码2
 
-  > raspberry_pi_simple_car_run_2.py
+  > simple_wheeled_robot_run_2.py
 
   该代码实现的功能比较简单，仅测试了机器人的电机遥控和超声波避障两个功能。
 
   ```python
   import Tkinter as tk
   import RPi.GPIO as gpio
-  from raspberry_pi_simple_car_lib import RaspberryPiSimpleCar
+  from simple_wheeled_robot_lib import SimpleWheeledRobot
 
-  raspberry_pi_simple_car = RaspberryPiSimpleCar()
-  raspberry_pi_simple_car.initialize_lcd()
+  simple_wheeled_robot = SimpleWheeledRobot()
+  simple_wheeled_robot.initialize_lcd()
 
   def input_key(event):
       print 'Key', event.char
@@ -501,32 +501,32 @@ comments: true
       seconds = 0.05
 
       if key_press.lower() == 'w':
-          raspberry_pi_simple_car.go_forward(seconds)
+          simple_wheeled_robot.go_forward(seconds)
       elif key_press.lower() == 's':
-          raspberry_pi_simple_car.go_reverse(seconds)
+          simple_wheeled_robot.go_reverse(seconds)
       elif key_press.lower() == 'a':
-          raspberry_pi_simple_car.go_left(seconds)
+          simple_wheeled_robot.go_left(seconds)
       elif key_press.lower() == 'd':
-          raspberry_pi_simple_car.go_right(seconds)
+          simple_wheeled_robot.go_right(seconds)
       elif key_press.lower() == 'q':
-          raspberry_pi_simple_car.go_pivot_left(seconds)
+          simple_wheeled_robot.go_pivot_left(seconds)
       elif key_press.lower() == 'e':
-          raspberry_pi_simple_car.go_pivot_right(seconds)
+          simple_wheeled_robot.go_pivot_right(seconds)
       elif key_press.lower() == 'o':
-          raspberry_pi_simple_car.move_servo_left()
+          simple_wheeled_robot.move_servo_left()
       elif key_press.lower() == 'p':
-          raspberry_pi_simple_car.move_servo_right()
+          simple_wheeled_robot.move_servo_right()
       else:
           pass
 
-      distance = raspberry_pi_simple_car.get_distance()
-      raspberry_pi_simple_car.print_lcd(1, 0, 'UltrasonicWare')
-      raspberry_pi_simple_car.print_lcd(1, 1, 'Distance:%.lf CM' % distance)
+      distance = simple_wheeled_robot.get_distance()
+      simple_wheeled_robot.print_lcd(1, 0, 'UltrasonicWare')
+      simple_wheeled_robot.print_lcd(1, 1, 'Distance:%.lf CM' % distance)
       print "Distance: %.1f CM" % distance
 
       if distance < 10:
-          raspberry_pi_simple_car.__init__()
-          raspberry_pi_simple_car.go_reverse(2)
+          simple_wheeled_robot.__init__()
+          simple_wheeled_robot.go_reverse(2)
 
   try:
       command = tk.Tk()
@@ -540,7 +540,7 @@ comments: true
 
 - #### Raspberry Pi测试代码3
 
-  > raspberry_pi_simple_car_run_3.py
+  > simple_wheeled_robot_run_3.py
 
   该代码实现的功能与上面的测试代码2类似，只不过图形界面本代码里使用的是[Pygame](https://www.pygame.org/)而不是之前的[Tkinter](https://docs.python.org/2/library/tkinter.html)。
 
@@ -549,14 +549,14 @@ comments: true
   import pygame
   from pygame.locals import *
   import RPi.GPIO as gpio
-  from raspberry_pi_simple_car_lib import RaspberryPiSimpleCar
+  from simple_wheeled_robot_lib import SimpleWheeledRobot
 
-  raspberry_pi_simple_car = RaspberryPiSimpleCar()
+  simple_wheeled_robot = SimpleWheeledRobot()
 
   pygame.init()
   screen = pygame.display.set_mode((800, 800))
   font = pygame.font.SysFont("arial", 64)
-  pygame.display.set_caption('RaspberryPiSimpleCar')
+  pygame.display.set_caption('SimpleWheeledRobot')
   pygame.mouse.set_visible(0)
 
   while True:
@@ -567,22 +567,22 @@ comments: true
           if event.type == KEYDOWN:
               time = 0.03
           if event.key == K_UP or event.key == ord('w'):
-              raspberry_pi_simple_car.go_forward(time)
+              simple_wheeled_robot.go_forward(time)
           elif event.key == K_DOWN or event.key == ord('s'):
-              raspberry_pi_simple_car.go_reverse(time)
+              simple_wheeled_robot.go_reverse(time)
           elif event.key == K_LEFT or event.key == ord('a'):
-              raspberry_pi_simple_car.go_left(time)
+              simple_wheeled_robot.go_left(time)
           elif event.key == K_RIGHT or event.key == ord('d'):
-              raspberry_pi_simple_car.go_right(time)
+              simple_wheeled_robot.go_right(time)
           elif event.key == ord('q'):
-              raspberry_pi_simple_car.go_pivot_left(time)
+              simple_wheeled_robot.go_pivot_left(time)
           elif event.key == ord('e'):
-              raspberry_pi_simple_car.go_pivot_right(time)
+              simple_wheeled_robot.go_pivot_right(time)
   ```
 
 - #### Arduino测试代码
 
-  > raspberry_pi_simple_car.ino
+  > simple_wheeled_robot.ino
 
   该代码从逻辑上比较好理解，在`setup()`函数初始化引脚的模式和串口波特率后，主函数`loop()`会不断地从串口中读取字符数据，并根据字符的不同进行不同的处理工作。
 
@@ -745,13 +745,13 @@ comments: true
 
 以下是制作完成后的成果图和测试视频：
 
-![raspberry_pi_simple_car_2](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/raspberry_pi_simple_car_2.jpg)
+![simple_wheeled_robot_2](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/simple_wheeled_robot_2.jpg)
 
-![raspberry_pi_simple_car_3](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/raspberry_pi_simple_car_3.jpg)
+![simple_wheeled_robot_3](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/simple_wheeled_robot_3.jpg)
 
-![raspberry_pi_simple_car_4](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/raspberry_pi_simple_car_4.jpg)
+![simple_wheeled_robot_4](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/simple_wheeled_robot_4.jpg)
 
-![raspberry_pi_simple_car_5](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/raspberry_pi_simple_car_5.jpg)
+![simple_wheeled_robot_5](https://media.myyerrol.io/images/diy_robots/1_simple_wheeled_robot/simple_wheeled_robot_5.jpg)
 
 <div style="height:0; padding-bottom:65%; position:relative;">
   <iframe src="//player.bilibili.com/player.html?aid=77580434&cid=132719157&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height:100%; width:100%;">
