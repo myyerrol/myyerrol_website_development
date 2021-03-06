@@ -1,11 +1,11 @@
 ---
-title: 自制机器人系列（三）：小型自平衡机器人
+title: 自制机器人系列（三）：两轮自平衡机器人
 date: 2018-06-13 21:45:00
 tags:
   - DIY
   - Robot
 categories: 自制机器人系列
-description: 本篇文章介绍自制小型自平衡机器人的相关内容。
+description: 本篇文章介绍自制两轮自平衡机器人的相关内容。
 feature: /images/features/robot.png
 toc: true
 comments: true
@@ -17,11 +17,11 @@ comments: true
 
 <!--more-->
 
-既然项目已经定下来要做机器人，那这回我要做什么类型的机器人呢？鉴于之前我已做过四轮和六足机器人，那这次我就不能做得重样，就在我考虑如何使用家里现有的元器件和模块搭建机器人的时候，我看到大神[彭稚晖](http://www.pengzhihui.xyz/about/)的一篇非常棒的博文《[Nano - 全球最迷你的自平衡机器人](http://www.pengzhihui.xyz/2015/12/09/nano/)》（其他博文的质量也非常高），它深深震撼了我，虽然TB上有很多商家在卖自平衡小车的学习套件，但能把一个自平衡机器人做得如此小型化、拟人化而且功能又足够丰富的确实很少见！于是，本着喜欢做小型机器人的爱好以及学习基本倒立摆模型的目的，我也踏上了制作小型自平衡机器人的旅程。
+既然项目已经定下来要做机器人，那这回我要做什么类型的机器人呢？鉴于之前我已做过四轮和六足机器人，那这次我就不能做得重样，就在我考虑如何使用家里现有的元器件和模块搭建机器人的时候，我看到大神[彭稚晖](http://www.pengzhihui.xyz/about/)的一篇非常棒的博文《[Nano - 全球最迷你的自平衡机器人](http://www.pengzhihui.xyz/2015/12/09/nano/)》（其他博文的质量也非常高），它深深震撼了我，虽然TB上有很多商家在卖自平衡小车的学习套件，但能把一个自平衡机器人做得如此小型化、拟人化而且功能又足够丰富的确实很少见！于是，本着喜欢做小型机器人的爱好以及学习基本倒立摆模型的目的，我也踏上了制作两轮自平衡机器人的旅程。
 
 ## 概述
 
-顾名思义，小型自平衡机器人是一个只依靠自身的前后运动实来现动态平衡的两轮机器人，其中涉及到的原理简单来说与高中物理中所学的磁场负反馈类似（具体内容请看下面软件部分的介绍）。该机器人的硬件核心使用的是队友制作的Arduino Nano最小系统版，它负责实时接收和处理姿态传感器的数据，并将处理后的数据发送给电机驱动模块来精确控制电机的转向和转速，从而实现机器人的自平衡效果。在软件层面上，该机器人采用的是自平衡车领域里最常见的PID算法，简单且易于理解，在保证机械结构没有问题（下面会有讲解）的情况下，只需调整相关的PID参数便可使机器人保持动态平衡。当然遵循惯例，该机器人项目的软件依旧开源，具体代码可以从我的GitHub[仓库](https://github.com/myyerrol/self_balancing_robot)上获得。
+顾名思义，两轮自平衡机器人是一个只依靠自身的前后运动实来现动态平衡的两轮机器人，其中涉及到的原理简单来说与高中物理中所学的磁场负反馈类似（具体内容请看下面软件部分的介绍）。该机器人的硬件核心使用的是队友制作的Arduino Nano最小系统版，它负责实时接收和处理姿态传感器的数据，并将处理后的数据发送给电机驱动模块来精确控制电机的转向和转速，从而实现机器人的自平衡效果。在软件层面上，该机器人采用的是自平衡车领域里最常见的PID算法，简单且易于理解，在保证机械结构没有问题（下面会有讲解）的情况下，只需调整相关的PID参数便可使机器人保持动态平衡。当然遵循惯例，该机器人项目的软件依旧开源，具体代码可以从我的GitHub[仓库](https://github.com/myyerrol/2wd_balancing_robot)上获得。
 
 ## 原理
 
@@ -35,9 +35,9 @@ comments: true
 
   我买的是带有AB双向增量式磁性霍尔编码器的N20减速电机，减速比为1：30，额定转速正好在300rpm左右。在买的时候一定要注意**电机的使用电压，因为同样的减速比，不同电压型号的N20减速电机其额定转速是不一样的！**至于TB链接就不发了，直接在首页中搜索“N20减速电机 码盘”就能找到。如下图所示，两个N20减速电机被紧紧地固定在机器人底座上：
 
-  ![self_balancing_robot_motor_1](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_motor_1.jpg)
+  ![2wd_balancing_robot_motor_1](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_motor_1.jpg)
 
-  ![self_balancing_robot_motor_2](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_motor_2.jpg)
+  ![2wd_balancing_robot_motor_2](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_motor_2.jpg)
 
 - #### 电机驱动层
 
@@ -47,9 +47,9 @@ comments: true
 
   目前据我了解到的情况，国内外做的自平衡小车其电机驱动用的基本上全是TB6612芯片，本来我也想用该芯片的，不过不知道自己从元器件收纳箱的哪个角落找到了一个之前买的但一直没用的L298N模块，而且加上彭神在[Arduino中文社区](https://www.arduino.cn/)发表的第一代[自平衡机器人-【蛋黄物语】](https://www.arduino.cn/thread-6246-1-1.html)中用的电机驱动也是L298N，所以本着不浪费的原则，我就索性用L298N作为本平衡机器人的电机驱动。不过由于L298N模块比TB6612模块高很多，所以最后制作完成的机器人也要比传统的自平衡机器人高很多。以下是电机驱动层的高清图：
 
-  ![self_balancing_robot_driver_1](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_driver_1.jpg)
+  ![2wd_balancing_robot_driver_1](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_driver_1.jpg)
 
-  ![self_balancing_robot_driver_2](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_driver_2.jpg)
+  ![2wd_balancing_robot_driver_2](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_driver_2.jpg)
 
 - #### 电源管理层
 
@@ -61,13 +61,13 @@ comments: true
 
   最后如图所示，我在升压模块的左侧焊了两个接线端子分别用于将升压后的电源通过导线输送给L298N和Breezeduino，而在右下角我添加了一个单刀双掷拨动开关用于控制锂电池电源的输入，而绿色LED和电阻构成的电路则方便判断当前电源通断的状态，即LED亮表示锂电池已经接入电路， 电源管理层可以正常工作；而LED灭则表示锂电池没有接入电路中，此时可以使用带有Micro USB接头的手机线给锂电池进行充电。
 
-  ![self_balancing_robot_power_1](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_power_1.jpg)
+  ![2wd_balancing_robot_power_1](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_power_1.jpg)
 
-  ![self_balancing_robot_power_2](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_power_2.jpg)
+  ![2wd_balancing_robot_power_2](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_power_2.jpg)
 
-  ![self_balancing_robot_power_3](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_power_3.jpg)
+  ![2wd_balancing_robot_power_3](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_power_3.jpg)
 
-  ![self_balancing_robot_power_4](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_power_4.jpg)
+  ![2wd_balancing_robot_power_4](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_power_4.jpg)
 
 - #### 主控处理层
 
@@ -75,21 +75,21 @@ comments: true
 
   首先详细介绍一下Breezeduino微控制器。如下图所示，Breezeduino板子是使用EAGLE软件进行设计的，EAGLE在国内的知名度并不是很高，用的人估计也不是很多，不过作为一款优秀的跨平台（Windows、GNU\Linux、Mac）PCB设计软件，它在国外开源硬件界还是非常流行的，比如大名鼎鼎的Arduino以及SparkFun公司大部分的硬件都是用EAGLE进行设计的，它简单易学而又足够强大，在画简单的PCB时其性能足以媲美Altium、Cadance SPB以及PADS等传统大型PCB设计软件。好了言归正传，Breezeduino的硬件原理其实很简单，就是实现了一个单片机的最小系统电路并将芯片的其他引脚通过排针的方式引出，便于功能扩展。
 
-  ![self_balancing_robot_mcu_1](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_mcu_1.png)
+  ![2wd_balancing_robot_mcu_1](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_mcu_1.png)
 
-  ![self_balancing_robot_mcu_2](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_mcu_2.png)
+  ![2wd_balancing_robot_mcu_2](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_mcu_2.png)
 
-  ![self_balancing_robot_mcu_3](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_mcu_3.jpg)
+  ![2wd_balancing_robot_mcu_3](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_mcu_3.jpg)
 
   如下图所示，除了Breezeduino微控制器之外，在本层洞洞板上我还焊了两个接线端子用于为电机编码器提供标准的5V电源（来源于L298N模块的5V输出端口），而板子左上角和右上角分别焊有排母和排针，分别用于连接OLED 12864显示屏的IIC接口和L298N的6个电机控制接口（4个用于控制左右两个电机的转向，2个用于PWM调速）。
 
-  ![self_balancing_robot_mcu_4](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_mcu_4.jpg)
+  ![2wd_balancing_robot_mcu_4](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_mcu_4.jpg)
 
-  ![self_balancing_robot_mcu_5](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_mcu_5.jpg)
+  ![2wd_balancing_robot_mcu_5](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_mcu_5.jpg)
 
-  ![self_balancing_robot_mcu_6](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_mcu_6.jpg)
+  ![2wd_balancing_robot_mcu_6](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_mcu_6.jpg)
 
-  ![self_balancing_robot_mcu_7](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_mcu_7.jpg)
+  ![2wd_balancing_robot_mcu_7](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_mcu_7.jpg)
 
 - #### 外设模块层
 
@@ -103,11 +103,11 @@ comments: true
 
   蜂鸣器和LED则主要用于表现机器人的某些情感状态，毕竟让机器人发个声、亮个灯要比什么都没有更能体现机器人中“人”的本意，不是吗？
 
-  ![self_balancing_robot_peripheral_1](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_peripheral_1.jpg)
+  ![2wd_balancing_robot_peripheral_1](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_peripheral_1.jpg)
 
-  ![self_balancing_robot_peripheral_2](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_peripheral_2.jpg)
+  ![2wd_balancing_robot_peripheral_2](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_peripheral_2.jpg)
 
-  ![self_balancing_robot_peripheral_3](https://media.myyerrol.io/images/diy_robots/3_self_balancing_robot/self_balancing_robot_peripheral_3.jpg)
+  ![2wd_balancing_robot_peripheral_3](https://media.myyerrol.io/images/diy_robots/3_2wd_balancing_robot/2wd_balancing_robot_peripheral_3.jpg)
 
 ### 软件
 
